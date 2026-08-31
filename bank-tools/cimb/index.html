@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CIMB Style Demo Receipt Builder</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#050505;color:#fff;font-family:Arial,Helvetica,sans-serif}
+.page{max-width:1160px;margin:auto;padding:10px}
+.layout{display:grid;grid-template-columns:390px 1fr;gap:14px;align-items:start}
+.row{display:grid;gap:7px;margin-bottom:8px}.split{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr 75px}
+label{font-size:11px;color:#aaa}
+input{width:100%;height:35px;border:1px solid #444;border-radius:6px;background:#151515;color:#fff;padding:0 10px}
+.btnbar{display:grid;grid-template-columns:90px 1fr 1fr 1fr;gap:7px}
+button{height:35px;border:0;border-radius:6px;color:#fff;font-weight:700;cursor:pointer;background:#176fe6}
+.reset{background:#171717;border:1px solid #444}.auto{background:#1a1a1a;border:1px solid #444}.auto.on{background:#0f5f3e}
+.note{font-size:11px;color:#999;line-height:1.5;margin-top:10px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1b1b1b;border:1px solid #444;padding:10px 14px;border-radius:8px;display:none;z-index:100}
+
+.receipt-wrap{display:flex;justify-content:center}
+.receipt{
+  width:min(515px,100%);
+  min-height:900px;
+  position:relative;
+  overflow:hidden;
+  background:#f7f7f5;
+  color:#1d1d1d;
+  border-radius:4px;
+}
+.receipt.blurred .private{filter:blur(5px)}
+.demo-badge{position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:30;background:#8c1321;color:#fff;border-radius:999px;padding:4px 10px;font-size:9px;font-weight:800}
+.watermark{position:absolute;inset:0;z-index:20;pointer-events:none;display:flex;align-items:center;justify-content:center;transform:rotate(-18deg);color:rgba(180,0,0,.11);font-size:32px;font-weight:900;text-align:center;line-height:1.1;letter-spacing:1px}
+
+.main{padding:52px 38px 215px}
+.success-art{width:100px;height:100px;margin:0 auto 16px;position:relative}
+.success-art .circle{position:absolute;inset:10px;border-radius:50%;background:#129b74;display:grid;place-items:center;color:#fff;font-size:48px;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,.12)}
+.success-art .dot{position:absolute;width:8px;height:8px;border-radius:50%}
+.success-art .d1{background:#f1ba23;left:8px;top:18px}.success-art .d2{background:#6a3cbb;right:4px;top:27px}.success-art .d3{background:#dc394f;left:16px;bottom:8px}.success-art .d4{background:#32a79a;right:20px;bottom:2px}
+.success-art .squig{position:absolute;width:27px;height:10px;border-top:4px solid;border-radius:50%}
+.success-art .s1{border-color:#e35235;left:-2px;top:48px;transform:rotate(-18deg)}
+.success-art .s2{border-color:#7b48c9;right:-8px;top:32px;transform:rotate(42deg)}
+
+.success{text-align:center;color:#18834f;font-size:35px;font-weight:800;margin-top:4px}
+.summary{text-align:center;font-size:17px;margin-top:30px;color:#222}
+.amount{text-align:center;font-size:33px;margin-top:8px;letter-spacing:.3px}
+.amount span{font-weight:800}
+.datetime{text-align:center;font-size:14px;font-weight:700;margin-top:20px;color:#333}
+.hr{height:1px;background:#e5e5e2;margin:42px -8px 24px}
+.details{display:grid;gap:30px}
+.drow{display:grid;grid-template-columns:145px 1fr;gap:16px;align-items:start}
+.k{font-size:18px;color:#4e4e4e}
+.v{font-size:18px;text-align:right;font-weight:700;line-height:1.35;color:#222;white-space:pre-line}
+
+.bottom-panel{position:absolute;left:0;right:0;bottom:0;background:rgba(247,247,245,.98);border-top:1px solid #dededb;padding:8px 28px 22px;z-index:10}
+.chev{width:38px;height:38px;border-radius:50%;border:2px solid #bcbcbc;margin:0 auto 15px;display:grid;place-items:center;color:#333;font-size:22px;font-weight:900;background:#fafafa}
+.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:320px;margin:0 auto 18px}
+.ic{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;margin:auto;font-size:28px;font-weight:800}
+.ic.green{background:#149c83;color:#fff}.ic.grey{background:#9a9a9a;color:#f2f2f2}.ic.star{font-size:34px}
+.done{width:100%;height:58px;background:#bd1717;border-radius:3px;font-size:21px;font-weight:800;color:#fff;border:0}
+
+@media(max-width:840px){.layout{grid-template-columns:1fr}.receipt{min-height:850px}.main{padding-left:28px;padding-right:28px}.drow{grid-template-columns:125px 1fr}.k,.v{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="page"><div class="layout">
+<section>
+  <div class="row split">
+    <div><label>Amount (MYR)</label><input id="amount" value="2211.00"></div>
+    <div><label>Reference No.</label><input id="reference" value="217000001"></div>
+  </div>
+  <div class="row"><label>Date / Time</label><input id="datetime" value="30 Aug 2026 7:56:47 AM"></div>
+  <div class="row"><label>To</label><input id="to" value="DEMO MERCHANT SDN BHD\nCIMB MALAYSIA\n8606000000"></div>
+  <div class="row"><label>Nickname</label><input id="nickname" value="DEMO MERCHANT"></div>
+  <div class="row"><label>From</label><input id="from" value="DEMO SAVINGS-i\n7658000000"></div>
+  <div class="row"><label>When</label><input id="when" value="Today, 30 Aug 2026"></div>
+  <div class="row two"><div></div><button id="autoBtn" class="auto">Auto: OFF</button></div>
+  <div class="btnbar">
+    <button id="resetBtn" class="reset">Reset</button>
+    <button id="createBtn">Create</button>
+    <button id="blurBtn">Blur</button>
+    <button id="copyBtn">Copy Image</button>
+  </div>
+  <div class="note">CIMB-inspired <b>demo mockup</b> based on the new screenshot you supplied. It is not an official bank receipt and always carries <b>SAMPLE — NOT A REAL TRANSACTION</b>.</div>
+</section>
+
+<section class="receipt-wrap">
+  <div id="receipt" class="receipt">
+    <div class="demo-badge">DEMO ONLY</div>
+    <div class="watermark">SAMPLE<br>NOT A REAL TRANSACTION</div>
+
+    <div class="main">
+      <div class="success-art">
+        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+        <span class="squig s1"></span><span class="squig s2"></span>
+        <div class="circle">✓</div>
+      </div>
+
+      <div class="success">Successful</div>
+      <div class="summary">Transaction Summary</div>
+      <div class="amount">MYR <span id="rAmount">2,211.00</span></div>
+      <div id="rDatetime" class="datetime">30 Aug 2026 7:56:47 AM</div>
+
+      <div class="hr"></div>
+
+      <div class="details">
+        <div class="drow"><div class="k">Reference No.</div><div id="rReference" class="v private">217000001</div></div>
+        <div class="drow"><div class="k">To</div><div id="rTo" class="v private">DEMO MERCHANT SDN BHD\nCIMB MALAYSIA\n8606000000</div></div>
+        <div class="drow"><div class="k">Nickname</div><div id="rNickname" class="v">DEMO MERCHANT</div></div>
+        <div class="drow"><div class="k">From</div><div id="rFrom" class="v private">DEMO SAVINGS-i\n7658000000</div></div>
+        <div class="drow"><div class="k">When</div><div id="rWhen" class="v">Today, 30 Aug 2026</div></div>
+      </div>
+    </div>
+
+    <div class="bottom-panel">
+      <div class="chev">⌃</div>
+      <div class="icons">
+        <div class="ic green">↗</div>
+        <div class="ic green">⇄</div>
+        <div class="ic grey star">★</div>
+      </div>
+      <button class="done">Done</button>
+    </div>
+  </div>
+</section>
+</div></div>
+<div id="toast" class="toast">Copied</div>
+<script>
+const $=id=>document.getElementById(id);let auto=false,blurred=false;
+const defaults={amount:'2211.00',reference:'217000001',datetime:'30 Aug 2026 7:56:47 AM',to:'DEMO MERCHANT SDN BHD\\nCIMB MALAYSIA\\n8606000000',nickname:'DEMO MERCHANT',from:'DEMO SAVINGS-i\\n7658000000',when:'Today, 30 Aug 2026'};
+function money(v){const n=Number(String(v).replace(/,/g,''));return Number.isFinite(n)?n.toLocaleString('en-MY',{minimumFractionDigits:2,maximumFractionDigits:2}):'0.00'}
+function nl(v){return String(v||'-').replace(/\\n/g,'\n')}
+function sync(){
+ $('rAmount').textContent=money($('amount').value);$('rReference').textContent=$('reference').value||'-';$('rDatetime').textContent=$('datetime').value||'-';$('rTo').textContent=nl($('to').value);$('rNickname').textContent=$('nickname').value||'-';$('rFrom').textContent=nl($('from').value);$('rWhen').textContent=$('when').value||'-';
+}
+function setNow(){const d=new Date();$('datetime').value=new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true}).format(d).replace(' am',' AM').replace(' pm',' PM');$('when').value='Today, '+new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short',year:'numeric'}).format(d);sync()}
+function resetAll(){Object.keys(defaults).forEach(k=>$(k).value=defaults[k]);auto=false;blurred=false;$('autoBtn').classList.remove('on');$('autoBtn').textContent='Auto: OFF';$('receipt').classList.remove('blurred');$('blurBtn').textContent='Blur';sync()}
+function toast(t){$('toast').textContent=t;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',1300)}
+function rr(x,y,w,h,r){return {x,y,w,h,r}}
+function drawCanvas(){
+ const c=document.createElement('canvas');c.width=515;c.height=900;const x=c.getContext('2d');
+ x.fillStyle='#f7f7f5';x.fillRect(0,0,515,900);
+ // celebration / check
+ x.fillStyle='#129b74';x.beginPath();x.arc(257,105,42,0,Math.PI*2);x.fill();
+ x.fillStyle='#fff';x.font='bold 48px Arial';x.textAlign='center';x.fillText('✓',257,121);
+ x.fillStyle='#18834f';x.font='bold 35px Arial';x.fillText('Successful',257,190);
+ x.fillStyle='#222';x.font='17px Arial';x.fillText('Transaction Summary',257,237);
+ x.font='33px Arial';x.fillText('MYR ',213,280);x.font='bold 33px Arial';x.fillText(money($('amount').value),320,280);
+ x.font='bold 14px Arial';x.fillText($('datetime').value||'-',257,320);
+ x.strokeStyle='#e5e5e2';x.beginPath();x.moveTo(40,357);x.lineTo(475,357);x.stroke();
+ const rows=[['Reference No.',$('reference').value],['To',nl($('to').value)],['Nickname',$('nickname').value],['From',nl($('from').value)],['When',$('when').value]];
+ let y=405;x.textAlign='left';
+ rows.forEach(([a,b],idx)=>{x.fillStyle='#4e4e4e';x.font='18px Arial';x.fillText(a,48,y);x.fillStyle='#222';x.font='bold 18px Arial';x.textAlign='right';String(b||'-').split(/\n/).forEach((line,i)=>x.fillText(line,467,y+i*23));x.textAlign='left';y+= idx===1?100:75;});
+ // bottom panel
+ x.fillStyle='#f7f7f5';x.fillRect(0,700,515,200);x.strokeStyle='#dededb';x.beginPath();x.moveTo(0,700);x.lineTo(515,700);x.stroke();
+ x.fillStyle='#149c83';x.beginPath();x.arc(165,760,31,0,Math.PI*2);x.fill();x.beginPath();x.arc(257,760,31,0,Math.PI*2);x.fill();x.fillStyle='#9a9a9a';x.beginPath();x.arc(350,760,31,0,Math.PI*2);x.fill();
+ x.fillStyle='#fff';x.font='bold 28px Arial';x.textAlign='center';x.fillText('↗',165,770);x.fillText('⇄',257,770);x.fillText('★',350,770);
+ x.fillStyle='#bd1717';x.fillRect(45,825,425,55);x.fillStyle='#fff';x.font='bold 22px Arial';x.fillText('Done',257,860);
+ x.save();x.translate(257,450);x.rotate(-18*Math.PI/180);x.fillStyle='rgba(180,0,0,.20)';x.font='bold 31px Arial';x.fillText('SAMPLE — NOT A REAL TRANSACTION',0,0);x.restore();
+ return c;
+}
+async function copyImage(){const c=drawCanvas();try{const blob=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);toast('Demo image copied')}catch(e){const w=window.open();if(w)w.document.write('<img style="max-width:100%" src="'+c.toDataURL('image/png')+'">');toast('Opened demo image')}}
+['amount','reference','datetime','to','nickname','from','when'].forEach(id=>$(id).addEventListener('input',sync));
+$('createBtn').onclick=()=>{sync();toast('Preview updated')};$('resetBtn').onclick=resetAll;$('blurBtn').onclick=()=>{blurred=!blurred;$('receipt').classList.toggle('blurred',blurred);$('blurBtn').textContent=blurred?'Unblur':'Blur'};$('copyBtn').onclick=copyImage;$('autoBtn').onclick=()=>{auto=!auto;$('autoBtn').classList.toggle('on',auto);$('autoBtn').textContent='Auto: '+(auto?'ON':'OFF');if(auto)setNow()};setInterval(()=>{if(auto)setNow()},1000);sync();
+</script>
+<a href="../../" style="position:fixed;right:10px;bottom:10px;z-index:9999;background:#111;color:#fff;border:1px solid #555;border-radius:8px;padding:8px 10px;text-decoration:none;font:12px Arial">← Asset Studio</a></body>
+</html>
