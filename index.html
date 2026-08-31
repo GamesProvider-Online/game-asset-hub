@@ -1,47 +1,199 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Game Asset Hub</title>
-  <style>
-    :root{--bg:#0b0d12;--panel:#121620;--muted:#8f98aa;--text:#f4f6fb;--line:#222938;--accent:#f2c14e}
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text)}
-    header{position:sticky;top:0;z-index:5;background:rgba(11,13,18,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-    .wrap{max-width:1200px;margin:auto;padding:20px}.top{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    h1{font-size:24px;margin:0}.search{flex:1;max-width:420px}.search input{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--text);outline:none}
-    .providers{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.chip{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:9px 13px;border-radius:999px;cursor:pointer}.chip.active{border-color:var(--accent);color:var(--accent)}
-    .meta{color:var(--muted);margin:8px 0 22px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-2px);border-color:#35405a}.thumb{aspect-ratio:1/1;background:#0f131b;display:flex;align-items:center;justify-content:center}.thumb img{width:100%;height:100%;object-fit:contain}.body{padding:14px}.name{font-weight:700}.small{font-size:12px;color:var(--muted);margin-top:5px}.actions{display:flex;gap:8px;margin-top:12px}.btn{flex:1;text-align:center;padding:9px 10px;border-radius:10px;border:1px solid var(--line);background:#0e1219;color:var(--text);cursor:pointer;text-decoration:none;font-size:13px}.empty{padding:50px 0;text-align:center;color:var(--muted)}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Game Asset Hub</title>
+<style>
+:root{
+  --bg:#0b0d12;--panel:#121620;--panel2:#0f131b;--line:#232b3a;
+  --text:#f5f7fb;--muted:#8f98aa;--accent:#f2c14e;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1220px;margin:auto;padding:20px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand h1{font-size:24px;margin:0}
+.brand div{font-size:12px;color:var(--muted);margin-top:4px}
+.search{width:min(430px,100%)}
+.search input{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);outline:none}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:20px 0 8px}
+.providers{display:flex;gap:9px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:9px 13px;border-radius:999px;cursor:pointer}
+.chip.active{border-color:var(--accent);color:var(--accent)}
+.meta{color:var(--muted);font-size:14px;margin:16px 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.18s}
+.card:hover{transform:translateY(-2px);border-color:#3b465f}
+.thumb{aspect-ratio:1/1;background:var(--panel2);display:flex;align-items:center;justify-content:center;padding:8px}
+.thumb img{width:100%;height:100%;object-fit:contain;border-radius:10px}
+.body{padding:14px}
+.name{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.small{font-size:12px;color:var(--muted);margin-top:5px}
+.actions{display:flex;gap:8px;margin-top:12px}
+.btn{flex:1;text-align:center;padding:9px 10px;border-radius:10px;border:1px solid var(--line);background:#0e1219;color:var(--text);cursor:pointer;text-decoration:none;font-size:13px}
+.empty{grid-column:1/-1;padding:70px 20px;text-align:center;color:var(--muted)}
+.status{display:inline-flex;align-items:center;gap:7px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+@media(max-width:620px){.wrap{padding:15px}.top{align-items:stretch}.search{width:100%}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.body{padding:11px}}
+</style>
 </head>
 <body>
-<header><div class="wrap top"><h1>Game Asset Hub</h1><div class="search"><input id="q" placeholder="Search game, provider or category..." /></div></div></header>
+<header>
+  <div class="wrap top">
+    <div class="brand">
+      <h1>Game Asset Hub</h1>
+      <div>Provider logos, game icons & image resources</div>
+    </div>
+    <div class="search"><input id="q" autocomplete="off" placeholder="Search game, provider or category..."></div>
+  </div>
+</header>
+
 <main class="wrap">
-  <div id="providers" class="providers"></div>
-  <div id="meta" class="meta">Loading assets...</div>
+  <div class="toolbar">
+    <div id="providers" class="providers"></div>
+  </div>
+  <div id="meta" class="meta"><span class="status"><span class="dot"></span>Scanning assets...</span></div>
   <div id="grid" class="grid"></div>
 </main>
+
 <script>
-let all=[]; let selected='ALL';
-const fmt=s=>s.replace(/[-_]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+let all=[];
+let selected='ALL';
+const IMAGE_EXTS=['.png','.jpg','.jpeg','.webp','.gif','.svg','.avif'];
+const IGNORE=['provider-logo.png','provider-logo.jpg','provider-logo.jpeg','provider-logo.webp','logo.png','logo.jpg','logo.jpeg','logo.webp'];
+
+const fmt=s=>decodeURIComponent(String(s||''))
+  .replace(/\.[^.]+$/,'')
+  .replace(/[-_]+/g,' ')
+  .replace(/\b\w/g,c=>c.toUpperCase());
+
+function repoInfo(){
+  // GitHub Pages project URL:
+  // https://OWNER.github.io/REPOSITORY/
+  const host=location.hostname.toLowerCase();
+  const parts=location.pathname.split('/').filter(Boolean);
+  if(host.endsWith('.github.io') && parts.length){
+    return {owner:host.replace('.github.io',''), repo:parts[0], branch:'main'};
+  }
+  // Fallback for this project if a custom domain is used later.
+  return {owner:'GamesProvider-Online',repo:'game-asset-hub',branch:'main'};
+}
+
+async function scanGitHub(){
+  const {owner,repo,branch}=repoInfo();
+  const api=`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/git/trees/${encodeURIComponent(branch)}?recursive=1`;
+  const r=await fetch(api,{headers:{'Accept':'application/vnd.github+json'}});
+  if(!r.ok) throw new Error('GitHub API '+r.status);
+  const data=await r.json();
+
+  const rows=(data.tree||[])
+    .filter(x=>x.type==='blob' && x.path.startsWith('assets/'))
+    .filter(x=>{
+      const low=x.path.toLowerCase();
+      const ext='.'+low.split('.').pop();
+      const filename=low.split('/').pop();
+      return IMAGE_EXTS.includes(ext) && !IGNORE.includes(filename);
+    })
+    .map(x=>{
+      const parts=x.path.split('/');
+      // assets / PROVIDER / CATEGORY / image.png
+      const provider=parts[1] || 'Unknown';
+      const category=parts.length>=4 ? parts[2] : 'Games';
+      const filename=parts[parts.length-1];
+      return {
+        provider,
+        category,
+        name:filename.replace(/\.[^.]+$/,''),
+        path:x.path
+      };
+    });
+
+  return rows;
+}
+
+async function loadFallback(){
+  try{
+    const r=await fetch('data.json?'+Date.now());
+    if(!r.ok) return [];
+    const d=await r.json();
+    return Array.isArray(d)?d:[];
+  }catch(e){return []}
+}
+
 async function load(){
-  try{ const r=await fetch('data.json?'+Date.now()); all=await r.json(); renderProviders(); render(); }
-  catch(e){ document.getElementById('meta').textContent='data.json not found yet. Push the repository once so GitHub Actions can generate it.'; }
+  try{
+    all=await scanGitHub();
+  }catch(err){
+    console.warn(err);
+    all=await loadFallback();
+  }
+  renderProviders();
+  render();
 }
+
 function renderProviders(){
-  const el=document.getElementById('providers'); const ps=['ALL',...new Set(all.map(x=>x.provider))];
-  el.innerHTML=ps.map(p=>`<button class="chip ${p===selected?'active':''}" data-p="${p}">${fmt(p)}</button>`).join('');
-  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{selected=b.dataset.p;renderProviders();render();});
+  const el=document.getElementById('providers');
+  const ps=['ALL',...new Set(all.map(x=>x.provider))];
+  if(!ps.includes(selected)) selected='ALL';
+  el.innerHTML=ps.map(p=>`<button class="chip ${p===selected?'active':''}" data-p="${escapeHtml(p)}">${fmt(p)}</button>`).join('');
+  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    selected=b.dataset.p; renderProviders(); render();
+  });
 }
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+}
+
 function render(){
-  const q=document.getElementById('q').value.toLowerCase();
-  const items=all.filter(x=>(selected==='ALL'||x.provider===selected)&&(`${x.name} ${x.provider} ${x.category}`.toLowerCase().includes(q)));
-  document.getElementById('meta').textContent=`${items.length} asset${items.length===1?'':'s'} shown`;
+  const q=document.getElementById('q').value.trim().toLowerCase();
+  const items=all.filter(x=>
+    (selected==='ALL'||x.provider===selected) &&
+    (`${x.name} ${x.provider} ${x.category}`.toLowerCase().includes(q))
+  );
+
+  document.getElementById('meta').textContent =
+    `${items.length} asset${items.length===1?'':'s'} shown · ${new Set(all.map(x=>x.provider)).size} provider${new Set(all.map(x=>x.provider)).size===1?'':'s'}`;
+
   const grid=document.getElementById('grid');
-  if(!items.length){grid.innerHTML='<div class="empty">No assets found.</div>';return;}
-  grid.innerHTML=items.map(x=>`<article class="card"><div class="thumb"><img loading="lazy" src="${encodeURI(x.path)}" alt="${x.name}"></div><div class="body"><div class="name">${fmt(x.name)}</div><div class="small">${fmt(x.provider)} · ${fmt(x.category)}</div><div class="actions"><button class="btn" onclick="navigator.clipboard.writeText(new URL('${x.path}',location.href).href);this.textContent='Copied'">Copy URL</button><a class="btn" href="${encodeURI(x.path)}" download>Open</a></div></div></article>`).join('');
+  if(!items.length){
+    grid.innerHTML=`<div class="empty">${
+      all.length
+      ? 'No matching assets found.'
+      : 'No game images yet.<br><br>Upload PNG/JPG/WebP files inside <b>assets/PROVIDER/CATEGORY/</b>.'
+    }</div>`;
+    return;
+  }
+
+  grid.innerHTML=items.map(x=>{
+    const path=encodeURI(x.path);
+    return `<article class="card">
+      <div class="thumb"><img loading="lazy" src="${path}" alt="${escapeHtml(fmt(x.name))}"></div>
+      <div class="body">
+        <div class="name" title="${escapeHtml(fmt(x.name))}">${escapeHtml(fmt(x.name))}</div>
+        <div class="small">${escapeHtml(fmt(x.provider))} · ${escapeHtml(fmt(x.category))}</div>
+        <div class="actions">
+          <button class="btn copy" data-path="${escapeHtml(x.path)}">Copy URL</button>
+          <a class="btn" href="${path}" target="_blank" rel="noopener">Open</a>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+
+  grid.querySelectorAll('.copy').forEach(btn=>{
+    btn.onclick=async()=>{
+      const url=new URL(btn.dataset.path,location.href).href;
+      try{await navigator.clipboard.writeText(url);btn.textContent='Copied ✓';}
+      catch(e){prompt('Copy image URL:',url);}
+      setTimeout(()=>btn.textContent='Copy URL',1200);
+    };
+  });
 }
-document.getElementById('q').addEventListener('input',render); load();
+
+document.getElementById('q').addEventListener('input',render);
+load();
 </script>
 </body>
 </html>
