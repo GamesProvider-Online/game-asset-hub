@@ -1,0 +1,151 @@
+GAME ASSET HUB — START HERE
+===========================
+
+THIS PACKAGE IS A COMPLETE CLEAN SAMPLE.
+
+UPLOAD THESE ITEMS DIRECTLY TO THE ROOT OF YOUR GITHUB REPOSITORY:
+
+index.html
+.nojekyll
+assets/
+
+DO NOT upload the outer folder "game-asset-hub-clean-sample" itself.
+
+
+EXPECTED GITHUB STRUCTURE
+-------------------------
+
+game-asset-hub/
+|
+|-- index.html
+|-- .nojekyll
+|
+`-- assets/
+    |
+    |-- MEGA888/
+    |   |-- provider-logo.png
+    |   |
+    |   |-- Slots/
+    |   |   |-- great-blue.png
+    |   |   |-- great-blue.txt
+    |   |   `-- lucky-panda.png
+    |   |
+    |   `-- Fishing/
+    |       |-- ocean-king.png
+    |       `-- ocean-king.txt
+    |
+    `-- JILI/
+        |-- provider-logo.png
+        |
+        `-- Slots/
+            `-- fortune-gems.png
+
+
+WHAT YOU CAN DELETE / REPLACE
+-----------------------------
+
+1. SAMPLE PROVIDERS
+   You may DELETE the entire:
+   assets/MEGA888/
+   assets/JILI/
+
+   Then create your real provider folders.
+
+2. SAMPLE GAME IMAGES
+   great-blue.png
+   lucky-panda.png
+   ocean-king.png
+   fortune-gems.png
+
+   These are only example placeholders. Delete/replace them.
+
+3. PROVIDER LOGO
+   Put the provider logo directly inside provider folder:
+   assets/MEGA888/provider-logo.png
+
+   Keep the exact file name:
+   provider-logo.png
+
+4. GAME CATEGORY
+   Folder name becomes category:
+   assets/MEGA888/Slots/
+   assets/MEGA888/Fishing/
+   assets/MEGA888/Arcade/
+
+5. GAME IMAGE
+   Put image inside category:
+   assets/MEGA888/Slots/great-blue.png
+
+   The website changes "great-blue.png" into:
+   Great Blue
+
+6. OPTIONAL TIPS / NOTES
+   Use SAME file name as the image:
+
+   great-blue.png
+   great-blue.txt
+
+   If .txt exists, website shows:
+   "View Tips / Notes"
+
+   If you don't need tips, just don't create the .txt file.
+
+
+HOW TO ADD A NEW PROVIDER
+-------------------------
+
+Example PGSOFT:
+
+assets/
+`-- PGSOFT/
+    |-- provider-logo.png
+    |
+    |-- Slots/
+    |   |-- game-one.png
+    |   `-- game-two.webp
+    |
+    `-- Arcade/
+        `-- game-three.jpg
+
+
+SUPPORTED IMAGE TYPES
+---------------------
+
+.png
+.jpg
+.jpeg
+.webp
+.gif
+.svg
+.avif
+
+
+GITHUB PAGES SETUP
+------------------
+
+After uploading all files:
+
+GitHub repository
+-> Settings
+-> Pages
+-> Build and deployment
+-> Source: Deploy from a branch
+-> Branch: main
+-> Folder: / (root)
+-> Save
+
+Your website should then be:
+
+https://YOUR-USERNAME.github.io/game-asset-hub/
+
+
+IMPORTANT
+---------
+
+The repository must be PUBLIC because the website reads the public GitHub
+file tree to auto-detect new providers and game images.
+
+After the first setup:
+YOU DO NOT NEED TO EDIT index.html.
+
+Just add/delete folders and images inside assets/.

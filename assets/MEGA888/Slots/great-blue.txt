@@ -1,0 +1,10 @@
+SAMPLE TIPS
+
+This is only example text.
+
+To add tips for a game:
+1. Use the SAME file name as the image.
+2. Image: great-blue.png
+3. Tips:  great-blue.txt
+
+You can replace all of this text with your own notes/tips.
