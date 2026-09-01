@@ -1,0 +1,1560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Transaction History Builder</title>
+
+<style>
+:root{
+  --bg:#050607;
+  --panel:#0d1015;
+  --gold:#f0ce3d;
+  --line:#52461e;
+  --green:#39d760;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:#050607;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.layout{
+  display:grid;
+  grid-template-columns:380px minmax(1100px,1fr);
+  min-height:100vh;
+}
+
+/* =========================
+   LEFT EDITOR
+========================= */
+
+.editor{
+  height:100vh;
+  overflow:auto;
+  position:sticky;
+  top:0;
+
+  background:#0d1015;
+  border-right:1px solid #333;
+
+  padding:18px;
+}
+
+.home-link{
+  display:block;
+  text-decoration:none;
+
+  color:#fff;
+  background:#292c33;
+
+  border:1px solid #444;
+  border-radius:6px;
+
+  padding:10px;
+
+  text-align:center;
+  font-size:11px;
+  font-weight:bold;
+
+  margin-bottom:14px;
+}
+
+.editor h2{
+  margin:0 0 5px;
+  font-size:18px;
+}
+
+.editor-desc{
+  color:#999;
+  font-size:10px;
+  line-height:1.5;
+  margin-bottom:15px;
+}
+
+.editor h3{
+  color:#f0ce3d;
+  font-size:14px;
+  margin:18px 0 10px;
+}
+
+.field{
+  margin-bottom:10px;
+}
+
+.field label{
+  display:block;
+  color:#999;
+  font-size:10px;
+  margin-bottom:5px;
+}
+
+.field input,
+.field select{
+  width:100%;
+  height:36px;
+
+  padding:0 9px;
+
+  background:#16191f;
+  color:#fff;
+
+  border:1px solid #3d4148;
+  border-radius:5px;
+}
+
+.two{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.editor-buttons{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+
+  margin-top:15px;
+}
+
+.editor-buttons button{
+  height:39px;
+  border:0;
+  border-radius:6px;
+
+  color:#fff;
+  font-weight:bold;
+
+  cursor:pointer;
+}
+
+.reset{
+  background:#292c33;
+}
+
+.create{
+  background:#176fe6;
+}
+
+.editor-note{
+  margin-top:12px;
+
+  border:1px solid #584916;
+  border-radius:6px;
+
+  padding:10px;
+
+  color:#c2a957;
+
+  font-size:10px;
+  line-height:1.5;
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview{
+  min-width:1100px;
+  position:relative;
+}
+
+.demo{
+  position:fixed;
+  right:15px;
+  bottom:15px;
+
+  background:rgba(100,0,0,.45);
+
+  color:#ffaaaa;
+
+  border:1px solid rgba(255,80,80,.4);
+
+  padding:7px 10px;
+
+  border-radius:6px;
+
+  font-size:10px;
+  font-weight:bold;
+
+  z-index:1000;
+}
+
+
+/* TOP */
+
+.top{
+  height:42px;
+
+  position:relative;
+
+  border-bottom:1px solid #8e7216;
+
+  background:
+  linear-gradient(
+    130deg,
+    transparent 0 13%,
+    rgba(214,175,59,.16) 13% 15%,
+    transparent 15% 28%,
+    rgba(214,175,59,.12) 28% 30%,
+    transparent 30%
+  ),
+  #111216;
+}
+
+.menu{
+  position:absolute;
+
+  left:5px;
+  top:7px;
+
+  padding:3px 7px;
+
+  border:1px solid #72694d;
+  border-radius:11px;
+
+  font-size:8px;
+  font-weight:bold;
+}
+
+.logo{
+  position:absolute;
+
+  left:50%;
+  top:7px;
+
+  transform:translateX(-50%);
+
+  color:#f0ce3d;
+
+  font-size:14px;
+  font-weight:900;
+}
+
+.ticker{
+  height:20px;
+  line-height:20px;
+
+  text-align:right;
+
+  padding-right:10px;
+
+  color:#f0ce3d;
+
+  border-bottom:1px solid #52461e;
+
+  font-size:10px;
+}
+
+
+/* PROFILE */
+
+.profile{
+  margin-top:8px;
+
+  border:1px solid #52461e;
+  border-radius:16px;
+
+  overflow:hidden;
+
+  background:
+  linear-gradient(
+    90deg,
+    #111216,
+    #171814,
+    #111216
+  );
+}
+
+.profile-head{
+  text-align:center;
+
+  padding:16px 10px 10px;
+
+  border-bottom:1px solid #52461e;
+}
+
+.profile-name{
+  color:#f0ce3d;
+
+  font-size:16px;
+  font-weight:900;
+
+  text-transform:uppercase;
+}
+
+.profile-wallet{
+  margin-top:5px;
+
+  color:#c49c1d;
+
+  font-size:10px;
+  font-weight:bold;
+}
+
+.balance{
+  text-align:center;
+  padding:12px;
+}
+
+.balance-label{
+  color:#f0ce3d;
+  font-size:10px;
+  font-weight:bold;
+}
+
+.balance-value{
+  margin-top:4px;
+
+  color:#f4d448;
+
+  font-size:24px;
+  font-weight:900;
+}
+
+.limits{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+
+  padding:0 12px 12px;
+}
+
+.limit{
+  border:1px solid #52461e;
+  border-radius:10px;
+
+  padding:12px;
+
+  text-align:center;
+
+  color:#d4ad23;
+
+  font-size:9px;
+  font-weight:bold;
+}
+
+.limit strong{
+  display:block;
+
+  margin-top:5px;
+
+  color:#f0ce3d;
+
+  font-size:14px;
+}
+
+
+/* BUTTONS */
+
+.actions{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:8px;
+
+  margin-top:10px;
+}
+
+.actions button{
+  height:40px;
+
+  background:#111216;
+  color:#fff;
+
+  border:1px solid #52461e;
+  border-radius:12px;
+
+  font-size:11px;
+  font-weight:bold;
+}
+
+
+/* TABS */
+
+.tabs{
+  display:flex;
+  gap:10px;
+
+  padding:14px 0 9px;
+}
+
+.tab{
+  padding:10px 16px;
+
+  border:1px solid #705d1b;
+  border-radius:20px;
+
+  font-size:11px;
+  font-weight:bold;
+}
+
+.tab.active{
+  color:#111;
+
+  border-color:#f0ce3d;
+
+  background:
+  linear-gradient(
+    #f7d855,
+    #c8a42b
+  );
+}
+
+
+/* HISTORY */
+
+.history{
+  border-top:1px solid #52461e;
+}
+
+.head,
+.transaction{
+  display:grid;
+  grid-template-columns:65% 35%;
+}
+
+.head{
+  color:#f0ce3d;
+
+  font-size:11px;
+  font-weight:900;
+}
+
+.head div{
+  padding:12px 6px;
+
+  border-bottom:1px solid #52461e;
+}
+
+.head div:last-child{
+  border-left:1px solid #52461e;
+}
+
+.transaction{
+  min-height:142px;
+
+  border-bottom:1px solid #3d3517;
+}
+
+.tx-left{
+  padding:12px 5px;
+
+  font-size:11px;
+  line-height:1.42;
+}
+
+.tx-title{
+  font-weight:900;
+}
+
+.tx-id{
+  margin:2px 0 4px;
+  font-weight:bold;
+}
+
+.tx-date{
+  margin-top:4px;
+  font-weight:bold;
+}
+
+.tx-right{
+  padding:40px 10px 10px;
+
+  border-left:1px solid #52461e;
+}
+
+.status{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  font-size:11px;
+  font-weight:900;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+
+  border-radius:50%;
+
+  background:#39d760;
+}
+
+.feedback{
+  width:100%;
+  height:31px;
+
+  margin-top:10px;
+
+  background:
+  linear-gradient(
+    #ed3b3b,
+    #c62020
+  );
+
+  border:1px solid #ef4545;
+
+  border-radius:3px;
+
+  color:#fff;
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .layout{
+    display:block;
+  }
+
+  .editor{
+    position:relative;
+    height:auto;
+  }
+
+  .preview{
+    overflow:auto;
+  }
+
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div class="layout">
+
+
+<!-- =================================
+     EDIT TRANSACTION HISTORY
+================================= -->
+
+<aside class="editor">
+
+
+<a
+class="home-link"
+href="../">
+
+← HOME
+
+</a>
+
+
+<h2>
+
+Edit Transaction History
+
+</h2>
+
+
+<div class="editor-desc">
+
+Editor sentiasa nampak.
+Tukar data kemudian tekan
+<b>CREATE / UPDATE</b>.
+
+</div>
+
+
+
+<h3>Profile</h3>
+
+
+<div class="field">
+
+<label>Customer Name</label>
+
+<input
+id="customer"
+value="DEMO CUSTOMER">
+
+</div>
+
+
+<div class="field">
+
+<label>Wallet / Account</label>
+
+<input
+id="wallet"
+value="Touch 'N Go (DUIT NOW) (160603229887)">
+
+</div>
+
+
+<div class="field">
+
+<label>Total Balance</label>
+
+<input
+id="balance"
+value="0.00">
+
+</div>
+
+
+
+<h3>Withdraw</h3>
+
+
+<div class="field">
+
+<label>Transaction ID</label>
+
+<input
+id="w_txid_input"
+value="17088476221">
+
+</div>
+
+
+
+<div class="two">
+
+
+<div class="field">
+
+<label>Amount</label>
+
+<input
+id="w_amount_input"
+value="100.05">
+
+</div>
+
+
+<div class="field">
+
+<label>Bank</label>
+
+<select id="w_bank_input">
+
+<option>TNG</option>
+<option>MBB</option>
+<option>CIMB</option>
+<option>RHB</option>
+<option>GXBank</option>
+<option>Bank Islam</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+
+
+<div class="field">
+
+<label>Bank Account Name</label>
+
+<input
+id="w_name_input"
+value="Demo Customer">
+
+</div>
+
+
+
+<div class="field">
+
+<label>Bank Account Number</label>
+
+<input
+id="w_no_input"
+value="160603229887">
+
+</div>
+
+
+
+<div class="two">
+
+
+<div class="field">
+
+<label>Method</label>
+
+<select id="w_method_input">
+
+<option>Manual</option>
+<option>DuitNow</option>
+<option>Instant Transfer</option>
+<option>Manual | Online</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Status</label>
+
+<select id="w_status_input">
+
+<option>COMPLETED</option>
+<option>PENDING</option>
+<option>PROCESSING</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+
+
+<div class="field">
+
+<label>Date / Time</label>
+
+<input
+id="w_time_input"
+value="1 Sep 2026 9:31PM">
+
+</div>
+
+
+
+<h3>Deposit</h3>
+
+
+<div class="field">
+
+<label>Transaction ID</label>
+
+<input
+id="d_txid_input"
+value="17088467578">
+
+</div>
+
+
+
+<div class="two">
+
+
+<div class="field">
+
+<label>Deposit Method</label>
+
+<select id="d_method_input">
+
+<option>OneMpay</option>
+<option>TelcoPayment</option>
+<option>PayMate</option>
+<option>RapidPays</option>
+<option>PowerPG</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Status</label>
+
+<select id="d_status_input">
+
+<option>COMPLETED</option>
+<option>PENDING</option>
+<option>PROCESSING</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+
+
+<div class="field">
+
+<label>Deposit Amount</label>
+
+<input
+id="d_amount_input"
+value="30.00">
+
+</div>
+
+
+
+<div class="field">
+
+<label>Date / Time</label>
+
+<input
+id="d_time_input"
+value="1 Sep 2026 9:26PM">
+
+</div>
+
+
+
+<div class="editor-buttons">
+
+
+<button
+class="reset"
+onclick="resetHistory()">
+
+RESET
+
+</button>
+
+
+<button
+class="create"
+onclick="updateHistory()">
+
+CREATE / UPDATE
+
+</button>
+
+
+</div>
+
+
+
+<div class="editor-note">
+
+DEMO / UI TESTING ONLY.
+
+<br><br>
+
+Bonus sudah dibuang.
+
+<br>
+
+History hanya mengandungi
+<b>WITHDRAW</b>
+dan
+<b>DEPOSIT</b>.
+
+</div>
+
+
+</aside>
+
+
+
+<!-- =================================
+     HISTORY PREVIEW
+================================= -->
+
+
+<main class="preview">
+
+
+<div class="demo">
+
+DEMO • NOT A REAL TRANSACTION HISTORY
+
+</div>
+
+
+<div class="top">
+
+
+<div class="menu">
+
+MENU ☰
+
+</div>
+
+
+<div class="logo">
+
+JKC DEMO
+
+</div>
+
+
+</div>
+
+
+
+<div class="ticker">
+
+01 September 2026 (Tue) 21:33:56
+◆ Welcome To Demo
+
+</div>
+
+
+
+<section class="profile">
+
+
+<div class="profile-head">
+
+
+<div
+class="profile-name"
+id="viewCustomer">
+
+DEMO CUSTOMER
+
+</div>
+
+
+<div
+class="profile-wallet"
+id="viewWallet">
+
+Touch 'N Go
+(DUIT NOW)
+(160603229887)
+
+</div>
+
+
+</div>
+
+
+
+<div class="balance">
+
+
+<div class="balance-label">
+
+▣ TOTAL BALANCE
+
+</div>
+
+
+<div class="balance-value">
+
+RM<span id="viewBalance">
+
+0.00
+
+</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="limits">
+
+
+<div class="limit">
+
+MINIMUM DEPOSIT:
+
+<strong>
+
+RM5.00
+
+</strong>
+
+</div>
+
+
+<div class="limit">
+
+MINIMUM WITHDRAWAL:
+
+<strong>
+
+RM50.00
+
+</strong>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<div class="actions">
+
+
+<button>
+
+⊕ Top Up
+
+</button>
+
+
+<button>
+
+▣ Withdraw
+
+</button>
+
+
+<button>
+
+⟳ Segarkan
+
+</button>
+
+
+</div>
+
+
+
+<div class="tabs">
+
+
+<div class="tab active">
+
+Transactions
+
+</div>
+
+
+<div class="tab">
+
+Bet History
+
+</div>
+
+
+</div>
+
+
+
+<section class="history">
+
+
+<div class="head">
+
+
+<div>
+
+TRANSACTIONS
+
+</div>
+
+
+<div>
+
+STATUS
+
+</div>
+
+
+</div>
+
+
+
+<!-- WITHDRAW -->
+
+
+<div class="transaction">
+
+
+<div class="tx-left">
+
+
+<div class="tx-title">
+
+WITHDRAW
+
+</div>
+
+
+<div class="tx-id">
+
+#<span id="w_txid">
+
+17088476221
+
+</span>
+
+</div>
+
+
+<div>
+
+Amount :
+RM<span id="w_amount">
+
+100.05
+
+</span>
+
+</div>
+
+
+<div>
+
+Bank :
+<span id="w_bank">
+
+TNG
+
+</span>
+
+</div>
+
+
+<div>
+
+BankAccountName :
+<span id="w_name">
+
+Demo Customer
+
+</span>
+
+</div>
+
+
+<div>
+
+BankAccountNumber :
+<span id="w_no">
+
+160603229887
+
+</span>
+
+</div>
+
+
+<div>
+
+Method :
+<span id="w_method">
+
+Manual
+
+</span>
+
+</div>
+
+
+<div
+class="tx-date"
+id="w_time">
+
+1 Sep 2026 9:31PM
+
+</div>
+
+
+</div>
+
+
+
+<div class="tx-right">
+
+
+<div class="status">
+
+
+<span class="dot">
+
+</span>
+
+
+<span id="w_status">
+
+COMPLETED
+
+</span>
+
+
+</div>
+
+
+
+<button class="feedback">
+
+FEEDBACK
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- DEPOSIT -->
+
+
+<div class="transaction">
+
+
+<div class="tx-left">
+
+
+<div class="tx-title">
+
+DEPOSIT
+
+</div>
+
+
+<div class="tx-id">
+
+#<span id="d_txid">
+
+17088467578
+
+</span>
+
+</div>
+
+
+<div>
+
+Method :
+<span id="d_method">
+
+OneMpay
+
+</span>
+
+</div>
+
+
+<div>
+
+Amount :
+RM<span id="d_amount">
+
+30.00
+
+</span>
+
+</div>
+
+
+<div
+class="tx-date"
+id="d_time">
+
+1 Sep 2026 9:26PM
+
+</div>
+
+
+</div>
+
+
+
+<div class="tx-right">
+
+
+<div class="status">
+
+
+<span class="dot">
+
+</span>
+
+
+<span id="d_status">
+
+COMPLETED
+
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+</div>
+
+
+
+<script>
+
+const defaults={
+
+customer:
+"DEMO CUSTOMER",
+
+wallet:
+"Touch 'N Go (DUIT NOW) (160603229887)",
+
+balance:
+"0.00",
+
+w_txid_input:
+"17088476221",
+
+w_amount_input:
+"100.05",
+
+w_bank_input:
+"TNG",
+
+w_name_input:
+"Demo Customer",
+
+w_no_input:
+"160603229887",
+
+w_method_input:
+"Manual",
+
+w_status_input:
+"COMPLETED",
+
+w_time_input:
+"1 Sep 2026 9:31PM",
+
+d_txid_input:
+"17088467578",
+
+d_method_input:
+"OneMpay",
+
+d_status_input:
+"COMPLETED",
+
+d_amount_input:
+"30.00",
+
+d_time_input:
+"1 Sep 2026 9:26PM"
+
+};
+
+
+
+function money(value){
+
+const n =
+Number(
+String(value)
+.replace(/,/g,"")
+);
+
+return Number.isFinite(n)
+
+?
+
+n.toLocaleString(
+"en-MY",
+{
+minimumFractionDigits:2,
+maximumFractionDigits:2
+}
+)
+
+:
+
+"0.00";
+
+}
+
+
+
+function input(id){
+
+return document
+.getElementById(id)
+.value || "-";
+
+}
+
+
+
+function set(id,value){
+
+document
+.getElementById(id)
+.textContent=value;
+
+}
+
+
+
+function updateHistory(){
+
+
+set(
+"viewCustomer",
+input("customer")
+);
+
+
+set(
+"viewWallet",
+input("wallet")
+);
+
+
+set(
+"viewBalance",
+money(
+input("balance")
+)
+);
+
+
+/* WITHDRAW */
+
+
+set(
+"w_txid",
+input("w_txid_input")
+);
+
+
+set(
+"w_amount",
+money(
+input("w_amount_input")
+)
+);
+
+
+set(
+"w_bank",
+input("w_bank_input")
+);
+
+
+set(
+"w_name",
+input("w_name_input")
+);
+
+
+set(
+"w_no",
+input("w_no_input")
+);
+
+
+set(
+"w_method",
+input("w_method_input")
+);
+
+
+set(
+"w_status",
+input("w_status_input")
+);
+
+
+set(
+"w_time",
+input("w_time_input")
+);
+
+
+/* DEPOSIT */
+
+
+set(
+"d_txid",
+input("d_txid_input")
+);
+
+
+set(
+"d_method",
+input("d_method_input")
+);
+
+
+set(
+"d_status",
+input("d_status_input")
+);
+
+
+set(
+"d_amount",
+money(
+input("d_amount_input")
+)
+);
+
+
+set(
+"d_time",
+input("d_time_input")
+);
+
+
+}
+
+
+
+function resetHistory(){
+
+
+Object.keys(defaults)
+
+.forEach(
+
+id=>{
+
+const element =
+document
+.getElementById(id);
+
+if(element){
+
+element.value =
+defaults[id];
+
+}
+
+}
+
+);
+
+
+updateHistory();
+
+}
+
+
+
+updateHistory();
+
+</script>
+
+
+</body>
+</html>
