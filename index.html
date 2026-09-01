@@ -3,102 +3,912 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Game Asset Studio</title>
+
 <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
+
 <header class="topbar">
+
   <div class="shell toprow">
-    <button class="brand brand-button" data-view="home" aria-label="Go home">
-      <div class="brandmark">GA</div>
-      <div><h1>Game Asset Studio</h1><p>Provider logos · Game images · Tips · Demo tools</p></div>
+
+    <button
+      class="brand brand-button"
+      data-view="home"
+      aria-label="Go home">
+
+      <div class="brandmark">
+        GA
+      </div>
+
+      <div>
+
+        <h1>
+          Game Asset Studio
+        </h1>
+
+        <p>
+          Provider logos · Game images · Tips · Demo tools
+        </p>
+
+      </div>
+
     </button>
+
+
     <nav class="nav">
-      <button data-view="home" class="active">Home</button>
-      <button data-view="games">Game Assets</button>
-      <button data-view="banks">Bank Demo Lab</button>
+
+      <button
+        data-view="home"
+        class="active">
+
+        Home
+
+      </button>
+
+
+      <button
+        data-view="games">
+
+        Game Assets
+
+      </button>
+
+
+      <button
+        data-view="banks">
+
+        Bank Demo Lab
+
+      </button>
+
+
+      <button
+        onclick="location.href='history-tools/'">
+
+        History Builder
+
+      </button>
+
     </nav>
+
   </div>
+
 </header>
 
+
+
 <main class="shell">
-  <section id="homeView">
-    <section class="hero home-hero">
-      <div class="eyebrow">ASSET MANAGEMENT DASHBOARD</div>
-      <h2>Everything in one clean workspace.</h2>
-      <p>Open your game-image library, provider logos, game tips, or the saved bank demo tools from one home screen.</p>
-      <div class="stats">
-        <div class="stat"><b id="statProviders">—</b><span>Providers</span></div>
-        <div class="stat"><b id="statGames">—</b><span>Game images</span></div>
-        <div class="stat"><b id="statLogos">—</b><span>Logo variants</span></div>
-        <div class="stat"><b id="sourceLabel">Loading</b><span>Asset source</span></div>
+
+
+<!-- =================================================
+     HOME
+================================================= -->
+
+<section id="homeView">
+
+
+  <section class="hero home-hero">
+
+    <div class="eyebrow">
+
+      ASSET MANAGEMENT DASHBOARD
+
+    </div>
+
+
+    <h2>
+
+      Everything in one clean workspace.
+
+    </h2>
+
+
+    <p>
+
+      Open your game-image library, provider logos,
+      game tips, bank demo tools, or transaction
+      history builder from one home screen.
+
+    </p>
+
+
+    <div class="stats">
+
+
+      <div class="stat">
+
+        <b id="statProviders">
+          —
+        </b>
+
+        <span>
+          Providers
+        </span>
+
       </div>
-    </section>
 
-    <section class="launch-grid">
-      <article class="launch-card game-launch">
-        <div class="launch-icon">🎮</div>
-        <div class="launch-copy">
-          <span class="launch-kicker">ASSET LIBRARY</span>
-          <h3>Game Assets</h3>
-          <p>Browse every provider, logo and game image. Search, preview, copy direct URLs, download originals and open game tips.</p>
-        </div>
-        <button class="launch-btn" data-open-view="games">Open Game Library →</button>
-      </article>
 
-      <article class="launch-card bank-launch">
-        <div class="launch-icon">▣</div>
-        <div class="launch-copy">
-          <span class="launch-kicker">DEMO TOOLS</span>
-          <h3>Bank Demo Lab</h3>
-          <p>Open the fixed MBB, GXB, RHB and CIMB demo layouts from a single menu, with an obvious route back Home.</p>
-        </div>
-        <button class="launch-btn" data-open-view="banks">Open Bank Demo Lab →</button>
-      </article>
-    </section>
+      <div class="stat">
 
-    <section class="quick-guide">
-      <div><b>1</b><span><strong>Choose a section</strong><small>Game library or demo tools.</small></span></div>
-      <div><b>2</b><span><strong>Open what you need</strong><small>Provider, game image, tip, or bank layout.</small></span></div>
-      <div><b>3</b><span><strong>Return anytime</strong><small>Use the Home button in the top navigation.</small></span></div>
-    </section>
+        <b id="statGames">
+          —
+        </b>
+
+        <span>
+          Game images
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <b id="statLogos">
+          —
+        </b>
+
+        <span>
+          Logo variants
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <b id="sourceLabel">
+          Loading
+        </b>
+
+        <span>
+          Asset source
+        </span>
+
+      </div>
+
+
+    </div>
+
   </section>
 
-  <section id="gameView" class="hidden">
-    <div class="pagehead">
-      <div><span class="eyebrow">GAME LIBRARY</span><h2>Game Assets</h2><p>Provider logos, game images and published TXT tips.</p></div>
-      <button class="home-shortcut" data-open-view="home">← Home</button>
-    </div>
-    <div class="toolbar">
-      <button id="backBtn" class="back hidden">← All Providers</button>
-      <div class="search"><input id="searchInput" placeholder="Search provider or game filename..."><button id="clearSearch" class="clear">×</button></div>
-    </div>
-    <div id="providerLogoTitle" class="section-title hidden"><h3>Provider Logos</h3></div>
-    <div id="providerLogos" class="logos hidden"></div>
-    <div class="section-title"><h3 id="gameSectionTitle">Providers</h3><span id="resultCount"></span></div>
-    <div id="providerGrid" class="providers"></div>
-    <div id="gameGrid" class="games"></div>
-    <button id="loadMore" class="loadmore hidden">Load More</button>
+
+
+  <!-- =================================================
+       HOME CARDS
+  ================================================= -->
+
+
+  <section class="launch-grid">
+
+
+    <!-- GAME ASSETS -->
+
+    <article class="launch-card game-launch">
+
+
+      <div class="launch-icon">
+
+        🎮
+
+      </div>
+
+
+      <div class="launch-copy">
+
+
+        <span class="launch-kicker">
+
+          ASSET LIBRARY
+
+        </span>
+
+
+        <h3>
+
+          Game Assets
+
+        </h3>
+
+
+        <p>
+
+          Browse every provider, logo and game image.
+          Search, preview, copy direct URLs,
+          download originals and open game tips.
+
+        </p>
+
+
+      </div>
+
+
+      <button
+        class="launch-btn"
+        data-open-view="games">
+
+        Open Game Library →
+
+      </button>
+
+
+    </article>
+
+
+
+    <!-- BANK DEMO -->
+
+
+    <article class="launch-card bank-launch">
+
+
+      <div class="launch-icon">
+
+        ▣
+
+      </div>
+
+
+      <div class="launch-copy">
+
+
+        <span class="launch-kicker">
+
+          DEMO TOOLS
+
+        </span>
+
+
+        <h3>
+
+          Bank Demo Lab
+
+        </h3>
+
+
+        <p>
+
+          Open the fixed MBB, GXB, RHB and CIMB
+          demo layouts from one menu,
+          with an obvious route back Home.
+
+        </p>
+
+
+      </div>
+
+
+      <button
+        class="launch-btn"
+        data-open-view="banks">
+
+        Open Bank Demo Lab →
+
+      </button>
+
+
+    </article>
+
+
+
+    <!-- HISTORY BUILDER -->
+
+
+    <article class="launch-card history-launch">
+
+
+      <div class="launch-icon">
+
+        🧾
+
+      </div>
+
+
+      <div class="launch-copy">
+
+
+        <span class="launch-kicker">
+
+          TRANSACTION TOOL
+
+        </span>
+
+
+        <h3>
+
+          History Builder
+
+        </h3>
+
+
+        <p>
+
+          Edit demo withdrawal and deposit transaction
+          records, customer details, amounts,
+          payment methods, status and date/time.
+
+        </p>
+
+
+      </div>
+
+
+      <button
+        class="launch-btn"
+        onclick="location.href='history-tools/'">
+
+        Open History Builder →
+
+      </button>
+
+
+    </article>
+
+
   </section>
 
-  <section id="bankView" class="hidden">
-    <div class="pagehead">
-      <div><span class="eyebrow">SAVED DEMO LAYOUTS</span><h2>Bank Demo Lab</h2><p>Select a saved layout. Each builder now has Home and Bank Demo Lab buttons at the top.</p></div>
-      <button class="home-shortcut" data-open-view="home">← Home</button>
+
+
+  <!-- =================================================
+       QUICK GUIDE
+  ================================================= -->
+
+
+  <section class="quick-guide">
+
+
+    <div>
+
+      <b>
+        1
+      </b>
+
+
+      <span>
+
+        <strong>
+          Choose a section
+        </strong>
+
+        <small>
+          Game library, bank demos or history builder.
+        </small>
+
+      </span>
+
     </div>
-    <div class="warning"><b>Demo-only tools.</b> These pages are for interface/layout testing. Their outputs remain clearly marked as SAMPLE / NOT A REAL TRANSACTION and should not be used as proof of payment.</div>
-    <div class="bank-grid">
-      <article class="bank-card"><span class="tag">FIXED</span><h4>MBB</h4><p>Compact transfer-success layout with green header, transaction details, total amount and demo watermark.</p><a class="openbank" href="bank-tools/mbb/">Open MBB Demo</a></article>
-      <article class="bank-card"><span class="tag">FIXED</span><h4>GXB</h4><p>Vertical transfer-success layout with the saved GXB structure, recipient, destination, amount and reference.</p><a class="openbank" href="bank-tools/gxb/">Open GXB Demo</a></article>
-      <article class="bank-card"><span class="tag fixed-ok">FIXED + REPAIRED</span><h4>RHB</h4><p>Status-first layout with amount, reference ID, From/To, DuitNow logo, transfer method and receipt actions.</p><a class="openbank" href="bank-tools/rhb/">Open RHB Demo</a></article>
-      <article class="bank-card"><span class="tag">FIXED</span><h4>CIMB</h4><p>Mobile-style transaction summary with success header, MYR amount, details and bottom action area.</p><a class="openbank" href="bank-tools/cimb/">Open CIMB Demo</a></article>
+
+
+
+    <div>
+
+      <b>
+        2
+      </b>
+
+
+      <span>
+
+        <strong>
+          Open what you need
+        </strong>
+
+        <small>
+          Provider, game image, tip, bank layout or transaction tool.
+        </small>
+
+      </span>
+
     </div>
+
+
+
+    <div>
+
+      <b>
+        3
+      </b>
+
+
+      <span>
+
+        <strong>
+          Return anytime
+        </strong>
+
+        <small>
+          Use the Home button in the top navigation.
+        </small>
+
+      </span>
+
+    </div>
+
+
   </section>
 
-  <footer class="footer-site">Static GitHub Pages package · No server or database required.</footer>
+
+</section>
+
+
+
+<!-- =================================================
+     GAME ASSETS
+================================================= -->
+
+
+<section
+  id="gameView"
+  class="hidden">
+
+
+  <div class="pagehead">
+
+
+    <div>
+
+
+      <span class="eyebrow">
+
+        GAME LIBRARY
+
+      </span>
+
+
+      <h2>
+
+        Game Assets
+
+      </h2>
+
+
+      <p>
+
+        Provider logos, game images and published TXT tips.
+
+      </p>
+
+
+    </div>
+
+
+    <button
+      class="home-shortcut"
+      data-open-view="home">
+
+      ← Home
+
+    </button>
+
+
+  </div>
+
+
+
+  <div class="toolbar">
+
+
+    <button
+      id="backBtn"
+      class="back hidden">
+
+      ← All Providers
+
+    </button>
+
+
+
+    <div class="search">
+
+
+      <input
+        id="searchInput"
+        placeholder="Search provider or game filename...">
+
+
+      <button
+        id="clearSearch"
+        class="clear">
+
+        ×
+
+      </button>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <div
+    id="providerLogoTitle"
+    class="section-title hidden">
+
+
+    <h3>
+
+      Provider Logos
+
+    </h3>
+
+
+  </div>
+
+
+
+  <div
+    id="providerLogos"
+    class="logos hidden">
+
+  </div>
+
+
+
+  <div class="section-title">
+
+
+    <h3 id="gameSectionTitle">
+
+      Providers
+
+    </h3>
+
+
+    <span id="resultCount">
+
+    </span>
+
+
+  </div>
+
+
+
+  <div
+    id="providerGrid"
+    class="providers">
+
+  </div>
+
+
+
+  <div
+    id="gameGrid"
+    class="games">
+
+  </div>
+
+
+
+  <button
+    id="loadMore"
+    class="loadmore hidden">
+
+    Load More
+
+  </button>
+
+
+</section>
+
+
+
+<!-- =================================================
+     BANK DEMO LAB
+================================================= -->
+
+
+<section
+  id="bankView"
+  class="hidden">
+
+
+  <div class="pagehead">
+
+
+    <div>
+
+
+      <span class="eyebrow">
+
+        SAVED DEMO LAYOUTS
+
+      </span>
+
+
+      <h2>
+
+        Bank Demo Lab
+
+      </h2>
+
+
+      <p>
+
+        Select a saved layout.
+        Each builder has Home and Bank Demo Lab buttons at the top.
+
+      </p>
+
+
+    </div>
+
+
+
+    <button
+      class="home-shortcut"
+      data-open-view="home">
+
+      ← Home
+
+    </button>
+
+
+  </div>
+
+
+
+  <div class="warning">
+
+    <b>
+      Demo-only tools.
+    </b>
+
+    These pages are for interface/layout testing.
+    Their outputs remain clearly marked as
+    SAMPLE / NOT A REAL TRANSACTION
+    and should not be used as proof of payment.
+
+  </div>
+
+
+
+  <div class="bank-grid">
+
+
+    <!-- MBB -->
+
+
+    <article class="bank-card">
+
+
+      <span class="tag">
+
+        FIXED
+
+      </span>
+
+
+      <h4>
+
+        MBB
+
+      </h4>
+
+
+      <p>
+
+        Compact transfer-success layout with green header,
+        transaction details, total amount and demo watermark.
+
+      </p>
+
+
+      <a
+        class="openbank"
+        href="bank-tools/mbb/">
+
+        Open MBB Demo
+
+      </a>
+
+
+    </article>
+
+
+
+    <!-- GXB -->
+
+
+    <article class="bank-card">
+
+
+      <span class="tag">
+
+        FIXED
+
+      </span>
+
+
+      <h4>
+
+        GXB
+
+      </h4>
+
+
+      <p>
+
+        Vertical transfer-success layout with the saved GXB structure,
+        recipient, destination, amount and reference.
+
+      </p>
+
+
+      <a
+        class="openbank"
+        href="bank-tools/gxb/">
+
+        Open GXB Demo
+
+      </a>
+
+
+    </article>
+
+
+
+    <!-- RHB -->
+
+
+    <article class="bank-card">
+
+
+      <span class="tag fixed-ok">
+
+        FIXED + REPAIRED
+
+      </span>
+
+
+      <h4>
+
+        RHB
+
+      </h4>
+
+
+      <p>
+
+        Status-first layout with amount, reference ID,
+        From/To, DuitNow logo,
+        transfer method and receipt actions.
+
+      </p>
+
+
+      <a
+        class="openbank"
+        href="bank-tools/rhb/">
+
+        Open RHB Demo
+
+      </a>
+
+
+    </article>
+
+
+
+    <!-- CIMB -->
+
+
+    <article class="bank-card">
+
+
+      <span class="tag">
+
+        FIXED
+
+      </span>
+
+
+      <h4>
+
+        CIMB
+
+      </h4>
+
+
+      <p>
+
+        Mobile-style transaction summary
+        with success header, MYR amount,
+        details and bottom action area.
+
+      </p>
+
+
+      <a
+        class="openbank"
+        href="bank-tools/cimb/">
+
+        Open CIMB Demo
+
+      </a>
+
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+
+<footer class="footer-site">
+
+  Static GitHub Pages package ·
+  No server or database required.
+
+</footer>
+
+
 </main>
 
-<div id="modal" class="modalbg"><div class="modal"><div class="modalhead"><h4 id="modalTitle">Preview</h4><button id="modalClose" class="close">Close</button></div><div id="modalBody"></div></div></div>
+
+
+<!-- =================================================
+     PREVIEW MODAL
+================================================= -->
+
+
+<div
+  id="modal"
+  class="modalbg">
+
+
+  <div class="modal">
+
+
+    <div class="modalhead">
+
+
+      <h4 id="modalTitle">
+
+        Preview
+
+      </h4>
+
+
+      <button
+        id="modalClose"
+        class="close">
+
+        Close
+
+      </button>
+
+
+    </div>
+
+
+    <div id="modalBody">
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
 <script src="app.js"></script>
+
+
 </body>
 </html>
