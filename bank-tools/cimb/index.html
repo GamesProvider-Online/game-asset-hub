@@ -84,10 +84,6 @@ button{height:35px;border:0;border-radius:6px;color:#fff;font-weight:700;cursor:
   <div class="note">CIMB-inspired <b>demo mockup</b> based on the new screenshot you supplied. It is not an official bank receipt and always carries <b>SAMPLE — NOT A REAL TRANSACTION</b>.</div>
 </section>
 
-<section class="receipt-wrap">
-  <div id="receipt" class="receipt">
-    <div class="demo-badge">DEMO ONLY</div>
-    <div class="watermark">SAMPLE<br>NOT A REAL TRANSACTION</div>
 
     <div class="main">
       <div class="success-art">
@@ -156,7 +152,7 @@ function drawCanvas(){
  x.fillStyle='#149c83';x.beginPath();x.arc(165,760,31,0,Math.PI*2);x.fill();x.beginPath();x.arc(257,760,31,0,Math.PI*2);x.fill();x.fillStyle='#9a9a9a';x.beginPath();x.arc(350,760,31,0,Math.PI*2);x.fill();
  x.fillStyle='#fff';x.font='bold 28px Arial';x.textAlign='center';x.fillText('↗',165,770);x.fillText('⇄',257,770);x.fillText('★',350,770);
  x.fillStyle='#bd1717';x.fillRect(45,825,425,55);x.fillStyle='#fff';x.font='bold 22px Arial';x.fillText('Done',257,860);
- x.save();x.translate(257,450);x.rotate(-18*Math.PI/180);x.fillStyle='rgba(180,0,0,.20)';x.font='bold 31px Arial';x.fillText('SAMPLE — NOT A REAL TRANSACTION',0,0);x.restore();
+ x.save();x.translate(257,450);x.rotate(-18*Math.PI/180);x.fillStyle='rgba(180,0,0,.20)';x.font='bold 31px Arial';x.fillText('',0,0);x.restore();
  return c;
 }
 async function copyImage(){const c=drawCanvas();try{const blob=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);toast('Demo image copied')}catch(e){const w=window.open();if(w)w.document.write('<img style="max-width:100%" src="'+c.toDataURL('image/png')+'">');toast('Opened demo image')}}
