@@ -1,0 +1,125 @@
+{
+  "provider": "PRAGMATIC PLAY",
+  "sourceType": "code-mapping",
+  "games": {
+    "vswayslions.png": {
+      "id": "vswayslions",
+      "name": "5 Lions Megaways",
+      "active": true
+    },
+
+    "vs20olympx.png": {
+      "id": "vs20olympx",
+      "name": "Gates of Olympus 1000",
+      "active": true
+    },
+
+    "vs20starlightx.png": {
+      "id": "vs20starlightx",
+      "name": "Starlight Princess 1000",
+      "active": true
+    },
+
+    "vs20olympgate.png": {
+      "id": "vs20olympgate",
+      "name": "Gates of Olympus",
+      "active": true
+    },
+
+    "vs20fruitsw.png": {
+      "id": "vs20fruitsw",
+      "name": "Sweet Bonanza",
+      "active": true
+    },
+
+    "vs20sugarrush.png": {
+      "id": "vs20sugarrush",
+      "name": "Sugar Rush",
+      "active": true
+    },
+
+    "vs20starlight.png": {
+      "id": "vs20starlight",
+      "name": "Starlight Princess",
+      "active": true
+    },
+
+    "vs40wildwest.png": {
+      "id": "vs40wildwest",
+      "name": "Wild West Gold",
+      "active": true
+    },
+
+    "vs20pbonanza.png": {
+      "id": "vs20pbonanza",
+      "name": "Pyramid Bonanza",
+      "active": true
+    },
+
+    "vs20rujakbnz.png": {
+      "id": "vs20rujakbnz",
+      "name": "Rujak Bonanza",
+      "active": true
+    },
+
+    "vs20sbxmas.png": {
+      "id": "vs20sbxmas",
+      "name": "Sweet Bonanza Xmas",
+      "active": true
+    },
+
+    "vs5aztecgems.png": {
+      "id": "vs5aztecgems",
+      "name": "Aztec Gems",
+      "active": true
+    },
+
+    "vs20bonzgold.png": {
+      "id": "vs20bonzgold",
+      "name": "Bonanza Gold",
+      "active": true
+    },
+
+    "vs20procount.png": {
+      "id": "vs20procount",
+      "name": "Wisdom of Athena",
+      "active": true
+    },
+
+    "vs20sugrux.png": {
+      "id": "vs20sugrux",
+      "name": "Sugar Rush Xmas",
+      "active": true
+    },
+
+    "vs1024mahjwins.png": {
+      "id": "vs1024mahjwins",
+      "name": "Mahjong Wins",
+      "active": true
+    },
+
+    "vs20gatotgates.png": {
+      "id": "vs20gatotgates",
+      "name": "Gates of Gatot Kaca",
+      "active": true
+    },
+
+    "vs20bnnzdice.png": {
+      "id": "vs20bnnzdice",
+      "name": "Sweet Bonanza Dice",
+      "active": true
+    },
+
+    "vs20dhcluster.png": {
+      "id": "vs20dhcluster",
+      "name": "Twilight Princess",
+      "active": true
+    },
+
+    "vs20cjcluster.png": {
+      "id": "vs20cjcluster",
+      "name": "Candy Jar Clusters",
+      "active": true
+    }
+  }
+}
