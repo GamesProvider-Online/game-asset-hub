@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Game Tips Generator</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:#080b10;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+header{
+  border-bottom:1px solid #263142;
+  background:#0d1219;
+}
+
+.top{
+  max-width:1000px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+h1{
+  margin:0;
+  font-size:20px;
+}
+
+.sub{
+  color:#8995a8;
+  font-size:11px;
+  margin-top:4px;
+}
+
+.home{
+  color:#fff;
+  text-decoration:none;
+  border:1px solid #39465a;
+  border-radius:7px;
+  padding:9px 12px;
+  font-size:11px;
+}
+
+main{
+  max-width:1000px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:340px 1fr;
+  gap:16px;
+}
+
+.card{
+  background:#111822;
+  border:1px solid #283548;
+  border-radius:14px;
+  padding:18px;
+}
+
+.card h2{
+  font-size:15px;
+  margin:0 0 18px;
+}
+
+label{
+  display:block;
+  color:#9ca8ba;
+  font-size:10px;
+  font-weight:bold;
+  margin-bottom:7px;
+  margin-top:15px;
+}
+
+select{
+  width:100%;
+  height:42px;
+  background:#090d13;
+  border:1px solid #35445a;
+  color:#fff;
+  border-radius:7px;
+  padding:0 10px;
+}
+
+.counts{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:6px;
+}
+
+.count{
+  height:40px;
+  background:#0b1119;
+  border:1px solid #344158;
+  color:#fff;
+  border-radius:7px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.count.active{
+  background:#2d72ef;
+  border-color:#2d72ef;
+}
+
+.generate{
+  width:100%;
+  height:45px;
+  margin-top:18px;
+  border:0;
+  border-radius:8px;
+  background:#2d72ef;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.status{
+  margin-top:13px;
+  font-size:10px;
+  color:#8793a5;
+  line-height:1.5;
+}
+
+.preview{
+  min-height:300px;
+  background:#080c12;
+  border:1px solid #293649;
+  border-radius:10px;
+  padding:20px;
+  white-space:pre-wrap;
+  font-size:16px;
+  line-height:1.9;
+}
+
+.empty{
+  color:#667387;
+}
+
+.actions{
+  display:flex;
+  gap:8px;
+  margin-top:12px;
+}
+
+.actions button{
+  flex:1;
+  height:42px;
+  border:0;
+  border-radius:7px;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.again{
+  background:#343e4e;
+}
+
+.copy{
+  background:#238d59;
+}
+
+.pool{
+  color:#8693a5;
+  font-size:10px;
+  margin-bottom:10px;
+}
+
+.note{
+  background:#0c121b;
+  border:1px solid #273448;
+  padding:11px;
+  border-radius:8px;
+  color:#7f8ca0;
+  font-size:9px;
+  margin-top:13px;
+  line-height:1.5;
+}
+
+@media(max-width:760px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top">
+
+    <div>
+      <h1>Game Tips Generator</h1>
+      <div class="sub">
+        Random game list from Game Asset Studio
+      </div>
+    </div>
+
+    <a class="home" href="../">
+      ← HOME
+    </a>
+
+  </div>
+</header>
+
+
+<main>
+
+<div class="grid">
+
+  <section class="card">
+
+    <h2>Generator Settings</h2>
+
+    <label>PROVIDER</label>
+
+    <select id="provider">
+      <option value="JILI">JILI</option>
+    </select>
+
+
+    <label>NUMBER OF GAMES</label>
+
+    <div class="counts">
+
+      <button class="count" data-count="1">1</button>
+      <button class="count" data-count="2">2</button>
+      <button class="count active" data-count="3">3</button>
+      <button class="count" data-count="4">4</button>
+      <button class="count" data-count="5">5</button>
+
+    </div>
+
+
+    <button class="generate" id="generate">
+      GENERATE GAME LIST
+    </button>
+
+
+    <div class="status" id="status">
+      Loading JILI database...
+    </div>
+
+
+    <div class="note">
+      Percentage shown is a randomly generated display score
+      between 90.00% and 99.98%.
+      It is not actual RTP, odds or a prediction of game results.
+    </div>
+
+  </section>
+
+
+  <section class="card">
+
+    <h2>Generated Result</h2>
+
+    <div class="pool" id="pool">
+      0 games available
+    </div>
+
+
+    <div id="preview" class="preview empty">
+Press GENERATE GAME LIST.
+    </div>
+
+
+    <div class="actions">
+
+      <button class="again" id="again">
+        GENERATE AGAIN
+      </button>
+
+      <button class="copy" id="copy">
+        COPY TEXT
+      </button>
+
+    </div>
+
+  </section>
+
+</div>
+
+</main>
+
+
+<script>
+
+let gamePool = [];
+let selectedCount = 3;
+let currentText = "";
+
+
+const preview =
+document.getElementById("preview");
+
+const status =
+document.getElementById("status");
+
+const pool =
+document.getElementById("pool");
+
+
+document
+.querySelectorAll(".count")
+.forEach(button=>{
+
+  button.onclick = ()=>{
+
+    document
+    .querySelectorAll(".count")
+    .forEach(btn=>
+      btn.classList.remove("active")
+    );
+
+    button.classList.add("active");
+
+    selectedCount =
+      Number(button.dataset.count);
+
+  };
+
+});
+
+
+async function loadJILI(){
+
+  try{
+
+    const response =
+      await fetch(
+        "../data/game-names/JILI.json",
+        {cache:"no-store"}
+      );
+
+
+    if(!response.ok){
+
+      throw new Error(
+        "JILI.json not found"
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    gamePool =
+      Object.values(data.games || {})
+      .filter(game=>
+
+        game &&
+        game.active === true &&
+        typeof game.name === "string" &&
+        game.name.trim()
+
+      );
+
+
+    pool.textContent =
+      gamePool.length +
+      " active named games available";
+
+
+    status.textContent =
+      "JILI database loaded successfully ✓";
+
+
+  }catch(error){
+
+    status.textContent =
+      "ERROR: " + error.message;
+
+    preview.textContent =
+      "Cannot load JILI database.";
+
+  }
+
+}
+
+
+function randomScore(){
+
+  const value =
+    90 +
+    Math.random() * 9.98;
+
+  return value.toFixed(2);
+
+}
+
+
+function shuffle(array){
+
+  const result =
+    [...array];
+
+
+  for(
+    let i=result.length-1;
+    i>0;
+    i--
+  ){
+
+    const j =
+      Math.floor(
+        Math.random() *
+        (i+1)
+      );
+
+    [
+      result[i],
+      result[j]
+    ] =
+    [
+      result[j],
+      result[i]
+    ];
+
+  }
+
+
+  return result;
+
+}
+
+
+function generate(){
+
+  if(!gamePool.length){
+
+    alert(
+      "Game database not loaded."
+    );
+
+    return;
+
+  }
+
+
+  const count =
+    Math.min(
+      selectedCount,
+      gamePool.length
+    );
+
+
+  const selected =
+    shuffle(gamePool)
+    .slice(0,count);
+
+
+  const provider =
+    document
+    .getElementById("provider")
+    .value;
+
+
+  const lines = [
+
+    `TOP GAME LIST : "${provider}"`,
+
+    "➖➖➖➖➖",
+
+    ...selected.map(
+      (game,index)=>
+        `${index+1}) ${game.name} 🟢${randomScore()}%`
+    )
+
+  ];
+
+
+  currentText =
+    lines.join("\n");
+
+
+  preview.classList.remove("empty");
+
+  preview.textContent =
+    currentText;
+
+}
+
+
+async function copyText(){
+
+  if(!currentText){
+
+    generate();
+
+  }
+
+
+  if(!currentText){
+    return;
+  }
+
+
+  try{
+
+    await navigator
+      .clipboard
+      .writeText(
+        currentText
+      );
+
+
+    const button =
+      document
+      .getElementById("copy");
+
+
+    button.textContent =
+      "COPIED ✓";
+
+
+    setTimeout(
+      ()=>button.textContent =
+        "COPY TEXT",
+      1200
+    );
+
+
+  }catch(error){
+
+    const temp =
+      document.createElement(
+        "textarea"
+      );
+
+
+    temp.value =
+      currentText;
+
+
+    document.body
+      .appendChild(temp);
+
+
+    temp.select();
+
+
+    document.execCommand(
+      "copy"
+    );
+
+
+    temp.remove();
+
+  }
+
+}
+
+
+document
+.getElementById("generate")
+.onclick =
+generate;
+
+
+document
+.getElementById("again")
+.onclick =
+generate;
+
+
+document
+.getElementById("copy")
+.onclick =
+copyText;
+
+
+loadJILI();
+
+</script>
+
+</body>
+</html>
