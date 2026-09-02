@@ -1,0 +1,1716 @@
+{
+  "provider": "JILI",
+  "generatedAt": "2026-09-02T09:38:13.076Z",
+  "games": {
+    "2.png": {
+      "id": "2",
+      "name": "Chin Shi Huang",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/2.png"
+    },
+    "4.png": {
+      "id": "4",
+      "name": "God Of Martial",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/4.png"
+    },
+    "5.png": {
+      "id": "5",
+      "name": "Hot Chilli",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/5.png"
+    },
+    "6.png": {
+      "id": "6",
+      "name": "Fortune Tree",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/6.png"
+    },
+    "9.png": {
+      "id": "9",
+      "name": "War Of Dragons",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/9.png"
+    },
+    "10.png": {
+      "id": "10",
+      "name": null,
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/10.png"
+    },
+    "13.png": {
+      "id": "13",
+      "name": "Lucky Ball",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/13.png"
+    },
+    "14.png": {
+      "id": "14",
+      "name": "Hyper Burst",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/14.png"
+    },
+    "16.png": {
+      "id": "16",
+      "name": "Jungle King",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/16.png"
+    },
+    "17.png": {
+      "id": "17",
+      "name": "Shanghai Beauty",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/17.png"
+    },
+    "21.png": {
+      "id": "21",
+      "name": "Fa Fa Fa",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/21.png"
+    },
+    "23.png": {
+      "id": "23",
+      "name": "Candy Baby",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/23.png"
+    },
+    "26.png": {
+      "id": "26",
+      "name": "Hawaii Beauty",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/26.png"
+    },
+    "27.png": {
+      "id": "27",
+      "name": "Seven Seven Seven",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/27.png"
+    },
+    "30.png": {
+      "id": "30",
+      "name": "Bubble Beauty",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/30.png"
+    },
+    "33.png": {
+      "id": "33",
+      "name": "Fortune Pig",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/33.png"
+    },
+    "35.png": {
+      "id": "35",
+      "name": "Crazy 777",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/35.png"
+    },
+    "36.png": {
+      "id": "36",
+      "name": "Bao Boon Chin",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/36.png"
+    },
+    "37.png": {
+      "id": "37",
+      "name": "Night City",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/37.png"
+    },
+    "38.png": {
+      "id": "38",
+      "name": "Feng Shen",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/38.png"
+    },
+    "40.png": {
+      "id": "40",
+      "name": "Crazy FaFaFa",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/40.png"
+    },
+    "43.png": {
+      "id": "43",
+      "name": "Xiyangyang",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/43.png"
+    },
+    "44.png": {
+      "id": "44",
+      "name": "Diamond Party",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/44.png"
+    },
+    "45.png": {
+      "id": "45",
+      "name": "Golden Bank",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/45.png"
+    },
+    "46.png": {
+      "id": "46",
+      "name": "Dragon Treasure",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/46.png"
+    },
+    "47.png": {
+      "id": "47",
+      "name": "Charge Buffalo",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/47.png"
+    },
+    "48.png": {
+      "id": "48",
+      "name": "Lucky Gold Bricks",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/48.png"
+    },
+    "49.png": {
+      "id": "49",
+      "name": "Super Ace",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/49.png"
+    },
+    "51.png": {
+      "id": "51",
+      "name": "Money Coming",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/51.png"
+    },
+    "58.png": {
+      "id": "58",
+      "name": "Golden Queen",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/58.png"
+    },
+    "67.png": {
+      "id": "67",
+      "name": "Monkey Party",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/67.png"
+    },
+    "76.png": {
+      "id": "76",
+      "name": "Party Night",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/76.png"
+    },
+    "77.png": {
+      "id": "77",
+      "name": "Boxing King",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/77.png"
+    },
+    "78.png": {
+      "id": "78",
+      "name": "Secret Treasure",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/78.png"
+    },
+    "85.png": {
+      "id": "85",
+      "name": "Pharaoh Treasure",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/85.png"
+    },
+    "87.png": {
+      "id": "87",
+      "name": "Book Of Gold",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/87.png"
+    },
+    "91.png": {
+      "id": "91",
+      "name": "Lucky Coming",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/91.png"
+    },
+    "92.png": {
+      "id": "92",
+      "name": "Crazy Hunter",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/92.png"
+    },
+    "100.png": {
+      "id": "100",
+      "name": "Super Rich",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/100.png"
+    },
+    "101.png": {
+      "id": "101",
+      "name": "Medusa",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/101.png"
+    },
+    "102.png": {
+      "id": "102",
+      "name": "Roma X",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/102.png"
+    },
+    "103.png": {
+      "id": "103",
+      "name": "Golden Empire",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/103.png"
+    },
+    "106.png": {
+      "id": "106",
+      "name": "Twin Wins",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/106.png"
+    },
+    "108.png": {
+      "id": "108",
+      "name": "Magic Lamp",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/108.png"
+    },
+    "109.png": {
+      "id": "109",
+      "name": "Fortune Gems",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/109.png"
+    },
+    "110.png": {
+      "id": "110",
+      "name": "Ali Baba",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/110.png"
+    },
+    "115.png": {
+      "id": "115",
+      "name": "Agent Ace",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/115.png"
+    },
+    "116.png": {
+      "id": "116",
+      "name": "Happy Taxi",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/116.png"
+    },
+    "126.png": {
+      "id": "126",
+      "name": "Bone Fortune",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/126.png"
+    },
+    "130.png": {
+      "id": "130",
+      "name": "Thor X",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/130.png"
+    },
+    "134.png": {
+      "id": "134",
+      "name": "Mega Ace",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/134.png"
+    },
+    "135.png": {
+      "id": "135",
+      "name": "Mayan Empire",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/135.png"
+    },
+    "136.png": {
+      "id": "136",
+      "name": "Samba",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/136.png"
+    },
+    "137.png": {
+      "id": "137",
+      "name": "Gold Rush",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/137.png"
+    },
+    "142.png": {
+      "id": "142",
+      "name": "Bonus Hunter",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/142.png"
+    },
+    "144.png": {
+      "id": "144",
+      "name": "JILI Caishen",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/144.png"
+    },
+    "145.png": {
+      "id": "145",
+      "name": "Neko Fortune",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/145.png"
+    },
+    "146.png": {
+      "id": "146",
+      "name": "World Cup",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/146.png"
+    },
+    "153.png": {
+      "id": "153",
+      "name": "Crazy Pusher",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/153.png"
+    },
+    "164.png": {
+      "id": "164",
+      "name": "Pirate Queen",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/164.png"
+    },
+    "166.png": {
+      "id": "166",
+      "name": "Wild Racer",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/166.png"
+    },
+    "171.png": {
+      "id": "171",
+      "name": "Sin City",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/171.png"
+    },
+    "172.png": {
+      "id": "172",
+      "name": "Elf Bingo",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/172.png"
+    },
+    "176.png": {
+      "id": "176",
+      "name": "Master Tiger",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/176.png"
+    },
+    "180.png": {
+      "id": "180",
+      "name": "Legacy Of Egypt",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/180.png"
+    },
+    "181.png": {
+      "id": "181",
+      "name": "Wild Ace",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/181.png"
+    },
+    "183.png": {
+      "id": "183",
+      "name": "Golden Joker",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/183.png"
+    },
+    "191.png": {
+      "id": "191",
+      "name": "Golden Temple",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/191.png"
+    },
+    "193.png": {
+      "id": "193",
+      "name": "Devil Fire",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/193.png"
+    },
+    "198.png": {
+      "id": "198",
+      "name": "Sweet Land",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/198.png"
+    },
+    "208.png": {
+      "id": "208",
+      "name": "Trial Of Phoenix",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/208.png"
+    },
+    "209.png": {
+      "id": "209",
+      "name": "Aztec Priestess",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/209.png"
+    },
+    "214.png": {
+      "id": "214",
+      "name": "King Arthur",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/214.png"
+    },
+    "223.png": {
+      "id": "223",
+      "name": "Fortune Gems 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/223.png"
+    },
+    "225.png": {
+      "id": "225",
+      "name": "Cricket King 18",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/225.png"
+    },
+    "226.png": {
+      "id": "226",
+      "name": "Witches Night",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/226.png"
+    },
+    "228.png": {
+      "id": "228",
+      "name": "Arena Fighter",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/228.png"
+    },
+    "230.png": {
+      "id": "230",
+      "name": "Cricket Sah 75",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/230.png"
+    },
+    "238.png": {
+      "id": "238",
+      "name": "Bangla Beauty",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/238.png"
+    },
+    "239.png": {
+      "id": "239",
+      "name": "Dabanggg",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/239.png"
+    },
+    "240.png": {
+      "id": "240",
+      "name": "Party Star",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/240.png"
+    },
+    "252.png": {
+      "id": "252",
+      "name": "Zeus",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/252.png"
+    },
+    "258.png": {
+      "id": "258",
+      "name": "Devil Fire 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/258.png"
+    },
+    "259.png": {
+      "id": "259",
+      "name": "Charge Buffalo Ascent",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/259.png"
+    },
+    "263.png": {
+      "id": "263",
+      "name": "The Pig House",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/263.png"
+    },
+    "264.png": {
+      "id": "264",
+      "name": "Egypt's Glow",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/264.png"
+    },
+    "299.png": {
+      "id": "299",
+      "name": "Potion Wizard",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/299.png"
+    },
+    "300.png": {
+      "id": "300",
+      "name": "Fortune Gems 3",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/300.png"
+    },
+    "301.png": {
+      "id": "301",
+      "name": "Jackpot Joker",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/301.png"
+    },
+    "302.png": {
+      "id": "302",
+      "name": "Money Coming Expand Bets",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/302.png"
+    },
+    "303.png": {
+      "id": "303",
+      "name": "Fortune Monkey",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/303.png"
+    },
+    "307.png": {
+      "id": "307",
+      "name": "Treasure Quest",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/307.png"
+    },
+    "324.png": {
+      "id": "324",
+      "name": "Nightfall Hunting",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/324.png"
+    },
+    "372.png": {
+      "id": "372",
+      "name": "3 Pots Dragons",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/372.png"
+    },
+    "374.png": {
+      "id": "374",
+      "name": "Lucky Doggy",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/374.png"
+    },
+    "375.png": {
+      "id": "375",
+      "name": "Poseidon",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/375.png"
+    },
+    "376.png": {
+      "id": "376",
+      "name": "Shogun",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/376.png"
+    },
+    "377.png": {
+      "id": "377",
+      "name": "Safari Mystery",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/377.png"
+    },
+    "378.png": {
+      "id": "378",
+      "name": "Golden Bank 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/378.png"
+    },
+    "379.png": {
+      "id": "379",
+      "name": "Money Pot",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/379.png"
+    },
+    "392.png": {
+      "id": "392",
+      "name": "Coin Tree",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/392.png"
+    },
+    "394.png": {
+      "id": "394",
+      "name": "Sweet Magic",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/394.png"
+    },
+    "399.png": {
+      "id": "399",
+      "name": "3 Coin Treasures",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/399.png"
+    },
+    "400.png": {
+      "id": "400",
+      "name": "3 Lucky Piggy",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/400.png"
+    },
+    "403.png": {
+      "id": "403",
+      "name": "Super Ace Deluxe",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/403.png"
+    },
+    "408.png": {
+      "id": "408",
+      "name": "Safari King",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/408.png"
+    },
+    "409.png": {
+      "id": "409",
+      "name": "Super Ace Joker",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/409.png"
+    },
+    "421.png": {
+      "id": "421",
+      "name": "Lucky Jaguar",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/421.png"
+    },
+    "422.png": {
+      "id": "422",
+      "name": "Fruity Wheel",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/422.png"
+    },
+    "424.png": {
+      "id": "424",
+      "name": "Golden Empire 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/424.png"
+    },
+    "447.png": {
+      "id": "447",
+      "name": "Crystal 777 Deluxe",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/447.png"
+    },
+    "448.png": {
+      "id": "448",
+      "name": "Rapid Gems 777",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/448.png"
+    },
+    "460.png": {
+      "id": "460",
+      "name": "3 Charge Buffalo",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/460.png"
+    },
+    "461.png": {
+      "id": "461",
+      "name": "Pirate Queen 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/461.png"
+    },
+    "463.png": {
+      "id": "463",
+      "name": "3 Lucky Lions",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/463.png"
+    },
+    "472.png": {
+      "id": "472",
+      "name": "3 Coin Treasures 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/472.png"
+    },
+    "485.png": {
+      "id": "485",
+      "name": "3 Coin Wild Horse",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/485.png"
+    },
+    "495.png": {
+      "id": "495",
+      "name": "Boxing King Title Match",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/495.png"
+    },
+    "497.png": {
+      "id": "497",
+      "name": "Lion 2 Dance",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/497.png"
+    },
+    "504.png": {
+      "id": "504",
+      "name": "Crazy 777 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/504.png"
+    },
+    "505.png": {
+      "id": "505",
+      "name": "3 Witch's Lamp",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/505.png"
+    },
+    "517.png": {
+      "id": "517",
+      "name": "Roma X Deluxe",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/517.png"
+    },
+    "518.png": {
+      "id": "518",
+      "name": "Circus Joker 4096",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/518.png"
+    },
+    "523.png": {
+      "id": "523",
+      "name": "Fortune Coins",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/523.png"
+    },
+    "526.png": {
+      "id": "526",
+      "name": "10 Sparkling Crown",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/526.png"
+    },
+    "529.png": {
+      "id": "529",
+      "name": "Joker Coins",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/529.png"
+    },
+    "536.png": {
+      "id": "536",
+      "name": "Lucky Jaguar 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/536.png"
+    },
+    "539.png": {
+      "id": "539",
+      "name": "SuperAce Speed",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/539.png"
+    },
+    "540.png": {
+      "id": "540",
+      "name": "Fortune Gems 500",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/540.png"
+    },
+    "541.png": {
+      "id": "541",
+      "name": "Money Pot Deluxe",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/541.png"
+    },
+    "542.png": {
+      "id": "542",
+      "name": "Super Ace 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/542.png"
+    },
+    "543.png": {
+      "id": "543",
+      "name": "Money Coming 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/543.png"
+    },
+    "545.png": {
+      "id": "545",
+      "name": "Clover Coins 3x3",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/545.png"
+    },
+    "547.png": {
+      "id": "547",
+      "name": "3 Coin Golden",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/547.png"
+    },
+    "558.png": {
+      "id": "558",
+      "name": "Lucky Tiger",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/558.png"
+    },
+    "559.png": {
+      "id": "559",
+      "name": "ChiShiHuang Deluxe",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/559.png"
+    },
+    "563.png": {
+      "id": "563",
+      "name": "3 Lucky Baozhu",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/563.png"
+    },
+    "573.png": {
+      "id": "573",
+      "name": "Fortune Coins 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/573.png"
+    },
+    "581.png": {
+      "id": "581",
+      "name": "Blazing Clover",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/581.png"
+    },
+    "583.png": {
+      "id": "583",
+      "name": "Cash Coin",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/583.png"
+    },
+    "586.png": {
+      "id": "586",
+      "name": "Party Ape",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/586.png"
+    },
+    "588.png": {
+      "id": "588",
+      "name": "3 Super Ace",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/588.png"
+    },
+    "589.png": {
+      "id": "589",
+      "name": "Sparkling Crown",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/589.png"
+    },
+    "590.png": {
+      "id": "590",
+      "name": "Clover Coins 4x4",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/590.png"
+    },
+    "591.png": {
+      "id": "591",
+      "name": "100 Blazing Clover",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/591.png"
+    },
+    "593.png": {
+      "id": "593",
+      "name": "Devil Fire Twins",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/593.png"
+    },
+    "594.png": {
+      "id": "594",
+      "name": "Fortune Hook Boom",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/594.png"
+    },
+    "595.png": {
+      "id": "595",
+      "name": "Dice&Drop",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/595.png"
+    },
+    "597.png": {
+      "id": "597",
+      "name": "Supernova",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/597.png"
+    },
+    "598.png": {
+      "id": "598",
+      "name": "Lucky Macaw",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/598.png"
+    },
+    "605.png": {
+      "id": "605",
+      "name": "Jackpot Joker Fever",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/605.png"
+    },
+    "621.png": {
+      "id": "621",
+      "name": "Crown Of Fortune",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/621.png"
+    },
+    "622.png": {
+      "id": "622",
+      "name": "3 Coin Wild Tiger",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/622.png"
+    },
+    "623.png": {
+      "id": "623",
+      "name": "Coin Of Lightning",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/623.png"
+    },
+    "635.png": {
+      "id": "635",
+      "name": "Joker Fortune",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/635.png"
+    },
+    "636.png": {
+      "id": "636",
+      "name": "Joker Coins Expanded",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/636.png"
+    },
+    "637.png": {
+      "id": "637",
+      "name": "Roma X 10000",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/637.png"
+    },
+    "655.png": {
+      "id": "655",
+      "name": "3 Lightning Blitz",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/655.png"
+    },
+    "664.png": {
+      "id": "664",
+      "name": "Lucky Jaguar 500",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/664.png"
+    },
+    "680.png": {
+      "id": "680",
+      "name": null,
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/680.png"
+    },
+    "686.png": {
+      "id": "686",
+      "name": null,
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/686.png"
+    },
+    "696.png": {
+      "id": "696",
+      "name": "Fortune Garuda 500",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/696.png"
+    },
+    "705.png": {
+      "id": "705",
+      "name": "Strom Of Seth 2",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/705.png"
+    },
+    "709.png": {
+      "id": "709",
+      "name": "Lucky Caramelo",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/709.png"
+    },
+    "720.png": {
+      "id": "720",
+      "name": "Bison Fortune Coins",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/720.png"
+    },
+    "757.png": {
+      "id": "757",
+      "name": null,
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/757.png"
+    },
+    "807.png": {
+      "id": "807",
+      "name": null,
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/807.png"
+    },
+    "812.png": {
+      "id": "812",
+      "name": "Fortune Gems Legend",
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/812.png"
+    },
+    "878.png": {
+      "id": "878",
+      "name": null,
+      "active": true,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/878.png"
+    },
+    "1.png": {
+      "id": "1",
+      "name": "Royal Fishing",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/1.png"
+    },
+    "20.png": {
+      "id": "20",
+      "name": "Bombing Fishing",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/20.png"
+    },
+    "32.png": {
+      "id": "32",
+      "name": "Jackpot Fishing",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/32.png"
+    },
+    "42.png": {
+      "id": "42",
+      "name": "Dinosaur Tycoon",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/42.png"
+    },
+    "60.png": {
+      "id": "60",
+      "name": "Dragon Fortune",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/60.png"
+    },
+    "71.png": {
+      "id": "71",
+      "name": "Boom Legend",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/71.png"
+    },
+    "72.png": {
+      "id": "72",
+      "name": "Teen Patti",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/72.png"
+    },
+    "74.png": {
+      "id": "74",
+      "name": "Mega Fishing",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/74.png"
+    },
+    "75.png": {
+      "id": "75",
+      "name": "AK47",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/75.png"
+    },
+    "79.png": {
+      "id": "79",
+      "name": "Andar Bahar",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/79.png"
+    },
+    "82.png": {
+      "id": "82",
+      "name": "Happy Fishing",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/82.png"
+    },
+    "94.png": {
+      "id": "94",
+      "name": "Rummy",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/94.png"
+    },
+    "113.png": {
+      "id": "113",
+      "name": "Poker King",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/113.png"
+    },
+    "114.png": {
+      "id": "114",
+      "name": "European Roulette",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/114.png"
+    },
+    "119.png": {
+      "id": "119",
+      "name": "All Star Fishing",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/119.png"
+    },
+    "122.png": {
+      "id": "122",
+      "name": "IRich Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/122.png"
+    },
+    "123.png": {
+      "id": "123",
+      "name": "Dragon & Tiger",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/123.png"
+    },
+    "124.png": {
+      "id": "124",
+      "name": "7 Up 7 Down",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/124.png"
+    },
+    "125.png": {
+      "id": "125",
+      "name": "Sic Bo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/125.png"
+    },
+    "127.png": {
+      "id": "127",
+      "name": "Callbreak",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/127.png"
+    },
+    "132.png": {
+      "id": "132",
+      "name": "Pool Rummy",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/132.png"
+    },
+    "139.png": {
+      "id": "139",
+      "name": "Fortune Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/139.png"
+    },
+    "148.png": {
+      "id": "148",
+      "name": "Bingo Carnaval",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/148.png"
+    },
+    "149.png": {
+      "id": "149",
+      "name": "Calaca Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/149.png"
+    },
+    "150.png": {
+      "id": "150",
+      "name": "Lucky Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/150.png"
+    },
+    "151.png": {
+      "id": "151",
+      "name": "Super Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/151.png"
+    },
+    "152.png": {
+      "id": "152",
+      "name": "Baccarat",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/152.png"
+    },
+    "159.png": {
+      "id": "159",
+      "name": "Teen Patti Joker",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/159.png"
+    },
+    "160.png": {
+      "id": "160",
+      "name": "Callbreak Quick",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/160.png"
+    },
+    "161.png": {
+      "id": "161",
+      "name": "Teen Patti 20-20",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/161.png"
+    },
+    "163.png": {
+      "id": "163",
+      "name": "Ludo Quick",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/163.png"
+    },
+    "173.png": {
+      "id": "173",
+      "name": "West Hunter Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/173.png"
+    },
+    "174.png": {
+      "id": "174",
+      "name": "Jackpot Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/174.png"
+    },
+    "177.png": {
+      "id": "177",
+      "name": "Bingo Adventure",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/177.png"
+    },
+    "178.png": {
+      "id": "178",
+      "name": "Go Goal Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/178.png"
+    },
+    "179.png": {
+      "id": "179",
+      "name": "Win Drop",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/179.png"
+    },
+    "195.png": {
+      "id": "195",
+      "name": "Pearls Of Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/195.png"
+    },
+    "197.png": {
+      "id": "197",
+      "name": "Color Game",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/197.png"
+    },
+    "199.png": {
+      "id": "199",
+      "name": "Tongits Go",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/199.png"
+    },
+    "200.png": {
+      "id": "200",
+      "name": "Pappu",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/200.png"
+    },
+    "204.png": {
+      "id": "204",
+      "name": "Color Prediction",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/204.png"
+    },
+    "211.png": {
+      "id": "211",
+      "name": "Pusoy Go",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/211.png"
+    },
+    "212.png": {
+      "id": "212",
+      "name": "Dinosaur Tycoon II",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/212.png"
+    },
+    "216.png": {
+      "id": "216",
+      "name": "Candyland Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/216.png"
+    },
+    "217.png": {
+      "id": "217",
+      "name": "Magic Lamp Bingo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/217.png"
+    },
+    "219.png": {
+      "id": "219",
+      "name": "Blackjack",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/219.png"
+    },
+    "220.png": {
+      "id": "220",
+      "name": "Blackjack Lucky Ladies",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/220.png"
+    },
+    "221.png": {
+      "id": "221",
+      "name": "Mini Flush",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/221.png"
+    },
+    "224.png": {
+      "id": "224",
+      "name": "Go Rush",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/224.png"
+    },
+    "229.png": {
+      "id": "229",
+      "name": "Mines",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/229.png"
+    },
+    "231.png": {
+      "id": "231",
+      "name": "Caribbean Stud Poker",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/231.png"
+    },
+    "232.png": {
+      "id": "232",
+      "name": "Tower",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/232.png"
+    },
+    "233.png": {
+      "id": "233",
+      "name": "Hilo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/233.png"
+    },
+    "235.png": {
+      "id": "235",
+      "name": "Limbo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/235.png"
+    },
+    "236.png": {
+      "id": "236",
+      "name": "Wheel",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/236.png"
+    },
+    "241.png": {
+      "id": "241",
+      "name": "Keno",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/241.png"
+    },
+    "242.png": {
+      "id": "242",
+      "name": "Plinko",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/242.png"
+    },
+    "253.png": {
+      "id": "253",
+      "name": "Video Poker",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/253.png"
+    },
+    "254.png": {
+      "id": "254",
+      "name": "Mines Gold",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/254.png"
+    },
+    "261.png": {
+      "id": "261",
+      "name": "Crash Bonus",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/261.png"
+    },
+    "262.png": {
+      "id": "262",
+      "name": "Speed Baccarat",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/262.png"
+    },
+    "272.png": {
+      "id": "272",
+      "name": "Keno Bonus Number",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/272.png"
+    },
+    "273.png": {
+      "id": "273",
+      "name": "Keno Super Chance",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/273.png"
+    },
+    "274.png": {
+      "id": "274",
+      "name": "Keno Extra Bet",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/274.png"
+    },
+    "289.png": {
+      "id": "289",
+      "name": "Ocean King Jackpot",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/289.png"
+    },
+    "297.png": {
+      "id": "297",
+      "name": "Jogo Do Bicho",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/297.png"
+    },
+    "305.png": {
+      "id": "305",
+      "name": "Super E-Sabong",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/305.png"
+    },
+    "327.png": {
+      "id": "327",
+      "name": "Domino Go",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/327.png"
+    },
+    "389.png": {
+      "id": "389",
+      "name": "Fish Prawn Crab",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/389.png"
+    },
+    "397.png": {
+      "id": "397",
+      "name": "Jhandi Munda",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/397.png"
+    },
+    "404.png": {
+      "id": "404",
+      "name": "Ultimate Texas Holdem",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/404.png"
+    },
+    "407.png": {
+      "id": "407",
+      "name": "Crash Goal",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/407.png"
+    },
+    "419.png": {
+      "id": "419",
+      "name": "Penalty Kicks",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/419.png"
+    },
+    "427.png": {
+      "id": "427",
+      "name": "Thai Hilo",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/427.png"
+    },
+    "436.png": {
+      "id": "436",
+      "name": "Fortune Roulette",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/436.png"
+    },
+    "439.png": {
+      "id": "439",
+      "name": "Super Ace Scratch",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/439.png"
+    },
+    "440.png": {
+      "id": "440",
+      "name": "Boxing Extravaganza",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/440.png"
+    },
+    "441.png": {
+      "id": "441",
+      "name": "Fortune Gems Scratch",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/441.png"
+    },
+    "442.png": {
+      "id": "442",
+      "name": "Go For Champion",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/442.png"
+    },
+    "459.png": {
+      "id": "459",
+      "name": "Crash Touchdown",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/459.png"
+    },
+    "462.png": {
+      "id": "462",
+      "name": "Cricket Roulette",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/462.png"
+    },
+    "464.png": {
+      "id": "464",
+      "name": "Fortune King Jackpot",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/464.png"
+    },
+    "469.png": {
+      "id": "469",
+      "name": "Crash Cricket",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/469.png"
+    },
+    "473.png": {
+      "id": "473",
+      "name": "Cricket War",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/473.png"
+    },
+    "474.png": {
+      "id": "474",
+      "name": null,
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/474.png"
+    },
+    "479.png": {
+      "id": "479",
+      "name": "Color Game Extreme",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/479.png"
+    },
+    "512.png": {
+      "id": "512",
+      "name": null,
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/512.png"
+    },
+    "515.png": {
+      "id": "515",
+      "name": null,
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/515.png"
+    },
+    "524.png": {
+      "id": "524",
+      "name": null,
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/524.png"
+    },
+    "531.png": {
+      "id": "531",
+      "name": "Fortune Zombie",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/531.png"
+    },
+    "546.png": {
+      "id": "546",
+      "name": "Mines Grand",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/546.png"
+    },
+    "551.png": {
+      "id": "551",
+      "name": "Plinko Of Mine",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/551.png"
+    },
+    "554.png": {
+      "id": "554",
+      "name": "Golden Treasure",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/554.png"
+    },
+    "571.png": {
+      "id": "571",
+      "name": null,
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/571.png"
+    },
+    "604.png": {
+      "id": "604",
+      "name": null,
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/604.png"
+    },
+    "613.png": {
+      "id": "613",
+      "name": "Mines Cricket",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/613.png"
+    },
+    "624.png": {
+      "id": "624",
+      "name": null,
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/624.png"
+    },
+    "626.png": {
+      "id": "626",
+      "name": "Golden Treasure Lightning",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/626.png"
+    },
+    "633.png": {
+      "id": "633",
+      "name": "Gallina Fortunata",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/633.png"
+    },
+    "645.png": {
+      "id": "645",
+      "name": "Cash Stack",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/645.png"
+    },
+    "652.png": {
+      "id": "652",
+      "name": "Speed Andar Bahar",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/652.png"
+    },
+    "653.png": {
+      "id": "653",
+      "name": "Crash Fruit",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/653.png"
+    },
+    "662.png": {
+      "id": "662",
+      "name": "Crash Trader",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/662.png"
+    },
+    "665.png": {
+      "id": "665",
+      "name": "Mines Football",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/665.png"
+    },
+    "667.png": {
+      "id": "667",
+      "name": "Circus Jackpot",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/667.png"
+    },
+    "690.png": {
+      "id": "690",
+      "name": "Chicken Dash",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/690.png"
+    },
+    "695.png": {
+      "id": "695",
+      "name": "Cash Balloon",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/695.png"
+    },
+    "698.png": {
+      "id": "698",
+      "name": "Frog Dash",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/698.png"
+    },
+    "719.png": {
+      "id": "719",
+      "name": "Grand Golden Treasure",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/719.png"
+    },
+    "731.png": {
+      "id": "731",
+      "name": "Plinko Football",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/731.png"
+    },
+    "736.png": {
+      "id": "736",
+      "name": "Jackpot Fishing",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/736.png"
+    },
+    "737.png": {
+      "id": "737",
+      "name": "Jackpot Football",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/737.png"
+    },
+    "748.png": {
+      "id": "748",
+      "name": "Chicken Dash 10000",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/748.png"
+    },
+    "786.png": {
+      "id": "786",
+      "name": "Football Golden Cup",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/786.png"
+    },
+    "794.png": {
+      "id": "794",
+      "name": "Chicken Dash Jackpot",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/794.png"
+    },
+    "813.png": {
+      "id": "813",
+      "name": "Crash Cricket Mr.360",
+      "active": false,
+      "sourceUrl": "https://cdn.vefrop.com/games/jili/813.png"
+    }
+  }
+}
