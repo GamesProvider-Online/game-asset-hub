@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JILI ID Mapper</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#090b10;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+.page{
+  max-width:1300px;
+  margin:auto;
+  padding:20px;
+}
+a{color:#fff}
+h1{margin:0 0 5px}
+.sub{
+  color:#8993a4;
+  font-size:12px;
+  margin-bottom:20px;
+}
+.box{
+  background:#11151d;
+  border:1px solid #2b3340;
+  border-radius:12px;
+  padding:16px;
+  margin-bottom:14px;
+}
+textarea{
+  width:100%;
+  height:220px;
+  background:#080a0e;
+  color:#fff;
+  border:1px solid #394251;
+  border-radius:7px;
+  padding:12px;
+  resize:vertical;
+}
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:10px;
+}
+button,.file{
+  border:0;
+  border-radius:6px;
+  padding:10px 14px;
+  background:#176fe6;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:12px;
+}
+.file{
+  display:inline-block;
+}
+input[type=file]{
+  display:none;
+}
+.secondary{background:#303641}
+.export{background:#99740c}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+  margin-bottom:15px;
+}
+.stat{
+  background:#11151d;
+  border:1px solid #2b3340;
+  border-radius:10px;
+  padding:13px;
+}
+.stat b{
+  display:block;
+  font-size:22px;
+}
+.stat span{
+  font-size:10px;
+  color:#8b95a5;
+}
+
+.toolbar{
+  display:flex;
+  gap:8px;
+  margin-bottom:10px;
+}
+.toolbar input{
+  flex:1;
+  height:38px;
+  background:#11151d;
+  color:#fff;
+  border:1px solid #394251;
+  border-radius:6px;
+  padding:0 10px;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:70px 85px 1fr 100px;
+  gap:10px;
+  align-items:center;
+  background:#11151d;
+  border:1px solid #2b3340;
+  border-radius:8px;
+  padding:9px;
+  margin-bottom:7px;
+}
+.id{
+  font-weight:bold;
+  color:#f2ce3b;
+}
+.file-name{
+  font-size:11px;
+  color:#98a1b0;
+}
+.name-input{
+  width:100%;
+  height:36px;
+  background:#090c11;
+  color:#fff;
+  border:1px solid #3a4351;
+  border-radius:5px;
+  padding:0 9px;
+}
+.status{
+  text-align:center;
+  padding:6px;
+  border-radius:20px;
+  font-size:9px;
+  font-weight:bold;
+}
+.active{
+  background:#103b29;
+  color:#63dfa0;
+}
+.inactive{
+  background:#39321a;
+  color:#dfc467;
+}
+.unknown{
+  border-color:#783939;
+}
+.empty{
+  color:#8d96a6;
+  padding:40px;
+  text-align:center;
+}
+.note{
+  font-size:11px;
+  color:#929bad;
+  line-height:1.5;
+}
+@media(max-width:700px){
+  .stats{grid-template-columns:1fr 1fr}
+  .row{grid-template-columns:60px 1fr}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<a href="../">← Home</a>
+
+<h1>JILI Game ID Mapper</h1>
+
+<div class="sub">
+Source HTML/TXT → Game ID → Real Game Name → JILI.json
+</div>
+
+<div class="box">
+
+<h3>1. Load your original JILI source</h3>
+
+<label class="file">
+Choose TXT / HTML
+<input id="fileInput" type="file" accept=".txt,.html,.htm">
+</label>
+
+<div style="margin:10px 0;color:#7f899a;font-size:11px">
+OR paste the original HTML below:
+</div>
+
+<textarea
+id="source"
+placeholder='Paste source containing: data-code="109" ... jili/109.png'>
+</textarea>
+
+<div class="controls">
+
+<button onclick="processSource()">
+PROCESS SOURCE
+</button>
+
+<button class="secondary" onclick="clearAll()">
+CLEAR
+</button>
+
+</div>
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat">
+<b id="total">0</b>
+<span>Source games</span>
+</div>
+
+<div class="stat">
+<b id="mapped">0</b>
+<span>Names mapped</span>
+</div>
+
+<div class="stat">
+<b id="unknown">0</b>
+<span>Unknown names</span>
+</div>
+
+<div class="stat">
+<b id="activeCount">0</b>
+<span>Active</span>
+</div>
+
+<div class="stat">
+<b id="inactiveCount">0</b>
+<span>Inactive</span>
+</div>
+
+</div>
+
+
+<div class="toolbar">
+
+<input
+id="search"
+placeholder="Search ID, filename or game name..."
+oninput="render()">
+
+<button class="secondary" onclick="setFilter('all')">
+ALL
+</button>
+
+<button class="secondary" onclick="setFilter('active')">
+ACTIVE
+</button>
+
+<button class="secondary" onclick="setFilter('unknown')">
+UNKNOWN
+</button>
+
+<button class="export" onclick="exportJSON()">
+EXPORT JILI.JSON
+</button>
+
+</div>
+
+
+<div id="list">
+<div class="empty">
+Load your original JILI source first.
+</div>
+</div>
+
+
+<div class="box">
+
+<div class="note">
+PNG files are NOT renamed. Example:
+<b>109.png</b> remains <b>109.png</b>,
+but the website can display it as <b>Fortune Gems</b>.
+Unknown IDs remain editable before export.
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/*
+  BASE GAME-ID DATABASE
+
+  Older / established IDs:
+  PAGCOR JILI approved game list.
+
+  Newer IDs:
+  supplemented from JILI official catalogue.
+*/
+
+const NAME_MAP = {
+
+"1":"Royal Fishing",
+"2":"Chin Shi Huang",
+"4":"God Of Martial",
+"5":"Hot Chilli",
+"6":"Fortune Tree",
+"9":"War Of Dragons",
+"13":"Lucky Ball",
+"14":"Hyper Burst",
+"16":"Jungle King",
+"17":"Shanghai Beauty",
+"20":"Bombing Fishing",
+"21":"Fa Fa Fa",
+"23":"Candy Baby",
+"26":"Hawaii Beauty",
+"27":"Seven Seven Seven",
+"30":"Bubble Beauty",
+"32":"Jackpot Fishing",
+"33":"Fortune Pig",
+"35":"Crazy 777",
+"36":"Bao Boon Chin",
+"37":"Night City",
+"38":"Feng Shen",
+"40":"Crazy FaFaFa",
+"42":"Dinosaur Tycoon",
+"43":"Xiyangyang",
+"44":"Diamond Party",
+"45":"Golden Bank",
+"46":"Dragon Treasure",
+"47":"Charge Buffalo",
+"48":"Lucky Gold Bricks",
+"49":"Super Ace",
+"51":"Money Coming",
+"58":"Golden Queen",
+"60":"Dragon Fortune",
+"71":"Boom Legend",
+"72":"Teen Patti",
+"74":"Mega Fishing",
+"75":"AK47",
+"76":"Party Night",
+"77":"Boxing King",
+"78":"Secret Treasure",
+"79":"Andar Bahar",
+"82":"Happy Fishing",
+"85":"Pharaoh Treasure",
+"87":"Book Of Gold",
+"91":"Lucky Coming",
+"92":"Crazy Hunter",
+"94":"Rummy",
+"100":"Super Rich",
+"101":"Medusa",
+"102":"Roma X",
+"103":"Golden Empire",
+"106":"Twin Wins",
+"108":"Magic Lamp",
+"109":"Fortune Gems",
+"110":"Ali Baba",
+"111":"Number King",
+"112":"Journey West M",
+"113":"Poker King",
+"114":"European Roulette",
+"115":"Agent Ace",
+"116":"Happy Taxi",
+"118":"Big Small",
+"119":"All Star Fishing",
+"122":"IRich Bingo",
+"123":"Dragon & Tiger",
+"124":"7 Up 7 Down",
+"125":"Sic Bo",
+"126":"Bone Fortune",
+"127":"Callbreak",
+"130":"Thor X",
+"132":"Pool Rummy",
+"134":"Mega Ace",
+"135":"Mayan Empire",
+"136":"Samba",
+"137":"Gold Rush",
+"139":"Fortune Bingo",
+"142":"Bonus Hunter",
+"144":"JILI Caishen",
+"145":"Neko Fortune",
+"146":"World Cup",
+"148":"Bingo Carnaval",
+"149":"Calaca Bingo",
+"150":"Lucky Bingo",
+"151":"Super Bingo",
+"152":"Baccarat",
+"153":"Crazy Pusher",
+"159":"Teen Patti Joker",
+"160":"Callbreak Quick",
+"161":"Teen Patti 20-20",
+"163":"Ludo Quick",
+"164":"Pirate Queen",
+"166":"Wild Racer",
+"171":"Sin City",
+"172":"Elf Bingo",
+"173":"West Hunter Bingo",
+"174":"Jackpot Bingo",
+"176":"Master Tiger",
+"177":"Bingo Adventure",
+"178":"Go Goal Bingo",
+"179":"Win Drop",
+"180":"Legacy Of Egypt",
+"181":"Wild Ace",
+"182":"Golden Land",
+"183":"Golden Joker",
+"191":"Golden Temple",
+"193":"Devil Fire",
+"195":"Pearls Of Bingo",
+"197":"Color Game",
+"198":"Sweet Land",
+"199":"Tongits Go",
+"200":"Pappu",
+"204":"Color Prediction",
+"208":"Trial Of Phoenix",
+"209":"Aztec Priestess",
+"211":"Pusoy Go",
+"212":"Dinosaur Tycoon II",
+"214":"King Arthur",
+"216":"Candyland Bingo",
+"217":"Magic Lamp Bingo",
+"219":"Blackjack",
+"220":"Blackjack Lucky Ladies",
+"221":"Mini Flush",
+"223":"Fortune Gems 2",
+"224":"Go Rush",
+"225":"Cricket King 18",
+"226":"Witches Night",
+"228":"Arena Fighter",
+"229":"Mines",
+"230":"Cricket Sah 75",
+"231":"Caribbean Stud Poker",
+"232":"Tower",
+"233":"Hilo",
+"235":"Limbo",
+"236":"Wheel",
+"238":"Bangla Beauty",
+"239":"Dabanggg",
+"240":"Party Star",
+"241":"Keno",
+"242":"Plinko",
+"252":"Zeus",
+"253":"Video Poker",
+"254":"Mines Gold",
+"258":"Devil Fire 2",
+"259":"Charge Buffalo Ascent",
+"261":"Crash Bonus",
+"262":"Speed Baccarat",
+"263":"The Pig House",
+"264":"Egypt's Glow",
+"272":"Keno Bonus Number",
+"273":"Keno Super Chance",
+"274":"Keno Extra Bet",
+"289":"Ocean King Jackpot",
+"297":"Jogo Do Bicho",
+"299":"Potion Wizard",
+
+/* Important correction:
+   300 is Fortune Gems 3.
+*/
+"300":"Fortune Gems 3",
+
+"301":"Jackpot Joker",
+"302":"Money Coming Expand Bets",
+"303":"Fortune Monkey",
+"307":"Treasure Quest",
+"324":"Nightfall Hunting",
+"327":"Domino Go",
+"372":"3 Pots Dragons",
+"374":"Lucky Doggy",
+"375":"Poseidon",
+"376":"Shogun",
+"377":"Safari Mystery",
+"378":"Golden Bank 2",
+"379":"Money Pot",
+"389":"Fish Prawn Crab",
+"392":"Coin Tree",
+"393":"Fortune Hook",
+"394":"Sweet Magic",
+"397":"Jhandi Munda",
+"399":"3 Coin Treasures",
+"400":"3 Lucky Piggy",
+"403":"Super Ace Deluxe",
+"404":"Ultimate Texas Holdem",
+"407":"Crash Goal",
+"409":"Super Ace Joker",
+"419":"Penalty Kicks",
+"420":"Crazy Hunter 2",
+"421":"Lucky Jaguar",
+"422":"Fruity Wheel",
+"423":"Bikini Lady",
+"424":"Golden Empire 2",
+"427":"Thai Hilo",
+"436":"Fortune Roulette",
+"439":"Super Ace Scratch",
+"440":"Boxing Extravaganza",
+"441":"Fortune Gems Scratch",
+"442":"Go For Champion",
+"448":"Rapid Gems 777",
+"459":"Crash Touchdown",
+"460":"3 Charge Buffalo",
+"461":"Pirate Queen 2",
+"462":"Cricket Roulette",
+"463":"3 Lucky Lions",
+"464":"Fortune King Jackpot",
+"469":"Crash Cricket",
+"472":"3 Coin Treasures 2",
+"473":"Cricket War",
+"479":"Color Game Extreme",
+"485":"3 Coin Wild Horse",
+
+/* Current JILI titles */
+
+"495":"Boxing King Title Match",
+"504":"Crazy 777 2",
+"517":"Roma X Deluxe",
+"518":"Circus Joker 4096",
+
+"523":"Fortune Coins",
+"526":"10 Sparkling Crown",
+"529":"Joker Coins",
+"531":"Fortune Zombie",
+"536":"Lucky Jaguar 2",
+
+"540":"Fortune Gems 500",
+"541":"Money Pot Deluxe",
+"542":"Super Ace 2",
+"543":"Money Coming 2",
+"545":"Clover Coins 3x3",
+"546":"Mines Grand",
+
+"551":"Plinko Of Mine",
+"554":"Golden Treasure",
+
+"573":"Fortune Coins 2",
+"586":"Party Ape",
+"588":"3 Super Ace",
+
+"593":"Devil Fire Twins",
+"594":"Fortune Hook Boom",
+"597":"Supernova",
+"598":"Lucky Macaw",
+
+"605":"Jackpot Joker Fever",
+"613":"Mines Cricket",
+
+"622":"3 Coin Wild Tiger",
+"623":"Coin Of Lightning",
+"626":"Golden Treasure Lightning",
+
+"637":"Roma X 10000",
+
+"664":"Lucky Jaguar 500",
+
+"696":"Fortune Garuda 500",
+
+"812":"Fortune Gems Legend"
+
+};
+
+
+let rows = [];
+let filterMode = "all";
+
+
+document
+.getElementById("fileInput")
+.addEventListener("change", async e=>{
+
+const file = e.target.files[0];
+
+if(!file) return;
+
+const text = await file.text();
+
+document.getElementById("source").value = text;
+
+processSource();
+
+});
+
+
+function processSource(){
+
+const source =
+document.getElementById("source").value;
+
+
+const regex =
+/<div class="game"\s+data-code="([^"]+)"\s+style="display:\s*(block|none);">[\s\S]*?background-image:url\(&quot;([^&]+)&quot;\)/g;
+
+
+rows = [];
+
+let match;
+
+
+while(
+(match = regex.exec(source)) !== null
+){
+
+const id =
+String(match[1]).trim();
+
+const active =
+match[2] === "block";
+
+const url =
+match[3];
+
+const filename =
+(url.split("/").pop() || (id + ".png"))
+.split("?")[0];
+
+
+rows.push({
+
+id:id,
+
+filename:filename,
+
+url:url,
+
+active:active,
+
+name:
+NAME_MAP[id] || ""
+
+});
+
+}
+
+
+/* remove duplicates */
+
+const unique = {};
+
+rows.forEach(row=>{
+
+unique[row.id] = row;
+
+});
+
+rows =
+Object.values(unique);
+
+
+rows.sort(
+(a,b)=>
+Number(b.active)-Number(a.active) ||
+Number(a.id)-Number(b.id)
+);
+
+
+render();
+
+}
+
+
+function render(){
+
+const list =
+document.getElementById("list");
+
+
+const search =
+document
+.getElementById("search")
+.value
+.toLowerCase()
+.trim();
+
+
+const filtered =
+rows.filter(row=>{
+
+if(
+filterMode === "active" &&
+!row.active
+){
+return false;
+}
+
+if(
+filterMode === "unknown" &&
+row.name
+){
+return false;
+}
+
+if(search){
+
+return (
+row.id.toLowerCase().includes(search) ||
+row.filename.toLowerCase().includes(search) ||
+(row.name || "").toLowerCase().includes(search)
+);
+
+}
+
+return true;
+
+});
+
+
+if(!filtered.length){
+
+list.innerHTML =
+'<div class="empty">No matching games.</div>';
+
+}else{
+
+list.innerHTML = "";
+
+
+filtered.forEach(row=>{
+
+const div =
+document.createElement("div");
+
+
+div.className =
+"row " +
+(!row.name ? "unknown" : "");
+
+
+div.innerHTML = `
+
+<div class="id">
+#${escapeHTML(row.id)}
+</div>
+
+<div class="file-name">
+${escapeHTML(row.filename)}
+</div>
+
+<input
+class="name-input"
+data-id="${escapeHTML(row.id)}"
+value="${escapeHTML(row.name)}"
+placeholder="UNKNOWN — enter game name">
+
+<div class="status ${row.active ? "active" : "inactive"}">
+${row.active ? "ACTIVE" : "INACTIVE"}
+</div>
+
+`;
+
+
+div
+.querySelector(".name-input")
+.addEventListener(
+"input",
+e=>{
+
+row.name =
+e.target.value.trim();
+
+updateStats();
+
+}
+);
+
+
+list.appendChild(div);
+
+});
+
+}
+
+
+updateStats();
+
+}
+
+
+function updateStats(){
+
+document
+.getElementById("total")
+.textContent =
+rows.length;
+
+
+document
+.getElementById("mapped")
+.textContent =
+rows.filter(r=>r.name).length;
+
+
+document
+.getElementById("unknown")
+.textContent =
+rows.filter(r=>!r.name).length;
+
+
+document
+.getElementById("activeCount")
+.textContent =
+rows.filter(r=>r.active).length;
+
+
+document
+.getElementById("inactiveCount")
+.textContent =
+rows.filter(r=>!r.active).length;
+
+}
+
+
+function setFilter(mode){
+
+filterMode = mode;
+
+render();
+
+}
+
+
+function exportJSON(){
+
+if(!rows.length){
+
+alert("Process the JILI source first.");
+
+return;
+
+}
+
+
+const output = {
+
+provider:"JILI",
+
+generatedAt:
+new Date().toISOString(),
+
+games:{}
+
+};
+
+
+rows.forEach(row=>{
+
+output.games[row.filename] = {
+
+id:row.id,
+
+name:
+row.name || null,
+
+active:
+row.active,
+
+sourceUrl:
+row.url
+
+};
+
+});
+
+
+const json =
+JSON.stringify(
+output,
+null,
+2
+);
+
+
+const blob =
+new Blob(
+[json],
+{
+type:"application/json"
+}
+);
+
+
+const url =
+URL.createObjectURL(blob);
+
+
+const a =
+document.createElement("a");
+
+
+a.href = url;
+
+a.download = "JILI.json";
+
+a.click();
+
+
+setTimeout(
+()=>URL.revokeObjectURL(url),
+1000
+);
+
+}
+
+
+function clearAll(){
+
+rows = [];
+
+document.getElementById("source").value = "";
+
+document.getElementById("search").value = "";
+
+document.getElementById("list").innerHTML =
+'<div class="empty">Load your original JILI source first.</div>';
+
+updateStats();
+
+}
+
+
+function escapeHTML(value){
+
+return String(value || "")
+.replace(
+/[&<>"']/g,
+char=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#039;"
+}[char])
+);
+
+}
+
+</script>
+
+</body>
+</html>
