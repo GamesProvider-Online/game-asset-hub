@@ -1,20 +1,38 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Game Asset Studio</title>
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1">
 
-<link rel="stylesheet" href="styles.css">
+<title>
+  Game Asset Studio
+</title>
+
+<link
+  rel="stylesheet"
+  href="styles.css">
 
 </head>
 
+
 <body>
+
+
+<!-- =================================================
+     TOP NAVIGATION
+================================================= -->
 
 <header class="topbar">
 
   <div class="shell toprow">
+
+
+    <!-- BRAND -->
 
     <button
       class="brand brand-button"
@@ -40,7 +58,11 @@
     </button>
 
 
+
+    <!-- NAV -->
+
     <nav class="nav">
+
 
       <button
         data-view="home"
@@ -51,12 +73,23 @@
       </button>
 
 
+
       <button
         data-view="games">
 
         Game Assets
 
       </button>
+
+
+
+      <button
+        onclick="location.href='tips-generator/'">
+
+        Tips Generator
+
+      </button>
+
 
 
       <button
@@ -67,12 +100,14 @@
       </button>
 
 
+
       <button
         onclick="location.href='history-tools/'">
 
         History Builder
 
       </button>
+
 
     </nav>
 
@@ -82,7 +117,12 @@
 
 
 
+<!-- =================================================
+     MAIN
+================================================= -->
+
 <main class="shell">
+
 
 
 <!-- =================================================
@@ -92,7 +132,10 @@
 <section id="homeView">
 
 
+  <!-- HERO -->
+
   <section class="hero home-hero">
+
 
     <div class="eyebrow">
 
@@ -110,12 +153,16 @@
 
     <p>
 
-      Open your game-image library, provider logos,
-      game tips, bank demo tools, or transaction
+      Open your game-image library,
+      provider logos, Tips Generator,
+      bank demo tools, or transaction
       history builder from one home screen.
 
     </p>
 
+
+
+    <!-- STATS -->
 
     <div class="stats">
 
@@ -133,6 +180,7 @@
       </div>
 
 
+
       <div class="stat">
 
         <b id="statGames">
@@ -146,6 +194,7 @@
       </div>
 
 
+
       <div class="stat">
 
         <b id="statLogos">
@@ -157,6 +206,7 @@
         </span>
 
       </div>
+
 
 
       <div class="stat">
@@ -182,11 +232,13 @@
        HOME CARDS
   ================================================= -->
 
-
   <section class="launch-grid">
 
 
-    <!-- GAME ASSETS -->
+
+    <!-- =================================================
+         GAME ASSETS
+    ================================================= -->
 
     <article class="launch-card game-launch">
 
@@ -218,8 +270,9 @@
         <p>
 
           Browse every provider, logo and game image.
-          Search, preview, copy direct URLs,
-          download originals and open game tips.
+          Search using provider, mapped game name,
+          game ID or filename. Preview images,
+          copy direct URLs and download originals.
 
         </p>
 
@@ -240,8 +293,66 @@
 
 
 
-    <!-- BANK DEMO -->
+    <!-- =================================================
+         TIPS GENERATOR
+    ================================================= -->
 
+    <article class="launch-card game-launch">
+
+
+      <div class="launch-icon">
+
+        🎯
+
+      </div>
+
+
+      <div class="launch-copy">
+
+
+        <span class="launch-kicker">
+
+          GAME LIST TOOL
+
+        </span>
+
+
+        <h3>
+
+          Tips Generator
+
+        </h3>
+
+
+        <p>
+
+          Generate random game cards with game images,
+          mapped game names and random display scores.
+          Copy ready-made text or direct image URLs
+          from the generated results.
+
+        </p>
+
+
+      </div>
+
+
+      <button
+        class="launch-btn"
+        onclick="location.href='tips-generator/'">
+
+        Open Tips Generator →
+
+      </button>
+
+
+    </article>
+
+
+
+    <!-- =================================================
+         BANK DEMO
+    ================================================= -->
 
     <article class="launch-card bank-launch">
 
@@ -295,8 +406,9 @@
 
 
 
-    <!-- HISTORY BUILDER -->
-
+    <!-- =================================================
+         HISTORY BUILDER
+    ================================================= -->
 
     <article class="launch-card history-launch">
 
@@ -357,7 +469,6 @@
        QUICK GUIDE
   ================================================= -->
 
-
   <section class="quick-guide">
 
 
@@ -367,7 +478,6 @@
         1
       </b>
 
-
       <span>
 
         <strong>
@@ -375,7 +485,8 @@
         </strong>
 
         <small>
-          Game library, bank demos or history builder.
+          Game library, Tips Generator,
+          bank demos or history builder.
         </small>
 
       </span>
@@ -390,7 +501,6 @@
         2
       </b>
 
-
       <span>
 
         <strong>
@@ -398,7 +508,8 @@
         </strong>
 
         <small>
-          Provider, game image, tip, bank layout or transaction tool.
+          Provider, game image, mapped game name,
+          Tips Generator, bank layout or transaction tool.
         </small>
 
       </span>
@@ -412,7 +523,6 @@
       <b>
         3
       </b>
-
 
       <span>
 
@@ -440,11 +550,12 @@
      GAME ASSETS
 ================================================= -->
 
-
 <section
   id="gameView"
   class="hidden">
 
+
+  <!-- PAGE HEADER -->
 
   <div class="pagehead">
 
@@ -468,12 +579,14 @@
 
       <p>
 
-        Provider logos, game images and published TXT tips.
+        Provider logos, game images,
+        mapped game names and published TXT tips.
 
       </p>
 
 
     </div>
+
 
 
     <button
@@ -488,6 +601,10 @@
   </div>
 
 
+
+  <!-- =================================================
+       SEARCH TOOLBAR
+  ================================================= -->
 
   <div class="toolbar">
 
@@ -507,7 +624,7 @@
 
       <input
         id="searchInput"
-        placeholder="Search provider or game filename...">
+        placeholder="Search provider, game name, ID or filename...">
 
 
       <button
@@ -525,6 +642,10 @@
   </div>
 
 
+
+  <!-- =================================================
+       PROVIDER LOGOS
+  ================================================= -->
 
   <div
     id="providerLogoTitle"
@@ -550,6 +671,10 @@
 
 
 
+  <!-- =================================================
+       GAME SECTION TITLE
+  ================================================= -->
+
   <div class="section-title">
 
 
@@ -569,6 +694,10 @@
 
 
 
+  <!-- =================================================
+       PROVIDERS
+  ================================================= -->
+
   <div
     id="providerGrid"
     class="providers">
@@ -576,6 +705,10 @@
   </div>
 
 
+
+  <!-- =================================================
+       GAME GRID
+  ================================================= -->
 
   <div
     id="gameGrid"
@@ -602,11 +735,12 @@
      BANK DEMO LAB
 ================================================= -->
 
-
 <section
   id="bankView"
   class="hidden">
 
+
+  <!-- PAGE HEADER -->
 
   <div class="pagehead">
 
@@ -631,7 +765,8 @@
       <p>
 
         Select a saved layout.
-        Each builder has Home and Bank Demo Lab buttons at the top.
+        Each builder has Home and
+        Bank Demo Lab buttons at the top.
 
       </p>
 
@@ -653,6 +788,8 @@
 
 
 
+  <!-- WARNING -->
+
   <div class="warning">
 
     <b>
@@ -668,11 +805,17 @@
 
 
 
+  <!-- =================================================
+       BANK CARDS
+  ================================================= -->
+
   <div class="bank-grid">
 
 
-    <!-- MBB -->
 
+    <!-- =================================================
+         MBB
+    ================================================= -->
 
     <article class="bank-card">
 
@@ -712,8 +855,9 @@
 
 
 
-    <!-- GXB -->
-
+    <!-- =================================================
+         GXB
+    ================================================= -->
 
     <article class="bank-card">
 
@@ -734,8 +878,9 @@
 
       <p>
 
-        Vertical transfer-success layout with the saved GXB structure,
-        recipient, destination, amount and reference.
+        Vertical transfer-success layout with the saved
+        GXB structure, recipient, destination,
+        amount and reference.
 
       </p>
 
@@ -753,8 +898,9 @@
 
 
 
-    <!-- RHB -->
-
+    <!-- =================================================
+         RHB
+    ================================================= -->
 
     <article class="bank-card">
 
@@ -775,8 +921,8 @@
 
       <p>
 
-        Status-first layout with amount, reference ID,
-        From/To, DuitNow logo,
+        Status-first layout with amount,
+        reference ID, From/To, DuitNow logo,
         transfer method and receipt actions.
 
       </p>
@@ -795,8 +941,9 @@
 
 
 
-    <!-- CIMB -->
-
+    <!-- =================================================
+         CIMB
+    ================================================= -->
 
     <article class="bank-card">
 
@@ -847,7 +994,6 @@
      FOOTER
 ================================================= -->
 
-
 <footer class="footer-site">
 
   Static GitHub Pages package ·
@@ -863,7 +1009,6 @@
 <!-- =================================================
      PREVIEW MODAL
 ================================================= -->
-
 
 <div
   id="modal"
@@ -895,6 +1040,7 @@
     </div>
 
 
+
     <div id="modalBody">
 
     </div>
@@ -907,8 +1053,13 @@
 
 
 
+<!-- =================================================
+     APP
+================================================= -->
+
 <script src="app.js"></script>
 
 
 </body>
+
 </html>
