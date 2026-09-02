@@ -1,28 +1,53 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Game Tips Generator</title>
+
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1">
+
+<title>
+  Game Tips Generator
+</title>
+
 
 <style>
+
 *{
   box-sizing:border-box;
 }
 
+
 :root{
+
   --bg:#070a0f;
+
   --panel:#101720;
+
+  --panel2:#090e15;
+
   --line:#29364a;
+
   --text:#ffffff;
+
   --muted:#8996a9;
+
   --blue:#2e76f4;
+
   --green:#35d481;
+
 }
 
+
 body{
+
   margin:0;
+
   min-height:100vh;
+
   background:
     radial-gradient(
       circle at top,
@@ -37,67 +62,114 @@ body{
     Arial,
     Helvetica,
     sans-serif;
+
 }
 
 
-/* HEADER */
+/* =====================================================
+   HEADER
+===================================================== */
 
 header{
-  background:rgba(9,13,19,.96);
-  border-bottom:1px solid var(--line);
+
+  background:
+    rgba(9,13,19,.96);
+
+  border-bottom:
+    1px solid var(--line);
+
 }
+
 
 .top{
+
   max-width:1200px;
+
   margin:auto;
-  padding:15px 20px;
+
+  padding:
+    15px 20px;
 
   display:flex;
+
   align-items:center;
-  justify-content:space-between;
+
+  justify-content:
+    space-between;
+
+  gap:15px;
+
 }
+
 
 .brand h1{
+
   margin:0;
+
   font-size:19px;
+
 }
+
 
 .brand p{
-  margin:4px 0 0;
+
+  margin:
+    4px 0 0;
+
   color:var(--muted);
+
   font-size:10px;
+
 }
 
+
 .home{
+
   color:#fff;
+
   text-decoration:none;
 
-  border:1px solid #35435a;
+  border:
+    1px solid #35435a;
 
   border-radius:7px;
 
-  padding:9px 12px;
+  padding:
+    9px 12px;
 
   font-size:11px;
+
   font-weight:bold;
+
 }
 
 
-/* MAIN */
+
+/* =====================================================
+   MAIN
+===================================================== */
 
 main{
+
   max-width:1200px;
+
   margin:auto;
 
-  padding:26px 20px 50px;
+  padding:
+    26px 20px 50px;
+
 }
 
 
 .hero{
+
   margin-bottom:16px;
+
 }
 
+
 .hero span{
+
   color:#7da9ff;
 
   font-size:10px;
@@ -105,36 +177,52 @@ main{
   font-weight:bold;
 
   letter-spacing:1.2px;
+
 }
+
 
 .hero h2{
-  margin:6px 0;
+
+  margin:
+    6px 0;
 
   font-size:30px;
+
 }
 
+
 .hero p{
+
   margin:0;
 
   color:var(--muted);
 
   font-size:11px;
+
+  line-height:1.6;
+
 }
 
 
-/* LAYOUT */
+
+/* =====================================================
+   LAYOUT
+===================================================== */
 
 .layout{
+
   display:grid;
 
   grid-template-columns:
     330px 1fr;
 
   gap:15px;
+
 }
 
 
 .card{
+
   background:
     rgba(16,23,32,.97);
 
@@ -144,28 +232,37 @@ main{
   border-radius:14px;
 
   padding:16px;
+
 }
 
 
-/* PROVIDER */
+
+/* =====================================================
+   PROVIDER
+===================================================== */
 
 .provider-box{
+
   text-align:center;
 
   padding:16px;
 
-  background:#090e15;
+  background:
+    var(--panel2);
 
   border:
     1px solid #273549;
 
   border-radius:10px;
+
 }
 
 
 .provider-logo{
-  width:120px;
-  height:70px;
+
+  width:140px;
+
+  height:75px;
 
   object-fit:contain;
 
@@ -173,19 +270,37 @@ main{
 
   margin:
     0 auto 8px;
+
 }
 
 
 .provider-name{
-  font-size:13px;
+
+  font-size:14px;
 
   font-weight:bold;
+
 }
 
 
-/* FORM */
+.provider-source{
+
+  color:#758297;
+
+  font-size:9px;
+
+  margin-top:5px;
+
+}
+
+
+
+/* =====================================================
+   SETTINGS
+===================================================== */
 
 label{
+
   display:block;
 
   color:#9eabba;
@@ -196,10 +311,12 @@ label{
 
   margin:
     16px 0 7px;
+
 }
 
 
 select{
+
   width:100%;
 
   height:42px;
@@ -215,20 +332,24 @@ select{
     0 10px;
 
   color:#fff;
+
 }
 
 
 .counts{
+
   display:grid;
 
   grid-template-columns:
     repeat(5,1fr);
 
   gap:6px;
+
 }
 
 
 .count{
+
   height:40px;
 
   border:
@@ -243,19 +364,21 @@ select{
   font-weight:bold;
 
   cursor:pointer;
+
 }
 
 
 .count.active{
-  background:
-    var(--blue);
 
-  border-color:
-    var(--blue);
+  background:var(--blue);
+
+  border-color:var(--blue);
+
 }
 
 
 .generate{
+
   margin-top:18px;
 
   width:100%;
@@ -266,18 +389,26 @@ select{
 
   border-radius:8px;
 
-  background:
-    var(--blue);
+  background:var(--blue);
 
   color:#fff;
 
   font-weight:bold;
 
   cursor:pointer;
+
+}
+
+
+.generate:hover{
+
+  filter:brightness(1.08);
+
 }
 
 
 .status{
+
   margin-top:12px;
 
   color:#8592a5;
@@ -285,12 +416,31 @@ select{
   font-size:10px;
 
   line-height:1.5;
+
 }
 
 
-/* RESULT */
+.status.good{
+
+  color:#55d994;
+
+}
+
+
+.status.error{
+
+  color:#ff7777;
+
+}
+
+
+
+/* =====================================================
+   RESULT
+===================================================== */
 
 .result-title{
+
   display:flex;
 
   justify-content:
@@ -298,27 +448,38 @@ select{
 
   align-items:center;
 
+  gap:10px;
+
   margin-bottom:12px;
+
 }
 
 
 .result-title h3{
+
   margin:0;
 
   font-size:14px;
+
 }
 
 
 .pool{
+
   font-size:10px;
 
   color:#8491a3;
+
 }
 
 
-/* GAME CARDS */
+
+/* =====================================================
+   GAME CARDS
+===================================================== */
 
 .game-grid{
+
   display:grid;
 
   grid-template-columns:
@@ -327,10 +488,12 @@ select{
   gap:12px;
 
   margin-bottom:14px;
+
 }
 
 
 .game-card{
+
   background:#090e15;
 
   border:
@@ -339,10 +502,24 @@ select{
   border-radius:12px;
 
   overflow:hidden;
+
+  transition:.18s;
+
+}
+
+
+.game-card:hover{
+
+  transform:
+    translateY(-2px);
+
+  border-color:#3d4d66;
+
 }
 
 
 .image-wrap{
+
   width:100%;
 
   aspect-ratio:
@@ -357,32 +534,41 @@ select{
   justify-content:center;
 
   padding:8px;
+
 }
 
 
 .game-image{
+
   width:100%;
+
   height:100%;
 
   object-fit:contain;
+
 }
 
 
 .game-info{
-  padding:10px;
+
+  padding:11px;
+
 }
 
 
 .game-number{
+
   color:#748195;
 
   font-size:9px;
 
   margin-bottom:4px;
+
 }
 
 
 .game-name{
+
   font-size:13px;
 
   font-weight:bold;
@@ -390,10 +576,29 @@ select{
   line-height:1.35;
 
   min-height:35px;
+
+}
+
+
+.game-file{
+
+  margin-top:4px;
+
+  color:#657287;
+
+  font-size:8px;
+
+  white-space:nowrap;
+
+  overflow:hidden;
+
+  text-overflow:ellipsis;
+
 }
 
 
 .score{
+
   margin-top:8px;
 
   color:#52df91;
@@ -401,12 +606,17 @@ select{
   font-size:15px;
 
   font-weight:bold;
+
 }
 
 
-/* COPY IMAGE URL BUTTON */
+
+/* =====================================================
+   IMAGE URL
+===================================================== */
 
 .image-url-btn{
+
   width:100%;
 
   height:34px;
@@ -427,19 +637,26 @@ select{
   font-weight:bold;
 
   cursor:pointer;
+
 }
 
 
 .image-url-btn:hover{
+
   background:#1c2939;
 
   color:#fff;
+
 }
 
 
-/* EMPTY */
+
+/* =====================================================
+   EMPTY
+===================================================== */
 
 .empty{
+
   grid-column:
     1 / -1;
 
@@ -451,6 +668,8 @@ select{
 
   align-items:center;
 
+  text-align:center;
+
   color:#667489;
 
   border:
@@ -459,12 +678,33 @@ select{
   border-radius:10px;
 
   font-size:11px;
+
+  padding:20px;
+
 }
 
 
-/* TEXT */
+
+/* =====================================================
+   TEXT PREVIEW
+===================================================== */
+
+.text-label{
+
+  font-size:10px;
+
+  color:#8996aa;
+
+  font-weight:bold;
+
+  margin:
+    8px 0 7px;
+
+}
+
 
 .text-box{
+
   background:#080c12;
 
   border:
@@ -481,21 +721,28 @@ select{
   font-size:14px;
 
   min-height:140px;
+
 }
 
 
-/* ACTIONS */
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
 
 .actions{
+
   display:flex;
 
   gap:8px;
 
   margin-top:10px;
+
 }
 
 
 .actions button{
+
   flex:1;
 
   height:40px;
@@ -509,22 +756,31 @@ select{
   font-weight:bold;
 
   cursor:pointer;
+
 }
 
 
 .again{
+
   background:#343e4d;
+
 }
 
 
 .copy{
+
   background:#248e5b;
+
 }
 
 
-/* NOTE */
+
+/* =====================================================
+   INFO
+===================================================== */
 
 .note{
+
   margin-top:12px;
 
   background:#0a1018;
@@ -540,22 +796,49 @@ select{
 
   font-size:9px;
 
-  line-height:1.5;
+  line-height:1.6;
+
 }
 
 
-/* MOBILE */
+.provider-info{
+
+  margin-top:10px;
+
+  padding-top:10px;
+
+  border-top:
+    1px solid #273246;
+
+  color:#6f7c90;
+
+  font-size:9px;
+
+  line-height:1.6;
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media(max-width:900px){
 
   .layout{
+
     grid-template-columns:
       1fr;
+
   }
 
+
   .game-grid{
+
     grid-template-columns:
       repeat(2,1fr);
+
   }
 
 }
@@ -564,21 +847,38 @@ select{
 @media(max-width:520px){
 
   .game-grid{
+
     grid-template-columns:
       1fr;
+
+  }
+
+
+  .hero h2{
+
+    font-size:25px;
+
   }
 
 }
+
 </style>
+
 </head>
+
 
 
 <body>
 
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header>
 
 <div class="top">
+
 
   <div class="brand">
 
@@ -587,7 +887,7 @@ select{
     </h1>
 
     <p>
-      Game Tips Generator
+      Multi-Provider Game Tips Generator
     </p>
 
   </div>
@@ -601,29 +901,46 @@ select{
 
   </a>
 
+
 </div>
 
 </header>
 
 
 
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
 <main>
 
 
 <section class="hero">
 
+
   <span>
-    GAME LIST GENERATOR
+
+    MULTI-PROVIDER GAME LIST
+
   </span>
 
+
   <h2>
+
     Tips Generator
+
   </h2>
 
+
   <p>
+
     Generate random game cards,
-    image URLs and copy-ready text.
+    copy-ready game lists and
+    direct image URLs from your
+    Game Asset Studio library.
+
   </p>
+
 
 </section>
 
@@ -632,45 +949,57 @@ select{
 <div class="layout">
 
 
-<!-- LEFT SIDE -->
+<!-- =====================================================
+     LEFT SETTINGS
+===================================================== -->
 
 <section class="card">
 
 
   <div class="provider-box">
 
+
     <img
       id="providerLogo"
-
       class="provider-logo"
-
-      src="../assets/game-providers/JILI/LOGO.png"
-
       alt="Provider Logo">
 
 
     <div
       id="providerTitle"
-
       class="provider-name">
 
-      JILI
+      Loading...
 
     </div>
+
+
+    <div
+      id="providerSource"
+      class="provider-source">
+
+      Preparing provider database...
+
+    </div>
+
 
   </div>
 
 
 
   <label>
+
     PROVIDER
+
   </label>
 
 
   <select id="provider">
 
-    <option value="JILI">
-      JILI
+    <option>
+
+      Loading providers...
+
     </option>
 
   </select>
@@ -678,7 +1007,9 @@ select{
 
 
   <label>
+
     NUMBER OF GAMES
+
   </label>
 
 
@@ -687,7 +1018,6 @@ select{
 
     <button
       class="count"
-
       data-count="1">
 
       1
@@ -695,10 +1025,8 @@ select{
     </button>
 
 
-
     <button
       class="count"
-
       data-count="2">
 
       2
@@ -706,10 +1034,8 @@ select{
     </button>
 
 
-
     <button
       class="count active"
-
       data-count="3">
 
       3
@@ -717,10 +1043,8 @@ select{
     </button>
 
 
-
     <button
       class="count"
-
       data-count="4">
 
       4
@@ -728,10 +1052,8 @@ select{
     </button>
 
 
-
     <button
       class="count"
-
       data-count="5">
 
       5
@@ -745,7 +1067,6 @@ select{
 
   <button
     id="generate"
-
     class="generate">
 
     GENERATE GAME LIST
@@ -756,10 +1077,25 @@ select{
 
   <div
     id="status"
-
     class="status">
 
-    Loading JILI database...
+    Loading asset database...
+
+  </div>
+
+
+
+  <div class="provider-info">
+
+    <b>JILI</b><br>
+    Uses mapped names from JILI.json
+    and only active named games.
+
+    <br><br>
+
+    <b>MEGA888 / 918KISS / PUSSY888</b><br>
+    Game names are automatically
+    taken from their existing filenames.
 
   </div>
 
@@ -767,12 +1103,13 @@ select{
 
   <div class="note">
 
-    Percentage is randomly generated
-    from 90.00%–99.98%.
+    The percentage shown is a
+    randomly generated display score
+    between 90.00% and 99.98%.
 
     It is not actual RTP,
-    odds or a prediction
-    of game results.
+    odds, game performance data
+    or a prediction of results.
 
   </div>
 
@@ -781,7 +1118,9 @@ select{
 
 
 
-<!-- RIGHT SIDE -->
+<!-- =====================================================
+     RIGHT RESULT
+===================================================== -->
 
 <section class="card">
 
@@ -790,13 +1129,14 @@ select{
 
 
     <h3>
+
       Generated Games
+
     </h3>
 
 
     <div
       id="pool"
-
       class="pool">
 
       0 games available
@@ -810,13 +1150,12 @@ select{
 
   <div
     id="gameGrid"
-
     class="game-grid">
 
 
     <div class="empty">
 
-      Press GENERATE GAME LIST
+      Loading provider database...
 
     </div>
 
@@ -825,12 +1164,18 @@ select{
 
 
 
+  <div class="text-label">
+
+    COPY-READY TEXT
+
+  </div>
+
+
   <div
     id="textPreview"
-
     class="text-box">
 
-TOP GAME LIST : "JILI"
+TOP GAME LIST
 ➖➖➖➖➖
 
   </div>
@@ -842,7 +1187,6 @@ TOP GAME LIST : "JILI"
 
     <button
       id="again"
-
       class="again">
 
       GENERATE AGAIN
@@ -850,10 +1194,8 @@ TOP GAME LIST : "JILI"
     </button>
 
 
-
     <button
       id="copy"
-
       class="copy">
 
       COPY TEXT
@@ -876,63 +1218,447 @@ TOP GAME LIST : "JILI"
 
 <script>
 
+/* =====================================================
+   GLOBAL DATA
+===================================================== */
 
-let selectedCount = 3;
+let PROVIDERS=[];
 
-let gamePool = [];
+let availableProviders=[];
 
-let currentText = "";
+let currentProvider=null;
 
-let currentProvider =
-  "JILI";
+let gamePool=[];
+
+let selectedCount=3;
+
+let currentText="";
+
+let JILI_MAP=null;
 
 
 
-const provider =
+/* =====================================================
+   TARGET PROVIDERS
+===================================================== */
+
+const TARGET_PROVIDERS=[
+
+  {
+
+    id:"JILI",
+
+    aliases:[
+      "JILI"
+    ]
+
+  },
+
+
+  {
+
+    id:"MEGA888",
+
+    aliases:[
+      "MEGA888",
+      "MEGA 888"
+    ]
+
+  },
+
+
+  {
+
+    id:"918KISS",
+
+    aliases:[
+      "918KISS",
+      "918 KISS",
+      "KISS918"
+    ]
+
+  },
+
+
+  {
+
+    id:"PUSSY888",
+
+    aliases:[
+      "PUSSY888",
+      "PUSSY 888"
+    ]
+
+  }
+
+];
+
+
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const providerEl=
 document.getElementById(
   "provider"
 );
 
 
-const providerLogo =
+const providerLogo=
 document.getElementById(
   "providerLogo"
 );
 
 
-const providerTitle =
+const providerTitle=
 document.getElementById(
   "providerTitle"
 );
 
 
-const status =
+const providerSource=
+document.getElementById(
+  "providerSource"
+);
+
+
+const statusEl=
 document.getElementById(
   "status"
 );
 
 
-const pool =
+const poolEl=
 document.getElementById(
   "pool"
 );
 
 
-const gameGrid =
+const gameGrid=
 document.getElementById(
   "gameGrid"
 );
 
 
-const textPreview =
+const textPreview=
 document.getElementById(
   "textPreview"
 );
 
 
 
+/* =====================================================
+   HELPERS
+===================================================== */
 
-/* COUNT BUTTON */
+function normalize(value){
+
+  return String(
+    value||""
+  )
+
+  .toUpperCase()
+
+  .replace(
+    /[^A-Z0-9]/g,
+    ""
+  );
+
+}
+
+
+
+function escapeHTML(value){
+
+  return String(
+    value||""
+  )
+
+  .replace(
+
+    /[&<>"']/g,
+
+    character=>({
+
+      "&":"&amp;",
+
+      "<":"&lt;",
+
+      ">":"&gt;",
+
+      '"':"&quot;",
+
+      "'":"&#039;"
+
+    }[character])
+
+  );
+
+}
+
+
+
+function basename(path){
+
+  return String(
+    path||""
+  )
+
+  .split("/")
+  .pop();
+
+}
+
+
+
+function niceName(value){
+
+  let text=
+    String(
+      value||""
+    );
+
+
+  try{
+
+    text=
+      decodeURIComponent(
+        text
+      );
+
+  }catch(e){}
+
+
+  text=
+    text
+
+    .replace(
+      /\.[^.]+$/,
+      ""
+    )
+
+    .replace(
+      /[_-]+/g,
+      " "
+    )
+
+    .replace(
+      /\s+/g,
+      " "
+    )
+
+    .trim();
+
+
+  return text;
+
+}
+
+
+
+function repoAssetURL(path){
+
+  let clean=
+    String(
+      path||""
+    )
+
+    .replace(
+      /^\.\.\//,
+      ""
+    )
+
+    .replace(
+      /^\.\//,
+      ""
+    )
+
+    .replace(
+      /^\/+/,
+      ""
+    );
+
+
+  const encoded=
+    clean
+
+    .split("/")
+
+    .map(
+      segment=>
+        encodeURIComponent(
+          segment
+        )
+    )
+
+    .join("/");
+
+
+  return new URL(
+
+    "../"+
+    encoded,
+
+    window.location.href
+
+  ).href;
+
+}
+
+
+
+function gameImageURL(
+  provider,
+  game
+){
+
+  if(
+    game.path
+  ){
+
+    return repoAssetURL(
+      game.path
+    );
+
+  }
+
+
+  const folder=
+
+    provider.folder ||
+    provider.name;
+
+
+  return repoAssetURL(
+
+    `assets/game-providers/${folder}/LIST/${game.file}`
+
+  );
+
+}
+
+
+
+function providerLogoURL(
+  provider
+){
+
+  if(
+    provider.logos &&
+    provider.logos.length
+  ){
+
+    return repoAssetURL(
+      provider.logos[0]
+    );
+
+  }
+
+
+  const folder=
+
+    provider.folder ||
+    provider.name;
+
+
+  return repoAssetURL(
+
+    `assets/game-providers/${folder}/LOGO.png`
+
+  );
+
+}
+
+
+
+/* =====================================================
+   EXACT RANDOM 90.00 - 99.98
+===================================================== */
+
+function randomScore(){
+
+  const integer=
+
+    9000 +
+
+    Math.floor(
+
+      Math.random() *
+      999
+
+    );
+
+
+  return(
+
+    integer /
+    100
+
+  ).toFixed(2);
+
+}
+
+
+
+/* =====================================================
+   SHUFFLE
+===================================================== */
+
+function shuffle(array){
+
+  const copy=[
+    ...array
+  ];
+
+
+  for(
+
+    let i=
+      copy.length-1;
+
+    i>0;
+
+    i--
+
+  ){
+
+    const j=
+
+      Math.floor(
+
+        Math.random()*
+        (i+1)
+
+      );
+
+
+    [
+
+      copy[i],
+
+      copy[j]
+
+    ]=[
+
+      copy[j],
+
+      copy[i]
+
+    ];
+
+  }
+
+
+  return copy;
+
+}
+
+
+
+/* =====================================================
+   COUNT BUTTONS
+===================================================== */
 
 document
 .querySelectorAll(
@@ -942,8 +1668,7 @@ document
   button=>{
 
 
-    button.onclick =
-    ()=>{
+    button.onclick=()=>{
 
 
       document
@@ -951,9 +1676,9 @@ document
         ".count"
       )
       .forEach(
-        btn=>
+        item=>
 
-          btn.classList.remove(
+          item.classList.remove(
             "active"
           )
 
@@ -967,7 +1692,8 @@ document
       );
 
 
-      selectedCount =
+      selectedCount=
+
         Number(
           button.dataset.count
         );
@@ -979,44 +1705,316 @@ document
 
 
 
+/* =====================================================
+   GITHUB INFO
+===================================================== */
 
-/* LOAD PROVIDER DATABASE */
+function repoInfo(){
 
-async function loadProvider(){
+  const host=
 
-
-  currentProvider =
-    provider.value;
-
-
-  providerTitle.textContent =
-    currentProvider;
+    location.hostname
+    .toLowerCase();
 
 
+  const parts=
 
-  providerLogo.src =
-
-    `../assets/game-providers/${encodeURIComponent(currentProvider)}/LOGO.png`;
-
-
-
-  status.textContent =
-
-    `Loading ${currentProvider} database...`;
+    location.pathname
+    .split("/")
+    .filter(Boolean);
 
 
+  if(
 
-  gamePool = [];
+    host.endsWith(
+      ".github.io"
+    ) &&
+
+    parts.length
+
+  ){
+
+    return{
+
+      owner:
+        host.replace(
+          ".github.io",
+          ""
+        ),
+
+      repo:
+        parts[0]
+
+    };
+
+  }
 
 
+  return null;
+
+}
+
+
+
+/* =====================================================
+   LIVE GITHUB FOLDER SCAN
+===================================================== */
+
+async function liveTree(){
+
+  const repo=
+    repoInfo();
+
+
+  if(
+    !repo
+  ){
+
+    return null;
+
+  }
+
+
+  const meta=
+
+    await fetch(
+
+      `https://api.github.com/repos/${repo.owner}/${repo.repo}`
+
+    );
+
+
+  if(
+    !meta.ok
+  ){
+
+    throw new Error(
+      "GitHub repository unavailable"
+    );
+
+  }
+
+
+  const metaData=
+
+    await meta.json();
+
+
+  const branch=
+
+    metaData.default_branch ||
+    "main";
+
+
+  const response=
+
+    await fetch(
+
+      `https://api.github.com/repos/${repo.owner}/${repo.repo}/git/trees/${encodeURIComponent(branch)}?recursive=1`
+
+    );
+
+
+  if(
+    !response.ok
+  ){
+
+    throw new Error(
+      "GitHub asset scan failed"
+    );
+
+  }
+
+
+  const data=
+
+    await response.json();
+
+
+  const map=
+    new Map();
+
+
+
+  for(
+    const item of
+    data.tree||[]
+  ){
+
+
+    if(
+
+      item.type!=="blob" ||
+
+      !item.path.startsWith(
+        "assets/game-providers/"
+      )
+
+    ){
+
+      continue;
+
+    }
+
+
+    const relative=
+
+      item.path.slice(
+
+        "assets/game-providers/"
+        .length
+
+      );
+
+
+    const parts=
+
+      relative.split("/");
+
+
+    if(
+      parts.length<2
+    ){
+
+      continue;
+
+    }
+
+
+    const providerName=
+
+      parts[0];
+
+
+
+    if(
+      !map.has(
+        providerName
+      )
+    ){
+
+      map.set(
+
+        providerName,
+
+        {
+
+          name:
+            providerName,
+
+          folder:
+            providerName,
+
+          logos:[],
+
+          games:[]
+
+        }
+
+      );
+
+    }
+
+
+
+    const provider=
+
+      map.get(
+        providerName
+      );
+
+
+    const lower=
+
+      item.path
+      .toLowerCase();
+
+
+
+    /* PROVIDER LOGOS */
+
+    if(
+
+      parts.length===2 &&
+
+      /\.(png|jpg|jpeg|webp|gif|svg|avif)$/
+      .test(lower)
+
+    ){
+
+      provider.logos.push(
+        item.path
+      );
+
+    }
+
+
+
+    /* GAME IMAGES */
+
+    else if(
+
+      parts[1]==="LIST" &&
+
+      parts.length>=3 &&
+
+      /\.(png|jpg|jpeg|webp|gif|svg|avif)$/
+      .test(lower)
+
+    ){
+
+      const relativeFile=
+
+        parts
+        .slice(2)
+        .join("/");
+
+
+      provider.games.push({
+
+        name:
+          relativeFile.replace(
+            /\.[^.]+$/,
+            ""
+          ),
+
+        file:
+          basename(
+            relativeFile
+          ),
+
+        path:
+          item.path
+
+      });
+
+    }
+
+  }
+
+
+
+  return[
+    ...map.values()
+  ];
+
+}
+
+
+
+/* =====================================================
+   LOAD MANIFEST
+===================================================== */
+
+async function loadManifest(){
 
   try{
 
+    const response=
 
-    const response =
       await fetch(
 
-        `../data/game-names/${encodeURIComponent(currentProvider)}.json`,
+        "../data/manifest.json",
 
         {
           cache:"no-store"
@@ -1025,198 +2023,611 @@ async function loadProvider(){
       );
 
 
+    if(
+      !response.ok
+    ){
+
+      return[];
+
+    }
+
+
+    const data=
+
+      await response.json();
+
+
+    return(
+
+      Array.isArray(
+        data.providers
+      )
+
+      ?data.providers
+
+      :[]
+
+    );
+
+
+  }catch(e){
+
+    return[];
+
+  }
+
+}
+
+
+
+/* =====================================================
+   FIND TARGET PROVIDER
+===================================================== */
+
+function findProvider(
+  target
+){
+
+  const aliases=
+
+    target.aliases.map(
+      normalize
+    );
+
+
+  return PROVIDERS.find(
+    provider=>{
+
+
+      const name=
+
+        normalize(
+          provider.name
+        );
+
+
+      return aliases.some(
+        alias=>
+
+          name===alias ||
+
+          name.includes(
+            alias
+          ) ||
+
+          alias.includes(
+            name
+          )
+
+      );
+
+    }
+  );
+
+}
+
+
+
+/* =====================================================
+   LOAD JILI MAP
+===================================================== */
+
+async function loadJILIMap(){
+
+  if(
+    JILI_MAP
+  ){
+
+    return JILI_MAP;
+
+  }
+
+
+  try{
+
+    const response=
+
+      await fetch(
+
+        "../data/game-names/JILI.json",
+
+        {
+          cache:"no-store"
+        }
+
+      );
+
 
     if(
       !response.ok
     ){
 
-
       throw new Error(
-
-        currentProvider +
-        ".json not found"
-
+        "JILI.json not found"
       );
 
     }
 
 
+    const data=
 
-    const data =
       await response.json();
 
 
+    JILI_MAP=
 
-    gamePool =
-
-      Object.entries(
-        data.games || {}
-      )
+      data.games ||
+      {};
 
 
-      .map(
-        ([filename,game])=>({
+    return JILI_MAP;
 
 
-          ...game,
+  }catch(error){
+
+    console.error(
+      error
+    );
 
 
-          filename:
-            filename
+    JILI_MAP={};
 
 
-        })
-      )
+    return JILI_MAP;
 
+  }
 
-      .filter(
-        game=>
-
-          game &&
-
-          game.active === true &&
-
-          typeof game.name ===
-            "string" &&
-
-          game.name.trim()
-
-      );
+}
 
 
 
-    status.textContent =
+/* =====================================================
+   LOAD ALL PROVIDERS
+===================================================== */
 
-      `${currentProvider} database loaded successfully ✓`;
+async function loadProviders(){
+
+
+  statusEl.className=
+    "status";
+
+
+  statusEl.textContent=
+    "Loading provider database...";
 
 
 
-    pool.textContent =
+  /* FIRST: MANIFEST */
 
-      `${gamePool.length} active named games`;
+  PROVIDERS=
 
+    await loadManifest();
+
+
+
+  /* SECOND: LIVE GITHUB SCAN */
+
+  try{
+
+
+    const live=
+
+      await liveTree();
+
+
+    if(
+      live &&
+      live.length
+    ){
+
+      PROVIDERS=
+        live;
+
+    }
+
+
+  }catch(error){
+
+    console.warn(
+      error
+    );
 
   }
 
 
-  catch(error){
 
-
-    status.textContent =
-
-      "ERROR: " +
-      error.message;
+  availableProviders=[];
 
 
 
-    pool.textContent =
+  for(
+    const target of
+    TARGET_PROVIDERS
+  ){
 
-      "0 games";
+
+    const provider=
+
+      findProvider(
+        target
+      );
+
+
+    if(
+      provider
+    ){
+
+
+      availableProviders.push({
+
+        ...provider,
+
+        tipLabel:
+          target.id
+
+      });
+
+
+    }
+
+  }
 
 
 
-    gameGrid.innerHTML = `
+  if(
+    !availableProviders.length
+  ){
+
+
+    statusEl.className=
+      "status error";
+
+
+    statusEl.textContent=
+      "No target providers found.";
+
+
+    gameGrid.innerHTML=`
 
       <div class="empty">
 
-        Cannot load database.
+        Cannot find JILI,
+        MEGA888, 918KISS
+        or PUSSY888 in
+        assets/game-providers/.
 
       </div>
 
     `;
 
+
+    return;
+
   }
 
+
+
+  providerEl.innerHTML=
+
+    availableProviders
+
+    .map(
+      provider=>`
+
+        <option
+          value="${escapeHTML(provider.name)}">
+
+          ${escapeHTML(provider.tipLabel)}
+
+        </option>
+
+      `
+    )
+
+    .join("");
+
+
+
+  providerEl.onchange=
+
+    loadSelectedProvider;
+
+
+
+  statusEl.className=
+    "status good";
+
+
+  statusEl.textContent=
+
+    `${availableProviders.length} providers ready ✓`;
+
+
+
+  await loadSelectedProvider();
+
 }
 
 
 
+/* =====================================================
+   LOAD SELECTED PROVIDER
+===================================================== */
 
-/* RANDOM SCORE */
-
-function randomScore(){
-
-
-  const value =
-
-    90 +
-
-    Math.random() *
-    9.98;
+async function loadSelectedProvider(){
 
 
-
-  return value.toFixed(2);
-
-}
+  currentText="";
 
 
+  currentProvider=
+
+    availableProviders.find(
+      provider=>
+
+        provider.name===
+        providerEl.value
+
+    );
 
 
-/* SHUFFLE */
+  if(
+    !currentProvider
+  ){
 
-function shuffle(array){
+    return;
 
-
-  const copy =
-    [...array];
+  }
 
 
 
-  for(
+  providerTitle.textContent=
 
-    let i =
-      copy.length - 1;
+    currentProvider.tipLabel;
 
-    i > 0;
 
-    i--
 
+  providerLogo.style.display=
+    "block";
+
+
+  providerLogo.src=
+
+    providerLogoURL(
+      currentProvider
+    );
+
+
+
+  providerLogo.onerror=()=>{
+
+    providerLogo.style.display=
+      "none";
+
+  };
+
+
+
+  gameGrid.innerHTML=`
+
+    <div class="empty">
+
+      Loading
+      ${escapeHTML(currentProvider.tipLabel)}
+      games...
+
+    </div>
+
+  `;
+
+
+  gamePool=[];
+
+
+
+  /* ===================================================
+     JILI
+  =================================================== */
+
+  if(
+    currentProvider.tipLabel===
+    "JILI"
   ){
 
 
-    const j =
+    providerSource.textContent=
 
-      Math.floor(
-
-        Math.random() *
-        (i + 1)
-
-      );
+      "Game names: JILI.json mapping";
 
 
+    const map=
 
-    [
+      await loadJILIMap();
 
-      copy[i],
 
-      copy[j]
 
-    ] = [
+    gamePool=
 
-      copy[j],
+      (currentProvider.games||[])
 
-      copy[i]
+      .map(
+        game=>{
 
-    ];
+
+          const file=
+
+            basename(
+              game.file ||
+              game.path
+            );
+
+
+          const record=
+
+            map[file];
+
+
+          if(
+
+            !record ||
+
+            record.active!==true ||
+
+            typeof record.name!==
+              "string" ||
+
+            !record.name.trim()
+
+          ){
+
+            return null;
+
+          }
+
+
+          return{
+
+            ...game,
+
+            file:file,
+
+            displayName:
+              record.name.trim()
+
+          };
+
+        }
+      )
+
+      .filter(Boolean);
+
 
   }
 
 
 
-  return copy;
+  /* ===================================================
+     MEGA888 / 918KISS / PUSSY888
+  =================================================== */
+
+  else{
+
+
+    providerSource.textContent=
+
+      "Game names: existing filenames";
+
+
+    gamePool=
+
+      (currentProvider.games||[])
+
+      .map(
+        game=>{
+
+
+          const file=
+
+            basename(
+
+              game.file ||
+              game.path
+
+            );
+
+
+          const name=
+
+            niceName(
+
+              game.name ||
+              file
+
+            );
+
+
+          if(
+            !name
+          ){
+
+            return null;
+
+          }
+
+
+          return{
+
+            ...game,
+
+            file:file,
+
+            displayName:
+              name
+
+          };
+
+        }
+      )
+
+      .filter(Boolean);
+
+  }
+
+
+
+  poolEl.textContent=
+
+    `${gamePool.length.toLocaleString()} games available`;
+
+
+
+  statusEl.className=
+    "status good";
+
+
+  statusEl.textContent=
+
+    `${currentProvider.tipLabel} database loaded ✓`;
+
+
+
+  gameGrid.innerHTML=`
+
+    <div class="empty">
+
+      ${escapeHTML(
+        currentProvider.tipLabel
+      )}
+      ready.
+
+      <br><br>
+
+      Press GENERATE GAME LIST.
+
+    </div>
+
+  `;
+
+
+
+  textPreview.textContent=
+
+`TOP GAME LIST : "${currentProvider.tipLabel}"
+➖➖➖➖➖`;
 
 }
 
 
 
-
-/* GENERATE */
+/* =====================================================
+   GENERATE
+===================================================== */
 
 function generate(){
 
 
   if(
+    !currentProvider ||
     !gamePool.length
   ){
 
@@ -1232,7 +2643,7 @@ function generate(){
 
 
 
-  const count =
+  const count=
 
     Math.min(
 
@@ -1244,7 +2655,7 @@ function generate(){
 
 
 
-  const selected =
+  const selected=
 
     shuffle(
       gamePool
@@ -1257,15 +2668,15 @@ function generate(){
 
 
 
-  gameGrid.innerHTML =
+  gameGrid.innerHTML=
     "";
 
 
 
-  const textLines = [
+  const textLines=[
 
 
-    `TOP GAME LIST : "${currentProvider}"`,
+    `TOP GAME LIST : "${currentProvider.tipLabel}"`,
 
 
     "➖➖➖➖➖"
@@ -1275,54 +2686,42 @@ function generate(){
 
 
 
-
   selected.forEach(
-
     (game,index)=>{
 
 
-      const percentage =
+      const percentage=
+
         randomScore();
 
 
 
-      /* LOCAL IMAGE PATH */
+      const imageURL=
 
-      const imagePath =
+        gameImageURL(
 
-        `../assets/game-providers/${encodeURIComponent(currentProvider)}/LIST/${encodeURIComponent(game.filename)}`;
+          currentProvider,
 
+          game
 
-
-      /* FULL PUBLIC IMAGE URL */
-
-      const imageURL =
-
-        new URL(
-
-          imagePath,
-
-          window.location.href
-
-        ).href;
+        );
 
 
 
-      const card =
+      const card=
 
         document.createElement(
           "article"
         );
 
 
+      card.className=
 
-      card.className =
         "game-card";
 
 
 
-      card.innerHTML = `
-
+      card.innerHTML=`
 
         <div class="image-wrap">
 
@@ -1331,9 +2730,9 @@ function generate(){
 
             class="game-image"
 
-            src="${imagePath}"
+            src="${escapeHTML(imageURL)}"
 
-            alt="${escapeHTML(game.name)}"
+            alt="${escapeHTML(game.displayName)}"
 
             loading="lazy"
 
@@ -1344,13 +2743,12 @@ function generate(){
 
 
 
-
         <div class="game-info">
 
 
           <div class="game-number">
 
-            GAME ${index + 1}
+            GAME ${index+1}
 
           </div>
 
@@ -1358,7 +2756,19 @@ function generate(){
 
           <div class="game-name">
 
-            ${escapeHTML(game.name)}
+            ${escapeHTML(
+              game.displayName
+            )}
+
+          </div>
+
+
+
+          <div class="game-file">
+
+            ${escapeHTML(
+              game.file
+            )}
 
           </div>
 
@@ -1385,7 +2795,6 @@ function generate(){
 
         </div>
 
-
       `;
 
 
@@ -1398,7 +2807,7 @@ function generate(){
 
       /* COPY IMAGE URL */
 
-      const urlButton =
+      const urlButton=
 
         card.querySelector(
           ".image-url-btn"
@@ -1406,108 +2815,50 @@ function generate(){
 
 
 
-      urlButton.onclick =
-      async ()=>{
+      urlButton.onclick=
+
+      async()=>{
 
 
-        const url =
-          urlButton.dataset.url;
+        await copyToClipboard(
+          imageURL
+        );
 
 
+        urlButton.textContent=
 
-        try{
-
-
-          await navigator
-          .clipboard
-          .writeText(
-            url
-          );
+          "URL COPIED ✓";
 
 
+        setTimeout(
+          ()=>{
 
-          urlButton.textContent =
+            urlButton.textContent=
 
-            "URL COPIED ✓";
+              "COPY IMAGE URL";
 
+          },
 
-
-          setTimeout(
-
-            ()=>{
-
-              urlButton.textContent =
-
-                "COPY IMAGE URL";
-
-            },
-
-            1200
-
-          );
-
-
-        }
-
-
-        catch(error){
-
-
-          const temp =
-
-            document.createElement(
-              "textarea"
-            );
-
-
-
-          temp.value =
-            url;
-
-
-
-          document.body
-          .appendChild(
-            temp
-          );
-
-
-
-          temp.select();
-
-
-
-          document.execCommand(
-            "copy"
-          );
-
-
-
-          temp.remove();
-
-
-        }
+          1200
+        );
 
       };
 
 
 
-      /* COPY TEXT LIST DATA */
-
       textLines.push(
 
-        `${index + 1}) ${game.name} 🟢${percentage}%`
+        `${index+1}) ${game.displayName} 🟢${percentage}%`
 
       );
 
 
     }
-
   );
 
 
 
-  currentText =
+  currentText=
 
     textLines.join(
       "\n"
@@ -1515,7 +2866,7 @@ function generate(){
 
 
 
-  textPreview.textContent =
+  textPreview.textContent=
 
     currentText;
 
@@ -1523,8 +2874,70 @@ function generate(){
 
 
 
+/* =====================================================
+   COPY HELPER
+===================================================== */
 
-/* COPY FULL TEXT */
+async function copyToClipboard(
+  text
+){
+
+
+  try{
+
+
+    await navigator
+      .clipboard
+      .writeText(
+        text
+      );
+
+
+    return true;
+
+
+  }catch(error){
+
+
+    const temp=
+
+      document.createElement(
+        "textarea"
+      );
+
+
+    temp.value=
+      text;
+
+
+    document.body
+      .appendChild(
+        temp
+      );
+
+
+    temp.select();
+
+
+    document.execCommand(
+      "copy"
+    );
+
+
+    temp.remove();
+
+
+    return true;
+
+  }
+
+}
+
+
+
+/* =====================================================
+   COPY TEXT
+===================================================== */
 
 async function copyText(){
 
@@ -1536,172 +2949,63 @@ async function copyText(){
 
     generate();
 
-
   }
-
 
 
   if(
     !currentText
   ){
 
-
     return;
 
-
   }
 
 
 
-  try{
-
-
-    await navigator
-    .clipboard
-    .writeText(
-      currentText
-    );
+  await copyToClipboard(
+    currentText
+  );
 
 
 
-    const button =
+  const button=
 
-      document.getElementById(
-        "copy"
-      );
-
-
-
-    button.textContent =
-
-      "COPIED ✓";
-
-
-
-    setTimeout(
-
-      ()=>{
-
-
-        button.textContent =
-
-          "COPY TEXT";
-
-
-      },
-
-      1200
-
-    );
-
-
-  }
-
-
-  catch(error){
-
-
-    const temp =
-
-      document.createElement(
-        "textarea"
-      );
-
-
-
-    temp.value =
-      currentText;
-
-
-
-    document.body
-    .appendChild(
-      temp
-    );
-
-
-
-    temp.select();
-
-
-
-    document.execCommand(
+    document.getElementById(
       "copy"
     );
 
 
+  button.textContent=
 
-    temp.remove();
-
-
-  }
-
-}
+    "COPIED ✓";
 
 
+  setTimeout(
+    ()=>{
 
+      button.textContent=
 
-/* ESCAPE HTML */
+        "COPY TEXT";
 
-function escapeHTML(value){
+    },
 
-
-  return String(
-    value || ""
-  )
-
-  .replace(
-
-    /[&<>"']/g,
-
-    character=>({
-
-
-      "&":"&amp;",
-
-
-      "<":"&lt;",
-
-
-      ">":"&gt;",
-
-
-      '"':"&quot;",
-
-
-      "'":"&#039;"
-
-
-    }[character])
-
+    1200
   );
 
 }
 
 
 
-
-/* PROVIDER CHANGE */
-
-provider.onchange =
-async ()=>{
-
-
-  await loadProvider();
-
-
-};
-
-
-
-
-/* BUTTONS */
+/* =====================================================
+   BUTTON EVENTS
+===================================================== */
 
 document
 .getElementById(
   "generate"
 )
-.onclick =
+.onclick=
+
 generate;
 
 
@@ -1710,7 +3014,8 @@ document
 .getElementById(
   "again"
 )
-.onclick =
+.onclick=
+
 generate;
 
 
@@ -1719,19 +3024,21 @@ document
 .getElementById(
   "copy"
 )
-.onclick =
+.onclick=
+
 copyText;
 
 
 
+/* =====================================================
+   START
+===================================================== */
 
-/* START */
-
-loadProvider();
-
+loadProviders();
 
 </script>
 
 
 </body>
+
 </html>
