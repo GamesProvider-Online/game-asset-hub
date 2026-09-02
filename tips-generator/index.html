@@ -8,89 +8,139 @@
 <style>
 *{box-sizing:border-box}
 
+:root{
+  --bg:#070a0f;
+  --panel:#101720;
+  --panel2:#141d29;
+  --line:#29364a;
+  --text:#ffffff;
+  --muted:#8996a9;
+  --blue:#2e76f4;
+  --green:#35d481;
+}
+
 body{
   margin:0;
   min-height:100vh;
-  background:#080b10;
-  color:#fff;
+  background:
+    radial-gradient(circle at top,#172235 0,#090d14 38%,#070a0f 100%);
+  color:var(--text);
   font-family:Arial,Helvetica,sans-serif;
 }
 
 header{
-  border-bottom:1px solid #263142;
-  background:#0d1219;
+  background:rgba(9,13,19,.96);
+  border-bottom:1px solid var(--line);
 }
 
 .top{
-  max-width:1000px;
+  max-width:1200px;
   margin:auto;
-  padding:16px 20px;
+  padding:15px 20px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 }
 
-h1{
+.brand h1{
   margin:0;
-  font-size:20px;
+  font-size:19px;
 }
 
-.sub{
-  color:#8995a8;
-  font-size:11px;
-  margin-top:4px;
+.brand p{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:10px;
 }
 
 .home{
   color:#fff;
   text-decoration:none;
-  border:1px solid #39465a;
+  border:1px solid #35435a;
   border-radius:7px;
   padding:9px 12px;
   font-size:11px;
+  font-weight:bold;
 }
 
 main{
-  max-width:1000px;
+  max-width:1200px;
   margin:auto;
-  padding:30px 20px;
+  padding:26px 20px 50px;
 }
 
-.grid{
+.hero{
+  margin-bottom:16px;
+}
+
+.hero span{
+  color:#7da9ff;
+  font-size:10px;
+  font-weight:bold;
+  letter-spacing:1.2px;
+}
+
+.hero h2{
+  margin:6px 0;
+  font-size:30px;
+}
+
+.hero p{
+  margin:0;
+  color:var(--muted);
+  font-size:11px;
+}
+
+.layout{
   display:grid;
-  grid-template-columns:340px 1fr;
-  gap:16px;
+  grid-template-columns:330px 1fr;
+  gap:15px;
 }
 
 .card{
-  background:#111822;
-  border:1px solid #283548;
+  background:rgba(16,23,32,.97);
+  border:1px solid var(--line);
   border-radius:14px;
-  padding:18px;
+  padding:16px;
 }
 
-.card h2{
-  font-size:15px;
-  margin:0 0 18px;
+.provider-box{
+  text-align:center;
+  padding:16px;
+  background:#090e15;
+  border:1px solid #273549;
+  border-radius:10px;
+}
+
+.provider-logo{
+  width:120px;
+  height:70px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 8px;
+}
+
+.provider-name{
+  font-size:13px;
+  font-weight:bold;
 }
 
 label{
   display:block;
-  color:#9ca8ba;
+  color:#9eabba;
   font-size:10px;
   font-weight:bold;
-  margin-bottom:7px;
-  margin-top:15px;
+  margin:16px 0 7px;
 }
 
 select{
   width:100%;
   height:42px;
   background:#090d13;
-  border:1px solid #35445a;
-  color:#fff;
+  border:1px solid #34435a;
   border-radius:7px;
   padding:0 10px;
+  color:#fff;
 }
 
 .counts{
@@ -101,8 +151,8 @@ select{
 
 .count{
   height:40px;
-  background:#0b1119;
   border:1px solid #344158;
+  background:#0b1017;
   color:#fff;
   border-radius:7px;
   font-weight:bold;
@@ -110,53 +160,132 @@ select{
 }
 
 .count.active{
-  background:#2d72ef;
-  border-color:#2d72ef;
+  background:var(--blue);
+  border-color:var(--blue);
 }
 
 .generate{
+  margin-top:18px;
   width:100%;
   height:45px;
-  margin-top:18px;
   border:0;
   border-radius:8px;
-  background:#2d72ef;
+  background:var(--blue);
   color:#fff;
   font-weight:bold;
   cursor:pointer;
 }
 
 .status{
-  margin-top:13px;
+  margin-top:12px;
+  color:#8592a5;
   font-size:10px;
-  color:#8793a5;
   line-height:1.5;
 }
 
-.preview{
-  min-height:300px;
-  background:#080c12;
-  border:1px solid #293649;
-  border-radius:10px;
-  padding:20px;
-  white-space:pre-wrap;
-  font-size:16px;
-  line-height:1.9;
+.result-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+.result-title h3{
+  margin:0;
+  font-size:14px;
+}
+
+.pool{
+  font-size:10px;
+  color:#8491a3;
+}
+
+.game-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-bottom:14px;
+}
+
+.game-card{
+  background:#090e15;
+  border:1px solid #29364a;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.image-wrap{
+  width:100%;
+  aspect-ratio:1.35/1;
+  background:#05070a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px;
+}
+
+.game-image{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.game-info{
+  padding:10px;
+}
+
+.game-number{
+  color:#748195;
+  font-size:9px;
+  margin-bottom:4px;
+}
+
+.game-name{
+  font-size:13px;
+  font-weight:bold;
+  line-height:1.35;
+  min-height:35px;
+}
+
+.score{
+  margin-top:8px;
+  color:#52df91;
+  font-size:15px;
+  font-weight:bold;
 }
 
 .empty{
-  color:#667387;
+  grid-column:1/-1;
+  min-height:240px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#667489;
+  border:1px dashed #2a384c;
+  border-radius:10px;
+  font-size:11px;
+}
+
+.text-box{
+  background:#080c12;
+  border:1px solid #29364a;
+  border-radius:10px;
+  padding:16px;
+  white-space:pre-wrap;
+  line-height:1.8;
+  font-size:14px;
+  min-height:140px;
 }
 
 .actions{
   display:flex;
   gap:8px;
-  margin-top:12px;
+  margin-top:10px;
 }
 
 .actions button{
   flex:1;
-  height:42px;
+  height:40px;
   border:0;
   border-radius:7px;
   color:#fff;
@@ -165,32 +294,36 @@ select{
 }
 
 .again{
-  background:#343e4e;
+  background:#343e4d;
 }
 
 .copy{
-  background:#238d59;
-}
-
-.pool{
-  color:#8693a5;
-  font-size:10px;
-  margin-bottom:10px;
+  background:#248e5b;
 }
 
 .note{
-  background:#0c121b;
-  border:1px solid #273448;
-  padding:11px;
+  margin-top:12px;
+  background:#0a1018;
+  border:1px solid #253246;
   border-radius:8px;
-  color:#7f8ca0;
+  padding:10px;
+  color:#7e8a9c;
   font-size:9px;
-  margin-top:13px;
   line-height:1.5;
 }
 
-@media(max-width:760px){
-  .grid{
+@media(max-width:900px){
+  .layout{
+    grid-template-columns:1fr;
+  }
+
+  .game-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:520px){
+  .game-grid{
     grid-template-columns:1fr;
   }
 }
@@ -202,14 +335,12 @@ select{
 <header>
   <div class="top">
 
-    <div>
-      <h1>Game Tips Generator</h1>
-      <div class="sub">
-        Random game list from Game Asset Studio
-      </div>
+    <div class="brand">
+      <h1>Game Asset Studio</h1>
+      <p>Game Tips Generator</p>
     </div>
 
-    <a class="home" href="../">
+    <a href="../" class="home">
       ← HOME
     </a>
 
@@ -219,78 +350,171 @@ select{
 
 <main>
 
-<div class="grid">
+<section class="hero">
 
-  <section class="card">
+  <span>GAME LIST GENERATOR</span>
 
-    <h2>Generator Settings</h2>
+  <h2>
+    Tips Generator
+  </h2>
 
-    <label>PROVIDER</label>
+  <p>
+    Generate random game cards and copy-ready text.
+  </p>
 
-    <select id="provider">
-      <option value="JILI">JILI</option>
-    </select>
+</section>
 
 
-    <label>NUMBER OF GAMES</label>
+<div class="layout">
 
-    <div class="counts">
+<!-- LEFT -->
+<section class="card">
 
-      <button class="count" data-count="1">1</button>
-      <button class="count" data-count="2">2</button>
-      <button class="count active" data-count="3">3</button>
-      <button class="count" data-count="4">4</button>
-      <button class="count" data-count="5">5</button>
+  <div class="provider-box">
 
+    <img
+      id="providerLogo"
+      class="provider-logo"
+      src="../assets/game-providers/JILI/LOGO.png"
+      alt="Provider Logo">
+
+    <div
+      id="providerTitle"
+      class="provider-name">
+      JILI
     </div>
 
+  </div>
 
-    <button class="generate" id="generate">
-      GENERATE GAME LIST
+
+  <label>
+    PROVIDER
+  </label>
+
+  <select id="provider">
+    <option value="JILI">
+      JILI
+    </option>
+  </select>
+
+
+  <label>
+    NUMBER OF GAMES
+  </label>
+
+  <div class="counts">
+
+    <button
+      class="count"
+      data-count="1">
+      1
     </button>
 
+    <button
+      class="count"
+      data-count="2">
+      2
+    </button>
 
-    <div class="status" id="status">
-      Loading JILI database...
-    </div>
+    <button
+      class="count active"
+      data-count="3">
+      3
+    </button>
+
+    <button
+      class="count"
+      data-count="4">
+      4
+    </button>
+
+    <button
+      class="count"
+      data-count="5">
+      5
+    </button>
+
+  </div>
 
 
-    <div class="note">
-      Percentage shown is a randomly generated display score
-      between 90.00% and 99.98%.
-      It is not actual RTP, odds or a prediction of game results.
-    </div>
-
-  </section>
+  <button
+    id="generate"
+    class="generate">
+    GENERATE GAME LIST
+  </button>
 
 
-  <section class="card">
+  <div
+    id="status"
+    class="status">
+    Loading JILI database...
+  </div>
 
-    <h2>Generated Result</h2>
 
-    <div class="pool" id="pool">
+  <div class="note">
+    Percentage is a random display score from
+    90.00%–99.98%. It is not actual RTP,
+    odds or a prediction of results.
+  </div>
+
+</section>
+
+
+
+<!-- RIGHT -->
+<section class="card">
+
+  <div class="result-title">
+
+    <h3>
+      Generated Games
+    </h3>
+
+    <div
+      id="pool"
+      class="pool">
       0 games available
     </div>
 
+  </div>
 
-    <div id="preview" class="preview empty">
-Press GENERATE GAME LIST.
+
+  <div
+    id="gameGrid"
+    class="game-grid">
+
+    <div class="empty">
+      Press GENERATE GAME LIST
     </div>
 
+  </div>
 
-    <div class="actions">
 
-      <button class="again" id="again">
-        GENERATE AGAIN
-      </button>
+  <div
+    id="textPreview"
+    class="text-box">
+TOP GAME LIST : "JILI"
+➖➖➖➖➖
+  </div>
 
-      <button class="copy" id="copy">
-        COPY TEXT
-      </button>
 
-    </div>
+  <div class="actions">
 
-  </section>
+    <button
+      id="again"
+      class="again">
+      GENERATE AGAIN
+    </button>
+
+    <button
+      id="copy"
+      class="copy">
+      COPY TEXT
+    </button>
+
+  </div>
+
+</section>
 
 </div>
 
@@ -299,19 +523,50 @@ Press GENERATE GAME LIST.
 
 <script>
 
-let gamePool = [];
 let selectedCount = 3;
+
+let gamePool = [];
+
 let currentText = "";
 
+let currentProvider = "JILI";
 
-const preview =
-document.getElementById("preview");
+
+const provider =
+document.getElementById(
+  "provider"
+);
+
+const providerLogo =
+document.getElementById(
+  "providerLogo"
+);
+
+const providerTitle =
+document.getElementById(
+  "providerTitle"
+);
 
 const status =
-document.getElementById("status");
+document.getElementById(
+  "status"
+);
 
 const pool =
-document.getElementById("pool");
+document.getElementById(
+  "pool"
+);
+
+const gameGrid =
+document.getElementById(
+  "gameGrid"
+);
+
+const textPreview =
+document.getElementById(
+  "textPreview"
+);
+
 
 
 document
@@ -323,34 +578,68 @@ document
     document
     .querySelectorAll(".count")
     .forEach(btn=>
-      btn.classList.remove("active")
+      btn.classList.remove(
+        "active"
+      )
     );
 
-    button.classList.add("active");
+
+    button.classList.add(
+      "active"
+    );
+
 
     selectedCount =
-      Number(button.dataset.count);
+      Number(
+        button.dataset.count
+      );
 
   };
 
 });
 
 
-async function loadJILI(){
+
+async function loadProvider(){
+
+  currentProvider =
+    provider.value;
+
+
+  providerTitle.textContent =
+    currentProvider;
+
+
+  providerLogo.src =
+    `../assets/game-providers/${encodeURIComponent(currentProvider)}/LOGO.png`;
+
+
+  status.textContent =
+    `Loading ${currentProvider} database...`;
+
+
+  gamePool = [];
+
 
   try{
 
     const response =
       await fetch(
-        "../data/game-names/JILI.json",
-        {cache:"no-store"}
+
+        `../data/game-names/${encodeURIComponent(currentProvider)}.json`,
+
+        {
+          cache:"no-store"
+        }
+
       );
 
 
     if(!response.ok){
 
       throw new Error(
-        "JILI.json not found"
+        currentProvider +
+        ".json not found"
       );
 
     }
@@ -361,91 +650,123 @@ async function loadJILI(){
 
 
     gamePool =
-      Object.values(data.games || {})
+      Object.entries(
+        data.games || {}
+      )
+
+      .map(
+        ([filename,game])=>({
+
+          ...game,
+
+          filename:filename
+
+        })
+      )
+
       .filter(game=>
 
         game &&
         game.active === true &&
-        typeof game.name === "string" &&
+        typeof game.name ===
+          "string" &&
         game.name.trim()
 
       );
 
 
-    pool.textContent =
-      gamePool.length +
-      " active named games available";
-
-
     status.textContent =
-      "JILI database loaded successfully ✓";
+      `${currentProvider} database loaded successfully ✓`;
+
+
+    pool.textContent =
+      `${gamePool.length} active named games`;
 
 
   }catch(error){
 
     status.textContent =
-      "ERROR: " + error.message;
+      "ERROR: " +
+      error.message;
 
-    preview.textContent =
-      "Cannot load JILI database.";
+
+    pool.textContent =
+      "0 games";
+
+
+    gameGrid.innerHTML =
+      `<div class="empty">
+        Cannot load database.
+      </div>`;
 
   }
 
 }
+
 
 
 function randomScore(){
 
   const value =
     90 +
-    Math.random() * 9.98;
+    Math.random() *
+    9.98;
+
 
   return value.toFixed(2);
 
 }
 
 
+
 function shuffle(array){
 
-  const result =
+  const copy =
     [...array];
 
 
   for(
-    let i=result.length-1;
-    i>0;
+    let i =
+      copy.length - 1;
+
+    i > 0;
+
     i--
   ){
 
     const j =
       Math.floor(
         Math.random() *
-        (i+1)
+        (i + 1)
       );
 
+
     [
-      result[i],
-      result[j]
+      copy[i],
+      copy[j]
     ] =
     [
-      result[j],
-      result[i]
+      copy[j],
+      copy[i]
     ];
 
   }
 
 
-  return result;
+  return copy;
 
 }
 
 
+
 function generate(){
 
-  if(!gamePool.length){
+  if(
+    !gamePool.length
+  ){
 
     alert(
-      "Game database not loaded."
+      "Game database not ready."
     );
 
     return;
@@ -461,52 +782,122 @@ function generate(){
 
 
   const selected =
-    shuffle(gamePool)
-    .slice(0,count);
+    shuffle(
+      gamePool
+    ).slice(
+      0,
+      count
+    );
 
 
-  const provider =
-    document
-    .getElementById("provider")
-    .value;
+  gameGrid.innerHTML = "";
 
 
-  const lines = [
+  const textLines = [
 
-    `TOP GAME LIST : "${provider}"`,
+    `TOP GAME LIST : "${currentProvider}"`,
 
-    "➖➖➖➖➖",
-
-    ...selected.map(
-      (game,index)=>
-        `${index+1}) ${game.name} 🟢${randomScore()}%`
-    )
+    "➖➖➖➖➖"
 
   ];
 
 
+  selected.forEach(
+    (game,index)=>{
+
+      const percentage =
+        randomScore();
+
+
+      const imagePath =
+        `../assets/game-providers/${encodeURIComponent(currentProvider)}/LIST/${encodeURIComponent(game.filename)}`;
+
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+
+      card.className =
+        "game-card";
+
+
+      card.innerHTML = `
+
+        <div class="image-wrap">
+
+          <img
+            class="game-image"
+            src="${imagePath}"
+            alt="${escapeHTML(game.name)}"
+            loading="lazy"
+            onerror="this.style.opacity='.15'">
+
+        </div>
+
+
+        <div class="game-info">
+
+          <div class="game-number">
+            GAME ${index + 1}
+          </div>
+
+          <div class="game-name">
+            ${escapeHTML(game.name)}
+          </div>
+
+          <div class="score">
+            🟢 ${percentage}%
+          </div>
+
+        </div>
+
+      `;
+
+
+      gameGrid.appendChild(
+        card
+      );
+
+
+      textLines.push(
+
+        `${index + 1}) ${game.name} 🟢${percentage}%`
+
+      );
+
+    }
+  );
+
+
   currentText =
-    lines.join("\n");
+    textLines.join(
+      "\n"
+    );
 
 
-  preview.classList.remove("empty");
-
-  preview.textContent =
+  textPreview.textContent =
     currentText;
 
 }
 
 
+
 async function copyText(){
 
-  if(!currentText){
+  if(
+    !currentText
+  ){
 
     generate();
 
   }
 
 
-  if(!currentText){
+  if(
+    !currentText
+  ){
     return;
   }
 
@@ -521,8 +912,9 @@ async function copyText(){
 
 
     const button =
-      document
-      .getElementById("copy");
+      document.getElementById(
+        "copy"
+      );
 
 
     button.textContent =
@@ -530,8 +922,12 @@ async function copyText(){
 
 
     setTimeout(
-      ()=>button.textContent =
-        "COPY TEXT",
+      ()=>{
+
+        button.textContent =
+          "COPY TEXT";
+
+      },
       1200
     );
 
@@ -549,7 +945,9 @@ async function copyText(){
 
 
     document.body
-      .appendChild(temp);
+      .appendChild(
+        temp
+      );
 
 
     temp.select();
@@ -567,25 +965,72 @@ async function copyText(){
 }
 
 
+
+function escapeHTML(value){
+
+  return String(
+    value || ""
+  ).replace(
+
+    /[&<>"']/g,
+
+    character=>({
+
+      "&":"&amp;",
+
+      "<":"&lt;",
+
+      ">":"&gt;",
+
+      '"':"&quot;",
+
+      "'":"&#039;"
+
+    }[character])
+
+  );
+
+}
+
+
+
+provider.onchange =
+async ()=>{
+
+  await loadProvider();
+
+};
+
+
+
 document
-.getElementById("generate")
+.getElementById(
+  "generate"
+)
 .onclick =
 generate;
 
 
+
 document
-.getElementById("again")
+.getElementById(
+  "again"
+)
 .onclick =
 generate;
 
 
+
 document
-.getElementById("copy")
+.getElementById(
+  "copy"
+)
 .onclick =
 copyText;
 
 
-loadJILI();
+
+loadProvider();
 
 </script>
 
