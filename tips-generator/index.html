@@ -6,12 +6,13 @@
 <title>Game Tips Generator</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 :root{
   --bg:#070a0f;
   --panel:#101720;
-  --panel2:#141d29;
   --line:#29364a;
   --text:#ffffff;
   --muted:#8996a9;
@@ -23,10 +24,23 @@ body{
   margin:0;
   min-height:100vh;
   background:
-    radial-gradient(circle at top,#172235 0,#090d14 38%,#070a0f 100%);
+    radial-gradient(
+      circle at top,
+      #172235 0,
+      #090d14 38%,
+      #070a0f 100%
+    );
+
   color:var(--text);
-  font-family:Arial,Helvetica,sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 }
+
+
+/* HEADER */
 
 header{
   background:rgba(9,13,19,.96);
@@ -37,6 +51,7 @@ header{
   max-width:1200px;
   margin:auto;
   padding:15px 20px;
+
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -56,18 +71,27 @@ header{
 .home{
   color:#fff;
   text-decoration:none;
+
   border:1px solid #35435a;
+
   border-radius:7px;
+
   padding:9px 12px;
+
   font-size:11px;
   font-weight:bold;
 }
 
+
+/* MAIN */
+
 main{
   max-width:1200px;
   margin:auto;
+
   padding:26px 20px 50px;
 }
+
 
 .hero{
   margin-bottom:16px;
@@ -75,453 +99,783 @@ main{
 
 .hero span{
   color:#7da9ff;
+
   font-size:10px;
+
   font-weight:bold;
+
   letter-spacing:1.2px;
 }
 
 .hero h2{
   margin:6px 0;
+
   font-size:30px;
 }
 
 .hero p{
   margin:0;
+
   color:var(--muted);
+
   font-size:11px;
 }
 
+
+/* LAYOUT */
+
 .layout{
   display:grid;
-  grid-template-columns:330px 1fr;
+
+  grid-template-columns:
+    330px 1fr;
+
   gap:15px;
 }
 
+
 .card{
-  background:rgba(16,23,32,.97);
-  border:1px solid var(--line);
+  background:
+    rgba(16,23,32,.97);
+
+  border:
+    1px solid var(--line);
+
   border-radius:14px;
+
   padding:16px;
 }
 
+
+/* PROVIDER */
+
 .provider-box{
   text-align:center;
+
   padding:16px;
+
   background:#090e15;
-  border:1px solid #273549;
+
+  border:
+    1px solid #273549;
+
   border-radius:10px;
 }
+
 
 .provider-logo{
   width:120px;
   height:70px;
+
   object-fit:contain;
+
   display:block;
-  margin:0 auto 8px;
+
+  margin:
+    0 auto 8px;
 }
+
 
 .provider-name{
   font-size:13px;
+
   font-weight:bold;
 }
+
+
+/* FORM */
 
 label{
   display:block;
+
   color:#9eabba;
+
   font-size:10px;
+
   font-weight:bold;
-  margin:16px 0 7px;
+
+  margin:
+    16px 0 7px;
 }
+
 
 select{
   width:100%;
+
   height:42px;
+
   background:#090d13;
-  border:1px solid #34435a;
+
+  border:
+    1px solid #34435a;
+
   border-radius:7px;
-  padding:0 10px;
+
+  padding:
+    0 10px;
+
   color:#fff;
 }
+
 
 .counts{
   display:grid;
-  grid-template-columns:repeat(5,1fr);
+
+  grid-template-columns:
+    repeat(5,1fr);
+
   gap:6px;
 }
 
+
 .count{
   height:40px;
-  border:1px solid #344158;
+
+  border:
+    1px solid #344158;
+
   background:#0b1017;
+
   color:#fff;
+
   border-radius:7px;
+
   font-weight:bold;
+
   cursor:pointer;
 }
 
+
 .count.active{
-  background:var(--blue);
-  border-color:var(--blue);
+  background:
+    var(--blue);
+
+  border-color:
+    var(--blue);
 }
+
 
 .generate{
   margin-top:18px;
+
   width:100%;
+
   height:45px;
+
   border:0;
+
   border-radius:8px;
-  background:var(--blue);
+
+  background:
+    var(--blue);
+
   color:#fff;
+
   font-weight:bold;
+
   cursor:pointer;
 }
 
+
 .status{
   margin-top:12px;
+
   color:#8592a5;
+
   font-size:10px;
+
   line-height:1.5;
 }
 
+
+/* RESULT */
+
 .result-title{
   display:flex;
-  justify-content:space-between;
+
+  justify-content:
+    space-between;
+
   align-items:center;
+
   margin-bottom:12px;
 }
 
+
 .result-title h3{
   margin:0;
+
   font-size:14px;
 }
 
+
 .pool{
   font-size:10px;
+
   color:#8491a3;
 }
 
+
+/* GAME CARDS */
+
 .game-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+
+  grid-template-columns:
+    repeat(3,1fr);
+
   gap:12px;
+
   margin-bottom:14px;
 }
 
+
 .game-card{
   background:#090e15;
-  border:1px solid #29364a;
+
+  border:
+    1px solid #29364a;
+
   border-radius:12px;
+
   overflow:hidden;
 }
 
+
 .image-wrap{
   width:100%;
-  aspect-ratio:1.35/1;
+
+  aspect-ratio:
+    1.35 / 1;
+
   background:#05070a;
+
   display:flex;
+
   align-items:center;
+
   justify-content:center;
+
   padding:8px;
 }
+
 
 .game-image{
   width:100%;
   height:100%;
+
   object-fit:contain;
 }
+
 
 .game-info{
   padding:10px;
 }
 
+
 .game-number{
   color:#748195;
+
   font-size:9px;
+
   margin-bottom:4px;
 }
 
+
 .game-name{
   font-size:13px;
+
   font-weight:bold;
+
   line-height:1.35;
+
   min-height:35px;
 }
 
+
 .score{
   margin-top:8px;
+
   color:#52df91;
+
   font-size:15px;
+
   font-weight:bold;
 }
 
+
+/* COPY IMAGE URL BUTTON */
+
+.image-url-btn{
+  width:100%;
+
+  height:34px;
+
+  margin-top:10px;
+
+  border:
+    1px solid #34455d;
+
+  border-radius:6px;
+
+  background:#151e2a;
+
+  color:#b9c8db;
+
+  font-size:9px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+}
+
+
+.image-url-btn:hover{
+  background:#1c2939;
+
+  color:#fff;
+}
+
+
+/* EMPTY */
+
 .empty{
-  grid-column:1/-1;
+  grid-column:
+    1 / -1;
+
   min-height:240px;
+
   display:flex;
+
   justify-content:center;
+
   align-items:center;
+
   color:#667489;
-  border:1px dashed #2a384c;
+
+  border:
+    1px dashed #2a384c;
+
   border-radius:10px;
+
   font-size:11px;
 }
 
+
+/* TEXT */
+
 .text-box{
   background:#080c12;
-  border:1px solid #29364a;
+
+  border:
+    1px solid #29364a;
+
   border-radius:10px;
+
   padding:16px;
+
   white-space:pre-wrap;
+
   line-height:1.8;
+
   font-size:14px;
+
   min-height:140px;
 }
 
+
+/* ACTIONS */
+
 .actions{
   display:flex;
+
   gap:8px;
+
   margin-top:10px;
 }
 
+
 .actions button{
   flex:1;
+
   height:40px;
+
   border:0;
+
   border-radius:7px;
+
   color:#fff;
+
   font-weight:bold;
+
   cursor:pointer;
 }
+
 
 .again{
   background:#343e4d;
 }
 
+
 .copy{
   background:#248e5b;
 }
 
+
+/* NOTE */
+
 .note{
   margin-top:12px;
+
   background:#0a1018;
-  border:1px solid #253246;
+
+  border:
+    1px solid #253246;
+
   border-radius:8px;
+
   padding:10px;
+
   color:#7e8a9c;
+
   font-size:9px;
+
   line-height:1.5;
 }
 
+
+/* MOBILE */
+
 @media(max-width:900px){
+
   .layout{
-    grid-template-columns:1fr;
+    grid-template-columns:
+      1fr;
   }
 
   .game-grid{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:
+      repeat(2,1fr);
   }
+
 }
 
+
 @media(max-width:520px){
+
   .game-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:
+      1fr;
   }
+
 }
 </style>
 </head>
 
+
 <body>
 
+
 <header>
-  <div class="top">
 
-    <div class="brand">
-      <h1>Game Asset Studio</h1>
-      <p>Game Tips Generator</p>
-    </div>
+<div class="top">
 
-    <a href="../" class="home">
-      ← HOME
-    </a>
+  <div class="brand">
+
+    <h1>
+      Game Asset Studio
+    </h1>
+
+    <p>
+      Game Tips Generator
+    </p>
 
   </div>
+
+
+  <a
+    href="../"
+    class="home">
+
+    ← HOME
+
+  </a>
+
+</div>
+
 </header>
+
 
 
 <main>
 
+
 <section class="hero">
 
-  <span>GAME LIST GENERATOR</span>
+  <span>
+    GAME LIST GENERATOR
+  </span>
 
   <h2>
     Tips Generator
   </h2>
 
   <p>
-    Generate random game cards and copy-ready text.
+    Generate random game cards,
+    image URLs and copy-ready text.
   </p>
 
 </section>
 
 
+
 <div class="layout">
 
-<!-- LEFT -->
+
+<!-- LEFT SIDE -->
+
 <section class="card">
+
 
   <div class="provider-box">
 
     <img
       id="providerLogo"
+
       class="provider-logo"
+
       src="../assets/game-providers/JILI/LOGO.png"
+
       alt="Provider Logo">
+
 
     <div
       id="providerTitle"
+
       class="provider-name">
+
       JILI
+
     </div>
 
   </div>
+
 
 
   <label>
     PROVIDER
   </label>
 
+
   <select id="provider">
+
     <option value="JILI">
       JILI
     </option>
+
   </select>
+
 
 
   <label>
     NUMBER OF GAMES
   </label>
 
+
   <div class="counts">
 
-    <button
-      class="count"
-      data-count="1">
-      1
-    </button>
 
     <button
       class="count"
-      data-count="2">
-      2
+
+      data-count="1">
+
+      1
+
     </button>
+
+
+
+    <button
+      class="count"
+
+      data-count="2">
+
+      2
+
+    </button>
+
+
 
     <button
       class="count active"
+
       data-count="3">
+
       3
+
     </button>
+
+
 
     <button
       class="count"
+
       data-count="4">
+
       4
+
     </button>
+
+
 
     <button
       class="count"
+
       data-count="5">
+
       5
+
     </button>
+
 
   </div>
+
 
 
   <button
     id="generate"
+
     class="generate">
+
     GENERATE GAME LIST
+
   </button>
+
 
 
   <div
     id="status"
+
     class="status">
+
     Loading JILI database...
+
   </div>
+
 
 
   <div class="note">
-    Percentage is a random display score from
-    90.00%–99.98%. It is not actual RTP,
-    odds or a prediction of results.
+
+    Percentage is randomly generated
+    from 90.00%–99.98%.
+
+    It is not actual RTP,
+    odds or a prediction
+    of game results.
+
   </div>
+
 
 </section>
 
 
 
-<!-- RIGHT -->
+<!-- RIGHT SIDE -->
+
 <section class="card">
 
+
   <div class="result-title">
+
 
     <h3>
       Generated Games
     </h3>
 
+
     <div
       id="pool"
+
       class="pool">
+
       0 games available
+
     </div>
 
+
   </div>
+
 
 
   <div
     id="gameGrid"
+
     class="game-grid">
 
+
     <div class="empty">
+
       Press GENERATE GAME LIST
+
     </div>
 
+
   </div>
+
 
 
   <div
     id="textPreview"
+
     class="text-box">
+
 TOP GAME LIST : "JILI"
 ➖➖➖➖➖
+
   </div>
+
 
 
   <div class="actions">
 
+
     <button
       id="again"
+
       class="again">
+
       GENERATE AGAIN
+
     </button>
+
+
 
     <button
       id="copy"
+
       class="copy">
+
       COPY TEXT
+
     </button>
+
 
   </div>
 
+
 </section>
 
+
 </div>
+
 
 </main>
 
 
+
 <script>
+
 
 let selectedCount = 3;
 
@@ -529,7 +883,9 @@ let gamePool = [];
 
 let currentText = "";
 
-let currentProvider = "JILI";
+let currentProvider =
+  "JILI";
+
 
 
 const provider =
@@ -537,30 +893,36 @@ document.getElementById(
   "provider"
 );
 
+
 const providerLogo =
 document.getElementById(
   "providerLogo"
 );
+
 
 const providerTitle =
 document.getElementById(
   "providerTitle"
 );
 
+
 const status =
 document.getElementById(
   "status"
 );
+
 
 const pool =
 document.getElementById(
   "pool"
 );
 
+
 const gameGrid =
 document.getElementById(
   "gameGrid"
 );
+
 
 const textPreview =
 document.getElementById(
@@ -569,38 +931,59 @@ document.getElementById(
 
 
 
+
+/* COUNT BUTTON */
+
 document
-.querySelectorAll(".count")
-.forEach(button=>{
+.querySelectorAll(
+  ".count"
+)
+.forEach(
+  button=>{
 
-  button.onclick = ()=>{
 
-    document
-    .querySelectorAll(".count")
-    .forEach(btn=>
-      btn.classList.remove(
-        "active"
+    button.onclick =
+    ()=>{
+
+
+      document
+      .querySelectorAll(
+        ".count"
       )
-    );
+      .forEach(
+        btn=>
 
+          btn.classList.remove(
+            "active"
+          )
 
-    button.classList.add(
-      "active"
-    );
-
-
-    selectedCount =
-      Number(
-        button.dataset.count
       );
 
-  };
 
-});
+      button
+      .classList
+      .add(
+        "active"
+      );
 
 
+      selectedCount =
+        Number(
+          button.dataset.count
+        );
+
+    };
+
+  }
+);
+
+
+
+
+/* LOAD PROVIDER DATABASE */
 
 async function loadProvider(){
+
 
   currentProvider =
     provider.value;
@@ -610,18 +993,25 @@ async function loadProvider(){
     currentProvider;
 
 
+
   providerLogo.src =
+
     `../assets/game-providers/${encodeURIComponent(currentProvider)}/LOGO.png`;
 
 
+
   status.textContent =
+
     `Loading ${currentProvider} database...`;
+
 
 
   gamePool = [];
 
 
+
   try{
+
 
     const response =
       await fetch(
@@ -635,69 +1025,105 @@ async function loadProvider(){
       );
 
 
-    if(!response.ok){
+
+    if(
+      !response.ok
+    ){
+
 
       throw new Error(
+
         currentProvider +
         ".json not found"
+
       );
 
     }
+
 
 
     const data =
       await response.json();
 
 
+
     gamePool =
+
       Object.entries(
         data.games || {}
       )
 
+
       .map(
         ([filename,game])=>({
 
+
           ...game,
 
-          filename:filename
+
+          filename:
+            filename
+
 
         })
       )
 
-      .filter(game=>
 
-        game &&
-        game.active === true &&
-        typeof game.name ===
-          "string" &&
-        game.name.trim()
+      .filter(
+        game=>
+
+          game &&
+
+          game.active === true &&
+
+          typeof game.name ===
+            "string" &&
+
+          game.name.trim()
 
       );
 
 
+
     status.textContent =
+
       `${currentProvider} database loaded successfully ✓`;
 
 
+
     pool.textContent =
+
       `${gamePool.length} active named games`;
 
 
-  }catch(error){
+  }
+
+
+  catch(error){
+
 
     status.textContent =
+
       "ERROR: " +
       error.message;
 
 
+
     pool.textContent =
+
       "0 games";
 
 
-    gameGrid.innerHTML =
-      `<div class="empty">
+
+    gameGrid.innerHTML = `
+
+      <div class="empty">
+
         Cannot load database.
-      </div>`;
+
+      </div>
+
+    `;
 
   }
 
@@ -705,12 +1131,19 @@ async function loadProvider(){
 
 
 
+
+/* RANDOM SCORE */
+
 function randomScore(){
 
+
   const value =
+
     90 +
+
     Math.random() *
     9.98;
+
 
 
   return value.toFixed(2);
@@ -719,38 +1152,56 @@ function randomScore(){
 
 
 
+
+/* SHUFFLE */
+
 function shuffle(array){
+
 
   const copy =
     [...array];
 
 
+
   for(
+
     let i =
       copy.length - 1;
 
     i > 0;
 
     i--
+
   ){
 
+
     const j =
+
       Math.floor(
+
         Math.random() *
         (i + 1)
+
       );
 
 
+
     [
+
       copy[i],
+
       copy[j]
-    ] =
-    [
+
+    ] = [
+
       copy[j],
+
       copy[i]
+
     ];
 
   }
+
 
 
   return copy;
@@ -759,101 +1210,184 @@ function shuffle(array){
 
 
 
+
+/* GENERATE */
+
 function generate(){
+
 
   if(
     !gamePool.length
   ){
 
+
     alert(
       "Game database not ready."
     );
+
 
     return;
 
   }
 
 
+
   const count =
+
     Math.min(
+
       selectedCount,
+
       gamePool.length
+
     );
 
 
+
   const selected =
+
     shuffle(
       gamePool
-    ).slice(
+    )
+
+    .slice(
       0,
       count
     );
 
 
-  gameGrid.innerHTML = "";
+
+  gameGrid.innerHTML =
+    "";
+
 
 
   const textLines = [
 
+
     `TOP GAME LIST : "${currentProvider}"`,
 
+
     "➖➖➖➖➖"
+
 
   ];
 
 
+
+
   selected.forEach(
+
     (game,index)=>{
+
 
       const percentage =
         randomScore();
 
 
+
+      /* LOCAL IMAGE PATH */
+
       const imagePath =
+
         `../assets/game-providers/${encodeURIComponent(currentProvider)}/LIST/${encodeURIComponent(game.filename)}`;
 
 
+
+      /* FULL PUBLIC IMAGE URL */
+
+      const imageURL =
+
+        new URL(
+
+          imagePath,
+
+          window.location.href
+
+        ).href;
+
+
+
       const card =
+
         document.createElement(
           "article"
         );
+
 
 
       card.className =
         "game-card";
 
 
+
       card.innerHTML = `
+
 
         <div class="image-wrap">
 
+
           <img
+
             class="game-image"
+
             src="${imagePath}"
+
             alt="${escapeHTML(game.name)}"
+
             loading="lazy"
+
             onerror="this.style.opacity='.15'">
 
+
         </div>
+
+
 
 
         <div class="game-info">
 
+
           <div class="game-number">
+
             GAME ${index + 1}
+
           </div>
+
+
 
           <div class="game-name">
+
             ${escapeHTML(game.name)}
+
           </div>
 
+
+
           <div class="score">
+
             🟢 ${percentage}%
+
           </div>
+
+
+
+          <button
+
+            class="image-url-btn"
+
+            data-url="${escapeHTML(imageURL)}">
+
+            COPY IMAGE URL
+
+          </button>
+
 
         </div>
 
+
       `;
+
 
 
       gameGrid.appendChild(
@@ -861,96 +1395,234 @@ function generate(){
       );
 
 
+
+      /* COPY IMAGE URL */
+
+      const urlButton =
+
+        card.querySelector(
+          ".image-url-btn"
+        );
+
+
+
+      urlButton.onclick =
+      async ()=>{
+
+
+        const url =
+          urlButton.dataset.url;
+
+
+
+        try{
+
+
+          await navigator
+          .clipboard
+          .writeText(
+            url
+          );
+
+
+
+          urlButton.textContent =
+
+            "URL COPIED ✓";
+
+
+
+          setTimeout(
+
+            ()=>{
+
+              urlButton.textContent =
+
+                "COPY IMAGE URL";
+
+            },
+
+            1200
+
+          );
+
+
+        }
+
+
+        catch(error){
+
+
+          const temp =
+
+            document.createElement(
+              "textarea"
+            );
+
+
+
+          temp.value =
+            url;
+
+
+
+          document.body
+          .appendChild(
+            temp
+          );
+
+
+
+          temp.select();
+
+
+
+          document.execCommand(
+            "copy"
+          );
+
+
+
+          temp.remove();
+
+
+        }
+
+      };
+
+
+
+      /* COPY TEXT LIST DATA */
+
       textLines.push(
 
         `${index + 1}) ${game.name} 🟢${percentage}%`
 
       );
 
+
     }
+
   );
 
 
+
   currentText =
+
     textLines.join(
       "\n"
     );
 
 
+
   textPreview.textContent =
+
     currentText;
 
 }
 
 
 
+
+/* COPY FULL TEXT */
+
 async function copyText(){
+
 
   if(
     !currentText
   ){
+
 
     generate();
 
+
   }
+
 
 
   if(
     !currentText
   ){
+
+
     return;
+
+
   }
+
 
 
   try{
 
+
     await navigator
-      .clipboard
-      .writeText(
-        currentText
-      );
+    .clipboard
+    .writeText(
+      currentText
+    );
+
 
 
     const button =
+
       document.getElementById(
         "copy"
       );
 
 
+
     button.textContent =
+
       "COPIED ✓";
 
 
+
     setTimeout(
+
       ()=>{
 
+
         button.textContent =
+
           "COPY TEXT";
 
+
       },
+
       1200
+
     );
 
 
-  }catch(error){
+  }
+
+
+  catch(error){
+
 
     const temp =
+
       document.createElement(
         "textarea"
       );
+
 
 
     temp.value =
       currentText;
 
 
+
     document.body
-      .appendChild(
-        temp
-      );
+    .appendChild(
+      temp
+    );
+
 
 
     temp.select();
+
 
 
     document.execCommand(
@@ -958,7 +1630,9 @@ async function copyText(){
     );
 
 
+
     temp.remove();
+
 
   }
 
@@ -966,25 +1640,37 @@ async function copyText(){
 
 
 
+
+/* ESCAPE HTML */
+
 function escapeHTML(value){
+
 
   return String(
     value || ""
-  ).replace(
+  )
+
+  .replace(
 
     /[&<>"']/g,
 
     character=>({
 
+
       "&":"&amp;",
+
 
       "<":"&lt;",
 
+
       ">":"&gt;",
+
 
       '"':"&quot;",
 
+
       "'":"&#039;"
+
 
     }[character])
 
@@ -994,14 +1680,22 @@ function escapeHTML(value){
 
 
 
+
+/* PROVIDER CHANGE */
+
 provider.onchange =
 async ()=>{
 
+
   await loadProvider();
+
 
 };
 
 
+
+
+/* BUTTONS */
 
 document
 .getElementById(
@@ -1030,9 +1724,14 @@ copyText;
 
 
 
+
+/* START */
+
 loadProvider();
 
+
 </script>
+
 
 </body>
 </html>
