@@ -1,6 +1,4 @@
-from pathlib import Path
-
-app_js = r'''let MANIFEST=null;
+let MANIFEST=null;
 let PROVIDERS=[];
 let selectedProvider=null;
 let renderLimit=72;
@@ -2266,8 +2264,3 @@ load()
 
   }
 );
-'''
-
-path = Path("/mnt/data/app.js")
-path.write_text(app_js, encoding="utf-8")
-print(f"Created {path} ({path.stat().st_size:,} bytes)")
