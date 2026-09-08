@@ -1,166 +1,504 @@
-<!doctype html>
+from pathlib import Path
+
+html = r'''<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CIMB Style Demo Receipt Builder</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#050505;color:#fff;font-family:Arial,Helvetica,sans-serif}
-.page{max-width:1160px;margin:auto;padding:10px}
-.layout{display:grid;grid-template-columns:390px 1fr;gap:14px;align-items:start}
-.row{display:grid;gap:7px;margin-bottom:8px}.split{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr 75px}
-label{font-size:11px;color:#aaa}
-input{width:100%;height:35px;border:1px solid #444;border-radius:6px;background:#151515;color:#fff;padding:0 10px}
-.btnbar{display:grid;grid-template-columns:90px 1fr 1fr 1fr;gap:7px}
-button{height:35px;border:0;border-radius:6px;color:#fff;font-weight:700;cursor:pointer;background:#176fe6}
-.reset{background:#171717;border:1px solid #444}.auto{background:#1a1a1a;border:1px solid #444}.auto.on{background:#0f5f3e}
-.note{font-size:11px;color:#999;line-height:1.5;margin-top:10px}
-.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1b1b1b;border:1px solid #444;padding:10px 14px;border-radius:8px;display:none;z-index:100}
+:root{
+  --panel:#15171b;
+  --panel2:#0e1013;
+  --line:#343840;
+  --text:#f5f5f5;
+  --muted:#9ca3ad;
+  --red:#d71920;
+}
+body{
+  margin:0;
+  background:#090a0c;
+  color:var(--text);
+  font-family:"Open Sans",Arial,sans-serif;
+}
+.app-layout{
+  max-width:1180px;
+  margin:0 auto;
+  padding:18px;
+  display:grid;
+  grid-template-columns:390px 1fr;
+  gap:18px;
+  align-items:start;
+}
+.builder-panel{
+  background:var(--panel);
+  border:1px solid #272b31;
+  border-radius:14px;
+  padding:16px;
+}
+.builder-row{display:grid;gap:10px}
+.builder-field{display:grid;gap:6px}
+.builder-field label{
+  font-size:11px;
+  color:var(--muted);
+}
+.builder-row-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.input-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px;
+}
+input,select{
+  width:100%;
+  height:38px;
+  padding:0 10px;
+  border:1px solid var(--line);
+  border-radius:7px;
+  background:var(--panel2);
+  color:#fff;
+  outline:none;
+  font-size:12px;
+}
+input:focus,select:focus{border-color:#666e78}
+button{
+  height:38px;
+  border:0;
+  border-radius:7px;
+  cursor:pointer;
+  font-weight:700;
+  font-size:12px;
+}
+.btn-now,.btn-update{
+  color:#fff;
+  background:var(--red);
+}
+.btn-now.off{background:#2c3036}
+.btn-reset{
+  color:#fff;
+  background:#22252a;
+  border:1px solid #3b4048;
+}
+.btn-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
+}
+.note{
+  margin-top:2px;
+  color:#9298a2;
+  font-size:10px;
+  line-height:1.5;
+}
 
-.receipt-wrap{display:flex;justify-content:center}
+/* ===== Preview ===== */
+.preview-panel{
+  display:flex;
+  justify-content:center;
+  padding-top:2px;
+}
+.receipt-stage{
+  width:min(100%,560px);
+  overflow:auto;
+  padding:2px;
+}
 .receipt{
-  width:min(515px,100%);
-  min-height:900px;
+  width:488px;
+  height:251px;
   position:relative;
+  background:#f7f7f7;
+  color:#000;
+  border:1px solid #777;
+  font-family:"Open Sans",Arial,sans-serif;
   overflow:hidden;
-  background:#f7f7f5;
-  color:#1d1d1d;
+  transform-origin:top left;
+}
+.status-bar{
+  height:44px;
+  background:#ececec;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 18px;
+  font-size:12px;
+  white-space:nowrap;
+}
+.status-left{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.check-icon{
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#75bd83;
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-size:10px;
+  font-weight:700;
+  line-height:1;
+}
+.success-text{
+  color:#63ae72;
+  font-weight:700;
+}
+.details{
+  position:relative;
+  height:207px;
+  background:#f9f9f9;
+  padding:19px 18px 12px;
+}
+.left-col{width:58%}
+.to-title{
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:13px;
+}
+.label{
+  color:#666;
+  font-size:12px;
+  margin-bottom:1px;
+}
+.value{
+  color:#000;
+  font-size:14px;
+  font-weight:700;
+  line-height:1.25;
+  margin-bottom:12px;
+}
+.amount-col{
+  position:absolute;
+  right:18px;
+  top:18px;
+  text-align:right;
+}
+.amount-title{
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+.amount-row{
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-start;
+  gap:5px;
+  line-height:1;
+}
+.currency{
+  font-size:10px;
+  font-weight:700;
+  margin-top:6px;
+}
+.amount-main{
+  font-size:19px;
+  font-weight:700;
+}
+.sen{
+  font-size:10px;
+  vertical-align:top;
+  position:relative;
+  top:-5px;
+  left:1px;
+}
+.charges{
+  margin-top:7px;
+  font-size:12px;
+}
+.charge-number{
+  font-weight:700;
+  margin-left:5px;
+}
+.charge-sen{
+  font-size:8px;
+  position:relative;
+  top:-4px;
+  left:1px;
+}
+.sample-watermark{
+  position:absolute;
+  left:50%;
+  bottom:7px;
+  transform:translateX(-50%);
+  z-index:10;
+  color:rgba(150,0,0,.55);
+  border:1px solid rgba(150,0,0,.35);
+  background:rgba(255,255,255,.72);
   border-radius:4px;
+  padding:2px 6px;
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:.45px;
+  pointer-events:none;
 }
-.receipt.blurred .private{filter:blur(5px)}
-.demo-badge{position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:30;background:#8c1321;color:#fff;border-radius:999px;padding:4px 10px;font-size:9px;font-weight:800}
-.watermark{position:absolute;inset:0;z-index:20;pointer-events:none;display:flex;align-items:center;justify-content:center;transform:rotate(-18deg);color:rgba(180,0,0,.11);font-size:32px;font-weight:900;text-align:center;line-height:1.1;letter-spacing:1px}
+.blurred .private{filter:blur(5px)}
 
-.main{padding:52px 38px 215px}
-.success-art{width:100px;height:100px;margin:0 auto 16px;position:relative}
-.success-art .circle{position:absolute;inset:10px;border-radius:50%;background:#129b74;display:grid;place-items:center;color:#fff;font-size:48px;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,.12)}
-.success-art .dot{position:absolute;width:8px;height:8px;border-radius:50%}
-.success-art .d1{background:#f1ba23;left:8px;top:18px}.success-art .d2{background:#6a3cbb;right:4px;top:27px}.success-art .d3{background:#dc394f;left:16px;bottom:8px}.success-art .d4{background:#32a79a;right:20px;bottom:2px}
-.success-art .squig{position:absolute;width:27px;height:10px;border-top:4px solid;border-radius:50%}
-.success-art .s1{border-color:#e35235;left:-2px;top:48px;transform:rotate(-18deg)}
-.success-art .s2{border-color:#7b48c9;right:-8px;top:32px;transform:rotate(42deg)}
-
-.success{text-align:center;color:#18834f;font-size:35px;font-weight:800;margin-top:4px}
-.summary{text-align:center;font-size:17px;margin-top:30px;color:#222}
-.amount{text-align:center;font-size:33px;margin-top:8px;letter-spacing:.3px}
-.amount span{font-weight:800}
-.datetime{text-align:center;font-size:14px;font-weight:700;margin-top:20px;color:#333}
-.hr{height:1px;background:#e5e5e2;margin:42px -8px 24px}
-.details{display:grid;gap:30px}
-.drow{display:grid;grid-template-columns:145px 1fr;gap:16px;align-items:start}
-.k{font-size:18px;color:#4e4e4e}
-.v{font-size:18px;text-align:right;font-weight:700;line-height:1.35;color:#222;white-space:pre-line}
-
-.bottom-panel{position:absolute;left:0;right:0;bottom:0;background:rgba(247,247,245,.98);border-top:1px solid #dededb;padding:8px 28px 22px;z-index:10}
-.chev{width:38px;height:38px;border-radius:50%;border:2px solid #bcbcbc;margin:0 auto 15px;display:grid;place-items:center;color:#333;font-size:22px;font-weight:900;background:#fafafa}
-.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:320px;margin:0 auto 18px}
-.ic{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;margin:auto;font-size:28px;font-weight:800}
-.ic.green{background:#149c83;color:#fff}.ic.grey{background:#9a9a9a;color:#f2f2f2}.ic.star{font-size:34px}
-.done{width:100%;height:58px;background:#bd1717;border-radius:3px;font-size:21px;font-weight:800;color:#fff;border:0}
-
-@media(max-width:840px){.layout{grid-template-columns:1fr}.receipt{min-height:850px}.main{padding-left:28px;padding-right:28px}.drow{grid-template-columns:125px 1fr}.k,.v{font-size:16px}}
+@media(max-width:860px){
+  .app-layout{grid-template-columns:1fr}
+  .builder-row-2{grid-template-columns:1fr}
+  .btn-row{grid-template-columns:1fr 1fr}
+  .receipt-stage{
+    width:100%;
+    overflow:auto;
+  }
+}
 </style>
-<style id="assetStudioNavStyle">.asset-studio-nav{position:sticky;top:0;z-index:99999;display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(7,9,12,.96);border-bottom:1px solid #303640;font-family:Arial,sans-serif}.asset-studio-nav a{display:inline-flex;align-items:center;height:32px;padding:0 11px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700}.asset-home{background:#176fe6;color:#fff}.asset-banks{background:#171b22;color:#e5e8ed;border:1px solid #3b424f}.asset-studio-nav span{margin-left:auto;color:#858d99;font-size:10px}</style></head>
-<body><div class="asset-studio-nav"><a class="asset-home" href="../../">← Home</a><a class="asset-banks" href="../../#banks">Bank Demo Lab</a><span>Game Asset Studio</span></div>
-<div class="page"><div class="layout">
-<section>
-  <div class="row split">
-    <div><label>Amount (MYR)</label><input id="amount" value="2211.00"></div>
-    <div><label>Reference No.</label><input id="reference" value="217000001"></div>
-  </div>
-  <div class="row"><label>Date / Time</label><input id="datetime" value="30 Aug 2026 7:56:47 AM"></div>
-  <div class="row"><label>To</label><input id="to" value="DEMO MERCHANT SDN BHD\nCIMB MALAYSIA\n8606000000"></div>
-  <div class="row"><label>Nickname</label><input id="nickname" value="DEMO MERCHANT"></div>
-  <div class="row"><label>From</label><input id="from" value="DEMO SAVINGS-i\n7658000000"></div>
-  <div class="row"><label>When</label><input id="when" value="Today, 30 Aug 2026"></div>
-  <div class="row two"><div></div><button id="autoBtn" class="auto">Auto: OFF</button></div>
-  <div class="btnbar">
-    <button id="resetBtn" class="reset">Reset</button>
-    <button id="createBtn">Create</button>
-    <button id="blurBtn">Blur</button>
-    <button id="copyBtn">Copy Image</button>
-  </div>
-  <div class="note">CIMB-inspired <b>demo mockup</b> based on the new screenshot you supplied. It is not an official bank receipt and always carries <b>SAMPLE — NOT A REAL TRANSACTION</b>.</div>
-</section>
+</head>
+<body>
 
-<section class="receipt-wrap">
-  <div id="receipt" class="receipt">
-    <div class="watermark"><br></div>
+<div class="app-layout">
+  <!-- LEFT BUILDER -->
+  <aside class="builder-panel">
+    <div class="builder-row">
 
-    <div class="main">
-      <div class="success-art">
-        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
-        <span class="squig s1"></span><span class="squig s2"></span>
-        <div class="circle">✓</div>
+      <div class="builder-field">
+        <label>Bank</label>
+        <select id="bank">
+          <option>Maybank</option>
+          <option selected>CIMB Bank</option>
+          <option>Public Bank Berhad</option>
+          <option>RHB Bank</option>
+          <option>Hong Leong Bank</option>
+          <option>AmBank</option>
+          <option>Bank Islam Malaysia</option>
+          <option>Bank Muamalat</option>
+          <option>UOB Malaysia</option>
+          <option>BSN</option>
+          <option>Agrobank</option>
+          <option>Affin Bank</option>
+          <option>Bank Rakyat</option>
+          <option>HSBC Malaysia</option>
+          <option>Touch 'n Go eWallet</option>
+          <option>GrabPay</option>
+          <option>Gx Bank</option>
+          <option>ShopeePay</option>
+        </select>
       </div>
 
-      <div class="success">Successful</div>
-      <div class="summary">Transaction Summary</div>
-      <div class="amount">MYR <span id="rAmount">2,211.00</span></div>
-      <div id="rDatetime" class="datetime">30 Aug 2026 7:56:47 AM</div>
+      <div class="builder-field">
+        <label>Recipient Name</label>
+        <div class="input-row">
+          <input type="text" id="input-recipient" value="DEMO RECIPIENT" placeholder="Recipient Name">
+          <button class="btn-now off" id="btn-auto-name" type="button">AUTO: OFF</button>
+        </div>
+      </div>
 
-      <div class="hr"></div>
+      <div class="builder-field">
+        <label>Date &amp; Time</label>
+        <div class="input-row">
+          <input type="text" id="input-date" value="Tuesday 26 May 2026 at 15:47:48" placeholder="Date & Time">
+          <button class="btn-now" id="btn-date" type="button">Now</button>
+        </div>
+      </div>
 
-      <div class="details">
-        <div class="drow"><div class="k">Reference No.</div><div id="rReference" class="v private">217000001</div></div>
-        <div class="drow"><div class="k">To</div><div id="rTo" class="v private">DEMO MERCHANT SDN BHD\nCIMB MALAYSIA\n8606000000</div></div>
-        <div class="drow"><div class="k">Nickname</div><div id="rNickname" class="v">DEMO MERCHANT</div></div>
-        <div class="drow"><div class="k">From</div><div id="rFrom" class="v private">DEMO SAVINGS-i\n7658000000</div></div>
-        <div class="drow"><div class="k">When</div><div id="rWhen" class="v">Today, 30 Aug 2026</div></div>
+      <div class="builder-row-2">
+        <div class="builder-field">
+          <label>Reference Number 4 Digit Awal</label>
+          <input type="text" id="input-ref4" value="5040" maxlength="4" inputmode="numeric">
+        </div>
+        <div class="builder-field">
+          <label>Amount</label>
+          <input type="text" id="input-amount" value="2500.00" placeholder="Fill Amount">
+        </div>
+      </div>
+
+      <div class="builder-row-2">
+        <div class="builder-field">
+          <label>Account Number</label>
+          <input type="text" id="input-account" value="0000000000" placeholder="Account Number">
+        </div>
+        <div class="builder-field">
+          <label>Account Name</label>
+          <input type="text" id="input-account-name" value="DEMO ACCOUNT" placeholder="Account Name">
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-reset" id="btn-reset" type="button">Reset</button>
+        <button class="btn-update" id="btn-create" type="button">Create</button>
+        <button class="btn-update" id="btn-blur" type="button">Blur</button>
+        <button class="btn-update" id="btn-copy-image" type="button">Copy Image</button>
       </div>
     </div>
+  </aside>
 
-    <div class="bottom-panel">
-      <div class="chev">⌃</div>
-      <div class="icons">
-        <div class="ic green">↗</div>
-        <div class="ic green">⇄</div>
-        <div class="ic grey star">★</div>
+  <!-- RIGHT PREVIEW -->
+  <main class="preview-panel">
+    <div class="receipt-stage">
+      <div class="receipt" id="receipt">
+
+        <div class="status-bar">
+          <div class="status-left">
+            <div class="check-icon">✓</div>
+            <span>
+              <span class="success-text">Successful</span>
+              Ref <span id="ref-number">504070409</span>
+            </span>
+          </div>
+          <div id="transfer-date">Tuesday 26 May 2026 at 15:47:48</div>
+        </div>
+
+        <div class="details">
+          <div class="left-col private">
+            <div class="to-title">To</div>
+
+            <div class="label">Account Number</div>
+            <div class="value" id="account-number">0000000000</div>
+
+            <div class="label">Account Name</div>
+            <div class="value" id="accountNameValue">DEMO ACCOUNT</div>
+
+            <div class="label">Recipient Name</div>
+            <div class="value" id="recipient-name">DEMO RECIPIENT</div>
+          </div>
+
+          <div class="amount-col">
+            <div class="amount-title">Amount</div>
+            <div class="amount-row">
+              <span class="currency">MYR</span>
+              <span class="amount-main"><span id="main-amount">2,500.</span><span class="sen" id="main-sen">00</span></span>
+            </div>
+            <div class="charges">
+              Bank charges
+              <span class="charge-number">0.</span><span class="charge-sen">00</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <button class="done">Done</button>
     </div>
-  </div>
-</section>
-</div></div>
-<div id="toast" class="toast">Copied</div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <script>
-const $=id=>document.getElementById(id);let auto=false,blurred=false;
-const defaults={amount:'2211.00',reference:'217000001',datetime:'30 Aug 2026 7:56:47 AM',to:'DEMO MERCHANT SDN BHD\\nCIMB MALAYSIA\\n8606000000',nickname:'DEMO MERCHANT',from:'DEMO SAVINGS-i\\n7658000000',when:'Today, 30 Aug 2026'};
-function money(v){const n=Number(String(v).replace(/,/g,''));return Number.isFinite(n)?n.toLocaleString('en-MY',{minimumFractionDigits:2,maximumFractionDigits:2}):'0.00'}
-function nl(v){return String(v||'-').replace(/\\n/g,'\n')}
-function sync(){
- $('rAmount').textContent=money($('amount').value);$('rReference').textContent=$('reference').value||'-';$('rDatetime').textContent=$('datetime').value||'-';$('rTo').textContent=nl($('to').value);$('rNickname').textContent=$('nickname').value||'-';$('rFrom').textContent=nl($('from').value);$('rWhen').textContent=$('when').value||'-';
+const $ = id => document.getElementById(id);
+
+function amountParts(v){
+  let n = Number(String(v).replace(/,/g,''));
+  if(!Number.isFinite(n)) n = 0;
+  const fixed = n.toFixed(2).split('.');
+  return {
+    main: Number(fixed[0]).toLocaleString('en-MY') + '.',
+    sen: fixed[1]
+  };
 }
-function setNow(){const d=new Date();$('datetime').value=new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true}).format(d).replace(' am',' AM').replace(' pm',' PM');$('when').value='Today, '+new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short',year:'numeric'}).format(d);sync()}
-function resetAll(){Object.keys(defaults).forEach(k=>$(k).value=defaults[k]);auto=false;blurred=false;$('autoBtn').classList.remove('on');$('autoBtn').textContent='Auto: OFF';$('receipt').classList.remove('blurred');$('blurBtn').textContent='Blur';sync()}
-function toast(t){$('toast').textContent=t;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',1300)}
-function rr(x,y,w,h,r){return {x,y,w,h,r}}
-function drawCanvas(){
- const c=document.createElement('canvas');c.width=515;c.height=900;const x=c.getContext('2d');
- x.fillStyle='#f7f7f5';x.fillRect(0,0,515,900);
- // celebration / check
- x.fillStyle='#129b74';x.beginPath();x.arc(257,105,42,0,Math.PI*2);x.fill();
- x.fillStyle='#fff';x.font='bold 48px Arial';x.textAlign='center';x.fillText('✓',257,121);
- x.fillStyle='#18834f';x.font='bold 35px Arial';x.fillText('Successful',257,190);
- x.fillStyle='#222';x.font='17px Arial';x.fillText('Transaction Summary',257,237);
- x.font='33px Arial';x.fillText('MYR ',213,280);x.font='bold 33px Arial';x.fillText(money($('amount').value),320,280);
- x.font='bold 14px Arial';x.fillText($('datetime').value||'-',257,320);
- x.strokeStyle='#e5e5e2';x.beginPath();x.moveTo(40,357);x.lineTo(475,357);x.stroke();
- const rows=[['Reference No.',$('reference').value],['To',nl($('to').value)],['Nickname',$('nickname').value],['From',nl($('from').value)],['When',$('when').value]];
- let y=405;x.textAlign='left';
- rows.forEach(([a,b],idx)=>{x.fillStyle='#4e4e4e';x.font='18px Arial';x.fillText(a,48,y);x.fillStyle='#222';x.font='bold 18px Arial';x.textAlign='right';String(b||'-').split(/\n/).forEach((line,i)=>x.fillText(line,467,y+i*23));x.textAlign='left';y+= idx===1?100:75;});
- // bottom panel
- x.fillStyle='#f7f7f5';x.fillRect(0,700,515,200);x.strokeStyle='#dededb';x.beginPath();x.moveTo(0,700);x.lineTo(515,700);x.stroke();
- x.fillStyle='#149c83';x.beginPath();x.arc(165,760,31,0,Math.PI*2);x.fill();x.beginPath();x.arc(257,760,31,0,Math.PI*2);x.fill();x.fillStyle='#9a9a9a';x.beginPath();x.arc(350,760,31,0,Math.PI*2);x.fill();
- x.fillStyle='#fff';x.font='bold 28px Arial';x.textAlign='center';x.fillText('↗',165,770);x.fillText('⇄',257,770);x.fillText('★',350,770);
- x.fillStyle='#bd1717';x.fillRect(45,825,425,55);x.fillStyle='#fff';x.font='bold 22px Arial';x.fillText('Done',257,860);
- x.save();x.translate(257,450);x.rotate(-18*Math.PI/180);x.fillStyle='rgba(180,0,0,.20)';x.font='bold 31px Arial';x.fillText('SAMPLE — NOT A REAL TRANSACTION',0,0);x.restore();
- return c;
+
+function randomDigits(len){
+  let out = '';
+  for(let i=0;i<len;i++) out += Math.floor(Math.random()*10);
+  return out;
 }
-async function copyImage(){const c=drawCanvas();try{const blob=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);toast('Demo image copied')}catch(e){const w=window.open();if(w)w.document.write('<img style="max-width:100%" src="'+c.toDataURL('image/png')+'">');toast('Opened demo image')}}
-['amount','reference','datetime','to','nickname','from','when'].forEach(id=>$(id).addEventListener('input',sync));
-$('createBtn').onclick=()=>{sync();toast('Preview updated')};$('resetBtn').onclick=resetAll;$('blurBtn').onclick=()=>{blurred=!blurred;$('receipt').classList.toggle('blurred',blurred);$('blurBtn').textContent=blurred?'Unblur':'Blur'};$('copyBtn').onclick=copyImage;$('autoBtn').onclick=()=>{auto=!auto;$('autoBtn').classList.toggle('on',auto);$('autoBtn').textContent='Auto: '+(auto?'ON':'OFF');if(auto)setNow()};setInterval(()=>{if(auto)setNow()},1000);sync();
+
+function createReference(){
+  const p = ($('input-ref4').value || '')
+    .replace(/\D/g,'')
+    .slice(0,4)
+    .padEnd(4,'0');
+  return p + randomDigits(5);
+}
+
+function updatePreview(newReference=true){
+  $('transfer-date').textContent = $('input-date').value;
+  $('recipient-name').textContent = $('input-recipient').value || 'DEMO RECIPIENT';
+  $('account-number').textContent = $('input-account').value || '0000000000';
+  $('accountNameValue').textContent = $('input-account-name').value || 'DEMO ACCOUNT';
+
+  const a = amountParts($('input-amount').value);
+  $('main-amount').textContent = a.main;
+  $('main-sen').textContent = a.sen;
+
+  if(newReference){
+    $('ref-number').textContent = createReference();
+  }
+}
+
+$('btn-create').addEventListener('click',()=>updatePreview(true));
+
+$('btn-date').addEventListener('click',()=>{
+  const d = new Date();
+  $('input-date').value = d.toLocaleString('en-GB',{
+    weekday:'long',
+    day:'2-digit',
+    month:'long',
+    year:'numeric',
+    hour:'2-digit',
+    minute:'2-digit',
+    second:'2-digit',
+    hour12:false
+  }).replace(',', '') ;
+  updatePreview(false);
+});
+
+$('btn-blur').addEventListener('click',()=>{
+  $('receipt').classList.toggle('blurred');
+});
+
+$('btn-reset').addEventListener('click',()=>{
+  $('bank').value='CIMB Bank';
+  $('input-recipient').value='DEMO RECIPIENT';
+  $('input-date').value='Tuesday 26 May 2026 at 15:47:48';
+  $('input-ref4').value='5040';
+  $('input-amount').value='2500.00';
+  $('input-account').value='0000000000';
+  $('input-account-name').value='DEMO ACCOUNT';
+  $('receipt').classList.remove('blurred');
+  $('ref-number').textContent='504070409';
+  updatePreview(false);
+});
+
+let autoName=false;
+const demoNames=[
+  'DEMO RECIPIENT',
+  'SAMPLE CUSTOMER',
+  'TEST ACCOUNT HOLDER',
+  'DEMO USER'
+];
+
+$('btn-auto-name').addEventListener('click',()=>{
+  autoName=!autoName;
+  $('btn-auto-name').classList.toggle('off',!autoName);
+  $('btn-auto-name').textContent=autoName?'AUTO: ON':'AUTO: OFF';
+  if(autoName){
+    $('input-recipient').value=demoNames[Math.floor(Math.random()*demoNames.length)];
+    updatePreview(false);
+  }
+});
+
+$('bank').addEventListener('change',()=>{
+  /* dropdown is kept in builder without changing screenshot layout */
+});
+
+$('btn-copy-image').addEventListener('click',async()=>{
+  if(typeof html2canvas==='undefined'){
+    alert('html2canvas belum loaded.');
+    return;
+  }
+  const canvas=await html2canvas($('receipt'),{
+    scale:2,
+    backgroundColor:'#f7f7f7'
+  });
+
+  canvas.toBlob(async blob=>{
+    try{
+      await navigator.clipboard.write([
+        new ClipboardItem({'image/png':blob})
+      ]);
+      alert('Image copied.');
+    }catch(err){
+      const a=document.createElement('a');
+      a.download='cimb-demo-sample.png';
+      a.href=canvas.toDataURL('image/png');
+      a.click();
+    }
+  });
+});
 </script>
 </body>
-</html>
+</html>'''
