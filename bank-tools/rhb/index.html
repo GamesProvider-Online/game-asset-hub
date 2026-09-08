@@ -75,7 +75,26 @@ button{height:35px;border:0;border-radius:6px;color:#fff;font-weight:700;cursor:
   <div class="row split">
     <div>
       <label>Bank</label>
-      <input id="bank" value="GXBank">
+      <select id="bank">
+        <option>Maybank</option>
+        <option>CIMB Bank</option>
+        <option>Public Bank Berhad</option>
+        <option>RHB Bank</option>
+        <option>Hong Leong Bank</option>
+        <option>AmBank</option>
+        <option>Bank Islam Malaysia</option>
+        <option>Bank Muamalat</option>
+        <option>UOB Malaysia</option>
+        <option>BSN</option>
+        <option>Agrobank</option>
+        <option>Affin Bank</option>
+        <option>Bank Rakyat</option>
+        <option>HSBC Malaysia</option>
+        <option>Touch 'n Go eWallet</option>
+        <option>GrabPay</option>
+        <option selected>Gx Bank</option>
+        <option>ShopeePay</option>
+      </select>
     </div>
     <div>
       <label>Transfer Type</label>
@@ -101,9 +120,6 @@ button{height:35px;border:0;border-radius:6px;color:#fff;font-weight:700;cursor:
     <button id="createBtn">Create</button>
     <button id="blurBtn">Blur</button>
     <button id="copyBtn">Copy Image</button>
-  </div>
-  <div class="note">
-    RHB-inspired <b>demo mockup</b> based on your sample screenshot structure, now using the DuitNow logo image you provided. It is not an official bank receipt and always carries <b>SAMPLE — NOT A REAL TRANSACTION</b>.
   </div>
 </section>
 
@@ -143,7 +159,7 @@ button{height:35px;border:0;border-radius:6px;color:#fff;font-weight:700;cursor:
           </div>
           <div class="info">
             <div class="k">Bank</div>
-            <div id="rBank" class="v">GXBank</div>
+            <div id="rBank" class="v">Gx Bank</div>
           </div>
           <div class="info">
             <div class="k">Transfer Type</div>
@@ -181,7 +197,7 @@ const defaults={
   reference:'17879536148200063',
   fromAcct:'RHB Smart Account-i | 26110000000000',
   toPerson:'DEMO RECIPIENT | 8888000000000',
-  bank:'GXBank',
+  bank:'Gx Bank',
   transferType:'Fund Transfer',
   transferMethod:'DuitNow (Instant)',
   recipientRef:'payment'
