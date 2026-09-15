@@ -23,520 +23,356 @@
 <body>
 
 
-<!-- =================================================
-     TOP NAVIGATION
-================================================= -->
+<!-- =====================================================
+     TOP
+===================================================== -->
 
-<header class="topbar">
-
-  <div class="shell toprow">
+<header class="appbar">
 
 
-    <!-- BRAND -->
+  <div class="brandbar">
+
+
+    <div class="brand">
+
+      <strong>
+        Game Asset Studio
+      </strong>
+
+      <span>
+        Simple Workspace
+      </span>
+
+    </div>
+
 
     <button
-      class="brand brand-button"
-      data-view="home"
-      aria-label="Go home">
+      id="homeButton"
+      class="home-button">
 
-      <div class="brandmark">
-        GA
-      </div>
-
-      <div>
-
-        <h1>
-          Game Asset Studio
-        </h1>
-
-        <p>
-          Provider logos · Game images · Tips · Demo tools
-        </p>
-
-      </div>
+      HOME
 
     </button>
 
 
-
-    <!-- NAV -->
-
-    <nav class="nav">
+  </div>
 
 
-      <button
-        data-view="home"
-        class="active">
 
+  <!-- =================================================
+       OPENED TABS
+  ================================================= -->
+
+  <div
+    id="tabs"
+    class="tabs">
+
+
+    <button
+      class="tab active"
+      data-key="home">
+
+      <span>
         Home
+      </span>
 
-      </button>
+    </button>
 
-
-
-      <button
-        data-view="games">
-
-        Game Assets
-
-      </button>
-
-
-
-      <button
-        onclick="location.href='tips-generator/'">
-
-        Tips Generator
-
-      </button>
-
-
-
-      <button
-        data-view="banks">
-
-        Bank Demo Lab
-
-      </button>
-
-
-
-      <button
-        onclick="location.href='history-tools/'">
-
-        History Builder
-
-      </button>
-
-
-    </nav>
 
   </div>
+
 
 </header>
 
 
 
-<!-- =================================================
-     MAIN
-================================================= -->
+<!-- =====================================================
+     WORKSPACE
+===================================================== -->
 
-<main class="shell">
+<main class="workspace">
 
 
 
-<!-- =================================================
+<!-- =====================================================
      HOME
-================================================= -->
+===================================================== -->
 
-<section id="homeView">
-
-
-  <!-- HERO -->
-
-  <section class="hero home-hero">
+<section
+  id="home"
+  class="home">
 
 
-    <div class="eyebrow">
-
-      ASSET MANAGEMENT DASHBOARD
-
-    </div>
+  <div class="intro">
 
 
-    <h2>
+    <span>
+      WORKSPACE
+    </span>
 
-      Everything in one clean workspace.
 
-    </h2>
+    <h1>
+      Game Asset Studio
+    </h1>
 
 
     <p>
 
-      Open your game-image library,
-      provider logos, Tips Generator,
-      bank demo tools, or transaction
-      history builder from one home screen.
+      Open the tool you need.
+      Opened pages will stay available
+      in the tab bar above.
 
     </p>
 
 
-
-    <!-- STATS -->
-
-    <div class="stats">
-
-
-      <div class="stat">
-
-        <b id="statProviders">
-          —
-        </b>
-
-        <span>
-          Providers
-        </span>
-
-      </div>
-
-
-
-      <div class="stat">
-
-        <b id="statGames">
-          —
-        </b>
-
-        <span>
-          Game images
-        </span>
-
-      </div>
-
-
-
-      <div class="stat">
-
-        <b id="statLogos">
-          —
-        </b>
-
-        <span>
-          Logo variants
-        </span>
-
-      </div>
-
-
-
-      <div class="stat">
-
-        <b id="sourceLabel">
-          Loading
-        </b>
-
-        <span>
-          Asset source
-        </span>
-
-      </div>
-
-
-    </div>
-
-  </section>
+  </div>
 
 
 
   <!-- =================================================
-       HOME CARDS
+       GAME
   ================================================= -->
 
-  <section class="launch-grid">
+  <section class="group">
+
+
+    <div class="group-title">
+
+      GAME TOOLS
+
+    </div>
 
 
 
-    <!-- =================================================
-         GAME ASSETS
-    ================================================= -->
-
-    <article class="launch-card game-launch">
-
-
-      <div class="launch-icon">
-
-        🎮
-
-      </div>
+    <button
+      class="tool"
+      data-title="Game Assets"
+      data-url="../">
 
 
-      <div class="launch-copy">
+      <div>
 
-
-        <span class="launch-kicker">
-
-          ASSET LIBRARY
-
-        </span>
-
-
-        <h3>
-
+        <strong>
           Game Assets
+        </strong>
 
-        </h3>
-
-
-        <p>
-
-          Browse every provider, logo and game image.
-          Search using provider, mapped game name,
-          game ID or filename. Preview images,
-          copy direct URLs and download originals.
-
-        </p>
-
+        <small>
+          Provider logos and game images
+        </small>
 
       </div>
 
 
-      <button
-        class="launch-btn"
-        data-open-view="games">
-
-        Open Game Library →
-
-      </button>
+      <span>
+        Open →
+      </span>
 
 
-    </article>
+    </button>
 
 
 
-    <!-- =================================================
-         TIPS GENERATOR
-    ================================================= -->
-
-    <article class="launch-card game-launch">
-
-
-      <div class="launch-icon">
-
-        🎯
-
-      </div>
+    <button
+      class="tool"
+      data-title="Tips Game"
+      data-url="../tips-generator/">
 
 
-      <div class="launch-copy">
+      <div>
 
-
-        <span class="launch-kicker">
-
-          GAME LIST TOOL
-
-        </span>
-
-
-        <h3>
-
+        <strong>
           Tips Generator
+        </strong>
 
-        </h3>
-
-
-        <p>
-
-          Generate random game cards with game images,
-          mapped game names and random display scores.
-          Copy ready-made text or direct image URLs
-          from the generated results.
-
-        </p>
-
+        <small>
+          Generate random game list
+        </small>
 
       </div>
 
 
-      <button
-        class="launch-btn"
-        onclick="location.href='tips-generator/'">
-
-        Open Tips Generator →
-
-      </button>
+      <span>
+        Open →
+      </span>
 
 
-    </article>
+    </button>
+
+
+  </section>
 
 
 
-    <!-- =================================================
-         BANK DEMO
-    ================================================= -->
+  <!-- =================================================
+       BANK
+  ================================================= -->
 
-    <article class="launch-card bank-launch">
-
-
-      <div class="launch-icon">
-
-        ▣
-
-      </div>
+  <section class="group">
 
 
-      <div class="launch-copy">
+    <div class="group-title">
+
+      BANK DEMO TOOLS
+
+    </div>
 
 
-        <span class="launch-kicker">
 
-          DEMO TOOLS
-
-        </span>
-
-
-        <h3>
-
-          Bank Demo Lab
-
-        </h3>
+    <button
+      class="tool"
+      data-title="Maybank2u"
+      data-url="../bank-tools/mbb/">
 
 
-        <p>
+      <div>
 
-          Open the fixed MBB, GXB, RHB and CIMB
-          demo layouts from one menu,
-          with an obvious route back Home.
+        <strong>
+          Maybank2u
+        </strong>
 
-        </p>
-
+        <small>
+          MBB demo builder
+        </small>
 
       </div>
 
 
-      <button
-        class="launch-btn"
-        data-open-view="banks">
-
-        Open Bank Demo Lab →
-
-      </button>
+      <span>
+        Open →
+      </span>
 
 
-    </article>
+    </button>
 
 
 
-    <!-- =================================================
-         HISTORY BUILDER
-    ================================================= -->
+    <button
+      class="tool"
+      data-title="RHB Bank"
+      data-url="../bank-tools/rhb/">
 
-    <article class="launch-card history-launch">
 
+      <div>
 
-      <div class="launch-icon">
+        <strong>
+          RHB Bank
+        </strong>
 
-        🧾
+        <small>
+          RHB demo builder
+        </small>
 
       </div>
 
 
-      <div class="launch-copy">
+      <span>
+        Open →
+      </span>
 
 
-        <span class="launch-kicker">
-
-          TRANSACTION TOOL
-
-        </span>
+    </button>
 
 
-        <h3>
 
+    <button
+      class="tool"
+      data-title="CIMB Bank"
+      data-url="../bank-tools/cimb/">
+
+
+      <div>
+
+        <strong>
+          CIMB Bank
+        </strong>
+
+        <small>
+          CIMB demo builder
+        </small>
+
+      </div>
+
+
+      <span>
+        Open →
+      </span>
+
+
+    </button>
+
+
+
+    <button
+      class="tool"
+      data-title="GXB Bank"
+      data-url="../bank-tools/gxb/">
+
+
+      <div>
+
+        <strong>
+          GXB Bank
+        </strong>
+
+        <small>
+          GXB demo builder
+        </small>
+
+      </div>
+
+
+      <span>
+        Open →
+      </span>
+
+
+    </button>
+
+
+  </section>
+
+
+
+  <!-- =================================================
+       OTHER
+  ================================================= -->
+
+  <section class="group">
+
+
+    <div class="group-title">
+
+      OTHER TOOLS
+
+    </div>
+
+
+
+    <button
+      class="tool"
+      data-title="History"
+      data-url="../history-tools/">
+
+
+      <div>
+
+        <strong>
           History Builder
+        </strong>
 
-        </h3>
-
-
-        <p>
-
-          Edit demo withdrawal and deposit transaction
-          records, customer details, amounts,
-          payment methods, status and date/time.
-
-        </p>
-
+        <small>
+          Withdraw / Deposit history
+        </small>
 
       </div>
 
 
-      <button
-        class="launch-btn"
-        onclick="location.href='history-tools/'">
-
-        Open History Builder →
-
-      </button>
-
-
-    </article>
-
-
-  </section>
-
-
-
-  <!-- =================================================
-       QUICK GUIDE
-  ================================================= -->
-
-  <section class="quick-guide">
-
-
-    <div>
-
-      <b>
-        1
-      </b>
-
       <span>
-
-        <strong>
-          Choose a section
-        </strong>
-
-        <small>
-          Game library, Tips Generator,
-          bank demos or history builder.
-        </small>
-
+        Open →
       </span>
 
-    </div>
 
-
-
-    <div>
-
-      <b>
-        2
-      </b>
-
-      <span>
-
-        <strong>
-          Open what you need
-        </strong>
-
-        <small>
-          Provider, game image, mapped game name,
-          Tips Generator, bank layout or transaction tool.
-        </small>
-
-      </span>
-
-    </div>
-
-
-
-    <div>
-
-      <b>
-        3
-      </b>
-
-      <span>
-
-        <strong>
-          Return anytime
-        </strong>
-
-        <small>
-          Use the Home button in the top navigation.
-        </small>
-
-      </span>
-
-    </div>
+    </button>
 
 
   </section>
@@ -546,518 +382,669 @@
 
 
 
-<!-- =================================================
-     GAME ASSETS
-================================================= -->
+<!-- =====================================================
+     OPENED PAGE
+===================================================== -->
 
 <section
-  id="gameView"
-  class="hidden">
+  id="viewer"
+  class="viewer hidden">
 
 
-  <!-- PAGE HEADER -->
-
-  <div class="pagehead">
+  <div class="viewer-head">
 
 
-    <div>
+    <strong id="viewerTitle">
+
+      Opened Tool
+
+    </strong>
 
 
-      <span class="eyebrow">
+    <a
+      id="openNew"
+      href="#"
+      target="_blank">
 
-        GAME LIBRARY
+      Open New Tab ↗
 
-      </span>
-
-
-      <h2>
-
-        Game Assets
-
-      </h2>
-
-
-      <p>
-
-        Provider logos, game images,
-        mapped game names and published TXT tips.
-
-      </p>
-
-
-    </div>
-
-
-
-    <button
-      class="home-shortcut"
-      data-open-view="home">
-
-      ← Home
-
-    </button>
+    </a>
 
 
   </div>
 
 
 
-  <!-- =================================================
-       SEARCH TOOLBAR
-  ================================================= -->
+  <iframe
+    id="frame"
+    title="Workspace">
 
-  <div class="toolbar">
-
-
-    <button
-      id="backBtn"
-      class="back hidden">
-
-      ← All Providers
-
-    </button>
-
-
-
-    <div class="search">
-
-
-      <input
-        id="searchInput"
-        placeholder="Search provider, game name, ID or filename...">
-
-
-      <button
-        id="clearSearch"
-        class="clear">
-
-        ×
-
-      </button>
-
-
-    </div>
-
-
-  </div>
-
-
-
-  <!-- =================================================
-       PROVIDER LOGOS
-  ================================================= -->
-
-  <div
-    id="providerLogoTitle"
-    class="section-title hidden">
-
-
-    <h3>
-
-      Provider Logos
-
-    </h3>
-
-
-  </div>
-
-
-
-  <div
-    id="providerLogos"
-    class="logos hidden">
-
-  </div>
-
-
-
-  <!-- =================================================
-       GAME SECTION TITLE
-  ================================================= -->
-
-  <div class="section-title">
-
-
-    <h3 id="gameSectionTitle">
-
-      Providers
-
-    </h3>
-
-
-    <span id="resultCount">
-
-    </span>
-
-
-  </div>
-
-
-
-  <!-- =================================================
-       PROVIDERS
-  ================================================= -->
-
-  <div
-    id="providerGrid"
-    class="providers">
-
-  </div>
-
-
-
-  <!-- =================================================
-       GAME GRID
-  ================================================= -->
-
-  <div
-    id="gameGrid"
-    class="games">
-
-  </div>
-
-
-
-  <button
-    id="loadMore"
-    class="loadmore hidden">
-
-    Load More
-
-  </button>
+  </iframe>
 
 
 </section>
-
-
-
-<!-- =================================================
-     BANK DEMO LAB
-================================================= -->
-
-<section
-  id="bankView"
-  class="hidden">
-
-
-  <!-- PAGE HEADER -->
-
-  <div class="pagehead">
-
-
-    <div>
-
-
-      <span class="eyebrow">
-
-        SAVED DEMO LAYOUTS
-
-      </span>
-
-
-      <h2>
-
-        Bank Demo Lab
-
-      </h2>
-
-
-      <p>
-
-        Select a saved layout.
-        Each builder has Home and
-        Bank Demo Lab buttons at the top.
-
-      </p>
-
-
-    </div>
-
-
-
-    <button
-      class="home-shortcut"
-      data-open-view="home">
-
-      ← Home
-
-    </button>
-
-
-  </div>
-
-
-
-  <!-- WARNING -->
-
-  <div class="warning">
-
-    <b>
-      Demo-only tools.
-    </b>
-
-    These pages are for interface/layout testing.
-    Their outputs remain clearly marked as
-    SAMPLE / NOT A REAL TRANSACTION
-    and should not be used as proof of payment.
-
-  </div>
-
-
-
-  <!-- =================================================
-       BANK CARDS
-  ================================================= -->
-
-  <div class="bank-grid">
-
-
-
-    <!-- =================================================
-         MBB
-    ================================================= -->
-
-    <article class="bank-card">
-
-
-      <span class="tag">
-
-        FIXED
-
-      </span>
-
-
-      <h4>
-
-        MBB
-
-      </h4>
-
-
-      <p>
-
-        Compact transfer-success layout with green header,
-        transaction details, total amount and demo watermark.
-
-      </p>
-
-
-      <a
-        class="openbank"
-        href="bank-tools/mbb/">
-
-        Open MBB Demo
-
-      </a>
-
-
-    </article>
-
-
-
-    <!-- =================================================
-         GXB
-    ================================================= -->
-
-    <article class="bank-card">
-
-
-      <span class="tag">
-
-        FIXED
-
-      </span>
-
-
-      <h4>
-
-        GXB
-
-      </h4>
-
-
-      <p>
-
-        Vertical transfer-success layout with the saved
-        GXB structure, recipient, destination,
-        amount and reference.
-
-      </p>
-
-
-      <a
-        class="openbank"
-        href="bank-tools/gxb/">
-
-        Open GXB Demo
-
-      </a>
-
-
-    </article>
-
-
-
-    <!-- =================================================
-         RHB
-    ================================================= -->
-
-    <article class="bank-card">
-
-
-      <span class="tag fixed-ok">
-
-        FIXED + REPAIRED
-
-      </span>
-
-
-      <h4>
-
-        RHB
-
-      </h4>
-
-
-      <p>
-
-        Status-first layout with amount,
-        reference ID, From/To, DuitNow logo,
-        transfer method and receipt actions.
-
-      </p>
-
-
-      <a
-        class="openbank"
-        href="bank-tools/rhb/">
-
-        Open RHB Demo
-
-      </a>
-
-
-    </article>
-
-
-
-    <!-- =================================================
-         CIMB
-    ================================================= -->
-
-    <article class="bank-card">
-
-
-      <span class="tag">
-
-        FIXED
-
-      </span>
-
-
-      <h4>
-
-        CIMB
-
-      </h4>
-
-
-      <p>
-
-        Mobile-style transaction summary
-        with success header, MYR amount,
-        details and bottom action area.
-
-      </p>
-
-
-      <a
-        class="openbank"
-        href="bank-tools/cimb/">
-
-        Open CIMB Demo
-
-      </a>
-
-
-    </article>
-
-
-  </div>
-
-
-</section>
-
-
-
-<!-- =================================================
-     FOOTER
-================================================= -->
-
-<footer class="footer-site">
-
-  Static GitHub Pages package ·
-  No server or database required.
-
-</footer>
 
 
 </main>
 
 
 
-<!-- =================================================
-     PREVIEW MODAL
-================================================= -->
+<script>
 
-<div
-  id="modal"
-  class="modalbg">
+/* =====================================================
+   ELEMENTS
+===================================================== */
 
-
-  <div class="modal">
-
-
-    <div class="modalhead">
+const tabsEl=
+  document.getElementById(
+    "tabs"
+  );
 
 
-      <h4 id="modalTitle">
-
-        Preview
-
-      </h4>
-
-
-      <button
-        id="modalClose"
-        class="close">
-
-        Close
-
-      </button>
+const home=
+  document.getElementById(
+    "home"
+  );
 
 
-    </div>
+const viewer=
+  document.getElementById(
+    "viewer"
+  );
+
+
+const frame=
+  document.getElementById(
+    "frame"
+  );
+
+
+const viewerTitle=
+  document.getElementById(
+    "viewerTitle"
+  );
+
+
+const openNew=
+  document.getElementById(
+    "openNew"
+  );
+
+
+const homeButton=
+  document.getElementById(
+    "homeButton"
+  );
 
 
 
-    <div id="modalBody">
+/* =====================================================
+   TAB DATA
+===================================================== */
 
-    </div>
+let openedTabs=[
+
+  {
+    key:"home",
+    title:"Home",
+    url:null
+  }
+
+];
 
 
-  </div>
-
-
-</div>
+let activeTab=
+  "home";
 
 
 
-<!-- =================================================
-     APP
-================================================= -->
+/* =====================================================
+   CREATE KEY
+===================================================== */
 
-<script src="app.js"></script>
+function makeKey(
+  value
+){
+
+  return String(
+    value
+  )
+
+  .toLowerCase()
+
+  .replace(
+    /[^a-z0-9]+/g,
+    "-"
+  )
+
+  .replace(
+    /^-|-$/g,
+    ""
+  );
+
+}
+
+
+
+/* =====================================================
+   SAVE
+===================================================== */
+
+function saveTabs(){
+
+  const save=
+
+    openedTabs.filter(
+      tab=>
+        tab.key!=="home"
+    );
+
+
+  localStorage.setItem(
+
+    "game-asset-open-tabs",
+
+    JSON.stringify(
+      save
+    )
+
+  );
+
+}
+
+
+
+/* =====================================================
+   LOAD SAVED TABS
+===================================================== */
+
+function loadSavedTabs(){
+
+  try{
+
+
+    const saved=
+
+      JSON.parse(
+
+        localStorage.getItem(
+          "game-asset-open-tabs"
+        )
+
+        ||
+
+        "[]"
+
+      );
+
+
+    if(
+      !Array.isArray(saved)
+    ){
+
+      return;
+
+    }
+
+
+    saved.forEach(
+      tab=>{
+
+
+        if(
+
+          !tab ||
+
+          !tab.key ||
+
+          !tab.title ||
+
+          !tab.url
+
+        ){
+
+          return;
+
+        }
+
+
+        if(
+
+          openedTabs.some(
+            item=>
+              item.key===
+              tab.key
+          )
+
+        ){
+
+          return;
+
+        }
+
+
+        openedTabs.push(
+          tab
+        );
+
+
+      }
+    );
+
+
+  }catch(error){}
+
+}
+
+
+
+/* =====================================================
+   DRAW TABS
+===================================================== */
+
+function renderTabs(){
+
+
+  tabsEl.innerHTML=
+    "";
+
+
+  openedTabs.forEach(
+    tab=>{
+
+
+      const button=
+
+        document.createElement(
+          "button"
+        );
+
+
+      button.className=
+
+        "tab"+
+        (
+          tab.key===activeTab
+          ?" active"
+          :""
+        );
+
+
+      const name=
+
+        document.createElement(
+          "span"
+        );
+
+
+      name.textContent=
+        tab.title;
+
+
+      button.appendChild(
+        name
+      );
+
+
+
+      /* CLOSE */
+
+      if(
+        tab.key!=="home"
+      ){
+
+
+        const close=
+
+          document.createElement(
+            "i"
+          );
+
+
+        close.textContent=
+          "×";
+
+
+        close.onclick=
+        event=>{
+
+
+          event.stopPropagation();
+
+
+          closeTab(
+            tab.key
+          );
+
+
+        };
+
+
+        button.appendChild(
+          close
+        );
+
+
+      }
+
+
+
+      button.onclick=
+      ()=>{
+
+
+        activateTab(
+          tab.key
+        );
+
+
+      };
+
+
+      tabsEl.appendChild(
+        button
+      );
+
+
+    }
+  );
+
+}
+
+
+
+/* =====================================================
+   OPEN TOOL
+===================================================== */
+
+function openTool(
+  title,
+  url
+){
+
+
+  const key=
+    makeKey(
+      title
+    );
+
+
+  const exists=
+
+    openedTabs.some(
+      tab=>
+        tab.key===key
+    );
+
+
+  if(
+    !exists
+  ){
+
+
+    openedTabs.push({
+
+      key,
+
+      title,
+
+      url
+
+    });
+
+
+    saveTabs();
+
+  }
+
+
+  activateTab(
+    key
+  );
+
+}
+
+
+
+/* =====================================================
+   ACTIVATE TAB
+===================================================== */
+
+function activateTab(
+  key
+){
+
+
+  const tab=
+
+    openedTabs.find(
+      item=>
+        item.key===key
+    );
+
+
+  if(
+    !tab
+  ){
+
+    return;
+
+  }
+
+
+  activeTab=
+    key;
+
+
+
+  /* HOME */
+
+  if(
+    key==="home"
+  ){
+
+
+    home.classList.remove(
+      "hidden"
+    );
+
+
+    viewer.classList.add(
+      "hidden"
+    );
+
+
+    frame.src=
+      "about:blank";
+
+
+    frame.removeAttribute(
+      "data-tab"
+    );
+
+
+  }
+
+
+
+  /* PAGE */
+
+  else{
+
+
+    home.classList.add(
+      "hidden"
+    );
+
+
+    viewer.classList.remove(
+      "hidden"
+    );
+
+
+    viewerTitle.textContent=
+      tab.title;
+
+
+    openNew.href=
+      tab.url;
+
+
+
+    /*
+      Only reload iframe
+      when changing page.
+    */
+
+    if(
+
+      frame.getAttribute(
+        "data-tab"
+      )!==key
+
+    ){
+
+
+      frame.src=
+        tab.url;
+
+
+      frame.setAttribute(
+        "data-tab",
+        key
+      );
+
+
+    }
+
+
+  }
+
+
+  renderTabs();
+
+}
+
+
+
+/* =====================================================
+   CLOSE TAB
+===================================================== */
+
+function closeTab(
+  key
+){
+
+
+  const index=
+
+    openedTabs.findIndex(
+      tab=>
+        tab.key===key
+    );
+
+
+  if(
+    index===-1
+  ){
+
+    return;
+
+  }
+
+
+  const closingActive=
+
+    activeTab===key;
+
+
+  openedTabs.splice(
+    index,
+    1
+  );
+
+
+  saveTabs();
+
+
+
+  if(
+    closingActive
+  ){
+
+    activateTab(
+      "home"
+    );
+
+  }
+
+  else{
+
+    renderTabs();
+
+  }
+
+}
+
+
+
+/* =====================================================
+   TOOL BUTTONS
+===================================================== */
+
+document
+.querySelectorAll(
+  ".tool"
+)
+.forEach(
+  button=>{
+
+
+    button.onclick=
+    ()=>{
+
+
+      openTool(
+
+        button.dataset.title,
+
+        button.dataset.url
+
+      );
+
+
+    };
+
+
+  }
+);
+
+
+
+/* =====================================================
+   HOME BUTTON
+===================================================== */
+
+homeButton.onclick=
+()=>{
+
+  activateTab(
+    "home"
+  );
+
+};
+
+
+
+/* =====================================================
+   START
+===================================================== */
+
+loadSavedTabs();
+
+renderTabs();
+
+</script>
 
 
 </body>
