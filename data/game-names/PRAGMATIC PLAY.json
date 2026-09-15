@@ -1,0 +1,5407 @@
+{
+  "provider": "PRAGMATIC PLAY",
+  "generatedAt": "2026-09-15T02:44:27.788Z",
+  "total": 675,
+  "games": {
+    "cs3irishcharms.png": {
+      "id": "cs3irishcharms",
+      "code": "cs3irishcharms",
+      "name": "Irish Charms",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/cs3irishcharms.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "cs3w.png": {
+      "id": "cs3w",
+      "code": "cs3w",
+      "name": "Diamonds are Forever 3 Lines",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/cs3w.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "cs5moneyroll.png": {
+      "id": "cs5moneyroll",
+      "code": "cs5moneyroll",
+      "name": "MONEY ROLL",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/cs5moneyroll.png",
+      "nameSource": "manual"
+    },
+    "vs1ball.png": {
+      "id": "vs1ball",
+      "code": "vs1ball",
+      "name": "DRAGON BALL",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1ball.png",
+      "nameSource": "manual"
+    },
+    "vs1dragon8.png": {
+      "id": "vs1dragon8",
+      "code": "vs1dragon8",
+      "name": "888 Dragons",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1dragon8.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs1fortunetree.png": {
+      "id": "vs1fortunetree",
+      "code": "vs1fortunetree",
+      "name": "Tree of Riches",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1fortunetree.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs1fufufu.png": {
+      "id": "vs1fufufu",
+      "code": "vs1fufufu",
+      "name": "FU FU FU",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1fufufu.png",
+      "nameSource": "manual"
+    },
+    "vs1masterjoker.png": {
+      "id": "vs1masterjoker",
+      "code": "vs1masterjoker",
+      "name": "Master Joker",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1masterjoker.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs1money.png": {
+      "id": "vs1money",
+      "code": "vs1money",
+      "name": "MONEY MONEY MONEY",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1money.png",
+      "nameSource": "manual"
+    },
+    "vs1tigers.png": {
+      "id": "vs1tigers",
+      "code": "vs1tigers",
+      "name": "Triple Tigers",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1tigers.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs3train.png": {
+      "id": "vs3train",
+      "code": "vs3train",
+      "name": "Gold Train",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs3train.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5aztecgems.png": {
+      "id": "vs5aztecgems",
+      "code": "vs5aztecgems",
+      "name": "Aztec Gems",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5aztecgems.png",
+      "nameSource": "verified"
+    },
+    "vs5balidragon.png": {
+      "id": "vs5balidragon",
+      "code": "vs5balidragon",
+      "name": "BALI DRAGON",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5balidragon.png",
+      "nameSource": "manual"
+    },
+    "vs5bb3reeler.png": {
+      "id": "vs5bb3reeler",
+      "code": "vs5bb3reeler",
+      "name": "BIG BASS BONANZA 3 REELER",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5bb3reeler.png",
+      "nameSource": "manual"
+    },
+    "vs5drhs.png": {
+      "id": "vs5drhs",
+      "code": "vs5drhs",
+      "name": "Dragon Hot Hold and Spin",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5drhs.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5drmystery.png": {
+      "id": "vs5drmystery",
+      "code": "vs5drmystery",
+      "name": "Dragon Kingdom – Eyes of Fire",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5drmystery.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5firehot.png": {
+      "id": "vs5firehot",
+      "code": "vs5firehot",
+      "name": "FIRE HOT 5",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5firehot.png",
+      "nameSource": "manual"
+    },
+    "vs5gemstone.png": {
+      "id": "vs5gemstone",
+      "code": "vs5gemstone",
+      "name": "GEMSTONE",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5gemstone.png",
+      "nameSource": "manual"
+    },
+    "vs5himalaw.png": {
+      "id": "vs5himalaw",
+      "code": "vs5himalaw",
+      "name": "HIMALAYAN WILD",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5himalaw.png",
+      "nameSource": "manual"
+    },
+    "vs5hotbmult.png": {
+      "id": "vs5hotbmult",
+      "code": "vs5hotbmult",
+      "name": "HOT TO BURN MULTIPLIER",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5hotbmult.png",
+      "nameSource": "manual"
+    },
+    "vs5hotburn.png": {
+      "id": "vs5hotburn",
+      "code": "vs5hotburn",
+      "name": "Hot to burn",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5hotburn.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5jjwild.png": {
+      "id": "vs5jjwild",
+      "code": "vs5jjwild",
+      "name": "JOKER JEWELS WILD",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5jjwild.png",
+      "nameSource": "manual"
+    },
+    "vs5jkrrevenge.png": {
+      "id": "vs5jkrrevenge",
+      "code": "vs5jkrrevenge",
+      "name": "JOKER REVENGE",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5jkrrevenge.png",
+      "nameSource": "manual"
+    },
+    "vs5joker.png": {
+      "id": "vs5joker",
+      "code": "vs5joker",
+      "name": "Joker’s Jewels",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5joker.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5jokerdice.png": {
+      "id": "vs5jokerdice",
+      "code": "vs5jokerdice",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5jokerdice.png",
+      "nameSource": ""
+    },
+    "vs5jokerjc.png": {
+      "id": "vs5jokerjc",
+      "code": "vs5jokerjc",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5jokerjc.png",
+      "nameSource": ""
+    },
+    "vs5jokjewhs.png": {
+      "id": "vs5jokjewhs",
+      "code": "vs5jokjewhs",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5jokjewhs.png",
+      "nameSource": ""
+    },
+    "vs5littlegem.png": {
+      "id": "vs5littlegem",
+      "code": "vs5littlegem",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5littlegem.png",
+      "nameSource": ""
+    },
+    "vs5magicdoor.png": {
+      "id": "vs5magicdoor",
+      "code": "vs5magicdoor",
+      "name": "JOKERS",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5magicdoor.png",
+      "nameSource": "manual"
+    },
+    "vs5sh.png": {
+      "id": "vs5sh",
+      "code": "vs5sh",
+      "name": "SHINING HOT 5",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5sh.png",
+      "nameSource": "manual"
+    },
+    "vs5spjoker.png": {
+      "id": "vs5spjoker",
+      "code": "vs5spjoker",
+      "name": "Super Joker",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5spjoker.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5strh.png": {
+      "id": "vs5strh",
+      "code": "vs5strh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5strh.png",
+      "nameSource": ""
+    },
+    "vs5super7.png": {
+      "id": "vs5super7",
+      "code": "vs5super7",
+      "name": "Super 7s",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5super7.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5supergummy.png": {
+      "id": "vs5supergummy",
+      "code": "vs5supergummy",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5supergummy.png",
+      "nameSource": ""
+    },
+    "vs5tikistrike.png": {
+      "id": "vs5tikistrike",
+      "code": "vs5tikistrike",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5tikistrike.png",
+      "nameSource": ""
+    },
+    "vs5trdragons.png": {
+      "id": "vs5trdragons",
+      "code": "vs5trdragons",
+      "name": "Triple Dragons",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5trdragons.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5triple8gold.png": {
+      "id": "vs5triple8gold",
+      "code": "vs5triple8gold",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5triple8gold.png",
+      "nameSource": ""
+    },
+    "vs5ultra.png": {
+      "id": "vs5ultra",
+      "code": "vs5ultra",
+      "name": "Ultra Hold and Spin",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5ultra.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs5ultrab.png": {
+      "id": "vs5ultrab",
+      "code": "vs5ultrab",
+      "name": "Ultra Burn",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5ultrab.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs5wheel7s.png": {
+      "id": "vs5wheel7s",
+      "code": "vs5wheel7s",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs5wheel7s.png",
+      "nameSource": ""
+    },
+    "vs7fire88.png": {
+      "id": "vs7fire88",
+      "code": "vs7fire88",
+      "name": "Fire 88",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs7fire88.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs7monkeys.png": {
+      "id": "vs7monkeys",
+      "code": "vs7monkeys",
+      "name": "7 Monkeys",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs7monkeys.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs7pigs.png": {
+      "id": "vs7pigs",
+      "code": "vs7pigs",
+      "name": "7 Piggies",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs7pigs.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs8magicjourn.png": {
+      "id": "vs8magicjourn",
+      "code": "vs8magicjourn",
+      "name": "Magic Journey",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs8magicjourn.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs9aztecgemsdx.png": {
+      "id": "vs9aztecgemsdx",
+      "code": "vs9aztecgemsdx",
+      "name": "Aztec Gems Deluxe",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9aztecgemsdx.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs9chen.png": {
+      "id": "vs9chen",
+      "code": "vs9chen",
+      "name": "Master Chen’s Fortune",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9chen.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs9gemtrio.png": {
+      "id": "vs9gemtrio",
+      "code": "vs9gemtrio",
+      "name": "GEM TRIO",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9gemtrio.png",
+      "nameSource": "manual"
+    },
+    "vs9hotroll.png": {
+      "id": "vs9hotroll",
+      "code": "vs9hotroll",
+      "name": "Hot Chilli",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9hotroll.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs9madmonkey.png": {
+      "id": "vs9madmonkey",
+      "code": "vs9madmonkey",
+      "name": "Monkey Madness",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9madmonkey.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs9outlaw.png": {
+      "id": "vs9outlaw",
+      "code": "vs9outlaw",
+      "name": "PIRATES PUB",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9outlaw.png",
+      "nameSource": "manual"
+    },
+    "vs9piggybank.png": {
+      "id": "vs9piggybank",
+      "code": "vs9piggybank",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9piggybank.png",
+      "nameSource": ""
+    },
+    "vs9ridelightng.png": {
+      "id": "vs9ridelightng",
+      "code": "vs9ridelightng",
+      "name": "RIDE LIGHTNING",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs9ridelightng.png",
+      "nameSource": "manual"
+    },
+    "vs10amm.png": {
+      "id": "vs10amm",
+      "code": "vs10amm",
+      "name": "The Amazing Money Machine",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10amm.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10bbasblitz.png": {
+      "id": "vs10bbasblitz",
+      "code": "vs10bbasblitz",
+      "name": "BIG BASS BLAST",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbasblitz.png",
+      "nameSource": "manual"
+    },
+    "vs10bbbbrnd.png": {
+      "id": "vs10bbbbrnd",
+      "code": "vs10bbbbrnd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbbbrnd.png",
+      "nameSource": ""
+    },
+    "vs10bbbnz.png": {
+      "id": "vs10bbbnz",
+      "code": "vs10bbbnz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbbnz.png",
+      "nameSource": ""
+    },
+    "vs10bbbnz1000.png": {
+      "id": "vs10bbbnz1000",
+      "code": "vs10bbbnz1000",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbbnz1000.png",
+      "nameSource": ""
+    },
+    "vs10bbbonanza.png": {
+      "id": "vs10bbbonanza",
+      "code": "vs10bbbonanza",
+      "name": "Big Bass Bonanza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbbonanza.png",
+      "nameSource": "verified"
+    },
+    "vs10bbbrlact.png": {
+      "id": "vs10bbbrlact",
+      "code": "vs10bbbrlact",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbbrlact.png",
+      "nameSource": ""
+    },
+    "vs10bbdoubled.png": {
+      "id": "vs10bbdoubled",
+      "code": "vs10bbdoubled",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbdoubled.png",
+      "nameSource": ""
+    },
+    "vs10bbextreme.png": {
+      "id": "vs10bbextreme",
+      "code": "vs10bbextreme",
+      "name": "Big Bass Amazon Xtreme",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbextreme.png",
+      "nameSource": "verified"
+    },
+    "vs10bbfloats.png": {
+      "id": "vs10bbfloats",
+      "code": "vs10bbfloats",
+      "name": "Big Bass Floats My Boat",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbfloats.png",
+      "nameSource": "verified"
+    },
+    "vs10bbfmission.png": {
+      "id": "vs10bbfmission",
+      "code": "vs10bbfmission",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbfmission.png",
+      "nameSource": ""
+    },
+    "vs10bbglxmas.png": {
+      "id": "vs10bbglxmas",
+      "code": "vs10bbglxmas",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbglxmas.png",
+      "nameSource": ""
+    },
+    "vs10bbhas.png": {
+      "id": "vs10bbhas",
+      "code": "vs10bbhas",
+      "name": "Big Bass - Hold & Spinner",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbhas.png",
+      "nameSource": "verified"
+    },
+    "vs10bbkir.png": {
+      "id": "vs10bbkir",
+      "code": "vs10bbkir",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbkir.png",
+      "nameSource": ""
+    },
+    "vs10bblotgl.png": {
+      "id": "vs10bblotgl",
+      "code": "vs10bblotgl",
+      "name": "Big Bass - Secrets Of The Golden Lake",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bblotgl.png",
+      "nameSource": "verified"
+    },
+    "vs10bblpop.png": {
+      "id": "vs10bblpop",
+      "code": "vs10bblpop",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bblpop.png",
+      "nameSource": ""
+    },
+    "vs10bbrcdr.png": {
+      "id": "vs10bbrcdr",
+      "code": "vs10bbrcdr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbrcdr.png",
+      "nameSource": ""
+    },
+    "vs10bbrrp.png": {
+      "id": "vs10bbrrp",
+      "code": "vs10bbrrp",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbrrp.png",
+      "nameSource": ""
+    },
+    "vs10bbrttr.png": {
+      "id": "vs10bbrttr",
+      "code": "vs10bbrttr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbrttr.png",
+      "nameSource": ""
+    },
+    "vs10bbsplashx.png": {
+      "id": "vs10bbsplashx",
+      "code": "vs10bbsplashx",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbsplashx.png",
+      "nameSource": ""
+    },
+    "vs10bbsplxmas.png": {
+      "id": "vs10bbsplxmas",
+      "code": "vs10bbsplxmas",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbsplxmas.png",
+      "nameSource": ""
+    },
+    "vs10bbtrphfshn.png": {
+      "id": "vs10bbtrphfshn",
+      "code": "vs10bbtrphfshn",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbtrphfshn.png",
+      "nameSource": ""
+    },
+    "vs10bburger.png": {
+      "id": "vs10bburger",
+      "code": "vs10bburger",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bburger.png",
+      "nameSource": ""
+    },
+    "vs10bbwcup.png": {
+      "id": "vs10bbwcup",
+      "code": "vs10bbwcup",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbwcup.png",
+      "nameSource": ""
+    },
+    "vs10bbxext.png": {
+      "id": "vs10bbxext",
+      "code": "vs10bbxext",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bbxext.png",
+      "nameSource": ""
+    },
+    "vs10beekeep.png": {
+      "id": "vs10beekeep",
+      "code": "vs10beekeep",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10beekeep.png",
+      "nameSource": ""
+    },
+    "vs10bhallbnza.png": {
+      "id": "vs10bhallbnza",
+      "code": "vs10bhallbnza",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bhallbnza.png",
+      "nameSource": ""
+    },
+    "vs10bhallbnza2.png": {
+      "id": "vs10bhallbnza2",
+      "code": "vs10bhallbnza2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bhallbnza2.png",
+      "nameSource": ""
+    },
+    "vs10bhallbnza3.png": {
+      "id": "vs10bhallbnza3",
+      "code": "vs10bhallbnza3",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bhallbnza3.png",
+      "nameSource": ""
+    },
+    "vs10bookazteck.png": {
+      "id": "vs10bookazteck",
+      "code": "vs10bookazteck",
+      "name": "AZTEC KING",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bookazteck.png",
+      "nameSource": "manual"
+    },
+    "vs10bookfallen.png": {
+      "id": "vs10bookfallen",
+      "code": "vs10bookfallen",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bookfallen.png",
+      "nameSource": ""
+    },
+    "vs10booklight.png": {
+      "id": "vs10booklight",
+      "code": "vs10booklight",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10booklight.png",
+      "nameSource": ""
+    },
+    "vs10bookoftut.png": {
+      "id": "vs10bookoftut",
+      "code": "vs10bookoftut",
+      "name": "John Hunter and the book of Tut",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bookoftut.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10bxmasbnza.png": {
+      "id": "vs10bxmasbnza",
+      "code": "vs10bxmasbnza",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10bxmasbnza.png",
+      "nameSource": ""
+    },
+    "vs10cenrlgdevl.png": {
+      "id": "vs10cenrlgdevl",
+      "code": "vs10cenrlgdevl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10cenrlgdevl.png",
+      "nameSource": ""
+    },
+    "vs10chillihmr.png": {
+      "id": "vs10chillihmr",
+      "code": "vs10chillihmr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10chillihmr.png",
+      "nameSource": ""
+    },
+    "vs10chkchase.png": {
+      "id": "vs10chkchase",
+      "code": "vs10chkchase",
+      "name": "CHICKEN CHASE",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10chkchase.png",
+      "nameSource": "manual"
+    },
+    "vs10coffee.png": {
+      "id": "vs10coffee",
+      "code": "vs10coffee",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10coffee.png",
+      "nameSource": ""
+    },
+    "vs10cowgold.png": {
+      "id": "vs10cowgold",
+      "code": "vs10cowgold",
+      "name": "Cowboys Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10cowgold.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10crownfire.png": {
+      "id": "vs10crownfire",
+      "code": "vs10crownfire",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10crownfire.png",
+      "nameSource": ""
+    },
+    "vs10ddcbells.png": {
+      "id": "vs10ddcbells",
+      "code": "vs10ddcbells",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10ddcbells.png",
+      "nameSource": ""
+    },
+    "vs10dgold88.png": {
+      "id": "vs10dgold88",
+      "code": "vs10dgold88",
+      "name": "DRAGON GOLD 88",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10dgold88.png",
+      "nameSource": "manual"
+    },
+    "vs10diamondrgh.png": {
+      "id": "vs10diamondrgh",
+      "code": "vs10diamondrgh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10diamondrgh.png",
+      "nameSource": ""
+    },
+    "vs10dkinghp.png": {
+      "id": "vs10dkinghp",
+      "code": "vs10dkinghp",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10dkinghp.png",
+      "nameSource": ""
+    },
+    "vs10dublin.png": {
+      "id": "vs10dublin",
+      "code": "vs10dublin",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10dublin.png",
+      "nameSource": ""
+    },
+    "vs10dyndigd.png": {
+      "id": "vs10dyndigd",
+      "code": "vs10dyndigd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10dyndigd.png",
+      "nameSource": ""
+    },
+    "vs10egrich.png": {
+      "id": "vs10egrich",
+      "code": "vs10egrich",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10egrich.png",
+      "nameSource": ""
+    },
+    "vs10egypt.png": {
+      "id": "vs10egypt",
+      "code": "vs10egypt",
+      "name": "Ancient Egypt",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10egypt.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10egyptcls.png": {
+      "id": "vs10egyptcls",
+      "code": "vs10egyptcls",
+      "name": "Ancient Egypt Classic",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10egyptcls.png",
+      "nameSource": "verified"
+    },
+    "vs10eyestorm.png": {
+      "id": "vs10eyestorm",
+      "code": "vs10eyestorm",
+      "name": "Eye of the Storm",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10eyestorm.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10fangfree.png": {
+      "id": "vs10fangfree",
+      "code": "vs10fangfree",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fangfree.png",
+      "nameSource": ""
+    },
+    "vs10fdrasbf.png": {
+      "id": "vs10fdrasbf",
+      "code": "vs10fdrasbf",
+      "name": "Floating Dragon - Dragon Boat Festival Hold & Spin",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fdrasbf.png",
+      "nameSource": "verified"
+    },
+    "vs10fdsnake.png": {
+      "id": "vs10fdsnake",
+      "code": "vs10fdsnake",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fdsnake.png",
+      "nameSource": ""
+    },
+    "vs10fdwhorses.png": {
+      "id": "vs10fdwhorses",
+      "code": "vs10fdwhorses",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fdwhorses.png",
+      "nameSource": ""
+    },
+    "vs10fingerlfs.png": {
+      "id": "vs10fingerlfs",
+      "code": "vs10fingerlfs",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fingerlfs.png",
+      "nameSource": ""
+    },
+    "vs10fireice.png": {
+      "id": "vs10fireice",
+      "code": "vs10fireice",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fireice.png",
+      "nameSource": ""
+    },
+    "vs10firestrike.png": {
+      "id": "vs10firestrike",
+      "code": "vs10firestrike",
+      "name": "Fire Strike",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10firestrike.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10firestrike2.png": {
+      "id": "vs10firestrike2",
+      "code": "vs10firestrike2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10firestrike2.png",
+      "nameSource": ""
+    },
+    "vs10fisheye.png": {
+      "id": "vs10fisheye",
+      "code": "vs10fisheye",
+      "name": "Fish Eye",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fisheye.png",
+      "nameSource": "verified"
+    },
+    "vs10floatdrg.png": {
+      "id": "vs10floatdrg",
+      "code": "vs10floatdrg",
+      "name": "Floating Dragon Hold & Spin",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10floatdrg.png",
+      "nameSource": "verified"
+    },
+    "vs10fonzofff.png": {
+      "id": "vs10fonzofff",
+      "code": "vs10fonzofff",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fonzofff.png",
+      "nameSource": ""
+    },
+    "vs10fortnpig.png": {
+      "id": "vs10fortnpig",
+      "code": "vs10fortnpig",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fortnpig.png",
+      "nameSource": ""
+    },
+    "vs10frontrun.png": {
+      "id": "vs10frontrun",
+      "code": "vs10frontrun",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10frontrun.png",
+      "nameSource": ""
+    },
+    "vs10fruity2.png": {
+      "id": "vs10fruity2",
+      "code": "vs10fruity2",
+      "name": "Extra Juicy",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10fruity2.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10gbseries.png": {
+      "id": "vs10gbseries",
+      "code": "vs10gbseries",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10gbseries.png",
+      "nameSource": ""
+    },
+    "vs10gdchalleng.png": {
+      "id": "vs10gdchalleng",
+      "code": "vs10gdchalleng",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10gdchalleng.png",
+      "nameSource": ""
+    },
+    "vs10gizagods.png": {
+      "id": "vs10gizagods",
+      "code": "vs10gizagods",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10gizagods.png",
+      "nameSource": ""
+    },
+    "vs10goldenret.png": {
+      "id": "vs10goldenret",
+      "code": "vs10goldenret",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10goldenret.png",
+      "nameSource": ""
+    },
+    "vs10goldfish.png": {
+      "id": "vs10goldfish",
+      "code": "vs10goldfish",
+      "name": "Fishin’ Reels",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10goldfish.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10hottb7fs.png": {
+      "id": "vs10hottb7fs",
+      "code": "vs10hottb7fs",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10hottb7fs.png",
+      "nameSource": ""
+    },
+    "vs10hottuna.png": {
+      "id": "vs10hottuna",
+      "code": "vs10hottuna",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10hottuna.png",
+      "nameSource": ""
+    },
+    "vs10jnmntzma.png": {
+      "id": "vs10jnmntzma",
+      "code": "vs10jnmntzma",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10jnmntzma.png",
+      "nameSource": ""
+    },
+    "vs10jokerhot.png": {
+      "id": "vs10jokerhot",
+      "code": "vs10jokerhot",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10jokerhot.png",
+      "nameSource": ""
+    },
+    "vs10jpblaze.png": {
+      "id": "vs10jpblaze",
+      "code": "vs10jpblaze",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10jpblaze.png",
+      "nameSource": ""
+    },
+    "vs10kingofdth.png": {
+      "id": "vs10kingofdth",
+      "code": "vs10kingofdth",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10kingofdth.png",
+      "nameSource": ""
+    },
+    "vs10luckcharm.png": {
+      "id": "vs10luckcharm",
+      "code": "vs10luckcharm",
+      "name": "Lucky Grace And Charm",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10luckcharm.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10luckfort.png": {
+      "id": "vs10luckfort",
+      "code": "vs10luckfort",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10luckfort.png",
+      "nameSource": ""
+    },
+    "vs10madame.png": {
+      "id": "vs10madame",
+      "code": "vs10madame",
+      "name": "Madame Destiny",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10madame.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10mayangods.png": {
+      "id": "vs10mayangods",
+      "code": "vs10mayangods",
+      "name": "John Hunter and the Mayan Gods",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10mayangods.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10mmm.png": {
+      "id": "vs10mmm",
+      "code": "vs10mmm",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10mmm.png",
+      "nameSource": ""
+    },
+    "vs10noodles.png": {
+      "id": "vs10noodles",
+      "code": "vs10noodles",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10noodles.png",
+      "nameSource": ""
+    },
+    "vs10nudgeit.png": {
+      "id": "vs10nudgeit",
+      "code": "vs10nudgeit",
+      "name": "Rise of Giza PowerNudge",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10nudgeit.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10piggybank.png": {
+      "id": "vs10piggybank",
+      "code": "vs10piggybank",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10piggybank.png",
+      "nameSource": ""
+    },
+    "vs10powerlines.png": {
+      "id": "vs10powerlines",
+      "code": "vs10powerlines",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10powerlines.png",
+      "nameSource": ""
+    },
+    "vs10returndead.png": {
+      "id": "vs10returndead",
+      "code": "vs10returndead",
+      "name": "Return Of The Dead",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10returndead.png",
+      "nameSource": "verified"
+    },
+    "vs10runes.png": {
+      "id": "vs10runes",
+      "code": "vs10runes",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10runes.png",
+      "nameSource": ""
+    },
+    "vs10santasl.png": {
+      "id": "vs10santasl",
+      "code": "vs10santasl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10santasl.png",
+      "nameSource": ""
+    },
+    "vs10sleepdud.png": {
+      "id": "vs10sleepdud",
+      "code": "vs10sleepdud",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10sleepdud.png",
+      "nameSource": ""
+    },
+    "vs10snakeeyes.png": {
+      "id": "vs10snakeeyes",
+      "code": "vs10snakeeyes",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10snakeeyes.png",
+      "nameSource": ""
+    },
+    "vs10snakeladd.png": {
+      "id": "vs10snakeladd",
+      "code": "vs10snakeladd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10snakeladd.png",
+      "nameSource": ""
+    },
+    "vs10spellmastr.png": {
+      "id": "vs10spellmastr",
+      "code": "vs10spellmastr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10spellmastr.png",
+      "nameSource": ""
+    },
+    "vs10spiritadv.png": {
+      "id": "vs10spiritadv",
+      "code": "vs10spiritadv",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10spiritadv.png",
+      "nameSource": ""
+    },
+    "vs10starpirate.png": {
+      "id": "vs10starpirate",
+      "code": "vs10starpirate",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10starpirate.png",
+      "nameSource": ""
+    },
+    "vs10stmreels.png": {
+      "id": "vs10stmreels",
+      "code": "vs10stmreels",
+      "name": "STEAMIN REELS",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10stmreels.png",
+      "nameSource": "manual"
+    },
+    "vs10strawberry.png": {
+      "id": "vs10strawberry",
+      "code": "vs10strawberry",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10strawberry.png",
+      "nameSource": ""
+    },
+    "vs10threestar.png": {
+      "id": "vs10threestar",
+      "code": "vs10threestar",
+      "name": "Three Star Fortune",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10threestar.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10tictac.png": {
+      "id": "vs10tictac",
+      "code": "vs10tictac",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10tictac.png",
+      "nameSource": ""
+    },
+    "vs10trail.png": {
+      "id": "vs10trail",
+      "code": "vs10trail",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10trail.png",
+      "nameSource": ""
+    },
+    "vs10tut.png": {
+      "id": "vs10tut",
+      "code": "vs10tut",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10tut.png",
+      "nameSource": ""
+    },
+    "vs10txbigbass.png": {
+      "id": "vs10txbigbass",
+      "code": "vs10txbigbass",
+      "name": "Big Bass Splash",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10txbigbass.png",
+      "nameSource": "verified"
+    },
+    "vs10vampwolf.png": {
+      "id": "vs10vampwolf",
+      "code": "vs10vampwolf",
+      "name": "Vampires vs Wolves",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10vampwolf.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs10wildtut.png": {
+      "id": "vs10wildtut",
+      "code": "vs10wildtut",
+      "name": "Mysterious Egypt",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs10wildtut.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs12bbb.png": {
+      "id": "vs12bbb",
+      "code": "vs12bbb",
+      "name": "Bigger Bass Bonanza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs12bbb.png",
+      "nameSource": "verified"
+    },
+    "vs12bbbxmas.png": {
+      "id": "vs12bbbxmas",
+      "code": "vs12bbbxmas",
+      "name": "Bigger Bass Blizzard - Christmas Catch",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs12bbbxmas.png",
+      "nameSource": "verified"
+    },
+    "vs12bgrbspl.png": {
+      "id": "vs12bgrbspl",
+      "code": "vs12bgrbspl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs12bgrbspl.png",
+      "nameSource": ""
+    },
+    "vs12scode.png": {
+      "id": "vs12scode",
+      "code": "vs12scode",
+      "name": "Samurai Code",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs12scode.png",
+      "nameSource": "verified"
+    },
+    "vs12tropicana.png": {
+      "id": "vs12tropicana",
+      "code": "vs12tropicana",
+      "name": "Club Tropicana",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs12tropicana.png",
+      "nameSource": "verified"
+    },
+    "vs12trpcnhour.png": {
+      "id": "vs12trpcnhour",
+      "code": "vs12trpcnhour",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs12trpcnhour.png",
+      "nameSource": ""
+    },
+    "vs13g.png": {
+      "id": "vs13g",
+      "code": "vs13g",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs13g.png",
+      "nameSource": ""
+    },
+    "vs15diamond.png": {
+      "id": "vs15diamond",
+      "code": "vs15diamond",
+      "name": "Diamond Strike",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15diamond.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs15eastfury.png": {
+      "id": "vs15eastfury",
+      "code": "vs15eastfury",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15eastfury.png",
+      "nameSource": ""
+    },
+    "vs15eyeofspart.png": {
+      "id": "vs15eyeofspart",
+      "code": "vs15eyeofspart",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15eyeofspart.png",
+      "nameSource": ""
+    },
+    "vs15fairytale.png": {
+      "id": "vs15fairytale",
+      "code": "vs15fairytale",
+      "name": "Fairytale Fortune",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15fairytale.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs15fghtmultlv.png": {
+      "id": "vs15fghtmultlv",
+      "code": "vs15fghtmultlv",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15fghtmultlv.png",
+      "nameSource": ""
+    },
+    "vs15godsofwar.png": {
+      "id": "vs15godsofwar",
+      "code": "vs15godsofwar",
+      "name": "Zeus Vs Hades - Gods Of War",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15godsofwar.png",
+      "nameSource": "verified"
+    },
+    "vs15grprofits.png": {
+      "id": "vs15grprofits",
+      "code": "vs15grprofits",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15grprofits.png",
+      "nameSource": ""
+    },
+    "vs15raos.png": {
+      "id": "vs15raos",
+      "code": "vs15raos",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15raos.png",
+      "nameSource": ""
+    },
+    "vs15samurai4.png": {
+      "id": "vs15samurai4",
+      "code": "vs15samurai4",
+      "name": "Rise Of Samurai 4",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15samurai4.png",
+      "nameSource": "verified"
+    },
+    "vs15seoultrain.png": {
+      "id": "vs15seoultrain",
+      "code": "vs15seoultrain",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15seoultrain.png",
+      "nameSource": ""
+    },
+    "vs15zeushadseq.png": {
+      "id": "vs15zeushadseq",
+      "code": "vs15zeushadseq",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs15zeushadseq.png",
+      "nameSource": ""
+    },
+    "vs18mashang.png": {
+      "id": "vs18mashang",
+      "code": "vs18mashang",
+      "name": "Treasure Horse",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs18mashang.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20aladdinsorc.png": {
+      "id": "vs20aladdinsorc",
+      "code": "vs20aladdinsorc",
+      "name": "Aladdin and the Sorcerer",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20aladdinsorc.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20alieninv.png": {
+      "id": "vs20alieninv",
+      "code": "vs20alieninv",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20alieninv.png",
+      "nameSource": ""
+    },
+    "vs20amuleteg.png": {
+      "id": "vs20amuleteg",
+      "code": "vs20amuleteg",
+      "name": "Fortune Of Giza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20amuleteg.png",
+      "nameSource": "verified"
+    },
+    "vs20asgard.png": {
+      "id": "vs20asgard",
+      "code": "vs20asgard",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20asgard.png",
+      "nameSource": ""
+    },
+    "vs20aztecgates.png": {
+      "id": "vs20aztecgates",
+      "code": "vs20aztecgates",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20aztecgates.png",
+      "nameSource": ""
+    },
+    "vs20bblitz.png": {
+      "id": "vs20bblitz",
+      "code": "vs20bblitz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bblitz.png",
+      "nameSource": ""
+    },
+    "vs20bblup.png": {
+      "id": "vs20bblup",
+      "code": "vs20bblup",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bblup.png",
+      "nameSource": ""
+    },
+    "vs20bchprty.png": {
+      "id": "vs20bchprty",
+      "code": "vs20bchprty",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bchprty.png",
+      "nameSource": ""
+    },
+    "vs20beefed.png": {
+      "id": "vs20beefed",
+      "code": "vs20beefed",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20beefed.png",
+      "nameSource": ""
+    },
+    "vs20bermuda.png": {
+      "id": "vs20bermuda",
+      "code": "vs20bermuda",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bermuda.png",
+      "nameSource": ""
+    },
+    "vs20bgdoghouse.png": {
+      "id": "vs20bgdoghouse",
+      "code": "vs20bgdoghouse",
+      "name": "THE BIG DOG HOUSE",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bgdoghouse.png",
+      "nameSource": "manual"
+    },
+    "vs20bhunter.png": {
+      "id": "vs20bhunter",
+      "code": "vs20bhunter",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bhunter.png",
+      "nameSource": ""
+    },
+    "vs20bigbbear.png": {
+      "id": "vs20bigbbear",
+      "code": "vs20bigbbear",
+      "name": "BEAR CRAZY",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bigbbear.png",
+      "nameSource": "manual"
+    },
+    "vs20bigdawgs.png": {
+      "id": "vs20bigdawgs",
+      "code": "vs20bigdawgs",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bigdawgs.png",
+      "nameSource": ""
+    },
+    "vs20bigmass.png": {
+      "id": "vs20bigmass",
+      "code": "vs20bigmass",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bigmass.png",
+      "nameSource": ""
+    },
+    "vs20bison.png": {
+      "id": "vs20bison",
+      "code": "vs20bison",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bison.png",
+      "nameSource": ""
+    },
+    "vs20bl.png": {
+      "id": "vs20bl",
+      "code": "vs20bl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bl.png",
+      "nameSource": ""
+    },
+    "vs20bnnzdice.png": {
+      "id": "vs20bnnzdice",
+      "code": "vs20bnnzdice",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bnnzdice.png",
+      "nameSource": ""
+    },
+    "vs20bonzgold.png": {
+      "id": "vs20bonzgold",
+      "code": "vs20bonzgold",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20bonzgold.png",
+      "nameSource": ""
+    },
+    "vs20candvil.png": {
+      "id": "vs20candvil",
+      "code": "vs20candvil",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20candvil.png",
+      "nameSource": ""
+    },
+    "vs20candyblitz.png": {
+      "id": "vs20candyblitz",
+      "code": "vs20candyblitz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20candyblitz.png",
+      "nameSource": ""
+    },
+    "vs20candybltz2.png": {
+      "id": "vs20candybltz2",
+      "code": "vs20candybltz2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20candybltz2.png",
+      "nameSource": ""
+    },
+    "vs20candyia.png": {
+      "id": "vs20candyia",
+      "code": "vs20candyia",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20candyia.png",
+      "nameSource": ""
+    },
+    "vs20cashmachine.png": {
+      "id": "vs20cashmachine",
+      "code": "vs20cashmachine",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20cashmachine.png",
+      "nameSource": ""
+    },
+    "vs20cbrhst.png": {
+      "id": "vs20cbrhst",
+      "code": "vs20cbrhst",
+      "name": "Cyber Heist",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20cbrhst.png",
+      "nameSource": "verified"
+    },
+    "vs20chestcol.png": {
+      "id": "vs20chestcol",
+      "code": "vs20chestcol",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20chestcol.png",
+      "nameSource": ""
+    },
+    "vs20chickdrop.png": {
+      "id": "vs20chickdrop",
+      "code": "vs20chickdrop",
+      "name": "Chicken Drop",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20chickdrop.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20chicken.png": {
+      "id": "vs20chicken",
+      "code": "vs20chicken",
+      "name": "The Great Chicken Escape",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20chicken.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20cjcluster.png": {
+      "id": "vs20cjcluster",
+      "code": "vs20cjcluster",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20cjcluster.png",
+      "nameSource": ""
+    },
+    "vs20cjoinclust.png": {
+      "id": "vs20cjoinclust",
+      "code": "vs20cjoinclust",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20cjoinclust.png",
+      "nameSource": ""
+    },
+    "vs20cleocatra.png": {
+      "id": "vs20cleocatra",
+      "code": "vs20cleocatra",
+      "name": "Cleocatra",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20cleocatra.png",
+      "nameSource": "verified"
+    },
+    "vs20clreacts.png": {
+      "id": "vs20clreacts",
+      "code": "vs20clreacts",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20clreacts.png",
+      "nameSource": ""
+    },
+    "vs20clspwrndg.png": {
+      "id": "vs20clspwrndg",
+      "code": "vs20clspwrndg",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20clspwrndg.png",
+      "nameSource": ""
+    },
+    "vs20clustcol.png": {
+      "id": "vs20clustcol",
+      "code": "vs20clustcol",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20clustcol.png",
+      "nameSource": ""
+    },
+    "vs20clustersw.png": {
+      "id": "vs20clustersw",
+      "code": "vs20clustersw",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20clustersw.png",
+      "nameSource": ""
+    },
+    "vs20clustext.png": {
+      "id": "vs20clustext",
+      "code": "vs20clustext",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20clustext.png",
+      "nameSource": ""
+    },
+    "vs20clustwild.png": {
+      "id": "vs20clustwild",
+      "code": "vs20clustwild",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20clustwild.png",
+      "nameSource": ""
+    },
+    "vs20colcashzone.png": {
+      "id": "vs20colcashzone",
+      "code": "vs20colcashzone",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20colcashzone.png",
+      "nameSource": ""
+    },
+    "vs20crankit.png": {
+      "id": "vs20crankit",
+      "code": "vs20crankit",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20crankit.png",
+      "nameSource": ""
+    },
+    "vs20daydead.png": {
+      "id": "vs20daydead",
+      "code": "vs20daydead",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20daydead.png",
+      "nameSource": ""
+    },
+    "vs20ddominion.png": {
+      "id": "vs20ddominion",
+      "code": "vs20ddominion",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20ddominion.png",
+      "nameSource": ""
+    },
+    "vs20devilic.png": {
+      "id": "vs20devilic",
+      "code": "vs20devilic",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20devilic.png",
+      "nameSource": ""
+    },
+    "vs20dhcluster.png": {
+      "id": "vs20dhcluster",
+      "code": "vs20dhcluster",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20dhcluster.png",
+      "nameSource": ""
+    },
+    "vs20dhcluster2.png": {
+      "id": "vs20dhcluster2",
+      "code": "vs20dhcluster2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20dhcluster2.png",
+      "nameSource": ""
+    },
+    "vs20dhdice.png": {
+      "id": "vs20dhdice",
+      "code": "vs20dhdice",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20dhdice.png",
+      "nameSource": ""
+    },
+    "vs20dhousehm.png": {
+      "id": "vs20dhousehm",
+      "code": "vs20dhousehm",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20dhousehm.png",
+      "nameSource": ""
+    },
+    "vs20dhsuper.png": {
+      "id": "vs20dhsuper",
+      "code": "vs20dhsuper",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20dhsuper.png",
+      "nameSource": ""
+    },
+    "vs20doghouse.png": {
+      "id": "vs20doghouse",
+      "code": "vs20doghouse",
+      "name": "The Dog House",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20doghouse.png",
+      "nameSource": "verified"
+    },
+    "vs20doghouse2.png": {
+      "id": "vs20doghouse2",
+      "code": "vs20doghouse2",
+      "name": "The Dog House - Dog Or Alive",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20doghouse2.png",
+      "nameSource": "verified"
+    },
+    "vs20doghousemh.png": {
+      "id": "vs20doghousemh",
+      "code": "vs20doghousemh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20doghousemh.png",
+      "nameSource": ""
+    },
+    "vs20drgbless.png": {
+      "id": "vs20drgbless",
+      "code": "vs20drgbless",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20drgbless.png",
+      "nameSource": ""
+    },
+    "vs20drtgold.png": {
+      "id": "vs20drtgold",
+      "code": "vs20drtgold",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20drtgold.png",
+      "nameSource": ""
+    },
+    "vs20dugems.png": {
+      "id": "vs20dugems",
+      "code": "vs20dugems",
+      "name": "Hot Pepper",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20dugems.png",
+      "nameSource": "verified"
+    },
+    "vs20earthquake.png": {
+      "id": "vs20earthquake",
+      "code": "vs20earthquake",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20earthquake.png",
+      "nameSource": ""
+    },
+    "vs20egypttrs.png": {
+      "id": "vs20egypttrs",
+      "code": "vs20egypttrs",
+      "name": "Egyptian Fortunes",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20egypttrs.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20eightdragons.png": {
+      "id": "vs20eightdragons",
+      "code": "vs20eightdragons",
+      "name": "8 Dragons",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20eightdragons.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20eking.png": {
+      "id": "vs20eking",
+      "code": "vs20eking",
+      "name": "Emerald King",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20eking.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20ekingrr.png": {
+      "id": "vs20ekingrr",
+      "code": "vs20ekingrr",
+      "name": "Emerald King Rainbow Road",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20ekingrr.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20elevclust.png": {
+      "id": "vs20elevclust",
+      "code": "vs20elevclust",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20elevclust.png",
+      "nameSource": ""
+    },
+    "vs20emptybank.png": {
+      "id": "vs20emptybank",
+      "code": "vs20emptybank",
+      "name": "Empty the Bank",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20emptybank.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20excalibur.png": {
+      "id": "vs20excalibur",
+      "code": "vs20excalibur",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20excalibur.png",
+      "nameSource": ""
+    },
+    "vs20farmfest.png": {
+      "id": "vs20farmfest",
+      "code": "vs20farmfest",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20farmfest.png",
+      "nameSource": ""
+    },
+    "vs20fatbook.png": {
+      "id": "vs20fatbook",
+      "code": "vs20fatbook",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fatbook.png",
+      "nameSource": ""
+    },
+    "vs20fh.png": {
+      "id": "vs20fh",
+      "code": "vs20fh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fh.png",
+      "nameSource": ""
+    },
+    "vs20forge.png": {
+      "id": "vs20forge",
+      "code": "vs20forge",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20forge.png",
+      "nameSource": ""
+    },
+    "vs20forgewilds.png": {
+      "id": "vs20forgewilds",
+      "code": "vs20forgewilds",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20forgewilds.png",
+      "nameSource": ""
+    },
+    "vs20fortbon.png": {
+      "id": "vs20fortbon",
+      "code": "vs20fortbon",
+      "name": "Fruity Treats",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fortbon.png",
+      "nameSource": "verified"
+    },
+    "vs20fourmc.png": {
+      "id": "vs20fourmc",
+      "code": "vs20fourmc",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fourmc.png",
+      "nameSource": ""
+    },
+    "vs20fparty2.png": {
+      "id": "vs20fparty2",
+      "code": "vs20fparty2",
+      "name": "Fruit Party 2",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fparty2.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs20framazon.png": {
+      "id": "vs20framazon",
+      "code": "vs20framazon",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20framazon.png",
+      "nameSource": ""
+    },
+    "vs20frankie.png": {
+      "id": "vs20frankie",
+      "code": "vs20frankie",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20frankie.png",
+      "nameSource": ""
+    },
+    "vs20fruitparty.png": {
+      "id": "vs20fruitparty",
+      "code": "vs20fruitparty",
+      "name": "Fruit Party",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fruitparty.png",
+      "nameSource": "verified"
+    },
+    "vs20fruitsw.png": {
+      "id": "vs20fruitsw",
+      "code": "vs20fruitsw",
+      "name": "Sweet Bonanza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fruitsw.png",
+      "nameSource": "verified"
+    },
+    "vs20fruitswx.png": {
+      "id": "vs20fruitswx",
+      "code": "vs20fruitswx",
+      "name": "Sweet Bonanza 1000",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20fruitswx.png",
+      "nameSource": "verified"
+    },
+    "vs20gatotfury.png": {
+      "id": "vs20gatotfury",
+      "code": "vs20gatotfury",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gatotfury.png",
+      "nameSource": ""
+    },
+    "vs20gatotgates.png": {
+      "id": "vs20gatotgates",
+      "code": "vs20gatotgates",
+      "name": "Gates Of Gatot Kaca",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gatotgates.png",
+      "nameSource": "verified"
+    },
+    "vs20gatotx.png": {
+      "id": "vs20gatotx",
+      "code": "vs20gatotx",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gatotx.png",
+      "nameSource": ""
+    },
+    "vs20gembondx.png": {
+      "id": "vs20gembondx",
+      "code": "vs20gembondx",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gembondx.png",
+      "nameSource": ""
+    },
+    "vs20gemfirefor.png": {
+      "id": "vs20gemfirefor",
+      "code": "vs20gemfirefor",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gemfirefor.png",
+      "nameSource": ""
+    },
+    "vs20gengembnz.png": {
+      "id": "vs20gengembnz",
+      "code": "vs20gengembnz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gengembnz.png",
+      "nameSource": ""
+    },
+    "vs20gobnudge.png": {
+      "id": "vs20gobnudge",
+      "code": "vs20gobnudge",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gobnudge.png",
+      "nameSource": ""
+    },
+    "vs20godiva.png": {
+      "id": "vs20godiva",
+      "code": "vs20godiva",
+      "name": "Lady Godiva",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20godiva.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20goldclust.png": {
+      "id": "vs20goldclust",
+      "code": "vs20goldclust",
+      "name": "Rabbit Garden",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20goldclust.png",
+      "nameSource": "verified"
+    },
+    "vs20goldfever.png": {
+      "id": "vs20goldfever",
+      "code": "vs20goldfever",
+      "name": "Gems Bonanza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20goldfever.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20gorilla.png": {
+      "id": "vs20gorilla",
+      "code": "vs20gorilla",
+      "name": "Jungle Gorilla",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gorilla.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20gravity.png": {
+      "id": "vs20gravity",
+      "code": "vs20gravity",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gravity.png",
+      "nameSource": ""
+    },
+    "vs20gtsofhades.png": {
+      "id": "vs20gtsofhades",
+      "code": "vs20gtsofhades",
+      "name": "Gates Of Hades",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20gtsofhades.png",
+      "nameSource": "verified"
+    },
+    "vs20hburnhs.png": {
+      "id": "vs20hburnhs",
+      "code": "vs20hburnhs",
+      "name": "Hot to Burn Hold and Spin",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20hburnhs.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20heartcleo.png": {
+      "id": "vs20heartcleo",
+      "code": "vs20heartcleo",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20heartcleo.png",
+      "nameSource": ""
+    },
+    "vs20hercpeg.png": {
+      "id": "vs20hercpeg",
+      "code": "vs20hercpeg",
+      "name": "Hercules and Pegasus",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20hercpeg.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20honey.png": {
+      "id": "vs20honey",
+      "code": "vs20honey",
+      "name": "Honey Honey Honey",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20honey.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20hotzone.png": {
+      "id": "vs20hotzone",
+      "code": "vs20hotzone",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20hotzone.png",
+      "nameSource": ""
+    },
+    "vs20hstgldngt.png": {
+      "id": "vs20hstgldngt",
+      "code": "vs20hstgldngt",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20hstgldngt.png",
+      "nameSource": ""
+    },
+    "vs20irishcrown.png": {
+      "id": "vs20irishcrown",
+      "code": "vs20irishcrown",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20irishcrown.png",
+      "nameSource": ""
+    },
+    "vs20jademrich.png": {
+      "id": "vs20jademrich",
+      "code": "vs20jademrich",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20jademrich.png",
+      "nameSource": ""
+    },
+    "vs20jewelparty.png": {
+      "id": "vs20jewelparty",
+      "code": "vs20jewelparty",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20jewelparty.png",
+      "nameSource": ""
+    },
+    "vs20jhunter.png": {
+      "id": "vs20jhunter",
+      "code": "vs20jhunter",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20jhunter.png",
+      "nameSource": ""
+    },
+    "vs20jjjack.png": {
+      "id": "vs20jjjack",
+      "code": "vs20jjjack",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20jjjack.png",
+      "nameSource": ""
+    },
+    "vs20kraken.png": {
+      "id": "vs20kraken",
+      "code": "vs20kraken",
+      "name": "Release the Kraken",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20kraken.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20kraken2.png": {
+      "id": "vs20kraken2",
+      "code": "vs20kraken2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20kraken2.png",
+      "nameSource": ""
+    },
+    "vs20lampinf.png": {
+      "id": "vs20lampinf",
+      "code": "vs20lampinf",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20lampinf.png",
+      "nameSource": ""
+    },
+    "vs20laughluck.png": {
+      "id": "vs20laughluck",
+      "code": "vs20laughluck",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20laughluck.png",
+      "nameSource": ""
+    },
+    "vs20lbstrhouse.png": {
+      "id": "vs20lbstrhouse",
+      "code": "vs20lbstrhouse",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20lbstrhouse.png",
+      "nameSource": ""
+    },
+    "vs20lcount.png": {
+      "id": "vs20lcount",
+      "code": "vs20lcount",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20lcount.png",
+      "nameSource": ""
+    },
+    "vs20leprechaun.png": {
+      "id": "vs20leprechaun",
+      "code": "vs20leprechaun",
+      "name": "Leprechaun Song",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20leprechaun.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20leprexmas.png": {
+      "id": "vs20leprexmas",
+      "code": "vs20leprexmas",
+      "name": "Leprechaun Carol",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20leprexmas.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20lightblitz.png": {
+      "id": "vs20lightblitz",
+      "code": "vs20lightblitz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20lightblitz.png",
+      "nameSource": ""
+    },
+    "vs20lobcrab.png": {
+      "id": "vs20lobcrab",
+      "code": "vs20lobcrab",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20lobcrab.png",
+      "nameSource": ""
+    },
+    "vs20lobseafd.png": {
+      "id": "vs20lobseafd",
+      "code": "vs20lobseafd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20lobseafd.png",
+      "nameSource": ""
+    },
+    "vs20loksriches.png": {
+      "id": "vs20loksriches",
+      "code": "vs20loksriches",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20loksriches.png",
+      "nameSource": ""
+    },
+    "vs20ltng.png": {
+      "id": "vs20ltng",
+      "code": "vs20ltng",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20ltng.png",
+      "nameSource": ""
+    },
+    "vs20luckycoi88.png": {
+      "id": "vs20luckycoi88",
+      "code": "vs20luckycoi88",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20luckycoi88.png",
+      "nameSource": ""
+    },
+    "vs20lvlup.png": {
+      "id": "vs20lvlup",
+      "code": "vs20lvlup",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20lvlup.png",
+      "nameSource": ""
+    },
+    "vs20magicpot.png": {
+      "id": "vs20magicpot",
+      "code": "vs20magicpot",
+      "name": "The Magic Cauldron – Enchanted Brew",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20magicpot.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20mahjxbnz.png": {
+      "id": "vs20mahjxbnz",
+      "code": "vs20mahjxbnz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mahjxbnz.png",
+      "nameSource": ""
+    },
+    "vs20mammoth.png": {
+      "id": "vs20mammoth",
+      "code": "vs20mammoth",
+      "name": "Mammoth Gold Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mammoth.png",
+      "nameSource": "verified"
+    },
+    "vs20maskgame.png": {
+      "id": "vs20maskgame",
+      "code": "vs20maskgame",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20maskgame.png",
+      "nameSource": ""
+    },
+    "vs20medusast.png": {
+      "id": "vs20medusast",
+      "code": "vs20medusast",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20medusast.png",
+      "nameSource": ""
+    },
+    "vs20mergedwndw.png": {
+      "id": "vs20mergedwndw",
+      "code": "vs20mergedwndw",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mergedwndw.png",
+      "nameSource": ""
+    },
+    "vs20mesmult.png": {
+      "id": "vs20mesmult",
+      "code": "vs20mesmult",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mesmult.png",
+      "nameSource": ""
+    },
+    "vs20midas.png": {
+      "id": "vs20midas",
+      "code": "vs20midas",
+      "name": "The Hand of Midas",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20midas.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20midas2.png": {
+      "id": "vs20midas2",
+      "code": "vs20midas2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20midas2.png",
+      "nameSource": ""
+    },
+    "vs20minerush.png": {
+      "id": "vs20minerush",
+      "code": "vs20minerush",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20minerush.png",
+      "nameSource": ""
+    },
+    "vs20mkrush.png": {
+      "id": "vs20mkrush",
+      "code": "vs20mkrush",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mkrush.png",
+      "nameSource": ""
+    },
+    "vs20mmdtres.png": {
+      "id": "vs20mmdtres",
+      "code": "vs20mmdtres",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mmdtres.png",
+      "nameSource": ""
+    },
+    "vs20mmmelon.png": {
+      "id": "vs20mmmelon",
+      "code": "vs20mmmelon",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mmmelon.png",
+      "nameSource": ""
+    },
+    "vs20mochimon.png": {
+      "id": "vs20mochimon",
+      "code": "vs20mochimon",
+      "name": "Mochimon",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mochimon.png",
+      "nameSource": "verified"
+    },
+    "vs20mparty.png": {
+      "id": "vs20mparty",
+      "code": "vs20mparty",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mparty.png",
+      "nameSource": ""
+    },
+    "vs20mtreasure.png": {
+      "id": "vs20mtreasure",
+      "code": "vs20mtreasure",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mtreasure.png",
+      "nameSource": ""
+    },
+    "vs20muertos.png": {
+      "id": "vs20muertos",
+      "code": "vs20muertos",
+      "name": "Muertos Multiplier Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20muertos.png",
+      "nameSource": "verified"
+    },
+    "vs20multcann.png": {
+      "id": "vs20multcann",
+      "code": "vs20multcann",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20multcann.png",
+      "nameSource": ""
+    },
+    "vs20multiup.png": {
+      "id": "vs20multiup",
+      "code": "vs20multiup",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20multiup.png",
+      "nameSource": ""
+    },
+    "vs20mustanggld2.png": {
+      "id": "vs20mustanggld2",
+      "code": "vs20mustanggld2",
+      "name": "Clover Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mustanggld2.png",
+      "nameSource": "verified"
+    },
+    "vs20mvwild.png": {
+      "id": "vs20mvwild",
+      "code": "vs20mvwild",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20mvwild.png",
+      "nameSource": ""
+    },
+    "vs20nilefort.png": {
+      "id": "vs20nilefort",
+      "code": "vs20nilefort",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20nilefort.png",
+      "nameSource": ""
+    },
+    "vs20ninjapower.png": {
+      "id": "vs20ninjapower",
+      "code": "vs20ninjapower",
+      "name": "Power Of Ninja",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20ninjapower.png",
+      "nameSource": "verified"
+    },
+    "vs20octobeer.png": {
+      "id": "vs20octobeer",
+      "code": "vs20octobeer",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20octobeer.png",
+      "nameSource": ""
+    },
+    "vs20olgatssc.png": {
+      "id": "vs20olgatssc",
+      "code": "vs20olgatssc",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olgatssc.png",
+      "nameSource": ""
+    },
+    "vs20olympdice.png": {
+      "id": "vs20olympdice",
+      "code": "vs20olympdice",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympdice.png",
+      "nameSource": ""
+    },
+    "vs20olympgate.png": {
+      "id": "vs20olympgate",
+      "code": "vs20olympgate",
+      "name": "Gates Of Olympus",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympgate.png",
+      "nameSource": "verified"
+    },
+    "vs20olympgcl.png": {
+      "id": "vs20olympgcl",
+      "code": "vs20olympgcl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympgcl.png",
+      "nameSource": ""
+    },
+    "vs20olympgold.png": {
+      "id": "vs20olympgold",
+      "code": "vs20olympgold",
+      "name": "Gates Of Olympus Super Scatter",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympgold.png",
+      "nameSource": "verified"
+    },
+    "vs20olympgrace.png": {
+      "id": "vs20olympgrace",
+      "code": "vs20olympgrace",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympgrace.png",
+      "nameSource": ""
+    },
+    "vs20olympuspot.png": {
+      "id": "vs20olympuspot",
+      "code": "vs20olympuspot",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympuspot.png",
+      "nameSource": ""
+    },
+    "vs20olympx.png": {
+      "id": "vs20olympx",
+      "code": "vs20olympx",
+      "name": "Gates Of Olympus 1000",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympx.png",
+      "nameSource": "verified"
+    },
+    "vs20olympxmas.png": {
+      "id": "vs20olympxmas",
+      "code": "vs20olympxmas",
+      "name": "Gates Of Olympus Xmas 1000",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20olympxmas.png",
+      "nameSource": "verified"
+    },
+    "vs20oragold.png": {
+      "id": "vs20oragold",
+      "code": "vs20oragold",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20oragold.png",
+      "nameSource": ""
+    },
+    "vs20payanyvol.png": {
+      "id": "vs20payanyvol",
+      "code": "vs20payanyvol",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20payanyvol.png",
+      "nameSource": ""
+    },
+    "vs20pbonanza.png": {
+      "id": "vs20pbonanza",
+      "code": "vs20pbonanza",
+      "name": "Pyramid Bonanza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20pbonanza.png",
+      "nameSource": "verified"
+    },
+    "vs20phoenixf.png": {
+      "id": "vs20phoenixf",
+      "code": "vs20phoenixf",
+      "name": "Phoenix Forge",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20phoenixf.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20piggybank.png": {
+      "id": "vs20piggybank",
+      "code": "vs20piggybank",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20piggybank.png",
+      "nameSource": ""
+    },
+    "vs20pistols.png": {
+      "id": "vs20pistols",
+      "code": "vs20pistols",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20pistols.png",
+      "nameSource": ""
+    },
+    "vs20plsmcannon.png": {
+      "id": "vs20plsmcannon",
+      "code": "vs20plsmcannon",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20plsmcannon.png",
+      "nameSource": ""
+    },
+    "vs20popbottles.png": {
+      "id": "vs20popbottles",
+      "code": "vs20popbottles",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20popbottles.png",
+      "nameSource": ""
+    },
+    "vs20porbs.png": {
+      "id": "vs20porbs",
+      "code": "vs20porbs",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20porbs.png",
+      "nameSource": ""
+    },
+    "vs20portals.png": {
+      "id": "vs20portals",
+      "code": "vs20portals",
+      "name": "Fire Portals",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20portals.png",
+      "nameSource": "verified"
+    },
+    "vs20powerwild.png": {
+      "id": "vs20powerwild",
+      "code": "vs20powerwild",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20powerwild.png",
+      "nameSource": ""
+    },
+    "vs20prizegrow.png": {
+      "id": "vs20prizegrow",
+      "code": "vs20prizegrow",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20prizegrow.png",
+      "nameSource": ""
+    },
+    "vs20procount.png": {
+      "id": "vs20procount",
+      "code": "vs20procount",
+      "name": "Wisdom Of Athena",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20procount.png",
+      "nameSource": "verified"
+    },
+    "vs20procountx.png": {
+      "id": "vs20procountx",
+      "code": "vs20procountx",
+      "name": "Wisdom Of Athena 1000",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20procountx.png",
+      "nameSource": "verified"
+    },
+    "vs20procountxm.png": {
+      "id": "vs20procountxm",
+      "code": "vs20procountxm",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20procountxm.png",
+      "nameSource": ""
+    },
+    "vs20rainbowg.png": {
+      "id": "vs20rainbowg",
+      "code": "vs20rainbowg",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20rainbowg.png",
+      "nameSource": ""
+    },
+    "vs20rainbowrsh.png": {
+      "id": "vs20rainbowrsh",
+      "code": "vs20rainbowrsh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20rainbowrsh.png",
+      "nameSource": ""
+    },
+    "vs20rhino.png": {
+      "id": "vs20rhino",
+      "code": "vs20rhino",
+      "name": "Great Rhino",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20rhino.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20rhinoluxe.png": {
+      "id": "vs20rhinoluxe",
+      "code": "vs20rhinoluxe",
+      "name": "Great Rhino Deluxe",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20rhinoluxe.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20rnriches.png": {
+      "id": "vs20rnriches",
+      "code": "vs20rnriches",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20rnriches.png",
+      "nameSource": ""
+    },
+    "vs20rockvegas.png": {
+      "id": "vs20rockvegas",
+      "code": "vs20rockvegas",
+      "name": "Rock Vegas Mega Hold & Spin",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20rockvegas.png",
+      "nameSource": "verified"
+    },
+    "vs20rujakbnz.png": {
+      "id": "vs20rujakbnz",
+      "code": "vs20rujakbnz",
+      "name": "Rujak Bonanza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20rujakbnz.png",
+      "nameSource": "verified"
+    },
+    "vs20saiman.png": {
+      "id": "vs20saiman",
+      "code": "vs20saiman",
+      "name": "Saiyan Mania",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20saiman.png",
+      "nameSource": "verified"
+    },
+    "vs20santa.png": {
+      "id": "vs20santa",
+      "code": "vs20santa",
+      "name": "Santa",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20santa.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs20santawonder.png": {
+      "id": "vs20santawonder",
+      "code": "vs20santawonder",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20santawonder.png",
+      "nameSource": ""
+    },
+    "vs20sbpnudge.png": {
+      "id": "vs20sbpnudge",
+      "code": "vs20sbpnudge",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sbpnudge.png",
+      "nameSource": ""
+    },
+    "vs20sbxmas.png": {
+      "id": "vs20sbxmas",
+      "code": "vs20sbxmas",
+      "name": "Sweet Bonanza Xmas",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sbxmas.png",
+      "nameSource": "verified"
+    },
+    "vs20schristmas.png": {
+      "id": "vs20schristmas",
+      "code": "vs20schristmas",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20schristmas.png",
+      "nameSource": ""
+    },
+    "vs20sh.png": {
+      "id": "vs20sh",
+      "code": "vs20sh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sh.png",
+      "nameSource": ""
+    },
+    "vs20shmnarise.png": {
+      "id": "vs20shmnarise",
+      "code": "vs20shmnarise",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20shmnarise.png",
+      "nameSource": ""
+    },
+    "vs20shootstars.png": {
+      "id": "vs20shootstars",
+      "code": "vs20shootstars",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20shootstars.png",
+      "nameSource": ""
+    },
+    "vs20sknights.png": {
+      "id": "vs20sknights",
+      "code": "vs20sknights",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sknights.png",
+      "nameSource": ""
+    },
+    "vs20slightwdm.png": {
+      "id": "vs20slightwdm",
+      "code": "vs20slightwdm",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20slightwdm.png",
+      "nameSource": ""
+    },
+    "vs20smugcove.png": {
+      "id": "vs20smugcove",
+      "code": "vs20smugcove",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20smugcove.png",
+      "nameSource": ""
+    },
+    "vs20sparta.png": {
+      "id": "vs20sparta",
+      "code": "vs20sparta",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sparta.png",
+      "nameSource": ""
+    },
+    "vs20speark.png": {
+      "id": "vs20speark",
+      "code": "vs20speark",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20speark.png",
+      "nameSource": ""
+    },
+    "vs20splmystery.png": {
+      "id": "vs20splmystery",
+      "code": "vs20splmystery",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20splmystery.png",
+      "nameSource": ""
+    },
+    "vs20stararx.png": {
+      "id": "vs20stararx",
+      "code": "vs20stararx",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20stararx.png",
+      "nameSource": ""
+    },
+    "vs20starlight.png": {
+      "id": "vs20starlight",
+      "code": "vs20starlight",
+      "name": "Starlight Princess",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20starlight.png",
+      "nameSource": "verified"
+    },
+    "vs20starlightx.png": {
+      "id": "vs20starlightx",
+      "code": "vs20starlightx",
+      "name": "Starlight Princess 1000",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20starlightx.png",
+      "nameSource": "verified"
+    },
+    "vs20starprss.png": {
+      "id": "vs20starprss",
+      "code": "vs20starprss",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20starprss.png",
+      "nameSource": ""
+    },
+    "vs20stckwldsc.png": {
+      "id": "vs20stckwldsc",
+      "code": "vs20stckwldsc",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20stckwldsc.png",
+      "nameSource": ""
+    },
+    "vs20stickypos.png": {
+      "id": "vs20stickypos",
+      "code": "vs20stickypos",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20stickypos.png",
+      "nameSource": ""
+    },
+    "vs20stickysymbol.png": {
+      "id": "vs20stickysymbol",
+      "code": "vs20stickysymbol",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20stickysymbol.png",
+      "nameSource": ""
+    },
+    "vs20sugarcoins.png": {
+      "id": "vs20sugarcoins",
+      "code": "vs20sugarcoins",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sugarcoins.png",
+      "nameSource": ""
+    },
+    "vs20sugarnudge.png": {
+      "id": "vs20sugarnudge",
+      "code": "vs20sugarnudge",
+      "name": "Sugar Supreme Powernudge",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sugarnudge.png",
+      "nameSource": "verified"
+    },
+    "vs20sugarrush.png": {
+      "id": "vs20sugarrush",
+      "code": "vs20sugarrush",
+      "name": "Sugar Rush",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sugarrush.png",
+      "nameSource": "verified"
+    },
+    "vs20sugarrusha.png": {
+      "id": "vs20sugarrusha",
+      "code": "vs20sugarrusha",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sugarrusha.png",
+      "nameSource": ""
+    },
+    "vs20sugarrushx.png": {
+      "id": "vs20sugarrushx",
+      "code": "vs20sugarrushx",
+      "name": "Sugar Rush 1000",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sugarrushx.png",
+      "nameSource": "verified"
+    },
+    "vs20sugrushss.png": {
+      "id": "vs20sugrushss",
+      "code": "vs20sugrushss",
+      "name": "Sugar Rush Super Scatter",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sugrushss.png",
+      "nameSource": "verified"
+    },
+    "vs20sugrux.png": {
+      "id": "vs20sugrux",
+      "code": "vs20sugrux",
+      "name": "Sugar Rush Xmas",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20sugrux.png",
+      "nameSource": "verified"
+    },
+    "vs20superlanche.png": {
+      "id": "vs20superlanche",
+      "code": "vs20superlanche",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20superlanche.png",
+      "nameSource": ""
+    },
+    "vs20supermania.png": {
+      "id": "vs20supermania",
+      "code": "vs20supermania",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20supermania.png",
+      "nameSource": ""
+    },
+    "vs20superx.png": {
+      "id": "vs20superx",
+      "code": "vs20superx",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20superx.png",
+      "nameSource": ""
+    },
+    "vs20swbon2500.png": {
+      "id": "vs20swbon2500",
+      "code": "vs20swbon2500",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20swbon2500.png",
+      "nameSource": ""
+    },
+    "vs20swbonsup.png": {
+      "id": "vs20swbonsup",
+      "code": "vs20swbonsup",
+      "name": "Sweet Bonanza Super Scatter",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20swbonsup.png",
+      "nameSource": "verified"
+    },
+    "vs20swordofares.png": {
+      "id": "vs20swordofares",
+      "code": "vs20swordofares",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20swordofares.png",
+      "nameSource": ""
+    },
+    "vs20swrbon.png": {
+      "id": "vs20swrbon",
+      "code": "vs20swrbon",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20swrbon.png",
+      "nameSource": ""
+    },
+    "vs20terrorv.png": {
+      "id": "vs20terrorv",
+      "code": "vs20terrorv",
+      "name": "Cash Elevator",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20terrorv.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20theights.png": {
+      "id": "vs20theights",
+      "code": "vs20theights",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20theights.png",
+      "nameSource": ""
+    },
+    "vs20thunder.png": {
+      "id": "vs20thunder",
+      "code": "vs20thunder",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20thunder.png",
+      "nameSource": ""
+    },
+    "vs20treesot.png": {
+      "id": "vs20treesot",
+      "code": "vs20treesot",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20treesot.png",
+      "nameSource": ""
+    },
+    "vs20trsbox.png": {
+      "id": "vs20trsbox",
+      "code": "vs20trsbox",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20trsbox.png",
+      "nameSource": ""
+    },
+    "vs20trswild2.png": {
+      "id": "vs20trswild2",
+      "code": "vs20trswild2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20trswild2.png",
+      "nameSource": ""
+    },
+    "vs20trswild3.png": {
+      "id": "vs20trswild3",
+      "code": "vs20trswild3",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20trswild3.png",
+      "nameSource": ""
+    },
+    "vs20tweethouse.png": {
+      "id": "vs20tweethouse",
+      "code": "vs20tweethouse",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20tweethouse.png",
+      "nameSource": ""
+    },
+    "vs20ultim5.png": {
+      "id": "vs20ultim5",
+      "code": "vs20ultim5",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20ultim5.png",
+      "nameSource": ""
+    },
+    "vs20underground.png": {
+      "id": "vs20underground",
+      "code": "vs20underground",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20underground.png",
+      "nameSource": ""
+    },
+    "vs20vegasmagic.png": {
+      "id": "vs20vegasmagic",
+      "code": "vs20vegasmagic",
+      "name": "Vegas Magic",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20vegasmagic.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20wildboost.png": {
+      "id": "vs20wildboost",
+      "code": "vs20wildboost",
+      "name": "Wild Booster",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20wildboost.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20wildparty.png": {
+      "id": "vs20wildparty",
+      "code": "vs20wildparty",
+      "name": "3 Buzzing Wilds",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20wildparty.png",
+      "nameSource": "verified"
+    },
+    "vs20wildpix.png": {
+      "id": "vs20wildpix",
+      "code": "vs20wildpix",
+      "name": "Wild Pixies",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20wildpix.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20wolfie.png": {
+      "id": "vs20wolfie",
+      "code": "vs20wolfie",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20wolfie.png",
+      "nameSource": ""
+    },
+    "vs20wraanu.png": {
+      "id": "vs20wraanu",
+      "code": "vs20wraanu",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20wraanu.png",
+      "nameSource": ""
+    },
+    "vs20wwgcluster.png": {
+      "id": "vs20wwgcluster",
+      "code": "vs20wwgcluster",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20wwgcluster.png",
+      "nameSource": ""
+    },
+    "vs20xmascarol.png": {
+      "id": "vs20xmascarol",
+      "code": "vs20xmascarol",
+      "name": "Christmas Carol Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20xmascarol.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs20yotdk.png": {
+      "id": "vs20yotdk",
+      "code": "vs20yotdk",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs20yotdk.png",
+      "nameSource": ""
+    },
+    "vs25archer.png": {
+      "id": "vs25archer",
+      "code": "vs25archer",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25archer.png",
+      "nameSource": ""
+    },
+    "vs25asgard.png": {
+      "id": "vs25asgard",
+      "code": "vs25asgard",
+      "name": "Asgard",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25asgard.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25aztecking.png": {
+      "id": "vs25aztecking",
+      "code": "vs25aztecking",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25aztecking.png",
+      "nameSource": ""
+    },
+    "vs25badge.png": {
+      "id": "vs25badge",
+      "code": "vs25badge",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25badge.png",
+      "nameSource": ""
+    },
+    "vs25bkofkngdm.png": {
+      "id": "vs25bkofkngdm",
+      "code": "vs25bkofkngdm",
+      "name": "Book of Kingdoms",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25bkofkngdm.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25bomb.png": {
+      "id": "vs25bomb",
+      "code": "vs25bomb",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25bomb.png",
+      "nameSource": ""
+    },
+    "vs25bstackwild.png": {
+      "id": "vs25bstackwild",
+      "code": "vs25bstackwild",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25bstackwild.png",
+      "nameSource": ""
+    },
+    "vs25btygold.png": {
+      "id": "vs25btygold",
+      "code": "vs25btygold",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25btygold.png",
+      "nameSource": ""
+    },
+    "vs25bullfiesta.png": {
+      "id": "vs25bullfiesta",
+      "code": "vs25bullfiesta",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25bullfiesta.png",
+      "nameSource": ""
+    },
+    "vs25caishen2.png": {
+      "id": "vs25caishen2",
+      "code": "vs25caishen2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25caishen2.png",
+      "nameSource": ""
+    },
+    "vs25checaishen.png": {
+      "id": "vs25checaishen",
+      "code": "vs25checaishen",
+      "name": "Chests Of Cai Shen",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25checaishen.png",
+      "nameSource": "verified"
+    },
+    "vs25chilli.png": {
+      "id": "vs25chilli",
+      "code": "vs25chilli",
+      "name": "Chilli Heat",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25chilli.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25copsrobbers.png": {
+      "id": "vs25copsrobbers",
+      "code": "vs25copsrobbers",
+      "name": "Cash Patrol",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25copsrobbers.png",
+      "nameSource": "verified"
+    },
+    "vs25davinci.png": {
+      "id": "vs25davinci",
+      "code": "vs25davinci",
+      "name": "Da Vinci’s Treasure",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25davinci.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25dragonkingdom.png": {
+      "id": "vs25dragonkingdom",
+      "code": "vs25dragonkingdom",
+      "name": "Dragon Kingdom",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25dragonkingdom.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25dwarves_new.png": {
+      "id": "vs25dwarves_new",
+      "code": "vs25dwarves_new",
+      "name": "Dwarven Gold Deluxe",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25dwarves_new.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25gladiator.png": {
+      "id": "vs25gladiator",
+      "code": "vs25gladiator",
+      "name": "Wild Gladiators",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25gladiator.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25gldox.png": {
+      "id": "vs25gldox",
+      "code": "vs25gldox",
+      "name": "Golden Ox",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25gldox.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs25goldparty.png": {
+      "id": "vs25goldparty",
+      "code": "vs25goldparty",
+      "name": "Gold Party",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25goldparty.png",
+      "nameSource": "verified"
+    },
+    "vs25goldpartya.png": {
+      "id": "vs25goldpartya",
+      "code": "vs25goldpartya",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25goldpartya.png",
+      "nameSource": ""
+    },
+    "vs25goldpig.png": {
+      "id": "vs25goldpig",
+      "code": "vs25goldpig",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25goldpig.png",
+      "nameSource": ""
+    },
+    "vs25goldrexp.png": {
+      "id": "vs25goldrexp",
+      "code": "vs25goldrexp",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25goldrexp.png",
+      "nameSource": ""
+    },
+    "vs25goldrush.png": {
+      "id": "vs25goldrush",
+      "code": "vs25goldrush",
+      "name": "Gold Rush",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25goldrush.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25holiday.png": {
+      "id": "vs25holiday",
+      "code": "vs25holiday",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25holiday.png",
+      "nameSource": ""
+    },
+    "vs25hotfiesta.png": {
+      "id": "vs25hotfiesta",
+      "code": "vs25hotfiesta",
+      "name": "Hot Fiesta",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25hotfiesta.png",
+      "nameSource": "verified"
+    },
+    "vs25jokerking.png": {
+      "id": "vs25jokerking",
+      "code": "vs25jokerking",
+      "name": "Joker King",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25jokerking.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25jokrace.png": {
+      "id": "vs25jokrace",
+      "code": "vs25jokrace",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25jokrace.png",
+      "nameSource": ""
+    },
+    "vs25journey.png": {
+      "id": "vs25journey",
+      "code": "vs25journey",
+      "name": "Journey to the West",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25journey.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25kfruit.png": {
+      "id": "vs25kfruit",
+      "code": "vs25kfruit",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25kfruit.png",
+      "nameSource": ""
+    },
+    "vs25kingdoms.png": {
+      "id": "vs25kingdoms",
+      "code": "vs25kingdoms",
+      "name": "3 Kingdoms – Battle of Red Cliffs",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25kingdoms.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25lagoon.png": {
+      "id": "vs25lagoon",
+      "code": "vs25lagoon",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25lagoon.png",
+      "nameSource": ""
+    },
+    "vs25luckpub.png": {
+      "id": "vs25luckpub",
+      "code": "vs25luckpub",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25luckpub.png",
+      "nameSource": ""
+    },
+    "vs25luckwildpb.png": {
+      "id": "vs25luckwildpb",
+      "code": "vs25luckwildpb",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25luckwildpb.png",
+      "nameSource": ""
+    },
+    "vs25mmouse.png": {
+      "id": "vs25mmouse",
+      "code": "vs25mmouse",
+      "name": "Money Mouse",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25mmouse.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25mustang.png": {
+      "id": "vs25mustang",
+      "code": "vs25mustang",
+      "name": "Mustang Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25mustang.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs25newyear.png": {
+      "id": "vs25newyear",
+      "code": "vs25newyear",
+      "name": "Lucky New Year",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25newyear.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25pandagold.png": {
+      "id": "vs25pandagold",
+      "code": "vs25pandagold",
+      "name": "Panda's Fortune",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25pandagold.png",
+      "nameSource": "verified"
+    },
+    "vs25pandatemple.png": {
+      "id": "vs25pandatemple",
+      "code": "vs25pandatemple",
+      "name": "Panda's Fortune 2",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25pandatemple.png",
+      "nameSource": "verified"
+    },
+    "vs25peking.png": {
+      "id": "vs25peking",
+      "code": "vs25peking",
+      "name": "Peking Luck",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25peking.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25pyramid.png": {
+      "id": "vs25pyramid",
+      "code": "vs25pyramid",
+      "name": "Pyramid King",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25pyramid.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25quadwolf.png": {
+      "id": "vs25quadwolf",
+      "code": "vs25quadwolf",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25quadwolf.png",
+      "nameSource": ""
+    },
+    "vs25rio.png": {
+      "id": "vs25rio",
+      "code": "vs25rio",
+      "name": "Heart of Rio",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25rio.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs25rlbank.png": {
+      "id": "vs25rlbank",
+      "code": "vs25rlbank",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25rlbank.png",
+      "nameSource": ""
+    },
+    "vs25safari.png": {
+      "id": "vs25safari",
+      "code": "vs25safari",
+      "name": "Hot Safari",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25safari.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25samurai.png": {
+      "id": "vs25samurai",
+      "code": "vs25samurai",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25samurai.png",
+      "nameSource": ""
+    },
+    "vs25scarabqueen.png": {
+      "id": "vs25scarabqueen",
+      "code": "vs25scarabqueen",
+      "name": "John Hunter and the Tomb of the Scarab Queen",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25scarabqueen.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25scolymp.png": {
+      "id": "vs25scolymp",
+      "code": "vs25scolymp",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25scolymp.png",
+      "nameSource": ""
+    },
+    "vs25sea.png": {
+      "id": "vs25sea",
+      "code": "vs25sea",
+      "name": "Great Reef",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25sea.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25shenrich.png": {
+      "id": "vs25shenrich",
+      "code": "vs25shenrich",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25shenrich.png",
+      "nameSource": ""
+    },
+    "vs25sleepdrag.png": {
+      "id": "vs25sleepdrag",
+      "code": "vs25sleepdrag",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25sleepdrag.png",
+      "nameSource": ""
+    },
+    "vs25spgldways.png": {
+      "id": "vs25spgldways",
+      "code": "vs25spgldways",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25spgldways.png",
+      "nameSource": ""
+    },
+    "vs25spotz.png": {
+      "id": "vs25spotz",
+      "code": "vs25spotz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25spotz.png",
+      "nameSource": ""
+    },
+    "vs25tigerwar.png": {
+      "id": "vs25tigerwar",
+      "code": "vs25tigerwar",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25tigerwar.png",
+      "nameSource": ""
+    },
+    "vs25tigeryear.png": {
+      "id": "vs25tigeryear",
+      "code": "vs25tigeryear",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25tigeryear.png",
+      "nameSource": ""
+    },
+    "vs25tripleps.png": {
+      "id": "vs25tripleps",
+      "code": "vs25tripleps",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25tripleps.png",
+      "nameSource": ""
+    },
+    "vs25ultwolgol.png": {
+      "id": "vs25ultwolgol",
+      "code": "vs25ultwolgol",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25ultwolgol.png",
+      "nameSource": ""
+    },
+    "vs25vegas.png": {
+      "id": "vs25vegas",
+      "code": "vs25vegas",
+      "name": "Vegas Nights",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25vegas.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25walker.png": {
+      "id": "vs25walker",
+      "code": "vs25walker",
+      "name": "Wild Walker",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25walker.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25wildies.png": {
+      "id": "vs25wildies",
+      "code": "vs25wildies",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25wildies.png",
+      "nameSource": ""
+    },
+    "vs25wildspells.png": {
+      "id": "vs25wildspells",
+      "code": "vs25wildspells",
+      "name": "Wild Spells",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25wildspells.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25wolfgmm.png": {
+      "id": "vs25wolfgmm",
+      "code": "vs25wolfgmm",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25wolfgmm.png",
+      "nameSource": ""
+    },
+    "vs25wolfgold.png": {
+      "id": "vs25wolfgold",
+      "code": "vs25wolfgold",
+      "name": "Wolf Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25wolfgold.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs25xmasparty.png": {
+      "id": "vs25xmasparty",
+      "code": "vs25xmasparty",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs25xmasparty.png",
+      "nameSource": ""
+    },
+    "vs30bingomania.png": {
+      "id": "vs30bingomania",
+      "code": "vs30bingomania",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs30bingomania.png",
+      "nameSource": ""
+    },
+    "vs40bigjuan.png": {
+      "id": "vs40bigjuan",
+      "code": "vs40bigjuan",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40bigjuan.png",
+      "nameSource": ""
+    },
+    "vs40cleoeye.png": {
+      "id": "vs40cleoeye",
+      "code": "vs40cleoeye",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40cleoeye.png",
+      "nameSource": ""
+    },
+    "vs40cosmiccash.png": {
+      "id": "vs40cosmiccash",
+      "code": "vs40cosmiccash",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40cosmiccash.png",
+      "nameSource": ""
+    },
+    "vs40demonpots.png": {
+      "id": "vs40demonpots",
+      "code": "vs40demonpots",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40demonpots.png",
+      "nameSource": ""
+    },
+    "vs40firehot.png": {
+      "id": "vs40firehot",
+      "code": "vs40firehot",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40firehot.png",
+      "nameSource": ""
+    },
+    "vs40frrainbow.png": {
+      "id": "vs40frrainbow",
+      "code": "vs40frrainbow",
+      "name": "Fruit Rainbow",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40frrainbow.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs40hmrstrm.png": {
+      "id": "vs40hmrstrm",
+      "code": "vs40hmrstrm",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40hmrstrm.png",
+      "nameSource": ""
+    },
+    "vs40hotburnx.png": {
+      "id": "vs40hotburnx",
+      "code": "vs40hotburnx",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40hotburnx.png",
+      "nameSource": ""
+    },
+    "vs40infwild.png": {
+      "id": "vs40infwild",
+      "code": "vs40infwild",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40infwild.png",
+      "nameSource": ""
+    },
+    "vs40madwheel.png": {
+      "id": "vs40madwheel",
+      "code": "vs40madwheel",
+      "name": "The Wild Machine",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40madwheel.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs40pdmrsg.png": {
+      "id": "vs40pdmrsg",
+      "code": "vs40pdmrsg",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40pdmrsg.png",
+      "nameSource": ""
+    },
+    "vs40pirate.png": {
+      "id": "vs40pirate",
+      "code": "vs40pirate",
+      "name": "Pirate Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40pirate.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs40pirgold.png": {
+      "id": "vs40pirgold",
+      "code": "vs40pirgold",
+      "name": "Pirate Gold Deluxe",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40pirgold.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs40rainbowr.png": {
+      "id": "vs40rainbowr",
+      "code": "vs40rainbowr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40rainbowr.png",
+      "nameSource": ""
+    },
+    "vs40samurai3.png": {
+      "id": "vs40samurai3",
+      "code": "vs40samurai3",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40samurai3.png",
+      "nameSource": ""
+    },
+    "vs40sh.png": {
+      "id": "vs40sh",
+      "code": "vs40sh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40sh.png",
+      "nameSource": ""
+    },
+    "vs40spartaking.png": {
+      "id": "vs40spartaking",
+      "code": "vs40spartaking",
+      "name": "Spartan King",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40spartaking.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs40stckwldlvl.png": {
+      "id": "vs40stckwldlvl",
+      "code": "vs40stckwldlvl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40stckwldlvl.png",
+      "nameSource": ""
+    },
+    "vs40streetracer.png": {
+      "id": "vs40streetracer",
+      "code": "vs40streetracer",
+      "name": "Street Racer",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40streetracer.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs40voodoo.png": {
+      "id": "vs40voodoo",
+      "code": "vs40voodoo",
+      "name": "Voodoo Magic",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40voodoo.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs40wanderw.png": {
+      "id": "vs40wanderw",
+      "code": "vs40wanderw",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40wanderw.png",
+      "nameSource": ""
+    },
+    "vs40wildrun.png": {
+      "id": "vs40wildrun",
+      "code": "vs40wildrun",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40wildrun.png",
+      "nameSource": ""
+    },
+    "vs40wildwest.png": {
+      "id": "vs40wildwest",
+      "code": "vs40wildwest",
+      "name": "Wild West Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs40wildwest.png",
+      "nameSource": "verified"
+    },
+    "vs50aladdin.png": {
+      "id": "vs50aladdin",
+      "code": "vs50aladdin",
+      "name": "3 Genie Wishes",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50aladdin.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs50chinesecharms.png": {
+      "id": "vs50chinesecharms",
+      "code": "vs50chinesecharms",
+      "name": "Lucky Dragons",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50chinesecharms.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs50dmdcascade.png": {
+      "id": "vs50dmdcascade",
+      "code": "vs50dmdcascade",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50dmdcascade.png",
+      "nameSource": ""
+    },
+    "vs50dragatebch.png": {
+      "id": "vs50dragatebch",
+      "code": "vs50dragatebch",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50dragatebch.png",
+      "nameSource": ""
+    },
+    "vs50fatfrogs.png": {
+      "id": "vs50fatfrogs",
+      "code": "vs50fatfrogs",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50fatfrogs.png",
+      "nameSource": ""
+    },
+    "vs50grghsts.png": {
+      "id": "vs50grghsts",
+      "code": "vs50grghsts",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50grghsts.png",
+      "nameSource": ""
+    },
+    "vs50hercules.png": {
+      "id": "vs50hercules",
+      "code": "vs50hercules",
+      "name": "Hercules Son of Zeus",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50hercules.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs50jfmulthold.png": {
+      "id": "vs50jfmulthold",
+      "code": "vs50jfmulthold",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50jfmulthold.png",
+      "nameSource": ""
+    },
+    "vs50jucier.png": {
+      "id": "vs50jucier",
+      "code": "vs50jucier",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50jucier.png",
+      "nameSource": ""
+    },
+    "vs50juicyfr.png": {
+      "id": "vs50juicyfr",
+      "code": "vs50juicyfr",
+      "name": "Juicy Fruits",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50juicyfr.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs50kingkong.png": {
+      "id": "vs50kingkong",
+      "code": "vs50kingkong",
+      "name": "Mighty Kong",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50kingkong.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs50mightra.png": {
+      "id": "vs50mightra",
+      "code": "vs50mightra",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50mightra.png",
+      "nameSource": ""
+    },
+    "vs50northgard.png": {
+      "id": "vs50northgard",
+      "code": "vs50northgard",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50northgard.png",
+      "nameSource": ""
+    },
+    "vs50pixie.png": {
+      "id": "vs50pixie",
+      "code": "vs50pixie",
+      "name": "Pixie Wings",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50pixie.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs50safariking.png": {
+      "id": "vs50safariking",
+      "code": "vs50safariking",
+      "name": "Safari King",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50safariking.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs50tphns.png": {
+      "id": "vs50tphns",
+      "code": "vs50tphns",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs50tphns.png",
+      "nameSource": ""
+    },
+    "vs88hockattack.png": {
+      "id": "vs88hockattack",
+      "code": "vs88hockattack",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs88hockattack.png",
+      "nameSource": ""
+    },
+    "vs100firehot.png": {
+      "id": "vs100firehot",
+      "code": "vs100firehot",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs100firehot.png",
+      "nameSource": ""
+    },
+    "vs100hsandks.png": {
+      "id": "vs100hsandks",
+      "code": "vs100hsandks",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs100hsandks.png",
+      "nameSource": ""
+    },
+    "vs100sh.png": {
+      "id": "vs100sh",
+      "code": "vs100sh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs100sh.png",
+      "nameSource": ""
+    },
+    "vs243caishien.png": {
+      "id": "vs243caishien",
+      "code": "vs243caishien",
+      "name": "Caishen’s Cash",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243caishien.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs243chargebull.png": {
+      "id": "vs243chargebull",
+      "code": "vs243chargebull",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243chargebull.png",
+      "nameSource": ""
+    },
+    "vs243ckemp.png": {
+      "id": "vs243ckemp",
+      "code": "vs243ckemp",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243ckemp.png",
+      "nameSource": ""
+    },
+    "vs243dancingpar.png": {
+      "id": "vs243dancingpar",
+      "code": "vs243dancingpar",
+      "name": "Dance Party",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243dancingpar.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs243discolady.png": {
+      "id": "vs243discolady",
+      "code": "vs243discolady",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243discolady.png",
+      "nameSource": ""
+    },
+    "vs243empcaishen.png": {
+      "id": "vs243empcaishen",
+      "code": "vs243empcaishen",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243empcaishen.png",
+      "nameSource": ""
+    },
+    "vs243fdragon.png": {
+      "id": "vs243fdragon",
+      "code": "vs243fdragon",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243fdragon.png",
+      "nameSource": ""
+    },
+    "vs243fortseren.png": {
+      "id": "vs243fortseren",
+      "code": "vs243fortseren",
+      "name": "Greek Gods",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243fortseren.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs243fortune.png": {
+      "id": "vs243fortune",
+      "code": "vs243fortune",
+      "name": "Caishen’s Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243fortune.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs243goldfor.png": {
+      "id": "vs243goldfor",
+      "code": "vs243goldfor",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243goldfor.png",
+      "nameSource": ""
+    },
+    "vs243koipond.png": {
+      "id": "vs243koipond",
+      "code": "vs243koipond",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243koipond.png",
+      "nameSource": ""
+    },
+    "vs243lions.png": {
+      "id": "vs243lions",
+      "code": "vs243lions",
+      "name": "5 Lions",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243lions.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs243lionsgold.png": {
+      "id": "vs243lionsgold",
+      "code": "vs243lionsgold",
+      "name": "5 Lions Gold",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243lionsgold.png",
+      "nameSource": "verified"
+    },
+    "vs243matrem.png": {
+      "id": "vs243matrem",
+      "code": "vs243matrem",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243matrem.png",
+      "nameSource": ""
+    },
+    "vs243mwarrior.png": {
+      "id": "vs243mwarrior",
+      "code": "vs243mwarrior",
+      "name": "Monkey Warrior",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243mwarrior.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs243nudge4gold.png": {
+      "id": "vs243nudge4gold",
+      "code": "vs243nudge4gold",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243nudge4gold.png",
+      "nameSource": ""
+    },
+    "vs243queenie.png": {
+      "id": "vs243queenie",
+      "code": "vs243queenie",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs243queenie.png",
+      "nameSource": ""
+    },
+    "vs432congocash.png": {
+      "id": "vs432congocash",
+      "code": "vs432congocash",
+      "name": "Congo Cash",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs432congocash.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs576hokkwolf.png": {
+      "id": "vs576hokkwolf",
+      "code": "vs576hokkwolf",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs576hokkwolf.png",
+      "nameSource": ""
+    },
+    "vs576treasures.png": {
+      "id": "vs576treasures",
+      "code": "vs576treasures",
+      "name": "Wild Wild Riches",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs576treasures.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs1024butterfly.png": {
+      "id": "vs1024butterfly",
+      "code": "vs1024butterfly",
+      "name": "Jade Butterfly",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024butterfly.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs1024dtiger.png": {
+      "id": "vs1024dtiger",
+      "code": "vs1024dtiger",
+      "name": "Dragon Tiger",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024dtiger.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs1024fortune.png": {
+      "id": "vs1024fortune",
+      "code": "vs1024fortune",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024fortune.png",
+      "nameSource": ""
+    },
+    "vs1024gmayhem.png": {
+      "id": "vs1024gmayhem",
+      "code": "vs1024gmayhem",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024gmayhem.png",
+      "nameSource": ""
+    },
+    "vs1024lionsd.png": {
+      "id": "vs1024lionsd",
+      "code": "vs1024lionsd",
+      "name": "5 Lions Dance",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024lionsd.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs1024mahjpanda.png": {
+      "id": "vs1024mahjpanda",
+      "code": "vs1024mahjpanda",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024mahjpanda.png",
+      "nameSource": ""
+    },
+    "vs1024mahjwins.png": {
+      "id": "vs1024mahjwins",
+      "code": "vs1024mahjwins",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024mahjwins.png",
+      "nameSource": ""
+    },
+    "vs1024mjwinbns.png": {
+      "id": "vs1024mjwinbns",
+      "code": "vs1024mjwinbns",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024mjwinbns.png",
+      "nameSource": ""
+    },
+    "vs1024moonsh.png": {
+      "id": "vs1024moonsh",
+      "code": "vs1024moonsh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024moonsh.png",
+      "nameSource": ""
+    },
+    "vs1024temuj.png": {
+      "id": "vs1024temuj",
+      "code": "vs1024temuj",
+      "name": "Temujin Treasures",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1024temuj.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vs1600drago.png": {
+      "id": "vs1600drago",
+      "code": "vs1600drago",
+      "name": "Drago – Jewels of Fortune",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs1600drago.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs4096bufking.png": {
+      "id": "vs4096bufking",
+      "code": "vs4096bufking",
+      "name": "Buffalo King",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs4096bufking.png",
+      "nameSource": "verified"
+    },
+    "vs4096magician.png": {
+      "id": "vs4096magician",
+      "code": "vs4096magician",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs4096magician.png",
+      "nameSource": ""
+    },
+    "vs4096mystery.png": {
+      "id": "vs4096mystery",
+      "code": "vs4096mystery",
+      "name": "Mysterious",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs4096mystery.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs4096robber.png": {
+      "id": "vs4096robber",
+      "code": "vs4096robber",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs4096robber.png",
+      "nameSource": ""
+    },
+    "vs7776aztec.png": {
+      "id": "vs7776aztec",
+      "code": "vs7776aztec",
+      "name": "Aztec Bonanza",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs7776aztec.png",
+      "nameSource": "verified"
+    },
+    "vs7776secrets.png": {
+      "id": "vs7776secrets",
+      "code": "vs7776secrets",
+      "name": "John Hunter and the Aztec Treasure",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs7776secrets.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vs117649starz.png": {
+      "id": "vs117649starz",
+      "code": "vs117649starz",
+      "name": "Starz Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vs117649starz.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vsways4ptgld.png": {
+      "id": "vsways4ptgld",
+      "code": "vsways4ptgld",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vsways4ptgld.png",
+      "nameSource": ""
+    },
+    "vsways5lions2.png": {
+      "id": "vsways5lions2",
+      "code": "vsways5lions2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vsways5lions2.png",
+      "nameSource": ""
+    },
+    "vsways5lionsr.png": {
+      "id": "vsways5lionsr",
+      "code": "vsways5lionsr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vsways5lionsr.png",
+      "nameSource": ""
+    },
+    "vswaysacnd.png": {
+      "id": "vswaysacnd",
+      "code": "vswaysacnd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysacnd.png",
+      "nameSource": ""
+    },
+    "vswaysalterego.png": {
+      "id": "vswaysalterego",
+      "code": "vswaysalterego",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysalterego.png",
+      "nameSource": ""
+    },
+    "vswaysanime.png": {
+      "id": "vswaysanime",
+      "code": "vswaysanime",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysanime.png",
+      "nameSource": ""
+    },
+    "vswaysarcher.png": {
+      "id": "vswaysarcher",
+      "code": "vswaysarcher",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysarcher.png",
+      "nameSource": ""
+    },
+    "vswaysargonts.png": {
+      "id": "vswaysargonts",
+      "code": "vswaysargonts",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysargonts.png",
+      "nameSource": ""
+    },
+    "vswaysasiatrzn.png": {
+      "id": "vswaysasiatrzn",
+      "code": "vswaysasiatrzn",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysasiatrzn.png",
+      "nameSource": ""
+    },
+    "vswaysaztec.png": {
+      "id": "vswaysaztec",
+      "code": "vswaysaztec",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysaztec.png",
+      "nameSource": ""
+    },
+    "vswaysaztecking.png": {
+      "id": "vswaysaztecking",
+      "code": "vswaysaztecking",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysaztecking.png",
+      "nameSource": ""
+    },
+    "vswaysbandit.png": {
+      "id": "vswaysbandit",
+      "code": "vswaysbandit",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbandit.png",
+      "nameSource": ""
+    },
+    "vswaysbankbonz.png": {
+      "id": "vswaysbankbonz",
+      "code": "vswaysbankbonz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbankbonz.png",
+      "nameSource": ""
+    },
+    "vswaysbbarnh.png": {
+      "id": "vswaysbbarnh",
+      "code": "vswaysbbarnh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbbarnh.png",
+      "nameSource": ""
+    },
+    "vswaysbbb.png": {
+      "id": "vswaysbbb",
+      "code": "vswaysbbb",
+      "name": "Big Bass Bonanza Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbbb.png",
+      "nameSource": "verified"
+    },
+    "vswaysbbhas.png": {
+      "id": "vswaysbbhas",
+      "code": "vswaysbbhas",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbbhas.png",
+      "nameSource": ""
+    },
+    "vswaysbblitz.png": {
+      "id": "vswaysbblitz",
+      "code": "vswaysbblitz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbblitz.png",
+      "nameSource": ""
+    },
+    "vswaysbewaretd.png": {
+      "id": "vswaysbewaretd",
+      "code": "vswaysbewaretd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbewaretd.png",
+      "nameSource": ""
+    },
+    "vswaysbibebarn.png": {
+      "id": "vswaysbibebarn",
+      "code": "vswaysbibebarn",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbibebarn.png",
+      "nameSource": ""
+    },
+    "vswaysbkingasc.png": {
+      "id": "vswaysbkingasc",
+      "code": "vswaysbkingasc",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbkingasc.png",
+      "nameSource": ""
+    },
+    "vswaysbooboo.png": {
+      "id": "vswaysbooboo",
+      "code": "vswaysbooboo",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbooboo.png",
+      "nameSource": ""
+    },
+    "vswaysbook.png": {
+      "id": "vswaysbook",
+      "code": "vswaysbook",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbook.png",
+      "nameSource": ""
+    },
+    "vswaysbrickhos.png": {
+      "id": "vswaysbrickhos",
+      "code": "vswaysbrickhos",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbrickhos.png",
+      "nameSource": ""
+    },
+    "vswaysbufking.png": {
+      "id": "vswaysbufking",
+      "code": "vswaysbufking",
+      "name": "Buffalo King Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbufking.png",
+      "nameSource": "verified"
+    },
+    "vswaysbufstamp.png": {
+      "id": "vswaysbufstamp",
+      "code": "vswaysbufstamp",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysbufstamp.png",
+      "nameSource": ""
+    },
+    "vswayscashconv.png": {
+      "id": "vswayscashconv",
+      "code": "vswayscashconv",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscashconv.png",
+      "nameSource": ""
+    },
+    "vswayscashsurg.png": {
+      "id": "vswayscashsurg",
+      "code": "vswayscashsurg",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscashsurg.png",
+      "nameSource": ""
+    },
+    "vswayscfglory.png": {
+      "id": "vswayscfglory",
+      "code": "vswayscfglory",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscfglory.png",
+      "nameSource": ""
+    },
+    "vswayscharms.png": {
+      "id": "vswayscharms",
+      "code": "vswayscharms",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscharms.png",
+      "nameSource": ""
+    },
+    "vswayscheist.png": {
+      "id": "vswayscheist",
+      "code": "vswayscheist",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscheist.png",
+      "nameSource": ""
+    },
+    "vswayschilheat.png": {
+      "id": "vswayschilheat",
+      "code": "vswayschilheat",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayschilheat.png",
+      "nameSource": ""
+    },
+    "vswayschilhtwo.png": {
+      "id": "vswayschilhtwo",
+      "code": "vswayschilhtwo",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayschilhtwo.png",
+      "nameSource": ""
+    },
+    "vswaysconcoll.png": {
+      "id": "vswaysconcoll",
+      "code": "vswaysconcoll",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysconcoll.png",
+      "nameSource": ""
+    },
+    "vswayscongcash.png": {
+      "id": "vswayscongcash",
+      "code": "vswayscongcash",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscongcash.png",
+      "nameSource": ""
+    },
+    "vswayscryscav.png": {
+      "id": "vswayscryscav",
+      "code": "vswayscryscav",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscryscav.png",
+      "nameSource": ""
+    },
+    "vswayscyclop.png": {
+      "id": "vswayscyclop",
+      "code": "vswayscyclop",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscyclop.png",
+      "nameSource": ""
+    },
+    "vswayscyhecity.png": {
+      "id": "vswayscyhecity",
+      "code": "vswayscyhecity",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscyhecity.png",
+      "nameSource": ""
+    },
+    "vswayscypup.png": {
+      "id": "vswayscypup",
+      "code": "vswayscypup",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayscypup.png",
+      "nameSource": ""
+    },
+    "vswaysdh1000.png": {
+      "id": "vswaysdh1000",
+      "code": "vswaysdh1000",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysdh1000.png",
+      "nameSource": ""
+    },
+    "vswaysdogs.png": {
+      "id": "vswaysdogs",
+      "code": "vswaysdogs",
+      "name": "The Dog House Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysdogs.png",
+      "nameSource": "verified"
+    },
+    "vswaysdragden.png": {
+      "id": "vswaysdragden",
+      "code": "vswaysdragden",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysdragden.png",
+      "nameSource": ""
+    },
+    "vswayselements.png": {
+      "id": "vswayselements",
+      "code": "vswayselements",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayselements.png",
+      "nameSource": ""
+    },
+    "vswayseternity.png": {
+      "id": "vswayseternity",
+      "code": "vswayseternity",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayseternity.png",
+      "nameSource": ""
+    },
+    "vswaysexpandng.png": {
+      "id": "vswaysexpandng",
+      "code": "vswaysexpandng",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysexpandng.png",
+      "nameSource": ""
+    },
+    "vswaysfirest2.png": {
+      "id": "vswaysfirest2",
+      "code": "vswaysfirest2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfirest2.png",
+      "nameSource": ""
+    },
+    "vswaysfirest3.png": {
+      "id": "vswaysfirest3",
+      "code": "vswaysfirest3",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfirest3.png",
+      "nameSource": ""
+    },
+    "vswaysfirewmw.png": {
+      "id": "vswaysfirewmw",
+      "code": "vswaysfirewmw",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfirewmw.png",
+      "nameSource": ""
+    },
+    "vswaysfltdrg.png": {
+      "id": "vswaysfltdrg",
+      "code": "vswaysfltdrg",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfltdrg.png",
+      "nameSource": ""
+    },
+    "vswaysfltdrgny.png": {
+      "id": "vswaysfltdrgny",
+      "code": "vswaysfltdrgny",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfltdrgny.png",
+      "nameSource": ""
+    },
+    "vswaysfortsup.png": {
+      "id": "vswaysfortsup",
+      "code": "vswaysfortsup",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfortsup.png",
+      "nameSource": ""
+    },
+    "vswaysfrbugs.png": {
+      "id": "vswaysfrbugs",
+      "code": "vswaysfrbugs",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfrbugs.png",
+      "nameSource": ""
+    },
+    "vswaysfreezet.png": {
+      "id": "vswaysfreezet",
+      "code": "vswaysfreezet",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfreezet.png",
+      "nameSource": ""
+    },
+    "vswaysfrywld.png": {
+      "id": "vswaysfrywld",
+      "code": "vswaysfrywld",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfrywld.png",
+      "nameSource": ""
+    },
+    "vswaysftropics.png": {
+      "id": "vswaysftropics",
+      "code": "vswaysftropics",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysftropics.png",
+      "nameSource": ""
+    },
+    "vswaysfuryodin.png": {
+      "id": "vswaysfuryodin",
+      "code": "vswaysfuryodin",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysfuryodin.png",
+      "nameSource": ""
+    },
+    "vswaysgoldcol.png": {
+      "id": "vswaysgoldcol",
+      "code": "vswaysgoldcol",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysgoldcol.png",
+      "nameSource": ""
+    },
+    "vswayshammthor.png": {
+      "id": "vswayshammthor",
+      "code": "vswayshammthor",
+      "name": "Power Of Thor Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayshammthor.png",
+      "nameSource": "verified"
+    },
+    "vswayshexhaus.png": {
+      "id": "vswayshexhaus",
+      "code": "vswayshexhaus",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayshexhaus.png",
+      "nameSource": ""
+    },
+    "vswayshive.png": {
+      "id": "vswayshive",
+      "code": "vswayshive",
+      "name": "Star Bounty",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayshive.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vswayshuffpbh.png": {
+      "id": "vswayshuffpbh",
+      "code": "vswayshuffpbh",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayshuffpbh.png",
+      "nameSource": ""
+    },
+    "vswaysincwnd.png": {
+      "id": "vswaysincwnd",
+      "code": "vswaysincwnd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysincwnd.png",
+      "nameSource": ""
+    },
+    "vswaysjapan.png": {
+      "id": "vswaysjapan",
+      "code": "vswaysjapan",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysjapan.png",
+      "nameSource": ""
+    },
+    "vswaysjkrdrop.png": {
+      "id": "vswaysjkrdrop",
+      "code": "vswaysjkrdrop",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysjkrdrop.png",
+      "nameSource": ""
+    },
+    "vswayskrakenmw.png": {
+      "id": "vswayskrakenmw",
+      "code": "vswayskrakenmw",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayskrakenmw.png",
+      "nameSource": ""
+    },
+    "vswaysladythf.png": {
+      "id": "vswaysladythf",
+      "code": "vswaysladythf",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysladythf.png",
+      "nameSource": ""
+    },
+    "vswayslavabls.png": {
+      "id": "vswayslavabls",
+      "code": "vswayslavabls",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayslavabls.png",
+      "nameSource": ""
+    },
+    "vswayslight.png": {
+      "id": "vswayslight",
+      "code": "vswayslight",
+      "name": "Lucky Lightning",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayslight.png",
+      "nameSource": "Nexus Catalog"
+    },
+    "vswayslions.png": {
+      "id": "vswayslions",
+      "code": "vswayslions",
+      "name": "5 Lions Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayslions.png",
+      "nameSource": "verified"
+    },
+    "vswayslofhero.png": {
+      "id": "vswayslofhero",
+      "code": "vswayslofhero",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayslofhero.png",
+      "nameSource": ""
+    },
+    "vswaysloki.png": {
+      "id": "vswaysloki",
+      "code": "vswaysloki",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysloki.png",
+      "nameSource": ""
+    },
+    "vswaysluckyfish.png": {
+      "id": "vswaysluckyfish",
+      "code": "vswaysluckyfish",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysluckyfish.png",
+      "nameSource": ""
+    },
+    "vswaysmadame.png": {
+      "id": "vswaysmadame",
+      "code": "vswaysmadame",
+      "name": "Madame Destiny Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmadame.png",
+      "nameSource": "verified"
+    },
+    "vswaysmahwin2.png": {
+      "id": "vswaysmahwin2",
+      "code": "vswaysmahwin2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmahwin2.png",
+      "nameSource": ""
+    },
+    "vswaysmajhng3p.png": {
+      "id": "vswaysmajhng3p",
+      "code": "vswaysmajhng3p",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmajhng3p.png",
+      "nameSource": ""
+    },
+    "vswaysmegahays.png": {
+      "id": "vswaysmegahays",
+      "code": "vswaysmegahays",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmegahays.png",
+      "nameSource": ""
+    },
+    "vswaysmegareel.png": {
+      "id": "vswaysmegareel",
+      "code": "vswaysmegareel",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmegareel.png",
+      "nameSource": ""
+    },
+    "vswaysmegwghts.png": {
+      "id": "vswaysmegwghts",
+      "code": "vswaysmegwghts",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmegwghts.png",
+      "nameSource": ""
+    },
+    "vswaysmfreya.png": {
+      "id": "vswaysmfreya",
+      "code": "vswaysmfreya",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmfreya.png",
+      "nameSource": ""
+    },
+    "vswaysmjwl.png": {
+      "id": "vswaysmjwl",
+      "code": "vswaysmjwl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmjwl.png",
+      "nameSource": ""
+    },
+    "vswaysmjwl2.png": {
+      "id": "vswaysmjwl2",
+      "code": "vswaysmjwl2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmjwl2.png",
+      "nameSource": ""
+    },
+    "vswaysmltchmgw.png": {
+      "id": "vswaysmltchmgw",
+      "code": "vswaysmltchmgw",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmltchmgw.png",
+      "nameSource": ""
+    },
+    "vswaysmodfr.png": {
+      "id": "vswaysmodfr",
+      "code": "vswaysmodfr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmodfr.png",
+      "nameSource": ""
+    },
+    "vswaysmoneyman.png": {
+      "id": "vswaysmoneyman",
+      "code": "vswaysmoneyman",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmoneyman.png",
+      "nameSource": ""
+    },
+    "vswaysmonkey.png": {
+      "id": "vswaysmonkey",
+      "code": "vswaysmonkey",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmonkey.png",
+      "nameSource": ""
+    },
+    "vswaysmorient.png": {
+      "id": "vswaysmorient",
+      "code": "vswaysmorient",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmorient.png",
+      "nameSource": ""
+    },
+    "vswaysmrcursc.png": {
+      "id": "vswaysmrcursc",
+      "code": "vswaysmrcursc",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysmrcursc.png",
+      "nameSource": ""
+    },
+    "vswaysoldminer.png": {
+      "id": "vswaysoldminer",
+      "code": "vswaysoldminer",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysoldminer.png",
+      "nameSource": ""
+    },
+    "vswayspearls.png": {
+      "id": "vswayspearls",
+      "code": "vswayspearls",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayspearls.png",
+      "nameSource": ""
+    },
+    "vswayspizza.png": {
+      "id": "vswayspizza",
+      "code": "vswayspizza",
+      "name": "Pizza! Pizza? Pizza!",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayspizza.png",
+      "nameSource": "verified"
+    },
+    "vswaysplnk3p.png": {
+      "id": "vswaysplnk3p",
+      "code": "vswaysplnk3p",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysplnk3p.png",
+      "nameSource": ""
+    },
+    "vswayspompmr2.png": {
+      "id": "vswayspompmr2",
+      "code": "vswayspompmr2",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayspompmr2.png",
+      "nameSource": ""
+    },
+    "vswayspowzeus.png": {
+      "id": "vswayspowzeus",
+      "code": "vswayspowzeus",
+      "name": "Power Of Merlin Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayspowzeus.png",
+      "nameSource": "verified"
+    },
+    "vswaysrabbits.png": {
+      "id": "vswaysrabbits",
+      "code": "vswaysrabbits",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysrabbits.png",
+      "nameSource": ""
+    },
+    "vswaysraghex.png": {
+      "id": "vswaysraghex",
+      "code": "vswaysraghex",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysraghex.png",
+      "nameSource": ""
+    },
+    "vswaysredqueen.png": {
+      "id": "vswaysredqueen",
+      "code": "vswaysredqueen",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysredqueen.png",
+      "nameSource": ""
+    },
+    "vswaysreelbtl.png": {
+      "id": "vswaysreelbtl",
+      "code": "vswaysreelbtl",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysreelbtl.png",
+      "nameSource": ""
+    },
+    "vswaysresurich.png": {
+      "id": "vswaysresurich",
+      "code": "vswaysresurich",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysresurich.png",
+      "nameSource": ""
+    },
+    "vswaysrhino.png": {
+      "id": "vswaysrhino",
+      "code": "vswaysrhino",
+      "name": "Great Rhino Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysrhino.png",
+      "nameSource": "verified"
+    },
+    "vswaysrockblst.png": {
+      "id": "vswaysrockblst",
+      "code": "vswaysrockblst",
+      "name": "Rocket Blast Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysrockblst.png",
+      "nameSource": "verified"
+    },
+    "vswaysrocktrls.png": {
+      "id": "vswaysrocktrls",
+      "code": "vswaysrocktrls",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysrocktrls.png",
+      "nameSource": ""
+    },
+    "vswaysrsm.png": {
+      "id": "vswaysrsm",
+      "code": "vswaysrsm",
+      "name": "Wild Celebrity Bus Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysrsm.png",
+      "nameSource": "verified"
+    },
+    "vswayssamurai.png": {
+      "id": "vswayssamurai",
+      "code": "vswayssamurai",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayssamurai.png",
+      "nameSource": ""
+    },
+    "vswayssanator.png": {
+      "id": "vswayssanator",
+      "code": "vswayssanator",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayssanator.png",
+      "nameSource": ""
+    },
+    "vswayssavlgnd.png": {
+      "id": "vswayssavlgnd",
+      "code": "vswayssavlgnd",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayssavlgnd.png",
+      "nameSource": ""
+    },
+    "vswaysseastory.png": {
+      "id": "vswaysseastory",
+      "code": "vswaysseastory",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysseastory.png",
+      "nameSource": ""
+    },
+    "vswayssevenc.png": {
+      "id": "vswayssevenc",
+      "code": "vswayssevenc",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayssevenc.png",
+      "nameSource": ""
+    },
+    "vswayssndzaslm.png": {
+      "id": "vswayssndzaslm",
+      "code": "vswayssndzaslm",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayssndzaslm.png",
+      "nameSource": ""
+    },
+    "vswayssparkadv.png": {
+      "id": "vswayssparkadv",
+      "code": "vswayssparkadv",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayssparkadv.png",
+      "nameSource": ""
+    },
+    "vswaysspltsym.png": {
+      "id": "vswaysspltsym",
+      "code": "vswaysspltsym",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysspltsym.png",
+      "nameSource": ""
+    },
+    "vswaysstampede.png": {
+      "id": "vswaysstampede",
+      "code": "vswaysstampede",
+      "name": "Fire Stampede",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysstampede.png",
+      "nameSource": "verified"
+    },
+    "vswaysstrlght.png": {
+      "id": "vswaysstrlght",
+      "code": "vswaysstrlght",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysstrlght.png",
+      "nameSource": ""
+    },
+    "vswaysstrwild.png": {
+      "id": "vswaysstrwild",
+      "code": "vswaysstrwild",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysstrwild.png",
+      "nameSource": ""
+    },
+    "vswaystimber.png": {
+      "id": "vswaystimber",
+      "code": "vswaystimber",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaystimber.png",
+      "nameSource": ""
+    },
+    "vswaystonypzz.png": {
+      "id": "vswaystonypzz",
+      "code": "vswaystonypzz",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaystonypzz.png",
+      "nameSource": ""
+    },
+    "vswaystrpgug.png": {
+      "id": "vswaystrpgug",
+      "code": "vswaystrpgug",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaystrpgug.png",
+      "nameSource": ""
+    },
+    "vswaystut.png": {
+      "id": "vswaystut",
+      "code": "vswaystut",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaystut.png",
+      "nameSource": ""
+    },
+    "vswaysultrcoin.png": {
+      "id": "vswaysultrcoin",
+      "code": "vswaysultrcoin",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysultrcoin.png",
+      "nameSource": ""
+    },
+    "vswaysvlcgds.png": {
+      "id": "vswaysvlcgds",
+      "code": "vswaysvlcgds",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysvlcgds.png",
+      "nameSource": ""
+    },
+    "vswayswbounty.png": {
+      "id": "vswayswbounty",
+      "code": "vswayswbounty",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswbounty.png",
+      "nameSource": ""
+    },
+    "vswayswerewolf.png": {
+      "id": "vswayswerewolf",
+      "code": "vswayswerewolf",
+      "name": "Curse of the Werewolf Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswerewolf.png",
+      "nameSource": "PP Demo Catalog"
+    },
+    "vswayswest.png": {
+      "id": "vswayswest",
+      "code": "vswayswest",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswest.png",
+      "nameSource": ""
+    },
+    "vswayswildb.png": {
+      "id": "vswayswildb",
+      "code": "vswayswildb",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswildb.png",
+      "nameSource": ""
+    },
+    "vswayswildbrst.png": {
+      "id": "vswayswildbrst",
+      "code": "vswayswildbrst",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswildbrst.png",
+      "nameSource": ""
+    },
+    "vswayswildeq.png": {
+      "id": "vswayswildeq",
+      "code": "vswayswildeq",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswildeq.png",
+      "nameSource": ""
+    },
+    "vswayswildgang.png": {
+      "id": "vswayswildgang",
+      "code": "vswayswildgang",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswildgang.png",
+      "nameSource": ""
+    },
+    "vswayswildwest.png": {
+      "id": "vswayswildwest",
+      "code": "vswayswildwest",
+      "name": "Wild West Gold Megaways",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswildwest.png",
+      "nameSource": "verified"
+    },
+    "vswayswwhex.png": {
+      "id": "vswayswwhex",
+      "code": "vswayswwhex",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswwhex.png",
+      "nameSource": ""
+    },
+    "vswayswwjoker.png": {
+      "id": "vswayswwjoker",
+      "code": "vswayswwjoker",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswwjoker.png",
+      "nameSource": ""
+    },
+    "vswayswwriches.png": {
+      "id": "vswayswwriches",
+      "code": "vswayswwriches",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswwriches.png",
+      "nameSource": ""
+    },
+    "vswayswwrichr.png": {
+      "id": "vswayswwrichr",
+      "code": "vswayswwrichr",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayswwrichr.png",
+      "nameSource": ""
+    },
+    "vswaysxjuicy.png": {
+      "id": "vswaysxjuicy",
+      "code": "vswaysxjuicy",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysxjuicy.png",
+      "nameSource": ""
+    },
+    "vswaysyinyang.png": {
+      "id": "vswaysyinyang",
+      "code": "vswaysyinyang",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysyinyang.png",
+      "nameSource": ""
+    },
+    "vswaysyumyum.png": {
+      "id": "vswaysyumyum",
+      "code": "vswaysyumyum",
+      "name": "",
+      "active": false,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswaysyumyum.png",
+      "nameSource": ""
+    },
+    "vswayszombcarn.png": {
+      "id": "vswayszombcarn",
+      "code": "vswayszombcarn",
+      "name": "Zombie Carnival",
+      "active": true,
+      "sourceUrl": "https://8lfj2xbefl.ghqzfbtddy.net/game_pic/rec/325/vswayszombcarn.png",
+      "nameSource": "verified"
+    }
+  }
+}
