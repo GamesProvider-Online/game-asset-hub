@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pragmatic Play Mapper</title>
+<title>Pragmatic Play Mapper V2</title>
 
 <style>
 :root{
@@ -19,13 +19,20 @@
   --red:#ff6e6e;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
   min-height:100vh;
   background:
-    radial-gradient(circle at top,#18243a 0,#090d14 38%,#070a0f 100%);
+    radial-gradient(
+      circle at top,
+      #18243a 0,
+      #090d14 38%,
+      #070a0f 100%
+    );
   color:var(--text);
   font-family:Arial,Helvetica,sans-serif;
 }
@@ -90,7 +97,7 @@ main{
 
 .hero p{
   margin:0;
-  max-width:850px;
+  max-width:900px;
   color:var(--muted);
   font-size:11px;
   line-height:1.6;
@@ -113,7 +120,6 @@ main{
 .box-title{
   margin:0 0 10px;
   font-size:13px;
-  color:#dce6f5;
 }
 
 .upload-box{
@@ -131,12 +137,8 @@ label{
   font-weight:bold;
 }
 
-input[type=file],
-input[type=text]{
-  width:100%;
-}
-
 input[type=file]{
+  width:100%;
   padding:8px;
   color:#fff;
   background:#0a0f15;
@@ -174,6 +176,11 @@ button{
   cursor:pointer;
 }
 
+button:disabled{
+  opacity:.5;
+  cursor:not-allowed;
+}
+
 .primary{
   background:var(--blue);
 }
@@ -195,10 +202,24 @@ button{
   background:#7b2c33;
 }
 
+.auto-fill{
+  width:100%;
+  min-height:48px;
+  margin-top:12px;
+  background:
+    linear-gradient(
+      135deg,
+      #2e76f4,
+      #7254e8
+    );
+  font-size:12px;
+}
+
 .status{
   margin-top:10px;
   color:#8f9db1;
   font-size:10px;
+  line-height:1.5;
 }
 
 .status.good{
@@ -300,6 +321,22 @@ button{
   font-size:8px;
 }
 
+.source-badge{
+  display:inline-block;
+  margin-top:6px;
+  padding:3px 6px;
+  border-radius:4px;
+  background:#172130;
+  color:#8fa5c4;
+  font-size:7px;
+  font-weight:bold;
+}
+
+.source-badge.auto{
+  background:#173c2b;
+  color:#63dda0;
+}
+
 .name-input{
   width:100%;
   height:38px;
@@ -354,6 +391,10 @@ button{
   line-height:1.6;
 }
 
+code{
+  color:#b6c8e3;
+}
+
 @media(max-width:1000px){
   .mapper-grid{
     grid-template-columns:repeat(2,1fr);
@@ -371,6 +412,10 @@ button{
 }
 
 @media(max-width:560px){
+  main{
+    padding:18px 12px 40px;
+  }
+
   .mapper-grid{
     grid-template-columns:1fr;
   }
@@ -382,18 +427,21 @@ button{
 </style>
 </head>
 
+
 <body>
 
 <header>
   <div class="top">
+
     <div class="brand">
       <h1>Game Asset Studio</h1>
-      <p>Pragmatic Play Game Name Mapper</p>
+      <p>Pragmatic Play Game Name Mapper V2</p>
     </div>
 
     <a href="../" class="home">
       ← HOME
     </a>
+
   </div>
 </header>
 
@@ -401,16 +449,22 @@ button{
 <main>
 
 <section class="hero">
-  <span>PRAGMATIC PLAY DATABASE TOOL</span>
 
-  <h2>Pragmatic Mapper</h2>
+  <span>
+    PRAGMATIC PLAY DATABASE TOOL
+  </span>
+
+  <h2>
+    Pragmatic Mapper
+  </h2>
 
   <p>
-    Upload the original Pragmatic source HTML/TXT,
-    detect every game code automatically,
-    enter the proper game name,
-    then export PRAGMATIC PLAY.json for Tips Generator.
+    Detect Pragmatic game codes from your original source,
+    automatically match available game names,
+    manually review unmatched games,
+    then export PRAGMATIC PLAY.json.
   </p>
+
 </section>
 
 
@@ -477,12 +531,12 @@ button{
   </section>
 
 
-  <!-- EXISTING JSON -->
+  <!-- MAPPING -->
 
   <section class="panel">
 
     <h3 class="box-title">
-      2. Continue Existing Mapping
+      2. Game Name Mapping
     </h3>
 
     <div class="upload-box">
@@ -527,16 +581,38 @@ button{
     </div>
 
 
+    <button
+      id="autoFillBtn"
+      class="auto-fill">
+
+      ⚡ AUTO FILL GAME NAMES
+
+    </button>
+
+
+    <div
+      id="autoStatus"
+      class="status">
+
+      Parse your 675-game source first.
+
+    </div>
+
+
     <div class="note">
 
-      Names are also auto-saved in this browser.
-      You can close the page and continue later.
+      AUTO FILL keeps names you already entered manually.
 
       <br><br>
 
-      Source <code>display:block</code> /
-      <code>display:none</code> is ignored.
-      It is not used as an active-game flag.
+      It first uses the built-in verified mapping,
+      then tries public game catalogs for additional
+      exact game-code matches.
+
+      <br><br>
+
+      Games that cannot be matched remain
+      <b>UNNAMED</b> for manual review.
 
     </div>
 
@@ -571,8 +647,6 @@ button{
 
 </div>
 
-
-<!-- MAPPER -->
 
 <section class="panel">
 
@@ -617,19 +691,22 @@ button{
 
 <div class="note">
 
-  Export filename:
+  Final export:
 
   <b>PRAGMATIC PLAY.json</b>
 
-  <br><br>
+  <br>
 
-  Upload it later to:
+  Upload to:
 
-  <code>data/game-names/PRAGMATIC PLAY.json</code>
+  <code>
+    data/game-names/PRAGMATIC PLAY.json
+  </code>
 
 </div>
 
 </main>
+
 
 
 <script>
@@ -639,10 +716,300 @@ button{
 ===================================================== */
 
 let games=[];
+
 let unnamedOnly=false;
 
 const STORAGE_KEY=
-  "pragmatic-play-name-map-v1";
+  "pragmatic-play-name-map-v2";
+
+
+
+/* =====================================================
+   BUILT-IN VERIFIED NAME MAP
+
+   This is also used as OFFLINE fallback.
+===================================================== */
+
+const BUILTIN_NAMES={
+
+  "vswayslions":
+    "5 Lions Megaways",
+
+  "vs243lionsgold":
+    "5 Lions Gold",
+
+  "vs7776aztec":
+    "Aztec Bonanza",
+
+  "vs5aztecgems":
+    "Aztec Gems",
+
+  "vs10egyptcls":
+    "Ancient Egypt Classic",
+
+  "vs10bbhas":
+    "Big Bass - Hold & Spinner",
+
+  "vs10bblotgl":
+    "Big Bass - Secrets Of The Golden Lake",
+
+  "vs10bbextreme":
+    "Big Bass Amazon Xtreme",
+
+  "vs10bbbonanza":
+    "Big Bass Bonanza",
+
+  "vswaysbbb":
+    "Big Bass Bonanza Megaways",
+
+  "vs10bbfloats":
+    "Big Bass Floats My Boat",
+
+  "vs10txbigbass":
+    "Big Bass Splash",
+
+  "vs12bbb":
+    "Bigger Bass Bonanza",
+
+  "vs12bbbxmas":
+    "Bigger Bass Blizzard - Christmas Catch",
+
+  "vs4096bufking":
+    "Buffalo King",
+
+  "vswaysbufking":
+    "Buffalo King Megaways",
+
+  "vs25copsrobbers":
+    "Cash Patrol",
+
+  "vs25checaishen":
+    "Chests Of Cai Shen",
+
+  "vs20cleocatra":
+    "Cleocatra",
+
+  "vs20mustanggld2":
+    "Clover Gold",
+
+  "vs12tropicana":
+    "Club Tropicana",
+
+  "vs20cbrhst":
+    "Cyber Heist",
+
+  "vs10fisheye":
+    "Fish Eye",
+
+  "vs10fdrasbf":
+    "Floating Dragon - Dragon Boat Festival Hold & Spin",
+
+  "vs10floatdrg":
+    "Floating Dragon Hold & Spin",
+
+  "vs20amuleteg":
+    "Fortune Of Giza",
+
+  "vs20fruitparty":
+    "Fruit Party",
+
+  "vs20fortbon":
+    "Fruity Treats",
+
+  "vs20gatotgates":
+    "Gates Of Gatot Kaca",
+
+  "vs20gtsofhades":
+    "Gates Of Hades",
+
+  "vs20olympgate":
+    "Gates Of Olympus",
+
+  "vs20olympx":
+    "Gates Of Olympus 1000",
+
+  "vs20olympgold":
+    "Gates Of Olympus Super Scatter",
+
+  "vs20olympxmas":
+    "Gates Of Olympus Xmas 1000",
+
+  "vs25goldparty":
+    "Gold Party",
+
+  "vswaysrhino":
+    "Great Rhino Megaways",
+
+  "vs25hotfiesta":
+    "Hot Fiesta",
+
+  "vs20dugems":
+    "Hot Pepper",
+
+  "vswaysmadame":
+    "Madame Destiny Megaways",
+
+  "vs20mammoth":
+    "Mammoth Gold Megaways",
+
+  "vs20mochimon":
+    "Mochimon",
+
+  "vs20muertos":
+    "Muertos Multiplier Megaways",
+
+  "vs25pandagold":
+    "Panda's Fortune",
+
+  "vs25pandatemple":
+    "Panda's Fortune 2",
+
+  "vswayspizza":
+    "Pizza! Pizza? Pizza!",
+
+  "vswayspowzeus":
+    "Power Of Merlin Megaways",
+
+  "vs20ninjapower":
+    "Power Of Ninja",
+
+  "vswayshammthor":
+    "Power Of Thor Megaways",
+
+  "vs20pbonanza":
+    "Pyramid Bonanza",
+
+  "vs20goldclust":
+    "Rabbit Garden",
+
+  "vs10returndead":
+    "Return Of The Dead",
+
+  "vs15samurai4":
+    "Rise Of Samurai 4",
+
+  "vs20rockvegas":
+    "Rock Vegas Mega Hold & Spin",
+
+  "vswaysrockblst":
+    "Rocket Blast Megaways",
+
+  "vs20rujakbnz":
+    "Rujak Bonanza",
+
+  "vs20saiman":
+    "Saiyan Mania",
+
+  "vs12scode":
+    "Samurai Code",
+
+  "vs20starlight":
+    "Starlight Princess",
+
+  "vs20starlightx":
+    "Starlight Princess 1000",
+
+  "vs20sugarrush":
+    "Sugar Rush",
+
+  "vs20sugarrushx":
+    "Sugar Rush 1000",
+
+  "vs20sugrushss":
+    "Sugar Rush Super Scatter",
+
+  "vs20sugrux":
+    "Sugar Rush Xmas",
+
+  "vs20sugarnudge":
+    "Sugar Supreme Powernudge",
+
+  "vs20fruitsw":
+    "Sweet Bonanza",
+
+  "vs20fruitswx":
+    "Sweet Bonanza 1000",
+
+  "vs20swbonsup":
+    "Sweet Bonanza Super Scatter",
+
+  "vs20sbxmas":
+    "Sweet Bonanza Xmas",
+
+  "vs20doghouse":
+    "The Dog House",
+
+  "vs20doghouse2":
+    "The Dog House - Dog Or Alive",
+
+  "vswaysdogs":
+    "The Dog House Megaways",
+
+  "vs20procount":
+    "Wisdom Of Athena",
+
+  "vs20procountx":
+    "Wisdom Of Athena 1000",
+
+  "vs40wildwest":
+    "Wild West Gold",
+
+  "vswayswildwest":
+    "Wild West Gold Megaways",
+
+  "vswaysrsm":
+    "Wild Celebrity Bus Megaways",
+
+  "vswaysstampede":
+    "Fire Stampede",
+
+  "vs20portals":
+    "Fire Portals",
+
+  "vswayszombcarn":
+    "Zombie Carnival",
+
+  "vs20wildparty":
+    "3 Buzzing Wilds",
+
+  "vs15godsofwar":
+    "Zeus Vs Hades - Gods Of War"
+
+};
+
+
+
+/* =====================================================
+   PUBLIC CATALOG SOURCES
+
+   These are only supplemental name catalogs.
+===================================================== */
+
+const ONLINE_SOURCES=[
+
+  {
+    name:"Nexus Catalog",
+
+    url:
+      "https://raw.githubusercontent.com/pragmatic-slot/nexus/main/index.html",
+
+    parser:
+      parseNexusCatalog
+  },
+
+
+  {
+    name:"PP Demo Catalog",
+
+    url:
+      "https://raw.githubusercontent.com/muhamadaway2/pp-slot-demo/main/index.html",
+
+    parser:
+      parsePPDemoCatalog
+  }
+
+];
+
 
 
 /* =====================================================
@@ -650,43 +1017,54 @@ const STORAGE_KEY=
 ===================================================== */
 
 const sourceFile=
-document.getElementById(
-  "sourceFile"
-);
+  document.getElementById(
+    "sourceFile"
+  );
 
 const sourceText=
-document.getElementById(
-  "sourceText"
-);
+  document.getElementById(
+    "sourceText"
+  );
 
 const sourceStatus=
-document.getElementById(
-  "sourceStatus"
-);
+  document.getElementById(
+    "sourceStatus"
+  );
 
 const jsonFile=
-document.getElementById(
-  "jsonFile"
-);
+  document.getElementById(
+    "jsonFile"
+  );
 
 const jsonStatus=
-document.getElementById(
-  "jsonStatus"
-);
+  document.getElementById(
+    "jsonStatus"
+  );
+
+const autoStatus=
+  document.getElementById(
+    "autoStatus"
+  );
+
+const autoFillBtn=
+  document.getElementById(
+    "autoFillBtn"
+  );
 
 const grid=
-document.getElementById(
-  "grid"
-);
+  document.getElementById(
+    "grid"
+  );
 
 const search=
-document.getElementById(
-  "search"
-);
+  document.getElementById(
+    "search"
+  );
+
 
 
 /* =====================================================
-   ESCAPE
+   HELPERS
 ===================================================== */
 
 function esc(value){
@@ -696,20 +1074,117 @@ function esc(value){
   )
   .replace(
     /[&<>"']/g,
+
     char=>({
+
       "&":"&amp;",
+
       "<":"&lt;",
+
       ">":"&gt;",
+
       '"':"&quot;",
+
       "'":"&#039;"
+
     }[char])
   );
 
 }
 
 
+
+function decodeHTML(value){
+
+  const textarea=
+    document.createElement(
+      "textarea"
+    );
+
+  textarea.innerHTML=
+    value;
+
+  return textarea.value;
+
+}
+
+
+
+function cleanName(value){
+
+  return decodeHTML(
+    String(
+      value||""
+    )
+  )
+  .replace(
+    /™/g,
+    ""
+  )
+  .replace(
+    /\s+/g,
+    " "
+  )
+  .trim();
+
+}
+
+
+
 /* =====================================================
-   READ FILE
+   CODE NORMALIZER
+
+   Example:
+   vs20sugrushss_cv110
+   becomes:
+   vs20sugrushss
+===================================================== */
+
+function normalizeCode(value){
+
+  let code=
+    String(
+      value||""
+    )
+    .trim()
+    .toLowerCase();
+
+
+  try{
+
+    code=
+      decodeURIComponent(
+        code
+      );
+
+  }catch(e){}
+
+
+  code=
+    code
+    .replace(
+      /\.png$/i,
+      ""
+    )
+    .replace(
+      /[?#].*$/,
+      ""
+    )
+    .replace(
+      /[_-]cv\d+.*$/i,
+      ""
+    )
+    .trim();
+
+
+  return code;
+
+}
+
+
+
+/* =====================================================
+   FILE READER
 ===================================================== */
 
 function readFile(file){
@@ -720,6 +1195,7 @@ function readFile(file){
       const reader=
         new FileReader();
 
+
       reader.onload=
         ()=>resolve(
           String(
@@ -727,8 +1203,10 @@ function readFile(file){
           )
         );
 
+
       reader.onerror=
         reject;
+
 
       reader.readAsText(
         file
@@ -740,8 +1218,9 @@ function readFile(file){
 }
 
 
+
 /* =====================================================
-   PARSE PRAGMATIC SOURCE
+   PARSE ORIGINAL PRAGMATIC SOURCE
 ===================================================== */
 
 function parseSource(text){
@@ -750,12 +1229,8 @@ function parseSource(text){
     new Map();
 
 
-  /*
-    We scan each game DIV start,
-    then look nearby for background-image URL.
-  */
-
   const codeRegex=
+
     /<div\s+class=["'][^"']*\bgame\b[^"']*["'][^>]*data-code=["']([^"']+)["'][^>]*>/gi;
 
 
@@ -769,11 +1244,17 @@ function parseSource(text){
     )
   ){
 
-    const code=
+    const originalCode=
       String(
         match[1]||""
       )
       .trim();
+
+
+    const code=
+      normalizeCode(
+        originalCode
+      );
 
 
     if(!code){
@@ -785,26 +1266,26 @@ function parseSource(text){
       match.index;
 
 
-    const nextChunk=
+    const chunk=
       text.slice(
         start,
-        start+900
-      );
-
-
-    const urlMatch=
-      nextChunk.match(
-        /background-image\s*:\s*url\((?:&quot;|["']?)(https?:\/\/[^)"'&]+(?:&[^;]+;)?[^)"']*)(?:&quot;|["']?)\)/i
+        start+1200
       );
 
 
     let sourceUrl="";
 
 
-    if(urlMatch){
+    const looseURL=
+      chunk.match(
+        /https?:\/\/[^"'<> ]+?\.png/i
+      );
+
+
+    if(looseURL){
 
       sourceUrl=
-        urlMatch[1]
+        looseURL[0]
         .replace(
           /&amp;/g,
           "&"
@@ -813,29 +1294,6 @@ function parseSource(text){
           /&quot;/g,
           ""
         );
-
-    }
-
-
-    /*
-      Better URL fallback
-    */
-
-    if(!sourceUrl){
-
-      const looseURL=
-        nextChunk.match(
-          /https?:\/\/[^"'<> ]+?\.png/i
-        );
-
-      if(looseURL){
-        sourceUrl=
-          looseURL[0]
-          .replace(
-            /&amp;/g,
-            "&"
-          );
-      }
 
     }
 
@@ -851,13 +1309,25 @@ function parseSource(text){
     ){
 
       found.set(
+
         filename,
+
         {
+
           code,
+
+          originalCode,
+
           filename,
+
           sourceUrl,
-          name:""
+
+          name:"",
+
+          nameSource:""
+
         }
+
       );
 
     }
@@ -870,22 +1340,23 @@ function parseSource(text){
   ];
 
 
-  /*
-    Apply browser-saved names.
-  */
-
   applySavedNames();
 
 
   games.sort(
     (a,b)=>
+
       a.code.localeCompare(
+
         b.code,
+
         undefined,
+
         {
           numeric:true,
           sensitivity:"base"
         }
+
       )
   );
 
@@ -898,13 +1369,24 @@ function parseSource(text){
 
 
   sourceStatus.textContent=
+
     `${games.length.toLocaleString()} Pragmatic game codes detected ✓`;
+
+
+  autoStatus.className=
+    "status";
+
+
+  autoStatus.textContent=
+
+    `Ready. Click AUTO FILL GAME NAMES.`;
 
 }
 
 
+
 /* =====================================================
-   LOCAL STORAGE
+   STORAGE
 ===================================================== */
 
 function getSavedNames(){
@@ -912,9 +1394,15 @@ function getSavedNames(){
   try{
 
     return JSON.parse(
+
       localStorage.getItem(
         STORAGE_KEY
-      ) || "{}"
+      )
+
+      ||
+
+      "{}"
+
     );
 
   }catch(e){
@@ -926,6 +1414,7 @@ function getSavedNames(){
 }
 
 
+
 function applySavedNames(){
 
   const saved=
@@ -935,14 +1424,37 @@ function applySavedNames(){
   games.forEach(
     game=>{
 
+      const record=
+        saved[
+          game.filename
+        ];
+
+
       if(
-        saved[game.filename]
+        record &&
+        typeof record==="object"
       ){
 
         game.name=
-          saved[
-            game.filename
-          ];
+          record.name||"";
+
+
+        game.nameSource=
+          record.source||"saved";
+
+      }
+
+
+      else if(
+        typeof record==="string"
+      ){
+
+        game.name=
+          record;
+
+
+        game.nameSource=
+          "saved";
 
       }
 
@@ -952,21 +1464,38 @@ function applySavedNames(){
 }
 
 
+
 function saveName(
   filename,
-  name
+  name,
+  source="manual"
 ){
 
   const saved=
     getSavedNames();
 
 
-  if(name.trim()){
+  if(
+    String(name)
+    .trim()
+  ){
 
-    saved[filename]=
-      name.trim();
+    saved[
+      filename
+    ]={
 
-  }else{
+      name:
+        String(name)
+        .trim(),
+
+      source
+
+    };
+
+  }
+
+
+  else{
 
     delete saved[
       filename
@@ -976,11 +1505,17 @@ function saveName(
 
 
   localStorage.setItem(
+
     STORAGE_KEY,
-    JSON.stringify(saved)
+
+    JSON.stringify(
+      saved
+    )
+
   );
 
 }
+
 
 
 /* =====================================================
@@ -998,8 +1533,9 @@ async function loadExistingJSON(){
     jsonStatus.className=
       "status error";
 
+
     jsonStatus.textContent=
-      "Choose a JSON file first.";
+      "Choose JSON file first.";
 
     return;
 
@@ -1009,11 +1545,15 @@ async function loadExistingJSON(){
   try{
 
     const text=
-      await readFile(file);
+      await readFile(
+        file
+      );
 
 
     const data=
-      JSON.parse(text);
+      JSON.parse(
+        text
+      );
 
 
     const records=
@@ -1036,9 +1576,17 @@ async function loadExistingJSON(){
         ){
 
           saveName(
-            filename,
-            record.name.trim()
+
+            normalizeCode(
+              filename
+            )+".png",
+
+            record.name.trim(),
+
+            "existing-json"
+
           );
+
 
           count++;
 
@@ -1058,12 +1606,15 @@ async function loadExistingJSON(){
 
 
     jsonStatus.textContent=
-      `${count} existing names loaded ✓`;
+
+      `${count.toLocaleString()} existing names loaded ✓`;
 
 
   }catch(error){
 
-    console.error(error);
+    console.error(
+      error
+    );
 
 
     jsonStatus.className=
@@ -1076,6 +1627,538 @@ async function loadExistingJSON(){
   }
 
 }
+
+
+
+/* =====================================================
+   PARSE NEXUS CATALOG
+===================================================== */
+
+function parseNexusCatalog(text){
+
+  const result=
+    new Map();
+
+
+  /*
+    Example:
+
+    load.html?id=vs20olympgate',
+    'Gates Of Olympus'
+  */
+
+  const regex=
+
+    /load\.html\?id=([^'"&\s]+)[^'"]*['"]\s*,\s*['"]([^'"]+)['"]/gi;
+
+
+  let match;
+
+
+  while(
+    (
+      match=
+        regex.exec(text)
+    )
+  ){
+
+    const code=
+      normalizeCode(
+        match[1]
+      );
+
+
+    const name=
+      cleanName(
+        match[2]
+      );
+
+
+    if(
+      code &&
+      name
+    ){
+
+      result.set(
+        code,
+        name
+      );
+
+    }
+
+  }
+
+
+  return result;
+
+}
+
+
+
+/* =====================================================
+   PARSE PP DEMO CATALOG
+===================================================== */
+
+function parsePPDemoCatalog(text){
+
+  const result=
+    new Map();
+
+
+  /*
+    Find each "title"
+    then look ahead for gameSymbol.
+  */
+
+  const titleRegex=
+
+    /"title"\s*:\s*"([^"]+)"/gi;
+
+
+  let match;
+
+
+  while(
+    (
+      match=
+        titleRegex.exec(text)
+    )
+  ){
+
+    const name=
+      cleanName(
+        match[1]
+      );
+
+
+    const chunk=
+      text.slice(
+        match.index,
+        match.index+2500
+      );
+
+
+    const symbol=
+      chunk.match(
+        /gameSymbol=([^"&]+)/i
+      );
+
+
+    if(
+      !symbol
+    ){
+      continue;
+    }
+
+
+    const code=
+      normalizeCode(
+        symbol[1]
+      );
+
+
+    if(
+      code &&
+      name
+    ){
+
+      result.set(
+        code,
+        name
+      );
+
+    }
+
+  }
+
+
+  return result;
+
+}
+
+
+
+/* =====================================================
+   FETCH WITH TIMEOUT
+===================================================== */
+
+async function fetchText(
+  url,
+  timeout=10000
+){
+
+  const controller=
+    new AbortController();
+
+
+  const timer=
+    setTimeout(
+      ()=>controller.abort(),
+      timeout
+    );
+
+
+  try{
+
+    const response=
+      await fetch(
+
+        url,
+
+        {
+          cache:"no-store",
+          signal:
+            controller.signal
+        }
+
+      );
+
+
+    if(
+      !response.ok
+    ){
+
+      throw new Error(
+        "HTTP "+
+        response.status
+      );
+
+    }
+
+
+    return await response.text();
+
+
+  }finally{
+
+    clearTimeout(
+      timer
+    );
+
+  }
+
+}
+
+
+
+/* =====================================================
+   BUILD NAME DATABASE
+===================================================== */
+
+async function buildAutoDatabase(){
+
+  const database=
+    new Map();
+
+
+  /*
+    Start with built-in verified names.
+  */
+
+  Object.entries(
+    BUILTIN_NAMES
+  )
+  .forEach(
+    ([code,name])=>{
+
+      database.set(
+
+        normalizeCode(
+          code
+        ),
+
+        {
+          name,
+          source:"verified"
+        }
+
+      );
+
+    }
+  );
+
+
+  const sourceReports=[];
+
+
+  for(
+    const source of
+    ONLINE_SOURCES
+  ){
+
+    try{
+
+      const text=
+        await fetchText(
+          source.url
+        );
+
+
+      const names=
+        source.parser(
+          text
+        );
+
+
+      let added=0;
+
+
+      names.forEach(
+        (name,code)=>{
+
+
+          /*
+            Built-in mapping has priority.
+          */
+
+          if(
+            !database.has(
+              code
+            )
+          ){
+
+            database.set(
+
+              code,
+
+              {
+                name,
+                source:
+                  source.name
+              }
+
+            );
+
+
+            added++;
+
+          }
+
+        }
+      );
+
+
+      sourceReports.push(
+
+        `${source.name}: ${names.size} detected`
+
+      );
+
+
+    }catch(error){
+
+      console.warn(
+        source.name,
+        error
+      );
+
+
+      sourceReports.push(
+
+        `${source.name}: unavailable`
+
+      );
+
+    }
+
+  }
+
+
+  return{
+
+    database,
+    sourceReports
+
+  };
+
+}
+
+
+
+/* =====================================================
+   AUTO FILL
+===================================================== */
+
+async function autoFillNames(){
+
+  if(
+    !games.length
+  ){
+
+    autoStatus.className=
+      "status error";
+
+
+    autoStatus.textContent=
+      "Parse Pragmatic source first.";
+
+    return;
+
+  }
+
+
+  autoFillBtn.disabled=
+    true;
+
+
+  autoFillBtn.textContent=
+    "SEARCHING GAME NAMES...";
+
+
+  autoStatus.className=
+    "status";
+
+
+  autoStatus.textContent=
+    "Building game-name database...";
+
+
+  try{
+
+    const result=
+      await buildAutoDatabase();
+
+
+    const database=
+      result.database;
+
+
+    let newMatches=0;
+
+    let alreadyNamed=0;
+
+
+    games.forEach(
+      game=>{
+
+
+        /*
+          Never overwrite a name that
+          the user already has.
+        */
+
+        if(
+          game.name.trim()
+        ){
+
+          alreadyNamed++;
+
+          return;
+
+        }
+
+
+        const code=
+          normalizeCode(
+            game.code
+          );
+
+
+        const record=
+          database.get(
+            code
+          );
+
+
+        if(
+          !record ||
+          !record.name
+        ){
+
+          return;
+
+        }
+
+
+        game.name=
+          record.name;
+
+
+        game.nameSource=
+          record.source;
+
+
+        saveName(
+
+          game.filename,
+
+          game.name,
+
+          record.source
+
+        );
+
+
+        newMatches++;
+
+      }
+    );
+
+
+    render();
+
+
+    const named=
+      games.filter(
+        game=>
+          game.name.trim()
+      ).length;
+
+
+    const unmatched=
+      games.length-
+      named;
+
+
+    autoStatus.className=
+      "status good";
+
+
+    autoStatus.innerHTML=
+
+      `AUTO FILL COMPLETE ✓<br>`+
+
+      `New matches: ${newMatches.toLocaleString()}<br>`+
+
+      `Total named: ${named.toLocaleString()} / ${games.length.toLocaleString()}<br>`+
+
+      `Still unnamed: ${unmatched.toLocaleString()}<br><br>`+
+
+      result.sourceReports
+      .map(
+        text=>esc(text)
+      )
+      .join("<br>");
+
+
+  }catch(error){
+
+    console.error(
+      error
+    );
+
+
+    autoStatus.className=
+      "status error";
+
+
+    autoStatus.textContent=
+      "Auto fill failed. Built-in names remain available.";
+
+
+  }finally{
+
+    autoFillBtn.disabled=
+      false;
+
+
+    autoFillBtn.textContent=
+      "⚡ AUTO FILL GAME NAMES";
+
+  }
+
+}
+
 
 
 /* =====================================================
@@ -1094,6 +2177,7 @@ function render(){
     games.filter(
       game=>{
 
+
         if(
           unnamedOnly &&
           game.name.trim()
@@ -1110,6 +2194,7 @@ function render(){
 
 
         return(
+
           game.code
           .toLowerCase()
           .includes(q)
@@ -1119,6 +2204,7 @@ function render(){
           game.name
           .toLowerCase()
           .includes(q)
+
         );
 
       }
@@ -1139,6 +2225,7 @@ function render(){
 
     `;
 
+
     updateStats();
 
     return;
@@ -1148,8 +2235,10 @@ function render(){
 
   grid.innerHTML=
 
-    filtered.map(
+    filtered
+    .map(
       game=>{
+
 
         const named=
           Boolean(
@@ -1157,10 +2246,48 @@ function render(){
           );
 
 
+        let badge="";
+
+
+        if(
+          game.nameSource
+        ){
+
+          const auto=
+
+            game.nameSource!=="manual" &&
+            game.nameSource!=="saved";
+
+
+          badge=`
+
+            <div class="
+              source-badge
+              ${auto?"auto":""}
+            ">
+
+              ${
+                auto
+                ?"AUTO: "
+                :"SOURCE: "
+              }
+
+              ${esc(game.nameSource)}
+
+            </div>
+
+          `;
+
+        }
+
+
         return`
 
           <article
-            class="game-card ${named?"named":""}"
+            class="
+              game-card
+              ${named?"named":""}
+            "
             data-file="${esc(game.filename)}">
 
 
@@ -1177,7 +2304,7 @@ function render(){
                     loading="lazy"
                     onerror="this.style.opacity='.15'">
 
-                 `
+                `
 
                 :`
 
@@ -1186,10 +2313,12 @@ function render(){
                     font-size:10px;
                     text-align:center;
                   ">
+
                     No source image URL
+
                   </div>
 
-                 `
+                `
               }
 
             </div>
@@ -1211,6 +2340,9 @@ function render(){
                 ${esc(game.filename)}
 
               </div>
+
+
+              ${badge}
 
 
               <input
@@ -1244,7 +2376,6 @@ function render(){
 
             </div>
 
-
           </article>
 
         `;
@@ -1261,8 +2392,9 @@ function render(){
 }
 
 
+
 /* =====================================================
-   BIND MAPPER INPUTS
+   INPUT EVENTS
 ===================================================== */
 
 function bindInputs(){
@@ -1298,21 +2430,36 @@ function bindInputs(){
           input.value;
 
 
+        game.nameSource=
+          input.value.trim()
+          ?"manual"
+          :"";
+
+
         saveName(
+
           filename,
-          input.value
+
+          input.value,
+
+          "manual"
+
         );
 
 
-        input.closest(
+        input
+        .closest(
           ".game-card"
         )
         .classList
         .toggle(
+
           "named",
+
           Boolean(
             input.value.trim()
           )
+
         );
 
 
@@ -1322,6 +2469,7 @@ function bindInputs(){
 
     }
   );
+
 
 
   document
@@ -1335,12 +2483,8 @@ function bindInputs(){
       button.onclick=
       async()=>{
 
-        const code=
-          button.dataset.copyCode;
-
-
         await copyText(
-          code
+          button.dataset.copyCode
         );
 
 
@@ -1354,8 +2498,10 @@ function bindInputs(){
 
         setTimeout(
           ()=>{
+
             button.textContent=
               old;
+
           },
           900
         );
@@ -1364,6 +2510,7 @@ function bindInputs(){
 
     }
   );
+
 
 
   document
@@ -1395,9 +2542,12 @@ function bindInputs(){
 
         game.name="";
 
+        game.nameSource="";
+
 
         saveName(
           filename,
+          "",
           ""
         );
 
@@ -1410,6 +2560,7 @@ function bindInputs(){
   );
 
 }
+
 
 
 /* =====================================================
@@ -1430,17 +2581,21 @@ function updateStats(){
 
 
   const unnamed=
-    total-named;
+    total-
+    named;
 
 
   const progress=
+
     total
+
     ?Math.round(
       (
         named/
         total
       )*100
     )
+
     :0;
 
 
@@ -1478,13 +2633,16 @@ function updateStats(){
 }
 
 
+
 /* =====================================================
    EXPORT JSON
 ===================================================== */
 
 function exportJSON(){
 
-  if(!games.length){
+  if(
+    !games.length
+  ){
 
     alert(
       "Load Pragmatic source first."
@@ -1504,6 +2662,9 @@ function exportJSON(){
       new Date()
       .toISOString(),
 
+    total:
+      games.length,
+
     games:{}
 
   };
@@ -1512,20 +2673,32 @@ function exportJSON(){
   games.forEach(
     game=>{
 
+
+      const name=
+        game.name.trim();
+
+
       output.games[
         game.filename
       ]={
+
+        id:
+          game.code,
 
         code:
           game.code,
 
         name:
-          game.name.trim()
-          ||null,
+          name,
+
+        active:
+          Boolean(name),
 
         sourceUrl:
-          game.sourceUrl
-          ||""
+          game.sourceUrl||"",
+
+        nameSource:
+          game.nameSource||""
 
       };
 
@@ -1535,6 +2708,7 @@ function exportJSON(){
 
   const blob=
     new Blob(
+
       [
         JSON.stringify(
           output,
@@ -1542,10 +2716,12 @@ function exportJSON(){
           2
         )
       ],
+
       {
         type:
           "application/json"
       }
+
     );
 
 
@@ -1588,6 +2764,7 @@ function exportJSON(){
 }
 
 
+
 /* =====================================================
    COPY
 ===================================================== */
@@ -1604,7 +2781,10 @@ async function copyText(
       text
     );
 
-  }catch(e){
+  }
+
+
+  catch(e){
 
     const area=
       document.createElement(
@@ -1637,8 +2817,9 @@ async function copyText(
 }
 
 
+
 /* =====================================================
-   BUTTONS
+   BUTTON EVENTS
 ===================================================== */
 
 document
@@ -1647,6 +2828,7 @@ document
 )
 .onclick=
 async()=>{
+
 
   const file=
     sourceFile.files[0];
@@ -1705,6 +2887,7 @@ document
 .onclick=
 ()=>{
 
+
   const text=
     sourceText.value;
 
@@ -1742,6 +2925,11 @@ document
 
 
 
+autoFillBtn.onclick=
+  autoFillNames;
+
+
+
 document
 .getElementById(
   "clearSavedBtn"
@@ -1749,9 +2937,10 @@ document
 .onclick=
 ()=>{
 
+
   if(
     !confirm(
-      "Clear all saved Pragmatic names from this browser?"
+      "Clear all saved Pragmatic game names?"
     )
   ){
 
@@ -1766,8 +2955,13 @@ document
 
 
   games.forEach(
-    game=>
-      game.name=""
+    game=>{
+
+      game.name="";
+
+      game.nameSource="";
+
+    }
   );
 
 
@@ -1792,13 +2986,17 @@ document
 .onclick=
 function(){
 
+
   unnamedOnly=
     !unnamedOnly;
 
 
   this.textContent=
+
     unnamedOnly
+
     ?"SHOW ALL"
+
     :"UNNAMED ONLY";
 
 
