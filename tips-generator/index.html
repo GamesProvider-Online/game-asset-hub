@@ -66,6 +66,7 @@ body{
 }
 
 
+
 /* =====================================================
    HEADER
 ===================================================== */
@@ -871,6 +872,7 @@ select{
 <body>
 
 
+
 <!-- =====================================================
      HEADER
 ===================================================== -->
@@ -947,6 +949,7 @@ select{
 
 
 <div class="layout">
+
 
 
 <!-- =====================================================
@@ -1087,13 +1090,40 @@ select{
 
   <div class="provider-info">
 
-    <b>JILI</b><br>
-    Uses mapped names from JILI.json
-    and only active named games.
+    <b>
+      JILI
+    </b>
+
+    <br>
+
+    Uses mapped names from
+    JILI.json and only active
+    named games.
+
 
     <br><br>
 
-    <b>MEGA888 / 918KISS / PUSSY888</b><br>
+
+    <b>
+      PRAGMATIC PLAY
+    </b>
+
+    <br>
+
+    Uses mapped names from
+    PRAGMATIC PLAY.json and
+    only active named games.
+
+
+    <br><br>
+
+
+    <b>
+      MEGA888 / 918KISS / PUSSY888
+    </b>
+
+    <br>
+
     Game names are automatically
     taken from their existing filenames.
 
@@ -1234,7 +1264,15 @@ let selectedCount=3;
 
 let currentText="";
 
-let JILI_MAP=null;
+
+/*
+  Mapping cache.
+
+  JILI and Pragmatic Play
+  are loaded from JSON files.
+*/
+
+const MAP_CACHE={};
 
 
 
@@ -1244,13 +1282,19 @@ let JILI_MAP=null;
 
 const TARGET_PROVIDERS=[
 
+
   {
 
     id:"JILI",
 
     aliases:[
       "JILI"
-    ]
+    ],
+
+    mode:"mapped",
+
+    mapFile:
+      "JILI.json"
 
   },
 
@@ -1262,7 +1306,9 @@ const TARGET_PROVIDERS=[
     aliases:[
       "MEGA888",
       "MEGA 888"
-    ]
+    ],
+
+    mode:"filename"
 
   },
 
@@ -1275,7 +1321,9 @@ const TARGET_PROVIDERS=[
       "918KISS",
       "918 KISS",
       "KISS918"
-    ]
+    ],
+
+    mode:"filename"
 
   },
 
@@ -1287,9 +1335,30 @@ const TARGET_PROVIDERS=[
     aliases:[
       "PUSSY888",
       "PUSSY 888"
-    ]
+    ],
+
+    mode:"filename"
+
+  },
+
+
+  {
+
+    id:"PRAGMATIC PLAY",
+
+    aliases:[
+      "PRAGMATIC PLAY",
+      "PRAGMATICPLAY",
+      "PRAGMATIC"
+    ],
+
+    mode:"mapped",
+
+    mapFile:
+      "PRAGMATIC PLAY.json"
 
   }
+
 
 ];
 
@@ -1457,6 +1526,46 @@ function niceName(value){
 
 
 
+/*
+  Used for safe matching between:
+
+  vs20sugarrush.png
+  VS20SUGARRUSH.PNG
+  etc.
+*/
+
+function normalizeFileKey(value){
+
+  let file=
+    basename(
+      String(
+        value||""
+      )
+    );
+
+
+  try{
+
+    file=
+      decodeURIComponent(
+        file
+      );
+
+  }catch(e){}
+
+
+  return file
+    .trim()
+    .toLowerCase();
+
+}
+
+
+
+/* =====================================================
+   REPOSITORY ASSET URL
+===================================================== */
+
 function repoAssetURL(path){
 
   let clean=
@@ -1508,6 +1617,10 @@ function repoAssetURL(path){
 
 
 
+/* =====================================================
+   GAME IMAGE URL
+===================================================== */
+
 function gameImageURL(
   provider,
   game
@@ -1540,6 +1653,10 @@ function gameImageURL(
 
 
 
+/* =====================================================
+   PROVIDER LOGO URL
+===================================================== */
+
 function providerLogoURL(
   provider
 ){
@@ -1549,8 +1666,26 @@ function providerLogoURL(
     provider.logos.length
   ){
 
+    /*
+      Prefer files with LOGO in filename.
+    */
+
+    const preferred=
+
+      provider.logos.find(
+        path=>
+          /logo/i.test(
+            basename(path)
+          )
+      )
+
+      ||
+
+      provider.logos[0];
+
+
     return repoAssetURL(
-      provider.logos[0]
+      preferred
     );
 
   }
@@ -1573,7 +1708,7 @@ function providerLogoURL(
 
 
 /* =====================================================
-   EXACT RANDOM 90.00 - 99.98
+   RANDOM DISPLAY SCORE
 ===================================================== */
 
 function randomScore(){
@@ -2109,27 +2244,46 @@ function findProvider(
 
 
 /* =====================================================
-   LOAD JILI MAP
+   LOAD GAME NAME MAP
 ===================================================== */
 
-async function loadJILIMap(){
+async function loadGameMap(
+  mapFile
+){
 
   if(
-    JILI_MAP
+    MAP_CACHE[
+      mapFile
+    ]
   ){
 
-    return JILI_MAP;
+    return MAP_CACHE[
+      mapFile
+    ];
 
   }
 
 
   try{
 
+    /*
+      Encode the filename so
+      PRAGMATIC PLAY.json works safely.
+    */
+
+    const encodedFile=
+
+      encodeURIComponent(
+        mapFile
+      );
+
+
     const response=
 
       await fetch(
 
-        "../data/game-names/JILI.json",
+        "../data/game-names/"+
+        encodedFile,
 
         {
           cache:"no-store"
@@ -2143,7 +2297,10 @@ async function loadJILIMap(){
     ){
 
       throw new Error(
-        "JILI.json not found"
+
+        mapFile+
+        " not found"
+
       );
 
     }
@@ -2154,13 +2311,81 @@ async function loadJILIMap(){
       await response.json();
 
 
-    JILI_MAP=
+    const rawGames=
 
       data.games ||
       {};
 
 
-    return JILI_MAP;
+    /*
+      Build normalized filename index.
+    */
+
+    const index={};
+
+
+    Object.entries(
+      rawGames
+    )
+    .forEach(
+      ([file,record])=>{
+
+
+        index[
+          normalizeFileKey(
+            file
+          )
+        ]=
+          record;
+
+
+        /*
+          Also support record.code/id
+          just in case.
+        */
+
+        if(
+          record &&
+          record.code
+        ){
+
+          index[
+            normalizeFileKey(
+              record.code+
+              ".png"
+            )
+          ]=
+            record;
+
+        }
+
+
+        if(
+          record &&
+          record.id
+        ){
+
+          index[
+            normalizeFileKey(
+              record.id+
+              ".png"
+            )
+          ]=
+            record;
+
+        }
+
+      }
+    );
+
+
+    MAP_CACHE[
+      mapFile
+    ]=
+      index;
+
+
+    return index;
 
 
   }catch(error){
@@ -2170,10 +2395,12 @@ async function loadJILIMap(){
     );
 
 
-    JILI_MAP={};
+    MAP_CACHE[
+      mapFile
+    ]={};
 
 
-    return JILI_MAP;
+    return{};
 
   }
 
@@ -2263,7 +2490,14 @@ async function loadProviders(){
         ...provider,
 
         tipLabel:
-          target.id
+          target.id,
+
+        tipMode:
+          target.mode,
+
+        mapFile:
+          target.mapFile ||
+          null
 
       });
 
@@ -2292,8 +2526,12 @@ async function loadProviders(){
       <div class="empty">
 
         Cannot find JILI,
-        MEGA888, 918KISS
-        or PUSSY888 in
+        MEGA888, 918KISS,
+        PUSSY888 or
+        PRAGMATIC PLAY in
+
+        <br><br>
+
         assets/game-providers/.
 
       </div>
@@ -2345,6 +2583,170 @@ async function loadProviders(){
 
 
   await loadSelectedProvider();
+
+}
+
+
+
+/* =====================================================
+   BUILD MAPPED GAME POOL
+===================================================== */
+
+async function buildMappedPool(
+  provider
+){
+
+  const map=
+
+    await loadGameMap(
+      provider.mapFile
+    );
+
+
+  return(
+
+    provider.games||
+    []
+
+  )
+
+  .map(
+    game=>{
+
+
+      const file=
+
+        basename(
+
+          game.file ||
+          game.path
+
+        );
+
+
+      const key=
+
+        normalizeFileKey(
+          file
+        );
+
+
+      const record=
+
+        map[
+          key
+        ];
+
+
+      /*
+        Only collect records that:
+
+        active === true
+        AND
+        have a proper name.
+      */
+
+      if(
+
+        !record ||
+
+        record.active!==true ||
+
+        typeof record.name!==
+          "string" ||
+
+        !record.name.trim()
+
+      ){
+
+        return null;
+
+      }
+
+
+      return{
+
+        ...game,
+
+        file:file,
+
+        displayName:
+          record.name.trim()
+
+      };
+
+    }
+  )
+
+  .filter(Boolean);
+
+}
+
+
+
+/* =====================================================
+   BUILD FILENAME GAME POOL
+===================================================== */
+
+function buildFilenamePool(
+  provider
+){
+
+  return(
+
+    provider.games||
+    []
+
+  )
+
+  .map(
+    game=>{
+
+
+      const file=
+
+        basename(
+
+          game.file ||
+          game.path
+
+        );
+
+
+      const name=
+
+        niceName(
+
+          game.name ||
+          file
+
+        );
+
+
+      if(
+        !name
+      ){
+
+        return null;
+
+      }
+
+
+      return{
+
+        ...game,
+
+        file:file,
+
+        displayName:
+          name
+
+      };
+
+    }
+  )
+
+  .filter(Boolean);
 
 }
 
@@ -2421,85 +2823,45 @@ async function loadSelectedProvider(){
   `;
 
 
+
+  poolEl.textContent=
+    "Loading games...";
+
+
+  statusEl.className=
+    "status";
+
+
+  statusEl.textContent=
+
+    `Loading ${currentProvider.tipLabel} database...`;
+
+
   gamePool=[];
 
 
 
   /* ===================================================
-     JILI
+     MAPPED PROVIDERS
+     JILI + PRAGMATIC PLAY
   =================================================== */
 
   if(
-    currentProvider.tipLabel===
-    "JILI"
+    currentProvider.tipMode===
+    "mapped"
   ){
 
 
     providerSource.textContent=
 
-      "Game names: JILI.json mapping";
-
-
-    const map=
-
-      await loadJILIMap();
-
+      `Game names: ${currentProvider.mapFile} mapping`;
 
 
     gamePool=
 
-      (currentProvider.games||[])
-
-      .map(
-        game=>{
-
-
-          const file=
-
-            basename(
-              game.file ||
-              game.path
-            );
-
-
-          const record=
-
-            map[file];
-
-
-          if(
-
-            !record ||
-
-            record.active!==true ||
-
-            typeof record.name!==
-              "string" ||
-
-            !record.name.trim()
-
-          ){
-
-            return null;
-
-          }
-
-
-          return{
-
-            ...game,
-
-            file:file,
-
-            displayName:
-              record.name.trim()
-
-          };
-
-        }
-      )
-
-      .filter(Boolean);
+      await buildMappedPool(
+        currentProvider
+      );
 
 
   }
@@ -2507,7 +2869,7 @@ async function loadSelectedProvider(){
 
 
   /* ===================================================
-     MEGA888 / 918KISS / PUSSY888
+     FILENAME PROVIDERS
   =================================================== */
 
   else{
@@ -2520,56 +2882,9 @@ async function loadSelectedProvider(){
 
     gamePool=
 
-      (currentProvider.games||[])
-
-      .map(
-        game=>{
-
-
-          const file=
-
-            basename(
-
-              game.file ||
-              game.path
-
-            );
-
-
-          const name=
-
-            niceName(
-
-              game.name ||
-              file
-
-            );
-
-
-          if(
-            !name
-          ){
-
-            return null;
-
-          }
-
-
-          return{
-
-            ...game,
-
-            file:file,
-
-            displayName:
-              name
-
-          };
-
-        }
-      )
-
-      .filter(Boolean);
+      buildFilenamePool(
+        currentProvider
+      );
 
   }
 
@@ -2581,32 +2896,82 @@ async function loadSelectedProvider(){
 
 
 
-  statusEl.className=
-    "status good";
+  if(
+    gamePool.length
+  ){
 
 
-  statusEl.textContent=
-
-    `${currentProvider.tipLabel} database loaded ✓`;
-
+    statusEl.className=
+      "status good";
 
 
-  gameGrid.innerHTML=`
+    statusEl.textContent=
 
-    <div class="empty">
+      `${currentProvider.tipLabel} database loaded ✓`;
 
-      ${escapeHTML(
-        currentProvider.tipLabel
-      )}
-      ready.
 
-      <br><br>
+    gameGrid.innerHTML=`
 
-      Press GENERATE GAME LIST.
+      <div class="empty">
 
-    </div>
+        ${escapeHTML(
+          currentProvider.tipLabel
+        )}
+        ready.
 
-  `;
+        <br><br>
+
+        ${gamePool.length.toLocaleString()}
+        named games available.
+
+        <br><br>
+
+        Press GENERATE GAME LIST.
+
+      </div>
+
+    `;
+
+
+  }
+
+
+  else{
+
+
+    statusEl.className=
+      "status error";
+
+
+    statusEl.textContent=
+
+      `${currentProvider.tipLabel}: no usable named games found.`;
+
+
+    gameGrid.innerHTML=`
+
+      <div class="empty">
+
+        No active named games found for
+
+        <br><br>
+
+        <b>
+          ${escapeHTML(
+            currentProvider.tipLabel
+          )}
+        </b>
+
+        <br><br>
+
+        Check mapping JSON and
+        asset filenames.
+
+      </div>
+
+    `;
+
+  }
 
 
 
