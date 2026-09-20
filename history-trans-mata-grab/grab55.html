@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>GRAB555 History Transaction</title>
+<style>
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  min-height:100%;
+  font-family:Roboto,Arial,sans-serif;
+  color:#fff;
+  background:#09101f;
+}
+body{
+  background-image:
+    linear-gradient(rgba(3,8,20,.12),rgba(3,8,20,.12)),
+    url("https://api.grb555.com/media/MAIN%20BACKGROUND_HhELEgc.png");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+button,input{font:inherit}
+
+.app{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:320px minmax(0,1fr);
+}
+
+/* editor */
+.editor{
+  min-height:100vh;
+  padding:18px 14px 28px;
+  background:rgba(10,18,37,.96);
+  border-right:1px solid rgba(100,170,255,.20);
+  box-shadow:10px 0 28px rgba(0,0,0,.30);
+  position:sticky;
+  top:0;
+  align-self:start;
+}
+.editor-title{
+  margin:0 0 5px;
+  font-size:20px;
+  font-weight:700;
+}
+.editor-sub{
+  margin:0 0 16px;
+  color:#b0bfdc;
+  font-size:12px;
+  line-height:1.45;
+}
+.edit-box{
+  padding:13px;
+  margin-bottom:12px;
+  border:1px solid #294a82;
+  border-radius:10px;
+  background:rgba(18,31,60,.95);
+}
+.edit-box h3{
+  margin:0 0 12px;
+  font-size:14px;
+  color:#fff;
+}
+.field{margin-bottom:10px}
+.field:last-child{margin-bottom:0}
+.field label{
+  display:block;
+  margin:0 0 5px;
+  color:#c0cceb;
+  font-size:10px;
+}
+.field input{
+  width:100%;
+  height:36px;
+  padding:0 9px;
+  border:1px solid #4066aa;
+  border-radius:6px;
+  outline:none;
+  background:#0a1328;
+  color:#fff;
+  font-size:12px;
+}
+.field input:focus{border-color:#3aa7ff}
+.date-line{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:6px;
+}
+.today-btn{
+  height:36px;
+  padding:0 10px;
+  border:1px solid #557bbb;
+  border-radius:6px;
+  background:#1b3761;
+  color:#fff;
+  font-size:11px;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.today-btn:hover{background:#244a80}
+.help{
+  color:#95a9cf;
+  font-size:10px;
+  line-height:1.45;
+  margin-top:8px;
+}
+
+/* preview */
+.preview{
+  min-width:0;
+  min-height:100vh;
+  background:rgba(5,9,18,.03);
+}
+.topbar{
+  padding:0;
+  border-bottom:1px solid rgba(0,190,255,.55);
+}
+.tabs{
+  height:66px;
+  display:flex;
+  align-items:stretch;
+  gap:0;
+  background:rgba(5,8,14,.42);
+}
+.tab{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 14px;
+  min-width:106px;
+  font-size:15px;
+  font-weight:600;
+  color:#f2f2f2;
+}
+.tab.active{
+  background:#0c4f84;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+}
+
+.tx-table{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+  background:rgba(5,10,20,.16);
+}
+.tx-table col:nth-child(1){width:9%}
+.tx-table col:nth-child(2){width:34%}
+.tx-table col:nth-child(3){width:23%}
+.tx-table col:nth-child(4){width:17%}
+.tx-table col:nth-child(5){width:17%}
+
+.tx-table thead td{
+  padding:13px 10px;
+  background:rgba(31,43,63,.92);
+  border-bottom:1px solid #00a8ff;
+  font-size:12px;
+  font-weight:600;
+  text-align:center;
+}
+.tx-table tbody td{
+  padding:13px 10px;
+  vertical-align:middle;
+  border-bottom:1px solid #00b8ff;
+  background:rgba(5,10,19,.10);
+  font-size:12px;
+  text-shadow:0 1px 2px rgba(0,0,0,.85);
+}
+.sno{
+  text-align:center;
+  font-weight:700;
+}
+.type-no{
+  text-align:center;
+  line-height:1.25;
+}
+.type-no .type{
+  display:block;
+  font-weight:700;
+}
+.type-no .id{
+  display:block;
+  margin-top:2px;
+  font-weight:700;
+}
+.amount-cell{
+  line-height:1.3;
+}
+.amount-line{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+.amount-line .label{
+  font-weight:700;
+}
+.amount-line .value{
+  font-weight:700;
+}
+.time-cell{
+  text-align:center;
+  line-height:1.2;
+  font-weight:700;
+}
+.status-cell{
+  text-align:center;
+}
+.status-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:72px;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  color:#fff;
+}
+.status-approved{
+  background:#24c85e;
+  box-shadow:0 0 8px rgba(36,200,94,.18) inset;
+}
+.status-rejected{
+  background:#ff150a;
+  box-shadow:0 0 8px rgba(255,21,10,.18) inset;
+}
+
+.pagination-wrap{
+  padding:10px 0 12px;
+  border-top:1px solid rgba(0,190,255,.65);
+  border-bottom:1px solid rgba(0,190,255,.65);
+  background:rgba(7,12,23,.32);
+}
+.pagination{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  gap:0;
+  border:1px solid #00aef3;
+  margin:0 2px;
+}
+.page-btn{
+  height:42px;
+  border:0;
+  border-right:1px solid rgba(0,174,243,.65);
+  background:rgba(10,24,53,.42);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+}
+.page-btn:last-child{border-right:0}
+.page-btn.active{
+  background:#d0a212;
+  color:#fff;
+}
+
+@media(max-width:980px){
+  .app{grid-template-columns:1fr}
+  .editor{
+    position:relative;
+    min-height:auto;
+    border-right:0;
+    border-bottom:1px solid rgba(100,170,255,.20);
+  }
+}
+@media(max-width:760px){
+  .tabs{height:56px}
+  .tab{font-size:14px;min-width:96px}
+  .tx-table{table-layout:auto}
+  .tx-table col{width:auto !important}
+}
+@media(max-width:520px){
+  .tab{font-size:12px;padding:0 8px;min-width:0}
+  .tx-table thead td,
+  .tx-table tbody td{
+    font-size:9.5px;
+    padding:10px 5px;
+  }
+  .status-pill{
+    min-width:56px;
+    padding:5px 8px;
+    font-size:10px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <aside class="editor">
+    <h1 class="editor-title">GRAB555 Editor</h1>
+
+    <div class="edit-box">
+      <h3>Deposit (Online Banking)</h3>
+
+      <div class="field">
+        <label>Actual Amount</label>
+        <input id="dpActual" type="number" step="0.01" min="0" value="50.00">
+      </div>
+
+      <div class="field">
+        <label>Date</label>
+        <div class="date-line">
+          <input id="dpDate" type="date" value="2026-08-20">
+          <button class="today-btn" data-target="dp">Today + Now</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Time</label>
+        <input id="dpTime" type="time" value="20:06">
+      </div>
+
+      <div class="help">
+        Boleh tukar date, time dan amount secara manual.
+      </div>
+    </div>
+
+    <div class="edit-box">
+      <h3>Withdrawal (Manual)</h3>
+
+      <div class="field">
+        <label>Requested Amount</label>
+        <input id="wdRequested" type="number" step="0.01" min="0" value="33.60">
+      </div>
+
+      <div class="field">
+        <label>Actual Amount</label>
+        <input id="wdActual" type="number" step="0.01" min="0" value="0.00">
+      </div>
+
+      <div class="field">
+        <label>Date</label>
+        <div class="date-line">
+          <input id="wdDate" type="date" value="2026-08-20">
+          <button class="today-btn" data-target="wd">Today + Now</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Time</label>
+        <input id="wdTime" type="time" value="20:05">
+      </div>
+
+      <div class="help">
+        Tarikh dan jam boleh diubah manual walaupun selepas tekan Today + Now.
+      </div>
+    </div>
+  </aside>
+
+  <main class="preview">
+    <div class="topbar">
+      <div class="tabs">
+        <div class="tab active">Transaction</div>
+        <div class="tab">Rewards</div>
+      </div>
+    </div>
+
+    <table class="tx-table">
+      <colgroup>
+        <col><col><col><col><col>
+      </colgroup>
+
+      <thead>
+        <tr>
+          <td>S.No</td>
+          <td>Type &amp; NO</td>
+          <td>Amount</td>
+          <td>Time</td>
+          <td>Status</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="sno">1</td>
+          <td class="type-no">
+            <span class="type">Deposit (Online Banking)</span>
+            <span class="id">IB6597958528166</span>
+          </td>
+          <td class="amount-cell">
+            <div class="amount-line"><span class="label">Actual:</span><span class="value" id="dpActualText">50.00</span></div>
+          </td>
+          <td class="time-cell">
+            <span id="dpDateText">20/08/26</span><br>
+            <span id="dpTimeText">20:06</span>
+          </td>
+          <td class="status-cell">
+            <span class="status-pill status-approved">Approved</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="sno">2</td>
+          <td class="type-no">
+            <span class="type">Withdrawal (Manual)</span>
+            <span class="id">MW6597955AD20A8</span>
+          </td>
+          <td class="amount-cell">
+            <div class="amount-line"><span class="label">Requested:</span><span class="value" id="wdRequestedText">33.60</span></div>
+            <div class="amount-line"><span class="label">Actual:</span><span class="value" id="wdActualText">0.00</span></div>
+          </td>
+          <td class="time-cell">
+            <span id="wdDateText">20/08/26</span><br>
+            <span id="wdTimeText">20:05</span>
+          </td>
+          <td class="status-cell">
+            <span class="status-pill status-approved">Approved</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+<script>
+const $ = id => document.getElementById(id);
+
+function formatMoney(value){
+  const n = Number(value || 0);
+  return n.toLocaleString('en-MY',{
+    minimumFractionDigits:2,
+    maximumFractionDigits:2
+  });
+}
+
+function displayDate(value){
+  if(!value) return '';
+  const [y,m,d] = value.split('-');
+  return `${d}/${m}/${y.slice(-2)}`;
+}
+
+function getNowLocal(){
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth()+1).padStart(2,'0');
+  const d = String(now.getDate()).padStart(2,'0');
+  const hh = String(now.getHours()).padStart(2,'0');
+  const mm = String(now.getMinutes()).padStart(2,'0');
+
+  return {
+    date:`${y}-${m}-${d}`,
+    time:`${hh}:${mm}`
+  };
+}
+
+function updatePreview(){
+  $('dpActualText').textContent = formatMoney($('dpActual').value);
+  $('wdRequestedText').textContent = formatMoney($('wdRequested').value);
+  $('wdActualText').textContent = formatMoney($('wdActual').value);
+
+  $('dpDateText').textContent = displayDate($('dpDate').value);
+  $('wdDateText').textContent = displayDate($('wdDate').value);
+
+  $('dpTimeText').textContent = $('dpTime').value;
+  $('wdTimeText').textContent = $('wdTime').value;
+}
+
+['dpActual','dpDate','dpTime','wdRequested','wdActual','wdDate','wdTime'].forEach(id=>{
+  $(id).addEventListener('input',updatePreview);
+  $(id).addEventListener('change',updatePreview);
+});
+
+document.querySelectorAll('.today-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const p = btn.dataset.target;
+    const now = getNowLocal();
+
+    $(p+'Date').value = now.date;
+    $(p+'Time').value = now.time;
+
+    updatePreview();
+  });
+});
+
+updatePreview();
+</script>
+</body>
+</html>
