@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>GRAB555 History Transaction</title>
+<title>GRAB555 Transaction Editor v3</title>
 <style>
 *{box-sizing:border-box}
 html,body{
@@ -223,10 +223,6 @@ button,input{font:inherit}
   background:#24c85e;
   box-shadow:0 0 8px rgba(36,200,94,.18) inset;
 }
-.status-rejected{
-  background:#ff150a;
-  box-shadow:0 0 8px rgba(255,21,10,.18) inset;
-}
 
 .pagination-wrap{
   padding:10px 0 12px;
@@ -284,47 +280,13 @@ button,input{font:inherit}
     font-size:10px;
   }
 }
-
-.tool-nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}
-.tool-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 11px;border:1px solid rgba(255,255,255,.22);border-radius:8px;background:rgba(255,255,255,.08);color:#fff;text-decoration:none;font-size:11px;font-weight:700;transition:.18s ease}
-.tool-nav a:hover{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.38)}
 </style>
 </head>
 <body>
 <div class="app">
 
   <aside class="editor">
-    <nav class="tool-nav" aria-label="History navigation">
-      <a href="../">← Main Menu</a>
-      <a href="./">← History Menu</a>
-    </nav>
     <h1 class="editor-title">GRAB555 Editor</h1>
-
-    <div class="edit-box">
-      <h3>Deposit (Online Banking)</h3>
-
-      <div class="field">
-        <label>Actual Amount</label>
-        <input id="dpActual" type="number" step="0.01" min="0" value="50.00">
-      </div>
-
-      <div class="field">
-        <label>Date</label>
-        <div class="date-line">
-          <input id="dpDate" type="date" value="2026-08-20">
-          <button class="today-btn" data-target="dp">Today + Now</button>
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Time</label>
-        <input id="dpTime" type="time" value="20:06">
-      </div>
-
-      <div class="help">
-        Boleh tukar date, time dan amount secara manual.
-      </div>
-    </div>
 
     <div class="edit-box">
       <h3>Withdrawal (Manual)</h3>
@@ -356,6 +318,32 @@ button,input{font:inherit}
         Tarikh dan jam boleh diubah manual walaupun selepas tekan Today + Now.
       </div>
     </div>
+
+    <div class="edit-box">
+      <h3>Deposit (Online Banking)</h3>
+
+      <div class="field">
+        <label>Actual Amount</label>
+        <input id="dpActual" type="number" step="0.01" min="0" value="50.00">
+      </div>
+
+      <div class="field">
+        <label>Date</label>
+        <div class="date-line">
+          <input id="dpDate" type="date" value="2026-08-20">
+          <button class="today-btn" data-target="dp">Today + Now</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Time</label>
+        <input id="dpTime" type="time" value="20:06">
+      </div>
+
+      <div class="help">
+        Boleh tukar date, time dan amount secara manual.
+      </div>
+    </div>
   </aside>
 
   <main class="preview">
@@ -385,24 +373,6 @@ button,input{font:inherit}
         <tr>
           <td class="sno">1</td>
           <td class="type-no">
-            <span class="type">Deposit (Online Banking)</span>
-            <span class="id">IB6597958528166</span>
-          </td>
-          <td class="amount-cell">
-            <div class="amount-line"><span class="label">Actual:</span><span class="value" id="dpActualText">50.00</span></div>
-          </td>
-          <td class="time-cell">
-            <span id="dpDateText">20/08/26</span><br>
-            <span id="dpTimeText">20:06</span>
-          </td>
-          <td class="status-cell">
-            <span class="status-pill status-approved">Approved</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="sno">2</td>
-          <td class="type-no">
             <span class="type">Withdrawal (Manual)</span>
             <span class="id">MW6597955AD20A8</span>
           </td>
@@ -413,6 +383,24 @@ button,input{font:inherit}
           <td class="time-cell">
             <span id="wdDateText">20/08/26</span><br>
             <span id="wdTimeText">20:05</span>
+          </td>
+          <td class="status-cell">
+            <span class="status-pill status-approved">Approved</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="sno">2</td>
+          <td class="type-no">
+            <span class="type">Deposit (Online Banking)</span>
+            <span class="id">IB6597958528166</span>
+          </td>
+          <td class="amount-cell">
+            <div class="amount-line"><span class="label">Actual:</span><span class="value" id="dpActualText">50.00</span></div>
+          </td>
+          <td class="time-cell">
+            <span id="dpDateText">20/08/26</span><br>
+            <span id="dpTimeText">20:06</span>
           </td>
           <td class="status-cell">
             <span class="status-pill status-approved">Approved</span>
@@ -453,18 +441,18 @@ function getNowLocal(){
 }
 
 function updatePreview(){
-  $('dpActualText').textContent = formatMoney($('dpActual').value);
   $('wdRequestedText').textContent = formatMoney($('wdRequested').value);
   $('wdActualText').textContent = formatMoney($('wdActual').value);
+  $('dpActualText').textContent = formatMoney($('dpActual').value);
 
-  $('dpDateText').textContent = displayDate($('dpDate').value);
   $('wdDateText').textContent = displayDate($('wdDate').value);
+  $('dpDateText').textContent = displayDate($('dpDate').value);
 
-  $('dpTimeText').textContent = $('dpTime').value;
   $('wdTimeText').textContent = $('wdTime').value;
+  $('dpTimeText').textContent = $('dpTime').value;
 }
 
-['dpActual','dpDate','dpTime','wdRequested','wdActual','wdDate','wdTime'].forEach(id=>{
+['wdRequested','wdActual','wdDate','wdTime','dpActual','dpDate','dpTime'].forEach(id=>{
   $(id).addEventListener('input',updatePreview);
   $(id).addEventListener('change',updatePreview);
 });
